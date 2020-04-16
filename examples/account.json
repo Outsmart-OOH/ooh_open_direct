@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "AdvertiserId": "1234987",
+    "BuyerId": "34587",
+    "ThirdPartyId": "98765",
+    "Name": "Brand A",
+    "OOHProviderData": {
+        "CampaignId": "1234",
+        "CampaignName": "Campaign Name",
+        "PoNumber": "PO123456",
+        "SalesOrderReference": "SO98765",
+        "BarterOrganizationID": "Barter",
+        "Other": "Some other"
+    }
+}

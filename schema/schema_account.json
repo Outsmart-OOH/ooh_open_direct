@@ -1,0 +1,133 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "OOH Account Object",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": false,
+    "required": [
+        "AdvertiserId",
+        "BuyerId",
+        "ThirdPartyId",
+        "Name"
+    ],
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri"
+        },
+        "AdvertiserId": {
+            "$id": "#/properties/AdvertiserId",
+            "type": "string",
+            "title": "The Advertiserid Schema",
+            "description": "An explanation about the purpose of this instance."
+        },
+        "BuyerId": {
+            "$id": "#/properties/BuyerId",
+            "type": "string",
+            "title": "The Buyerid Schema",
+            "description": "An explanation about the purpose of this instance."
+        },
+        "ThirdPartyId": {
+            "$id": "#/properties/ThirdPartyId",
+            "type": "string",
+            "title": "The Thirdpartyid Schema",
+            "description": "An explanation about the purpose of this instance."
+        },
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "The Name Schema",
+            "description": "An explanation about the purpose of this instance."
+        },
+        "OOHProviderData": {
+            "$id": "#/properties/OOHProviderData",
+            "type": "object",
+            "title": "The Oohproviderdata Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "CampaignId": "1234",
+                    "CampaignName": "Campaign Name",
+                    "Other": "Some other",
+                    "SalesOrderReference": "SO98765",
+                    "PoNumber": "PO123456",
+                    "BarterOrganizationID": "Barter"
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "CampaignId",
+                "CampaignName",
+                "PoNumber",
+                "SalesOrderReference",
+                "BarterOrganizationID",
+                "Other"
+            ],
+            "properties": {
+                "CampaignId": {
+                    "$id": "#/properties/OOHProviderData/properties/CampaignId",
+                    "type": "string",
+                    "title": "The Campaignid Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "1234"
+                    ]
+                },
+                "CampaignName": {
+                    "$id": "#/properties/OOHProviderData/properties/CampaignName",
+                    "type": "string",
+                    "title": "The Campaignname Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Campaign Name"
+                    ]
+                },
+                "PoNumber": {
+                    "$id": "#/properties/OOHProviderData/properties/PoNumber",
+                    "type": "string",
+                    "title": "The Ponumber Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "PO123456"
+                    ]
+                },
+                "SalesOrderReference": {
+                    "$id": "#/properties/OOHProviderData/properties/SalesOrderReference",
+                    "type": "string",
+                    "title": "The Salesorderreference Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "SO98765"
+                    ]
+                },
+                "BarterOrganizationID": {
+                    "$id": "#/properties/OOHProviderData/properties/BarterOrganizationID",
+                    "type": "string",
+                    "title": "The Barterorganizationid Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Barter"
+                    ]
+                },
+                "Other": {
+                    "$id": "#/properties/OOHProviderData/properties/Other",
+                    "type": "string",
+                    "title": "The Other Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Some other"
+                    ]
+                }
+            }
+        }
+    }
+}
