@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "http://example.com/example.json",
+    "$id": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/schema_account.json",
     "type": "object",
     "title": "OOH Account Object",
     "description": "The root schema comprises the entire JSON document.",
