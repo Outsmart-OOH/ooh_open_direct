@@ -1,2 +1,2 @@
-# ooh_open_direct
+# OOH Open Direct
 OOH Open Direct Schema and examples

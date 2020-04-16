@@ -1,0 +1,16 @@
+{
+    "$schema": "https://global-prs-schema.s3-eu-west-1.amazonaws.com/ooh_open_direct/test_schema.json",
+    "checked": false,
+    "crazy": "frog",
+    "dimensions": {
+        "width": 5,
+        "height": 10
+    },
+    "id": 56,
+    "name": "A green door",
+    "price": 12.5,
+    "tags": [
+        "home",
+        "green"
+    ]
+}
