@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/common/schema_oohProviderData.json",
+    "type": "object",
+    "title": "OOH Provider Data",
+    "description": "OOH Provider Data",
+    "additionalProperties": false,
+    "properties": {
+        "CampaignId": {
+            "$id": "#/properties/OOHProviderData/properties/CampaignId",
+            "type": "string",
+            "title": "The Campaignid Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "1234"
+            ]
+        },
+        "CampaignName": {
+            "$id": "#/properties/OOHProviderData/properties/CampaignName",
+            "type": "string",
+            "title": "The Campaignname Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Campaign Name"
+            ]
+        },
+        "PoNumber": {
+            "$id": "#/properties/OOHProviderData/properties/PoNumber",
+            "type": "string",
+            "title": "The Ponumber Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "PO123456"
+            ]
+        },
+        "SalesOrderReference": {
+            "$id": "#/properties/OOHProviderData/properties/SalesOrderReference",
+            "type": "string",
+            "title": "The Salesorderreference Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "SO98765"
+            ]
+        },
+        "BarterOrganizationID": {
+            "$id": "#/properties/OOHProviderData/properties/BarterOrganizationID",
+            "type": "string",
+            "title": "The Barterorganizationid Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Barter"
+            ]
+        },
+        "Other": {
+            "$id": "#/properties/OOHProviderData/properties/Other",
+            "type": "string",
+            "title": "The Other Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Some other"
+            ]
+        }
+    }
+}

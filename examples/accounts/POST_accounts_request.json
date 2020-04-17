@@ -1,0 +1,7 @@
+{
+    "$schema": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/schema_account.json",
+    "AdvertiserId": "1234987",
+    "BuyerId": "34587",
+    "ThirdPartyId": "98765",
+    "Name": "Brand A"
+}
