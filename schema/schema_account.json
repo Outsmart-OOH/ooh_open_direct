@@ -39,8 +39,14 @@
         "Name": {
             "$id": "#/properties/Name",
             "type": "string",
-            "title": "The Name Schema",
-            "description": "An explanation about the purpose of this instance."
+            "title": "Name",
+            "description": "The name of the account. Used for display purposes"
+        },
+        "ProviderData": {
+            "$id": "#/proerties/ProviderData",
+            "type": "string",
+            "title": "Provider Data",
+            "description": ""
         }
     }
 }
