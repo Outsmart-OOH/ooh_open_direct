@@ -22,19 +22,25 @@
             "$id": "#/properties/AdvertiserId",
             "type": "string",
             "title": "The Advertiserid Schema",
-            "description": "An explanation about the purpose of this instance."
+            "description": "An explanation about the purpose of this instance.",
+            "minLength": 1,
+            "maxLength": 36
         },
         "BuyerId": {
             "$id": "#/properties/BuyerId",
             "type": "string",
             "title": "The Buyerid Schema",
-            "description": "An explanation about the purpose of this instance."
+            "description": "An explanation about the purpose of this instance.",
+            "minLength": 1,
+            "maxLength": 36
         },
         "ThirdPartyId": {
             "$id": "#/properties/ThirdPartyId",
             "type": "string",
             "title": "The Thirdpartyid Schema",
-            "description": "An explanation about the purpose of this instance."
+            "description": "An explanation about the purpose of this instance.",
+            "minLength": 1,
+            "maxLength": 36
         },
         "Name": {
             "$id": "#/properties/Name",
