@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/resources/accounts/{id}/GET_response.json",
+    "$id": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/resources/accounts/id/GET_response.json",
     "type": "object",
     "title": "The Root Schema",
     "description": "The root schema comprises the entire JSON document.",
