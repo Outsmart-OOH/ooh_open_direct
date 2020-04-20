@@ -1,0 +1,66 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/resources/accounts/{id}/GET_response.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "AdvertiserId",
+        "BuyerId",
+        "ThirdPartyId",
+        "Id",
+        "Name",
+        "ProviderData"
+    ],
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "AdvertiserId": {
+            "$id": "#/properties/AdvertiserId",
+            "type": "string",
+            "title": "The Advertiserid Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        },
+        "BuyerId": {
+            "$id": "#/properties/BuyerId",
+            "type": "string",
+            "title": "The Buyerid Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        },
+        "ThirdPartyId": {
+            "$id": "#/properties/ThirdPartyId",
+            "type": "string",
+            "title": "The Thirdpartyid Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        },
+        "Id": {
+            "$id": "#/properties/Id",
+            "type": "string",
+            "title": "The Id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        },
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "The Name Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        },
+        "ProviderData": {
+            "$id": "#/properties/ProviderData",
+            "type": "string",
+            "title": "The Providerdata Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        }
+    }
+}

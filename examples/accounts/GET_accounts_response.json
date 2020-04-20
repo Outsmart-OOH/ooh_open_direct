@@ -1,0 +1,20 @@
+{
+    "Accounts": [
+        {
+            "AdvertiserId": "1234987",
+            "BuyerId": "1234987",
+            "ThirdPartyId": "1234987",
+            "Id": "9876542",
+            "Name": "Brand B",
+            "ProviderData": ""
+        },
+        {
+            "AdvertiserId": "1234987",
+            "BuyerId": "34587",
+            "ThirdPartyId": "98765",
+            "Id": "23873345",
+            "Name": "Brand A",
+            "ProviderData": ""
+        }
+    ]
+}
