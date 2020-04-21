@@ -37,6 +37,15 @@
             "type": "string",
             "title": "Product Name",
             "description": "The product's display name. The name must be unique."
-        }
+        },
+        "TargetTypes": {
+            "$id": "#/properties/TargetTypes",
+            "type": "array",
+            "title": "Target Types",
+            "description": "A list Target Types.",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/common/targetType_object.json"
+            }
+        },
     }
 }

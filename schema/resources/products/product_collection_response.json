@@ -22,7 +22,8 @@
                 "required": [
                     "ActiveDate",
                     "Id",
-                    "Name"
+                    "Name",
+                    "TargetTypes"
                 ]
             }
         }
