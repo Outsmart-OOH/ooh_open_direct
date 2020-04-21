@@ -46,6 +46,6 @@
             "items": {
                 "$ref": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/common/targetType_object.json"
             }
-        },
+        }
     }
 }
