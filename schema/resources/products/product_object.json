@@ -20,6 +20,15 @@
             "minLength": 1,
             "maxLength": 26
         },
+        "Geometry": {
+            "$id": "#/properties/AdvertiserId",
+            "type": "array",
+            "title": "Geometry",
+            "description": "A list of ad format sizes that the product supports.",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/common/size_object.json"
+            }
+        },
         "Id": {
             "$ref": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/resources/products/product_id_string.json"
         },
