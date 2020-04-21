@@ -6,13 +6,6 @@
     "description": "An account defines a buyer-advertiser relationship.",
     "default": {},
     "additionalProperties": false,
-    "required": [
-        "AdvertiserId",
-        "BuyerId",
-        "ThirdPartyId",
-        "Id",
-        "Name"
-    ],
     "properties": {
         "$schema": {
             "type": "string",
@@ -22,7 +15,7 @@
         "AdvertiserId": {
             "$id": "#/properties/AdvertiserId",
             "type": "string",
-            "title": "The Advertiserid Schema",
+            "title": "Advertiser ID",
             "description": "An explanation about the purpose of this instance.",
             "minLength": 1,
             "maxLength": 36
@@ -30,7 +23,7 @@
         "BuyerId": {
             "$id": "#/properties/BuyerId",
             "type": "string",
-            "title": "The Buyerid Schema",
+            "title": "Buyer ID",
             "description": "An explanation about the purpose of this instance.",
             "minLength": 1,
             "maxLength": 36
@@ -38,7 +31,7 @@
         "ThirdPartyId": {
             "$id": "#/properties/ThirdPartyId",
             "type": "string",
-            "title": "The Thirdpartyid Schema",
+            "title": "Thirdparty ID",
             "description": "An explanation about the purpose of this instance.",
             "minLength": 1,
             "maxLength": 36
@@ -46,7 +39,7 @@
         "Name": {
             "$id": "#/properties/Name",
             "type": "string",
-            "title": "Name",
+            "title": "Account Name",
             "description": "The name of the account. Used for display purposes"
         },
         "ProviderData": {

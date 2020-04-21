@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/resources/accounts/account_collection_response.json",
+    "type": "object",
+    "title": "Response for a collection of Accounts",
+    "description": "The schema of a response that gives a collection of Accounts",
+    "required": [
+        "Accounts"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string"
+        },
+        "Accounts": {
+            "$id": "#/properties/Examples",
+            "type": "array",
+            "title": "Array of Accounts",
+            "description": "Collection of Accounts",
+            "items": {
+                "$ref": "account_object.json",
+                "required": [
+                    "AdvertiserId",
+                    "BuyerId",
+                    "ThirdPartyId",
+                    "Id",
+                    "Name"
+                ]
+            }
+        }
+    }
+}
