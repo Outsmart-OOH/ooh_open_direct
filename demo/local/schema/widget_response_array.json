@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "Collection of Widgets",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "Widgets"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string"
+        },
+        "Widgets": {
+            "$id": "#/properties/Examples",
+            "type": "array",
+            "title": "Array of Widgets",
+            "description": "An explanation about the purpose of this instance.",
+            "items": {
+                "$ref": "widget_object.json",
+                "required": [
+                    "checked",
+                    "dimensions",
+                    "id",
+                    "name",
+                    "price",
+                    "tags"
+                ]
+            }
+        }
+    }
+}

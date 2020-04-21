@@ -1,0 +1,14 @@
+{
+    "$schema": "./schema/widget_request.json",
+    "checked": false,
+    "dimensions": {
+        "width": 5,
+        "height": 10
+    },
+    "name": "A green door",
+    "price": 12.5,
+    "tags": [
+        "home",
+        "green"
+    ]
+}

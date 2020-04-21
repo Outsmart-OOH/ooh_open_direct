@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "$ref": "widget_object.json",
+    "required": [
+        "checked",
+        "dimensions",
+        "id",
+        "name",
+        "price",
+        "tags"
+    ]
+}

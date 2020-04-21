@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Widget object",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string"
+        },
+        "checked": {
+            "$id": "#/properties/checked",
+            "type": "boolean",
+            "title": "The Checked Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "dimensions": {
+            "allOf": [
+                {
+                    "$ref": "dimensions_object.json"
+                },
+                {
+                    "required": [
+                        "width",
+                        "height"
+                    ]
+                }
+            ]
+        },
+        "id": {
+            "$ref": "id_integer.json",
+            "title": "ID ",
+            "description": "ID of Widget"
+        },
+        "name": {
+            "$ref": "name_string.json",
+            "title": "Name",
+            "description": "Name of the Widget"
+        },
+        "price": {
+            "$id": "#/properties/price",
+            "type": "number",
+            "title": "The Price Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                12.5
+            ]
+        },
+        "tags": {
+            "$id": "#/properties/tags",
+            "type": "array",
+            "title": "The Tags Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "home",
+                    "green"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/tags/items",
+                "type": "string",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "home",
+                    "green"
+                ]
+            }
+        }
+    }
+}

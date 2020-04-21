@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "#/dimensions",
+    "type": "object",
+    "title": "Dimensions of something",
+    "description": "It has a Width and Height.",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "width": {
+            "$id": "#/properties/dimensions/properties/width",
+            "type": "integer",
+            "title": "Width",
+            "description": "How wide it is.",
+            "default": 0,
+            "examples": [
+                5.0
+            ]
+        },
+        "height": {
+            "$id": "#/properties/dimensions/properties/height",
+            "type": "integer",
+            "title": "Height",
+            "description": "How high it is.",
+            "default": 0,
+            "examples": [
+                10.0
+            ]
+        }
+    }
+}
