@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/resources/products/product_object.json",
+    "type": "object",
+    "title": "Product object",
+    "description": "A Product resource identifies anything from an ad placement to a Run of Network product in the publisher’s product catalogue.",
+    "default": {},
+    "additionalProperties": true,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "ActiveDate": {
+            "$id": "#/properties/AdvertiserId",
+            "type": "string",
+            "title": "Active Date",
+            "description": "The date and time, in UTC, that the product may become part of the bookable inventory. Use ISO-8602 format for the time and date.",
+            "minLength": 1,
+            "maxLength": 26
+        },
+        "Id": {
+            "$ref": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/resources/products/product_id_string.json"
+        },
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "Product Name",
+            "description": "The product's display name. The name must be unique."
+        }
+    }
+}
