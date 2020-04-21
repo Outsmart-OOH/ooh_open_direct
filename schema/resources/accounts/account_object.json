@@ -36,6 +36,12 @@
             "minLength": 1,
             "maxLength": 36
         },
+        "Id": {
+            "$id": "#/properties/Id",
+            "type": "string",
+            "title": "Account ID",
+            "description": "A system-generated opaque ID that uniquely identifies the account"
+        },
         "Name": {
             "$id": "#/properties/Name",
             "type": "string",
