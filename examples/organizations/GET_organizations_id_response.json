@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/organizations/organizations_object.json",
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/resources/organizations/organizations_object.json",
     "Address": {
         "AddressLine1": "221B Baker Street",
         "City": "London",
