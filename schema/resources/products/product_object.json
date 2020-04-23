@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/resources/products/product_object.json",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/resources/products/product_object.json",
     "type": "object",
     "title": "Product object",
     "description": "A Product resource identifies anything from an ad placement to a Run of Network product in the publisher’s product catalogue.",
@@ -26,11 +26,11 @@
             "title": "Geometry",
             "description": "A list of ad format sizes that the product supports.",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/common/size_object.json"
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/common/size_object.json"
             }
         },
         "Id": {
-            "$ref": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/resources/products/product_id_string.json"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/resources/products/product_id_string.json"
         },
         "Name": {
             "$id": "#/properties/Name",
@@ -44,7 +44,7 @@
             "title": "Target Types",
             "description": "A list Target Types.",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/common/targetType_object.json"
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/common/targetType_object.json"
             }
         }
     }

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/reference/schema_organisationId.json",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/reference/schema_organisationId.json",
     "type": "string",
     "title": "Organisation ID",
     "description": "ID of an Organisation",

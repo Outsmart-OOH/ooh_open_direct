@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/demo/schema_example.json",
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/demo/schema_example.json",
     "checked": false,
     "dimensions": {
         "width": 5,

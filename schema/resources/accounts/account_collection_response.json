@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/resources/accounts/account_collection_response.json",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/resources/accounts/account_collection_response.json",
     "type": "object",
     "title": "Response for a collection of Accounts",
     "description": "The schema of a response that gives a collection of Accounts",
@@ -18,7 +18,7 @@
             "title": "Array of Accounts",
             "description": "Collection of Accounts",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/resources/accounts/account_object.json",
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/resources/accounts/account_object.json",
                 "required": [
                     "AdvertiserId",
                     "BuyerId",

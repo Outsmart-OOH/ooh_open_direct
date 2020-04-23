@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/resources/products/product_response.json",
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/resources/products/product_response.json",
     "ActiveDate": "2012-12-10T18:00:00.000Z",
     "AdFormatTypes": [
         "mp4",

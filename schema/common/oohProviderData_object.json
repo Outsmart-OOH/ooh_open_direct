@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/thisisglobal/ooh_open_direct/master/schema/common/oohProviderData_object.json",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/common/oohProviderData_object.json",
     "type": "object",
     "title": "OOH Provider Data",
     "description": "OOH Provider Data",
