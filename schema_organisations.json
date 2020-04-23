@@ -8,8 +8,9 @@
     "additionalProperties": false,
     "required": [
         "AdvertiserBrands",
+        "Contacts",
         "OrganizationType",
-        "OOHProviderData"
+        "Name"
     ],
     "properties": {
         "$schema": {
@@ -100,6 +101,50 @@
                     ]
                 }
             }
+        },
+        "Disapproval Reason":{
+            "$id": "#/properties/DisapprovalReason",
+            "description": "The reason why the organisation was not registered. Must be specified if Status is Disapproved",
+            "type": "string",
+            "maxLength": 255
+        },
+        "Fax":{
+            "$id": "#/properties/Fax",
+            "description": "The organisation's fax number",
+            "type": "string",
+            "maxLength": 20
+        },
+        "Id":{
+            "$id": "#/properties/id",
+            "description": "A system-generated opaque ID that uniquely identifies this resource",
+            "type": "string",
+            "maxLength": 36
+        },
+        "Industry":{
+            "$id": "#/properties/Industry",
+            "description": "An industry label for the organisation. Only required for advertiser organisation",
+            "type":"object",
+            "properties": {
+
+            }
+        },
+        "OrganizationType":{
+            "$id": "#/properties/OrganizationType",
+            "description": "The core activity that an organisation undertakes as a business e.g. advertiser, OOH Specialist or Media Agency",
+            "type": "string"
+        },
+        "Name":{
+            "$id": "#properties/Name",
+            "description": "The organization's display name",
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 1
+        },
+        "Phone":{
+            "$id": "#/properties/Phone",
+            "description": "The organization's phone number",
+            "type": "string",
+            "maxLength": 20
         }
     }
 }
