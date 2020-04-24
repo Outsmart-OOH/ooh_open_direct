@@ -6,15 +6,12 @@
     "description": "",
     "default": {},
     "additionalProperties": false,
-    "required": [
-        "AdFormatTypes",
-        "Currency",
-        "DeliveryType",
-        "Domain",
-        "Geometry",
-        "TargetTypes"
-    ],
     "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
         "AdFormatTypes": {
             "$id": "#/properties/AdFormatTypes",
             "type": "array",
