@@ -1,0 +1,49 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/products/product_search_request.json",
+    "AdFormatTypes": [
+        "HTML5",
+        "Image"
+    ],
+    "Currency": "GBP",
+    "DeliveryType": "Guaranteed",
+    "Domain": "yahoo.com",
+    "Geometry": [
+        {
+            "Width": 123,
+            "Height": 456
+        }
+    ],
+    "TargetTypes": [
+        {
+            "$and": [
+                {
+                    "Name": "Inventory",
+                    "Type": "Frames",
+                    "DataSource": "Space",
+                    "Target": "frame_type",
+                    "TargetValues": [
+                        "digital moving image"
+                    ]
+                },
+                {
+                    "Name": "Inventory",
+                    "Type": "Frames",
+                    "DataSource": "Space",
+                    "Target": "format",
+                    "TargetValues": [
+                        "6 sheets"
+                    ]
+                },
+                {
+                    "Name": "Inventory",
+                    "Type": "Frames",
+                    "DataSource": "Space",
+                    "Target": "environment",
+                    "TargetValues": [
+                        "Rail Stations"
+                    ]
+                }
+            ]
+        }
+    ]
+}
