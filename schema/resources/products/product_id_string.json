@@ -1,9 +1,0 @@
-{
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/resources/products/product_id_string.json",
-    "type": "string",
-    "title": "Product ID",
-    "description": "A system-generated opaque ID that uniquely identifies the product",
-    "minLength": 1,
-    "maxLength": 36
-}

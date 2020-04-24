@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/products/product_object.json",
+    "type": "object",
+    "title": "Product object",
+    "description": "A Product resource identifies anything from an ad placement to a Run of Network product in the publisher’s product catalogue.",
+    "default": {},
+    "additionalProperties": true,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "ActiveDate": {
+            "$id": "#/properties/AdvertiserId",
+            "type": "string",
+            "title": "Active Date",
+            "description": "The date and time, in UTC, that the product may become part of the bookable inventory. Use ISO-8602 format for the time and date.",
+            "minLength": 1,
+            "maxLength": 26
+        },
+        "Geometry": {
+            "$id": "#/properties/AdvertiserId",
+            "type": "array",
+            "title": "Geometry",
+            "description": "A list of ad format sizes that the product supports.",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/size_object.json"
+            }
+        },
+        "Id": {
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/products/product_id_string.json"
+        },
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "Product Name",
+            "description": "The product's display name. The name must be unique."
+        },
+        "TargetTypes": {
+            "$id": "#/properties/TargetTypes",
+            "type": "array",
+            "title": "Target Types",
+            "description": "A list Target Types.",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/targetType_object.json"
+            }
+        }
+    }
+}

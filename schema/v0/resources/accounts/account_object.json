@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/accounts/account_object.json",
+    "type": "object",
+    "title": "Account object",
+    "description": "An account defines a buyer-advertiser relationship.",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "AdvertiserId": {
+            "$id": "#/properties/AdvertiserId",
+            "type": "string",
+            "title": "Advertiser ID",
+            "description": "An explanation about the purpose of this instance.",
+            "minLength": 1,
+            "maxLength": 36
+        },
+        "BuyerId": {
+            "$id": "#/properties/BuyerId",
+            "type": "string",
+            "title": "Buyer ID",
+            "description": "An explanation about the purpose of this instance.",
+            "minLength": 1,
+            "maxLength": 36
+        },
+        "ThirdPartyId": {
+            "$id": "#/properties/ThirdPartyId",
+            "type": "string",
+            "title": "Thirdparty ID",
+            "description": "An explanation about the purpose of this instance.",
+            "minLength": 1,
+            "maxLength": 36
+        },
+        "Id": {
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/accounts/account_id_string.json"
+        },
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "Account Name",
+            "description": "The name of the account. Used for display purposes"
+        },
+        "ProviderData": {
+            "$id": "#/proerties/ProviderData",
+            "type": "string",
+            "title": "Provider Data",
+            "description": ""
+        }
+    }
+}
