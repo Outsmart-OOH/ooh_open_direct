@@ -9,14 +9,9 @@
     ],
     "additionalProperties": false,
     "properties": {
-        "$and": {
+        "$or": {
             "$id": "#/properties/$and",
-            "type": "array",
-            "title": "$or",
-            "description": "Logical OR",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/targetTypes_array.json"
-            }
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/targetTypes_array.json"
         }
     }
 }
