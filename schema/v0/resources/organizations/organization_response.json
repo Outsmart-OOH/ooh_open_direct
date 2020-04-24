@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/organizations/organization_response.json",
+    "type": "object",
+    "title": "Response for a single Organization",
+    "description": "The schema of a response that gives a single Organization",
+    "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/organizations/organization_object.json",
+    "required": [
+        "Id",
+        "Name"
+    ]
+}
