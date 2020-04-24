@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/$and_object.json",
+    "type": "object",
+    "title": "$and",
+    "description": "Locical AND",
+    "required": [
+        "$and"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "$and": {
+            "$id": "#/properties/$and",
+            "type": "array",
+            "title": "$and",
+            "description": "Logical AND",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/targetTypes_array.json"
+            }
+        }
+    }
+}

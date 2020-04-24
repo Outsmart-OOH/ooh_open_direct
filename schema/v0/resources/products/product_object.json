@@ -40,12 +40,7 @@
         },
         "TargetTypes": {
             "$id": "#/properties/TargetTypes",
-            "type": "array",
-            "title": "Target Types",
-            "description": "A list Target Types.",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/targetType_object.json"
-            }
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/targetTypes_array.json"
         }
     }
 }
