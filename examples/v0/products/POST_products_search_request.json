@@ -15,6 +15,11 @@
     ],
     "TargetTypes": [
         {
+            "$or":[
+                
+            ]
+        },
+        {
             "$and": [
                 {
                     "Name": "Inventory",

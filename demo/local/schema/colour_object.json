@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "#/colour",
+    "type": "object",
+    "title": "Colour Object",
+    "description": "It has colour values",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "colour": {
+            "$id": "#/properties/name",
+            "type": "string",
+            "title": "Name",
+            "description": "The name of the Colour."
+        },
+        "red": {
+            "$id": "#/properties/red",
+            "type": "integer",
+            "title": "Red",
+            "description": "Content of Red",
+            "minimum": 0,
+            "maximum": 255
+        },
+        "green": {
+            "$id": "#/properties/green",
+            "type": "integer",
+            "title": "Green",
+            "description": "Content of Green",
+            "minimum": 0,
+            "maximum": 255
+        },
+        "blue": {
+            "$id": "#/properties/blue",
+            "type": "integer",
+            "title": "Blue",
+            "description": "Content of Blue",
+            "minimum": 0,
+            "maximum": 255
+        }
+    }
+}

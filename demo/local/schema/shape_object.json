@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "#/colour",
+    "type": "object",
+    "title": "Shape Object",
+    "description": "It has shape values",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "shape": {
+            "$id": "#/properties/shape",
+            "type": "string",
+            "title": "Name",
+            "description": "The name of the Shape."
+        },
+        "width": {
+            "$id": "#/properties/width",
+            "type": "integer",
+            "title": "Width",
+            "description": "Width",
+            "minimum": 0,
+            "maximum": 1000
+        },
+        "height": {
+            "$id": "#/properties/height",
+            "type": "integer",
+            "title": "Height",
+            "description": "Height",
+            "minimum": 0,
+            "maximum": 1000
+        }
+    }
+}

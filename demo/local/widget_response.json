@@ -11,5 +11,67 @@
     "tags": [
         "home",
         "green"
+    ],
+    "objects": [
+        {
+            "colour": "Red",
+            "red": 255,
+            "green": 0,
+            "blue": 0
+        },
+        {
+            "shape": "Square",
+            "height": 100,
+            "width": 100
+        },
+        {
+            "colour": "Green",
+            "red": 0,
+            "green": 255,
+            "blue": 0
+        },
+        {
+            "shape": "Circle",
+            "height": 10,
+            "width": 10
+        },
+        {
+            "$and": [
+                {
+                    "shape": "Square"
+                },
+                {
+                    "colour": "Blue"
+                }
+            ]
+        },
+        {
+            "$and": [
+                {
+                    "colour": "Orange"
+                },
+                {
+                    "shape": "Triangle"
+                }
+            ]
+        },
+        {
+            "$or": [
+                {
+                    "$and": [
+                        {
+                            "shape": "Square"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "$and": [
+                {
+                    "colour": ""
+                }
+            ]
+        }
     ]
 }

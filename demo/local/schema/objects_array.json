@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/targetTypes_array.json",
+    "$id": "#/objects",
     "type": "array",
-    "title": "Target Types",
-    "description": "A list of Target Types.",
+    "title": "An array of objects",
+    "description": "",
     "additionalProperties": false,
     "items": {
         "oneOf": [
@@ -14,7 +14,10 @@
                 "$ref": "#/definitions/$or"
             },
             {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/oohbject_object.json"
+                "$ref": "colour_object.json"
+            },
+            {
+                "$ref": "shape_object.json"
             }
         ]
     },
@@ -22,8 +25,9 @@
         "$and": {
             "$id": "#/$and",
             "type": "object",
-            "title": "AND",
-            "description": "Logical AND",
+            "title": "AND Object",
+            "description": "AND object",
+            "default": {},
             "additionalProperties": false,
             "properties": {
                 "$and": {
@@ -34,8 +38,9 @@
         "$or": {
             "$id": "#/$or",
             "type": "object",
-            "title": "OR",
-            "description": "Logical OR",
+            "title": "OR Object",
+            "description": "OR object",
+            "default": {},
             "additionalProperties": false,
             "properties": {
                 "$or": {
