@@ -145,6 +145,32 @@
             "description": "The organization's phone number",
             "type": "string",
             "maxLength": 20
+        },
+        "OOHProviderData":{
+            "$id": "#/properties/OOHProviderData",
+            "description": "Detail structured information that may be used to identify their order in a Seller's system using their own IDs or reference",
+            "type": "object",
+            "properties":{
+                "CampaignId": { "type":"string", "maxLength": 255, "description": "Provided by the Buyer to uniquely identify  the Advertising Campaign for which the Order is being placed"},
+                "CampaignName":{ "type":"string", "maxLength": 255, "description": "A descriptive name provided by the Buyer which is associated with the Advertising Campaign for which the Order is being placed"},
+                "PoNumber":{ "type":"string", "maxLength": 255, "description": "A reference to be used by buyers doe any offline contact related to the Order"},
+                "SalesOrderReference":{ "type": "string", "maxLength": 255, "description": "The OrganizationID of a Barter Company can be added here to flag a Barter transaction"},
+                "Other":{ "type":"string", "maxLength": 1024, "description": "An opaque CLOB of provider-defined data"}
+            }
+        },
+        "Status":{
+            "$id": "#/properties/Status",
+            "description": "A value that indicates the current state of the approval process. The approval process confirms the organizatoin's identity",
+            "type":"string",
+            "enum": ["Pending", "Approved", "Disapproved", "Limited"],
+            "maxLength": 15,
+            "readOnly": true
+        },
+        "Url":{
+            "$id": "#/properties/Url",
+            "description": "A URL to the organization's website",
+            "type":"string",
+            "maxLength": 255
         }
     }
 }
