@@ -5,7 +5,7 @@
     "title": "Product object",
     "description": "A Product resource identifies anything from an ad placement to a Run of Network product in the publisher’s product catalogue.",
     "default": {},
-    "additionalProperties": true,
+    "additionalProperties": false,
     "properties": {
         "$schema": {
             "type": "string",
