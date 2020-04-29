@@ -1,0 +1,119 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/products/productAvailsSearch_object.json",
+    "type": "object",
+    "title": "ProductAvailsSearch object",
+    "description": "",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "AccountId": {
+            "$id": "#/properties/AccountId",
+            "type": "string"
+        },
+        "AdvertiserBrandId": {
+            "$id": "#/properties/AdvertiserBrandId",
+            "type": "string"
+        },
+        "Currency": {
+            "$id": "#/properties/Currency",
+            "type": "string"
+        },
+        "ProductIds": {
+            "$id": "#/properties/ProductIds",
+            "type": "array",
+
+            "items": {
+                "$id": "#/properties/ProductIds/items",
+                "type": "string"
+            }
+        },
+        "EndDate": {
+            "$id": "#/properties/EndDate",
+            "type": "string",
+            "format": "date-time"
+        },
+        "StartDate": {
+            "$id": "#/properties/StartDate",
+            "type": "string",
+            "format": "date-time"
+        },
+        "AvailabilityFields": {
+            "$id": "#/properties/AvailabilityFields",
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/AvailabilityFields/items",
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                    "Name",
+                    "Type",
+                    "DataSource",
+                    "Target"
+                ],
+                "properties": {
+                    "Name": {
+                        "$id": "#/properties/AvailabilityFields/items/properties/Name",
+                        "type": "string"
+                    },
+                    "Type": {
+                        "$id": "#/properties/AvailabilityFields/items/properties/Type",
+                        "type": "string"
+                    },
+                    "DataSource": {
+                        "$id": "#/properties/AvailabilityFields/items/properties/DataSource",
+                        "type": "string"
+                    },
+                    "Target": {
+                        "$id": "#/properties/AvailabilityFields/items/properties/Target",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "Grouping": {
+            "$id": "#/properties/Grouping",
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/Grouping/items",
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                    "Name",
+                    "Type",
+                    "DataSource",
+                    "Target"
+                ],
+                "properties": {
+                    "Name": {
+                        "$id": "#/properties/Grouping/items/properties/Name",
+                        "type": "string"
+                    },
+                    "Type": {
+                        "$id": "#/properties/Grouping/items/properties/Type",
+                        "type": "string"
+                    },
+                    "DataSource": {
+                        "$id": "#/properties/Grouping/items/properties/DataSource",
+                        "type": "string"
+                    },
+                    "Target": {
+                        "$id": "#/properties/Grouping/items/properties/Target",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "Targeting": {
+            "$id": "#/properties/Targeting",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/targetTypes_array.json"
+        }
+    }
+}
