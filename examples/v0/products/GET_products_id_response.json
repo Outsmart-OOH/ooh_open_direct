@@ -2,11 +2,11 @@
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/products/product_response.json",
     "ActiveDate": "2012-12-10T18:00:00.000Z",
     "AdFormatTypes": [
-        "mp4",
-        "jpg",
-        "html5"
+        "Video",
+        "Image",
+        "HTML5"
     ],
-    "AllowNoCreative": "True",
+    "AllowNoCreative": true,
     "BasePrice": 100.00,
     "Currency": "GBP",
     "DeliveryType": "Guaranteed",
