@@ -6,12 +6,6 @@
     "description": "The root schema comprises the entire JSON document.",
     "default": {},
     "additionalProperties": false,
-    "required": [
-        "AdvertiserBrands",
-        "Contacts",
-        "OrganizationType",
-        "Name"
-    ],
     "properties": {
         "$schema": {
             "type": "string",
