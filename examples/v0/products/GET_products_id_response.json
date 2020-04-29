@@ -7,7 +7,7 @@
         "html5"
     ],
     "AllowNoCreative": "True",
-    "BasePrice": 10000,
+    "BasePrice": 100.00,
     "Currency": "GBP",
     "DeliveryType": "Guaranteed",
     "Description": "All Digital 6-sheets in Metropolis",
@@ -19,142 +19,160 @@
     "LeadTime": "T1H",
     "Name": "Metro",
     "ReservedExpiryTime": "P7D",
-    "RetirementDate": "",
+    "AdvertiserIdAccess": [],
+    "BuyerIdAccess": [],
+    "ThirdPartyIdAccess": [],
     "TargetTypes": [
         {
-            "Inventory": [
-                {
-                    "Frames": [
-                        {
-                            "SPACE": [
-                                {
-                                    "frame_id": [
-                                        {
-                                            "TargetValues": [
-                                                1234931339,
-                                                1235190735,
-                                                1234931338,
-                                                1235191547,
-                                                1234931569,
-                                                1235202465
-                                            ],
-                                            "Selectable": "Yes",
-                                            "Minimum": 2,
-                                            "Maximum": 6,
-                                            "Increment": 2,
-                                            "Default": 6
-                                        }
-                                    ],
-                                    "frame_type": [
-                                        {
-                                            "TargetValues": [
-                                                "digital moving image"
-                                            ]
-                                        }
-                                    ],
-                                    "format": [
-                                        {
-                                            "TargetValues": "6 sheets"
-                                        }
-                                    ],
-                                    "environment": [
-                                        {
-                                            "TargetValues": [
-                                                "Rail Stations",
-                                                "Roadside",
-                                                "Underground"
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id",
+            "TargetValues": [
+                1234931339,
+                1235190735,
+                1234931338,
+                1235191547,
+                1234931569,
+                1235202465
             ],
-            "Delivery": [
-                {
-                    "Frames": [
-                        {
-                            "Time": [
-                                {
-                                    "Days": [
-                                        {
-                                            "TargetValues": "",
-                                            "Selectable": "Yes",
-                                            "Minimum": 1,
-                                            "Maximum": 7,
-                                            "Increment": 1,
-                                            "Default": 7
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
+            "Selectable": true,
+            "Minimum": 2,
+            "Maximum": 6,
+            "Increment": 2,
+            "Default": 6
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_type",
+            "TargetValues": [
+                "digital moving image"
+            ]
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "format",
+            "TargetValues": [
+                "6 sheets"
+            ]
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "environment",
+            "TargetValues": [
+                "Rail Stations",
+                "Roadside",
+                "Underground"
+            ]
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "Time",
+            "Target": "Days",
+            "TargetValues": [],
+            "Selectable": true,
+            "Minimum": 1,
+            "Maximum": 7,
+            "Increment": 1,
+            "Default": 7
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "ShareOfTime",
+            "TargetValues": [],
+            "Selectable": true,
+            "Minimum": 2,
+            "Maximum": 100,
+            "Increment": 1,
+            "Default": 16.6
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "Spot",
+            "Measurement": "seconds",
+            "Selectable": true,
+            "Minimum": 5,
+            "Maximum": 30,
+            "Increment": 5,
+            "Default": 5
+        },
+        {
+            "Name": "Distribution",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "Hour",
+            "TargetValues": []
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Route",
+            "Target": "age",
+            "TargetValues": [
+                "15-17",
+                "18-24",
+                "25-29",
+                "30-34",
+                "35-39",
+                "40-44",
+                "45-49",
+                "50-54",
+                "55-59",
+                "60-64"
             ],
-            "Frames": [
-                {
-                    "ShareOfDisplay": [
-                        {
-                            "ShareOfTime": [
-                                {
-                                    "TargetValues": "",
-                                    "Selectable": "Yes",
-                                    "Minimum": 2,
-                                    "Maximum": 100,
-                                    "Increment": 1,
-                                    "Default": 16.6
-                                }
-                            ],
-                            "Spot": [
-                                {
-                                    "TargetValues": "",
-                                    "Measurement": "seconds",
-                                    "Selectable": "Yes",
-                                    "Minimum": 5,
-                                    "Maximum": 30,
-                                    "Increment": 5,
-                                    "Default": 5
-                                }
-                            ]
-                        }
-                    ]
-                }
+            "Selectable": true
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Route",
+            "TargetValues": [
+                "Male",
+                "Female"
             ],
-            "Distribution": [
-                {
-                    "Frames": [
-                        {
-                            "ShareOfDisplay": [
-                                {
-                                    "TargetValues": [
-                                        {
-                                            "Hours": "Fixed"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
+            "Selectable": true
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Route",
+            "Target": "affluence",
+            "TargetValues": [
+                "A",
+                "B",
+                "C1",
+                "C2",
+                "D",
+                "E"
             ],
-            "Prohibitions": [
-                {
-                    "Frames": [
-                        {
-                            "SPACE": [
-                                {
-                                    "Alcohol": [
-                                        1234931339,
-                                        1235190735
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
+            "Selectable": true
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Metrics",
+            "Target": "Impacts",
+            "Selectable": true
+        },
+        {
+            "Name": "Prohibitions",
+            "Type": "Frames",
+            "DataSource": "SPACE",
+            "Target": "Alcohol",
+            "TargetValues": [
+                1234931339,
+                1235190735
             ]
         }
     ],

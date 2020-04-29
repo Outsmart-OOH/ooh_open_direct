@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/size_object.json",
+    "type": "object",
+    "title": "Size",
+    "description": "Size object.",
+    "required": [
+        "Id",
+        "Name",
+        "OrganizationID"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "Id": {
+            "type": "string",
+            "title": "ID",
+            "description": "A system-generated opaque ID that uniquely identifies the brand",
+            "maxLength": 36
+        },
+        "Name": {
+            "type": "string",
+            "title": "Name",
+            "description": "The brand's display name",
+            "maxLength": 128
+        },
+        "OrganizationID": {
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/organizations/organization_id_string.json"
+        },
+        "ThirdPartyId": {
+            "type": "string",
+            "title": "Third Party ID",
+            "description": "A Third Party ID for the AdvertiserBrand (e.g. Space)",
+            "maxLength": 36
+        },
+        "ThirdPartyDataSource": {
+            "type": "string",
+            "title": "Third Party Data Source",
+            "description": "The Third Party Data Source for the Advertiser Brand ID",
+            "maxLength": 128
+        }
+    }
+}
