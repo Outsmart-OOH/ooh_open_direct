@@ -16,20 +16,7 @@
             "description": "The organisation's corporate headquarters address",
             "$id": "#/properties/Address",
             "type": "object",
-            "properties": {
-                "AddressLine1": { "type": "string", "maxLength": 255, "pattern": "^[A-Za-z]*$", "description": "The first line of the address" },
-                "AddressLine2": { "type": "string", "maxLength": 255, "pattern": "^[A-Za-z]*$", "description": "The optional second line of the address" },
-                "City": { "type": "string", "maxLength": 35, "pattern": "^[A-Za-z]*$", "description": "The name of the city in which the address is located" },
-                "Country": { "type": "string", "maxLength": 2, "description": "The name of the country in which the address is located" },
-                "PostalCode": { "type": "string", "maxLength": 15, "pattern": "^[A-Za-z0-9-\\s]*$", "description": "The postal or zip code for the address" },
-                "State": { "type": "string", "maxLength": 35, "pattern": "^[A-Za-z]*$", "description": "The name of the state/province/country in which the address is located" }
-            },
-            "required":[
-                "AddressLine1",
-                "City",
-                "State",
-                "Country"
-            ]
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/address_object.json"
         },    
         
         "AdvertiserBrands":{
@@ -37,16 +24,7 @@
             "$id": "#properties/AdvertiserBrands",
             "type": "array",
             "items": {
-                "AdvertiserBrand":{
-                    "$id": "#/properties/AdvertiserBrand",
-                    "description": "Define the details of a Brand associated with an organization",
-                    "type": "object",
-                    "properties": {
-                        "Id": {"type": "string", "maxLength": 36},
-                        "Name": {"type": "string", "maxLength": 128},
-                        "OrganizationID": {"type": "string", "maxLength": 36}
-                    }
-                }
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/advertiserBrand_object.json"
             }
         },
 
@@ -71,28 +49,9 @@
                             "description": "The organisation's corporate headquarters address",
                             "$id": "#/properties/Address",
                             "type": "object",
-                            "properties": {
-                                "AddressLine1": { "type": "string", "maxLength": 255, "pattern": "^[A-Za-z]*$", "description": "The first line of the address" },
-                                "AddressLine2": { "type": "string", "maxLength": 255, "pattern": "^[A-Za-z]*$", "description": "The optional second line of the address" },
-                                "City": { "type": "string", "maxLength": 35, "pattern": "^[A-Za-z]*$", "description": "The name of the city in which the address is located" },
-                                "Country": { "type": "string", "maxLength": 2, "description": "The name of the country in which the address is located" },
-                                "PostalCode": { "type": "string", "maxLength": 15, "pattern": "^[A-Za-z0-9-\\s]*$", "description": "The postal or zip code for the address" },
-                                "State": { "type": "string", "maxLength": 35, "pattern": "^[A-Za-z]*$", "description": "The name of the state/province/country in which the address is located" }
-                            },
-                            "required":[
-                                "AddressLine1",
-                                "City",
-                                "State",
-                                "Country"
-                            ]
+                            "$ref":"https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/address_object.json"
                         }
-                    },
-                    "required": [
-                        "FirstName",
-                        "LastName",
-                        "Email",
-                        "Type"
-                    ]
+                    }
                 }
             }
         },
@@ -144,13 +103,7 @@
             "$id": "#/properties/OOHProviderData",
             "description": "Detail structured information that may be used to identify their order in a Seller's system using their own IDs or reference",
             "type": "object",
-            "properties":{
-                "CampaignId": { "type":"string", "maxLength": 255, "description": "Provided by the Buyer to uniquely identify  the Advertising Campaign for which the Order is being placed"},
-                "CampaignName":{ "type":"string", "maxLength": 255, "description": "A descriptive name provided by the Buyer which is associated with the Advertising Campaign for which the Order is being placed"},
-                "PoNumber":{ "type":"string", "maxLength": 255, "description": "A reference to be used by buyers doe any offline contact related to the Order"},
-                "SalesOrderReference":{ "type": "string", "maxLength": 255, "description": "The OrganizationID of a Barter Company can be added here to flag a Barter transaction"},
-                "Other":{ "type":"string", "maxLength": 1024, "description": "An opaque CLOB of provider-defined data"}
-            }
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/oohProviderData_object.json"
         },
         "Status":{
             "$id": "#/properties/Status",
