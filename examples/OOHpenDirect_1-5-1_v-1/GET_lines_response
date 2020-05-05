@@ -1,4 +1,5 @@
 {
+    "$schema": "",
     "Lines": [
         {
             "BookingStatus": "Booked",
