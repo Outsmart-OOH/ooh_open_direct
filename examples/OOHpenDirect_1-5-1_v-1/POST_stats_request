@@ -1,0 +1,102 @@
+{
+
+    "AccountId": "23873345",
+    "OrderId": "3479",
+    "LineId": "1",
+    "StatsStartDate": "2020-12-09T00:00:00.000Z", //if left blank defaults to StartDate of order line
+    "StatsEndDate": "2020-12-09T01:00:00.000Z", //if left blank defaults to EndDate of order line
+
+    //OutSmart Report Level 4 example
+
+    "StatsScheduled": [
+        {
+            "Fields": [
+                {
+                    "Name": "Inventory",
+                    "Type": "Frames",
+                    "DataSource": "Space",
+                    "Target": "frame_id",
+                    "TargetValues": []
+                },
+                {
+                    "Name": "Delivery",
+                    "Type": "Frames",
+                    "DataSource": "ShareOfDisplay",
+                    "Target": "ShareOfTime",
+                    "TargetValues": []
+                },
+                {
+                    "Name": "Delivery",
+                    "Type": "Frames",
+                    "DataSource": "ShareOfDisplay",
+                    "Target": "Spot",
+                    "TargetValues": []
+                },
+                {
+                    "Name": "Delivery",
+                    "Type": "Frames",
+                    "DataSource": "ShareOfDisplay",
+                    "Target": "Spot",
+                    "CreativeId": []
+                },
+                {
+                    "Name": "Delivery",
+                    "Type": "Frames",
+                    "DataSource": "ShareOfDisplay",
+                    "Target": "Spot",
+                    "Count": []
+                }
+            ]
+        }
+
+        
+
+    ],
+
+    "StatsDelivered": [
+        {
+            "Fields": [
+                {
+                    "Name": "Inventory",
+                    "Type": "Frames",
+                    "DataSource": "Space",
+                    "Target": "frame_id",
+                    "StatsValues": []
+                },
+                {
+                    "Name": "Delivery",
+                    "Type": "Frames",
+                    "DataSource": "ShareOfDisplay",
+                    "Target": "ShareOfTime",
+                    "StatsAverage": []
+                },
+                {
+                    "Name": "Delivery",
+                    "Type": "Frames",
+                    "DataSource": "ShareOfDisplay",
+                    "Target": "Spot",
+                    "StatsValues": []
+                },
+                {
+                    "Name": "Delivery",
+                    "Type": "Frames",
+                    "DataSource": "ShareOfDisplay",
+                    "Target": "Spot",
+                    "CreativeId": []
+                },
+                {
+                    "Name": "Delivery",
+                    "Type": "Frames",
+                    "DataSource": "ShareOfDisplay",
+                    "Target": "Spot",
+                    "StatsCount": []
+                }
+            ]
+        }   
+
+    ],
+
+    "Granularity": "Hour",
+    "Webhook": "URI which is to be notified when the stats information is available to be called from the Media Owner"
+
+}
