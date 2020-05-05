@@ -1,0 +1,15 @@
+{
+  "Id": "12345678",
+  "Contacts": [
+    {
+      "Email": "bnicks@contoso.com",
+      "Honorific": "Mr",
+      "Fax": "2065551212",
+      "FirstName": "Bill",
+      "LastName": "Nicks",
+      "Phone": "2065550105",
+      "Title": "Comptroller",
+      "Type": "Billing"
+    }
+  ]
+} 
