@@ -1,0 +1,42 @@
+{
+    "$schema": "",
+    "DataSources": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "format"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "environment"
+        }
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Route",
+            "Target": "age"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Route",
+            "Target": "sex"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Route",
+            "Target": "affluence"
+        }
+
+    ]
+}
