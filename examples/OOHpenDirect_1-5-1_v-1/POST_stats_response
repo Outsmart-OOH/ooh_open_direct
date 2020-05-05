@@ -1,0 +1,365 @@
+{
+    "Stats": [
+        {
+            "AccountId": "23873345",
+            "OrderId": "3479",
+            "LineId": "1",
+            "ReportDate": "2020-12-20T00:00:00.000Z",
+            "StatsStartDate": "2020-12-09T00:00:00.000Z",
+            "StatsEndDate": "2020-12-09T01:00:00.000Z",
+
+            "StatsScheduled": [
+                {
+                    "StartDate": "2020-12-09T00:00:00.000Z",
+                    "EndDate": "2020-12-09T01:00:00.000Z", // +1 Hour
+                    "Fields": [
+                        {
+                            "Name": "Inventory",
+                            "Type": "Frames",
+                            "DataSource": "Space",
+                            "Target": "frame_id",
+                            "TargetValues": 1234931339
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "ShareOfTime",
+                            "TargetValues": 16.666667
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "TargetValues": 10
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "CreativeId": "capad653"
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "Count": 60
+                        }
+                    ]
+                },
+
+                {
+                    "StartDate": "2020-12-09T00:00:00.000Z",
+                    "EndDate": "2020-12-09T01:00:00.000Z", // +1 Hour
+                    "Fields": [
+                        {
+                            "Name": "Inventory",
+                            "Type": "Frames",
+                            "DataSource": "Space",
+                            "Target": "frame_id",
+                            "TargetValues": 1235190735
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "ShareOfTime",
+                            "TargetValues": 16.666667
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "TargetValues": 10
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "CreativeId": "capad653"
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "Count": 60
+                        }
+                    ]
+                },
+
+                {
+                    "StartDate": "2020-12-09T00:00:00.000Z",
+                    "EndDate": "2020-12-09T01:00:00.000Z", // +1 Hour
+                    "Fields": [
+                        {
+                            "Name": "Inventory",
+                            "Type": "Frames",
+                            "DataSource": "Space",
+                            "Target": "frame_id",
+                            "TargetValues": 1234931338
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "ShareOfTime",
+                            "TargetValues": 16.666667
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "TargetValues": 10
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "CreativeId": "capad653"
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "Count": 60
+                        }
+                    ]
+                },
+                {
+                    "StartDate": "2020-12-09T00:00:00.000Z",
+                    "EndDate": "2020-12-09T01:00:00.000Z", // +1 Hour
+                    "Fields": [
+                        {
+                            "Name": "Inventory",
+                            "Type": "Frames",
+                            "DataSource": "Space",
+                            "Target": "frame_id",
+                            "TargetValues": 1235191547
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "ShareOfTime",
+                            "TargetValues": 16.666667
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "TargetValues": 10
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "CreativeId": "capad653"
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "Count": 60
+                        }
+                    ]
+                }
+
+            ],
+
+            //Delivered
+
+            "StatsDelivered": [
+                {
+                    "StartDate": "2020-12-09T00:00:00.000Z",
+                    "EndDate": "2020-12-09T01:00:00.000Z", // +1 Hour
+                    "Fields": [
+
+                        {
+                            "Name": "Inventory",
+                            "Type": "Frames",
+                            "DataSource": "Space",
+                            "Target": "frame_id",
+                            "StatsValues": 1234931339
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "ShareOfTime",
+                            "StatsAverage": 10
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "StatsValues": 10
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "CreativeId": "capad653"
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "StatsCount": 36
+                        }
+
+                    ]
+                },
+
+                {
+                    "StartDate": "2020-12-09T00:00:00.000Z",
+                    "EndDate": "2020-12-09T01:00:00.000Z", // +1 Hour
+                    "Fields": [
+
+                        {
+                            "Name": "Inventory",
+                            "Type": "Frames",
+                            "DataSource": "Space",
+                            "Target": "frame_id",
+                            "StatsValues": 1235190735
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "ShareOfTime",
+                            "StatsAverage": 10
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "StatsValues": 10
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "CreativeId": "capad653"
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "StatsCount": 36
+                        }
+
+                    ]
+                },
+
+                {
+                    "StartDate": "2020-12-09T00:00:00.000Z",
+                    "EndDate": "2020-12-09T01:00:00.000Z", // +1 Hour
+                    "Fields": [
+
+                        {
+                            "Name": "Inventory",
+                            "Type": "Frames",
+                            "DataSource": "Space",
+                            "Target": "frame_id",
+                            "StatsValues": 1234931338
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "ShareOfTime",
+                            "StatsAverage": 10
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "StatsValues": 10
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "CreativeId": "capad653"
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "StatsCount": 36
+                        }
+
+                    ]
+                },
+                {
+                    "StartDate": "2020-12-09T00:00:00.000Z",
+                    "EndDate": "2020-12-09T01:00:00.000Z", // +1 Hour
+                    "Fields": [
+
+                        {
+                            "Name": "Inventory",
+                            "Type": "Frames",
+                            "DataSource": "Space",
+                            "Target": "frame_id",
+                            "StatsValues": 1235191547
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "ShareOfTime",
+                            "StatsAverage": 10
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "StatsValues": 10
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "CreativeId": "capad653"
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "Spot",
+                            "StatsCount": 36
+                        }
+
+                    ]
+                }
+
+            ],
+
+            "Webhook": "insert webhook here"
+        }
+    ]
+
+}
