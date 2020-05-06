@@ -1,5 +1,5 @@
 {
-    "$schema": "",
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/organizations/organization_collection_response.json",
     "Organizations": [
         {
             "Address": {

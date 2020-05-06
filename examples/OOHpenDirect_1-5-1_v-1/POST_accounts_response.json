@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/accounts/account_request.json",
     "AdvertiserId": "1234987",
     "BuyerId": "34587",
     "ThirdPartyId": "98765",
