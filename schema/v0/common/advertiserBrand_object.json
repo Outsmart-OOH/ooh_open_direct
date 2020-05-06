@@ -18,7 +18,7 @@
             "description": "The brand's display name",
             "maxLength": 128
         },
-        "OrganizationID": {
+        "OrganizationId": {
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/organizations/organization_id_string.json"
         },
         "ThirdPartyId": {

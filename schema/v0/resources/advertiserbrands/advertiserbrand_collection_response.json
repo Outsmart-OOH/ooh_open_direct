@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/advertiserbrand/advertiserbrand_collection_response.json",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/advertiserbrands/advertiserbrand_collection_response.json",
     "type": "object",
     "title": "Response for a collection of AdvertiserBrands",
     "description": "The schema of a response that gives a collection of AdvertiserBrands",
