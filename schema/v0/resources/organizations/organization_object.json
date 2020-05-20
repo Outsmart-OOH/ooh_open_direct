@@ -32,28 +32,7 @@
             "$id": "#/properties/Contacts",
             "description": "A list of one or more contacts with the organisation",
             "type": "array",
-            "items": {
-                "Contact":{
-                    "$id": "#/properties/Contact",
-                    "description": "Defines details for an individual contact with an Organization",
-                    "type": "object",
-                    "properties": {
-                        "Honorific": {"type": "string", "maxLength": 20, "description": "The contact's honorific such as Mr, Mrs"},
-                        "Title": {"type": "string", "maxLength": 30, "description": "The contact's job title"},
-                        "FirstName": {"type": "string", "maxLength": 20, "description":"The contact's first name"},
-                        "Lastname": {"type":"string", "maxLength": 20, "description":"The contact's last name"},
-                        "Email": {"type":"string", "maxLength":254, "description":"The contact's email address"},
-                        "Phone": {"type":"string", "maxLength": 20, "description":"The contact's phone number"},
-                        "Type": {"type":"string", "maxLength": 10, "description":"The type of contact that this resource represents (e.g. billing, creative)"},
-                        "Address": {
-                            "description": "The organisation's corporate headquarters address",
-                            "$id": "#/properties/Address",
-                            "type": "object",
-                            "$ref":"https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/address_object.json"
-                        }
-                    }
-                }
-            }
+            "$ref":"https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/contact_object.json"
         },
         "Disapproval Reason":{
             "$id": "#/properties/DisapprovalReason",
