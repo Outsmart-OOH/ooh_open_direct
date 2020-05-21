@@ -39,6 +39,20 @@
             "title": "Budget",
             "description": "The order’s estimated budget. The budget is directional; it is not used to limit the amount of money that the order spends. To determine the projected spend based on quantity, aggregate the Cost property for each line of the order."
         },
+        "Contacts":{
+            "$id": "#/properties/Contacts",
+            "type": "array",
+            "title": "Contacts",
+            "description": "A list of one or more contacts with the organisation",
+            "$ref":"https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/contact_object.json"
+        },
+        "Currency":{
+            "$id": "#/properties/Currency",
+            "type": "string",
+            "title": "Currency",
+            "description": "The currency that all monetary properties of the order and lines are specified in. The currency is also used for billing and reporting. Values are provided using the CURRENCY reference data as specified in section 4.5.",
+            "maxLength": 3
+        },
         "Id": {
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/orders/order_id_string.json"
         },
