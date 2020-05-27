@@ -33,9 +33,7 @@
 | **Phone** | The organization’s phone number. |
 | **ProviderData** | An opaque CLOB of provider-defined data. Providers may use this field as needed (for example, to store an ID that correlates this object with resources   within their system). Note that any provider that edits this object may override the data in this field. The data should include a marker that you can identify to ensure the data is yours. |
 | **OOHProviderData** | The OOHProviderData object is used for Buyers to detail structured information that may be used to identify their order in a Seller's system using their own IDs or references. |
-| **Status** | A value that indicates the current state of the approval process. The approval process confirms the organization’s identity. The following are the possible values. 
-* Pending – The organization is under review. 
-* Approved – The organization is approved and can create and book  orders. 
+| **Status** | A value that indicates the current state of the approval process. The approval process confirms the organization’s identity. The following are the possible values. <br />* Pending – The organization is under review. <br />* Approved – The organization is approved and can create and book  orders. 
 * Disapproved – The organization’s identity could not be verified. The organization may not create and book orders. The DisapprovalReason property must specify the reason why the organization was not approved. 
 * Limited – The organization’s identity could not be verified; however, they may create and book orders. This state may affect the products and pricing offered to the organization. The organization may create orders in any state (except where noted); however, they may search for available inventory or reserve and book inventory only in the Approved and Limited states. |
 | **Url** | A URL to the organization’s website. |
