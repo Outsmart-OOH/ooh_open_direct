@@ -74,6 +74,7 @@
             "$id": "#/properties/Industry",
             "type":"object",
             "properties": {},
+            "title": "Industry",
             "description": "The industry associated with the order. This industry may differ from the industry specified on the advertiser’s Organization object."
         },
         "Name": {
@@ -82,6 +83,13 @@
             "title": "Order Name",
             "description": "The order's display name. The name must be unique.",
             "maxLength": 100
+        },
+        "OrderStatus": {
+            "$id": "#/properties/OrderSratus",
+            "type": "string",
+            "title": "Order Status",
+            "description": "Specifies the Status of the Order **PENDING** – The Order has not yet been approved/rejected **APPROVED** – The Order has been approved **REJECTED** – The Order has been rejected",
+            "enum": ["PENDING", "APPROVED", "REJECTED"]
         }
     }
 }
