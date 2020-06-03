@@ -90,6 +90,13 @@
             "title": "Order Status",
             "description": "Specifies the Status of the Order **PENDING** – The Order has not yet been approved/rejected **APPROVED** – The Order has been approved **REJECTED** – The Order has been rejected",
             "enum": ["PENDING", "APPROVED", "REJECTED"]
+        }, 
+        "PreferredBillingMethod":{
+            "$id": "#/properties/PreferredBillingMethod",
+            "type": "string",
+            "title": "Preferred Billing Method",
+            "description": "Electronic (Default) or Postal",
+            "enum": ["Electronic", "Postal"]
         }
     }
 }
