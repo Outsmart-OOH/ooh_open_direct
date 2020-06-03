@@ -53,6 +53,20 @@
             "description": "The currency that all monetary properties of the order and lines are specified in. The currency is also used for billing and reporting. Values are provided using the CURRENCY reference data as specified in section 4.5.",
             "maxLength": 3
         },
+        "EndDate":{
+            "$id": "#/properties/EndDate",
+            "type": "string",
+            "format": "date",
+            "title": "Order",
+            "description": "The date and time that the order will end. The end date is directional and may be updated by the publisher to match the latest end date found in the order’s lines.The date and time must be specified in UTC and conform to ISO 8601. If the time is missing, 11:59 PM is assumed.The end date must be later than the start date. End dates that have past cannot be updated."
+        },
+        "OrderExpiryDate":{
+            "$id": "#/properties/OrderExpiryDate",
+            "type": "string",
+            "format": "date",
+            "title": "Order Expiry Date",
+            "description": "The date and time using the ISO 8601 format for when the order expires. Publisher will only hold inventory up until the date and time indicated."
+        },
         "Id": {
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/orders/order_id_string.json"
         },
