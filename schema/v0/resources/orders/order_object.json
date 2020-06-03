@@ -97,6 +97,18 @@
             "title": "Preferred Billing Method",
             "description": "Electronic (Default) or Postal",
             "enum": ["Electronic", "Postal"]
+        },
+        "ProviderData": {
+            "$id": "#/properties/OOHProviderData",
+            "description": "An opaque CLOB of provider-defined data. ",
+            "type": "string",
+            "maxLength": 1000
+        },
+        "OOHProviderData": {
+            "$id": "#/properties/OOHProviderData",
+            "description": "Detail structured information that may be used to identify their order in a Seller's system using their own IDs or reference",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/oohProviderData_object.json"
         }
     }
 }
