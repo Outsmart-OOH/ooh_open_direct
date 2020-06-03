@@ -70,11 +70,18 @@
         "Id": {
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/orders/order_id_string.json"
         },
+        "Industry": {
+            "$id": "#/properties/Industry",
+            "type":"object",
+            "properties": {},
+            "description": "The industry associated with the order. This industry may differ from the industry specified on the advertiser’s Organization object."
+        },
         "Name": {
             "$id": "#/properties/Name",
             "type": "string",
             "title": "Order Name",
-            "description": "The order's display name. The name must be unique."
+            "description": "The order's display name. The name must be unique.",
+            "maxLength": 100
         }
     }
 }
