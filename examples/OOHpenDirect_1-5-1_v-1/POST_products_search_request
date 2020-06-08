@@ -1,0 +1,42 @@
+{
+    "Targeting": [
+        {
+            "$and": [
+                {
+                    "Name": "Inventory",
+                    "Type": "Frames",
+                    "DataSource": "Space",
+                    "Target": "frame_type",
+                    "TargetValues": [
+                        "digital moving image"
+                    ]
+                },
+                {
+                    "Name": "Inventory",
+                    "Type": "Frames",
+                    "DataSource": "Space",
+                    "Target": "format",
+                    "TargetValues": [
+                        "6 sheets"
+                    ]
+                },
+                {
+                    "Name": "Inventory",
+                    "Type": "Frames",
+                    "DataSource": "Space",
+                    "Target": "environment",
+                    "TargetValues": [
+                        "Rail Stations"
+                    ]
+                },
+                {
+                    "Name": "Delivery",
+                    "Type": "Frames",
+                    "DataSource": "ShareOfDisplay",
+                    "Target": "Spot",
+                    "TargetValues": 5
+                }
+            ]
+        }
+    ]
+}
