@@ -1,1 +1,86 @@
+{
+    "AccountId": "23873345",
+    "EndDate": "2014-12-10T18:00:00.000Z",
+    "ProductIds": [ "456367" ],
+    "StartDate": "2014-12-05T06:00:00.000Z",
 
+    "AvailabilityFields": [
+
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "ShareOfTime"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Metrics",
+            "Target": "Impacts"
+        },
+        {
+            "Name": "Investment",
+            "Type": "Total",
+            "DataSource": "GBP",
+            "Target": "Fixed"
+        }
+
+
+    ],
+
+
+    "Grouping": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id"
+        },
+        {
+            "Name": "Distribution",
+            "Type": "Frames",
+            "DataSource": "Time",
+            "Target": "Days"
+        }
+    ],
+
+    "Targeting": [
+
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Route",
+            "Target": "affluence",
+            "TargetValues": [
+                "A",
+                "B",
+                "C1"
+            ],
+        },
+        {
+             "Name": "Distribution",
+             "Type": "Audience",
+             "DataSource": "Space",
+             "Target": "Impacts_tv_area",
+             "DistributionArray": [
+                  {
+                      "DistTargetValues":"North West",
+                      "DistQuantity":"40000"
+                  },
+                  {
+                      "DistTargetValues":"North East",
+                      "DistQuantity":"40000"
+                  },
+                  {
+                      "DistTargetValues":"London",
+                      "DistQuantity":"20000"
+                  },
+                  {
+                      "DistTargetValues":"Midlands",
+                      "DistQuantity":"80000"
+                  }    
+             ]
+         }
+
+    ]
+} 
