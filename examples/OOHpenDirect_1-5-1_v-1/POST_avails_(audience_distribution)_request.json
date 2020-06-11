@@ -73,7 +73,7 @@
              "Name": "Distribution",
              "Type": "Audience",
              "DataSource": "Space",
-             "Target": "Impacts_tv_area",
+             "Target": "tv_area",
              "DistributionArray": [
                   {
                       "DistTargetValues":"North West",
