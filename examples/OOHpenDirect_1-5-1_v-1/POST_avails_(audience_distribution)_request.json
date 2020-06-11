@@ -7,6 +7,12 @@
     "AvailabilityFields": [
 
         {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "tv_area"
+        },
+        {
             "Name": "Delivery",
             "Type": "Frames",
             "DataSource": "ShareOfDisplay",
@@ -46,6 +52,12 @@
 
     "Targeting": [
 
+        {
+             "Name": "Inventory",
+             "Type": "Audience",
+             "DataSource": "Metrics",
+             "Target": "Impacts"
+        },
         {
             "Name": "Inventory",
             "Type": "Audience",
