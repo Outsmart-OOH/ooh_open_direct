@@ -4,6 +4,12 @@
     "type": "object",
     "title": "Contact Type",
     "description": "Contact object.",
+    "required": [
+        "FirstName",
+        "Lastname",
+        "Email",
+        "Type"
+    ],
     "properties": {
         "Honorific": {
             "type": "string",
@@ -20,38 +26,43 @@
         "FirstName": {
             "type": "string",
             "maxLength": 20,
-            "description":"The contact's first name",
+            "description": "The contact's first name",
             "$id": "#/properties/FirstName"
         },
         "Lastname": {
-            "type":"string",
+            "type": "string",
             "maxLength": 20,
-            "description":"The contact's last name",
+            "description": "The contact's last name",
             "$id": "#/properties/Lastname"
         },
         "Email": {
-            "type":"string",
-            "maxLength":254,
-            "description":"The contact's email address",
+            "type": "string",
+            "maxLength": 254,
+            "description": "The contact's email address",
             "$id": "#/properties/Email"
         },
         "Phone": {
-            "type":"string",
+            "type": "string",
             "maxLength": 20,
-            "description":"The contact's phone number",
+            "description": "The contact's phone number",
             "$id": "#/properties/Phone"
         },
         "Type": {
-            "type":"string",
+            "type": "string",
+            "enum": [
+                "Billing",
+                "Buyer",
+                "Creative"
+            ],
             "maxLength": 10,
-            "description":"The type of contact that this resource represents (e.g. billing, creative)",
+            "description": "The type of contact that this resource represents (e.g. billing, creative)",
             "$id": "#/properties/Type"
         },
         "Address": {
             "description": "The organisation's corporate headquarters address",
             "$id": "#/properties/Address",
             "type": "object",
-            "$ref":"https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/address_object.json"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/address_object.json"
         }
     }
 }
