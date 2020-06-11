@@ -5,6 +5,11 @@
     "title": "AdvertiserBrand",
     "description": "AdvertiserBrand object.",
     "additionalProperties": false,
+    "required": [
+        "Id",
+        "Name",
+        "OrganizationId"
+    ],
     "properties": {
         "Id": {
             "type": "string",
