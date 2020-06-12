@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/products/product_collection_response.json",
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/products/products_collection_response.json",
     "Products": [
         {
             "ActiveDate": "2012-12-10T18:00:00.000Z",
