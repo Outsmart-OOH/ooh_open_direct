@@ -109,6 +109,12 @@
             "description": "Detail structured information that may be used to identify their order in a Seller's system using their own IDs or reference",
             "type": "object",
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/oohProviderData_object.json"
+        },
+        "StartDate": {
+            "$id": "#/properties/StartDate",
+            "description": "The date and time that the order will start. The start date is directional and may be updated by the publisher to match the earliest start date found in the order’s list of lines.The date and time must be specified in UTC and conform to ISO 8601. If the time is missing, 12:00 AM is assumed. When creating the order, the date and time must be greater than or equal to now. Start dates that have past may not be updated.",
+            "type": "string",
+            "format": "date"
         }
     }
 }
