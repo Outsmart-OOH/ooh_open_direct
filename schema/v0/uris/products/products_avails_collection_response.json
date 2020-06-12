@@ -12,7 +12,7 @@
         "$schema": {
             "type": "string"
         },
-        "Products": {
+        "ProductAvails": {
             "$id": "#/properties/Products",
             "type": "array",
             "title": "Array of ProductAvails",
