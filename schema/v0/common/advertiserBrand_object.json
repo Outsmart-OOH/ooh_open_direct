@@ -24,7 +24,7 @@
             "maxLength": 128
         },
         "OrganizationId": {
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/organizations/organization_id_string.json"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/organization/organization_id_string.json"
         },
         "ThirdPartyId": {
             "type": "string",

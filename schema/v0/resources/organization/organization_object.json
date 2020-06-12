@@ -47,10 +47,7 @@
             "maxLength": 20
         },
         "Id": {
-            "$id": "#/properties/id",
-            "description": "A system-generated opaque ID that uniquely identifies this resource",
-            "type": "string",
-            "maxLength": 36
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/organization/organization_id_string.json"
         },
         "Industry": {
             "$id": "#/properties/Industry",
