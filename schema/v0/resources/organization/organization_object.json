@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/organizations/organization_object.json",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/organization/organization_object.json",
     "type": "object",
     "title": "OOH Organisation Object",
     "description": "The root schema comprises the entire JSON document.",
