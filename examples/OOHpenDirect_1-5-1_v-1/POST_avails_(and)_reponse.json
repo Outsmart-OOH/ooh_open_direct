@@ -1,8 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/products/products_avails_collection_response.json",
     "ProductAvails": {
-
-
         "Currency": "GBP",
         "ProductId": "456366",
         "Targeting": [
