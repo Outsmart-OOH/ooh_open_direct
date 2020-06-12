@@ -6,7 +6,7 @@
     "description": "Contact object.",
     "required": [
         "FirstName",
-        "Lastname",
+        "LastName",
         "Email",
         "Type"
     ],
@@ -29,7 +29,7 @@
             "description": "The contact's first name",
             "$id": "#/properties/FirstName"
         },
-        "Lastname": {
+        "LastName": {
             "type": "string",
             "maxLength": 20,
             "description": "The contact's last name",
