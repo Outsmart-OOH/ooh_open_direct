@@ -79,7 +79,8 @@
         "ProviderData": {
             "$id": "#/properties/OOHProviderData",
             "description": "An opaque CLOB of provider-defined data. ",
-            "type": "string"
+            "type": "string",
+            "maxLength": 1000
         },
         "OOHProviderData": {
             "$id": "#/properties/OOHProviderData",
