@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/products/products_search_request.json",
+    "type": "object",
+    "title": "Request for Products using Product Search",
+    "description": "The schema of a request",
+    "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/productSearch_object.json",
+    "required": [
+        "Currency",
+        "DeliveryType",
+        "TargetTypes"
+    ]
+}

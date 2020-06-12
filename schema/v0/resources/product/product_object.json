@@ -89,7 +89,7 @@
             "description": "URL to a thumbnail icon of the product. May be used to display next to the product in the product catalog."
         },
         "Id": {
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/products/product_id_string.json"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/product/product_id_string.json"
         },
         "Languages": {
             "$id": "#/properties/Languages",
