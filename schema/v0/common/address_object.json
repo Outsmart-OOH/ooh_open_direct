@@ -21,7 +21,7 @@
         "AddressLine2": {
             "type": "string",
             "maxLength": 255,
-            "pattern": "^[A-Za-z-\\s]*$",
+            "pattern": "^[A-Za-z0-9-\\s]*$",
             "description": "The optional second line of the address"
         },
         "City": {
