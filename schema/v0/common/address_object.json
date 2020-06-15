@@ -15,7 +15,7 @@
         "AddressLine1": { 
             "type": "string",
             "maxLength": 255,
-            "pattern": "^[A-Za-z-\\s]*$",
+            "pattern": "^[A-Za-z0-9-\\s]*$",
             "description": "The first line of the address"
         },
         "AddressLine2": {
