@@ -68,22 +68,22 @@
         },
         "Minimum": {
             "$id": "#/properties/Minimum",
-            "type": "integer",
+            "type": "number",
             "title": "Defines the minimum number of TargetValues that must be selected"
         },
         "Maximum": {
             "$id": "#/properties/Maximum",
-            "type": "integer",
+            "type": "number",
             "title": "Defines the maximum number of TargetValues that must be selected"
         },
         "Increment": {
             "$id": "#/properties/Increment",
-            "type": "integer",
+            "type": "number",
             "title": "Defines the increments that are permitted for the targeting values"
         },
         "Default": {
             "$id": "#/properties/Default",
-            "type": "integer",
+            "type": "number",
             "title": "Defines the default number of TargetValues that are selected if the Buyer does not specify any TargetValues or the target is not selectable"
         },
         "StatsValues": {

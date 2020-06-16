@@ -4,11 +4,11 @@
         {
             "ActiveDate": "2012-12-10T18:00:00.000Z",
             "AdFormatTypes": [
-                "mp4",
-                "jpg",
-                "html5"
+                "Video",
+                "Image",
+                "HTML5"
             ],
-            "AllowNoCreative": "True",
+            "AllowNoCreative": true,
             "BasePrice": 10000,
             "Currency": "GBP",
             "DeliveryType": "Guaranteed",
@@ -25,9 +25,6 @@
             "BuyerIdAccess": [],
             "ThirdPartyIdAccess": [],
             "TargetTypes": [
-
-                //Frames Description
-
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
@@ -41,7 +38,7 @@
                         1234931569,
                         1235202465
                     ],
-                    "Selectable": "Yes",
+                    "Selectable": true,
                     "Minimum": 2,
                     "Maximum": 6,
                     "Increment": 2,
@@ -82,7 +79,7 @@
                     "DataSource": "Time",
                     "Target": "Days",
                     "TargetValues": [],
-                    "Selectable": "Yes",
+                    "Selectable": true,
                     "Minimum": 1,
                     "Maximum": 7,
                     "Increment": 1,
@@ -94,7 +91,7 @@
                     "DataSource": "ShareOfDisplay",
                     "Target": "ShareOfTime",
                     "TargetValues": [],
-                    "Selectable": "Yes",
+                    "Selectable": true,
                     "Minimum": 2,
                     "Maximum": 100,
                     "Increment": 1,
@@ -105,9 +102,8 @@
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "Spot",
-                    "TargetValues":,
-                    "Measurement": "seconds",
-                    "Selectable": "Yes",
+                    "TargetValues": [],
+                    "Selectable": true,
                     "Minimum": 5,
                     "Maximum": 30,
                     "Increment": 5,
@@ -118,11 +114,10 @@
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "Hour",
-                    "TargetValues": "Fixed"
+                    "TargetValues": [
+                        "Fixed"
+                    ]
                 },
-
-                //Audience Description
-
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
@@ -140,17 +135,18 @@
                         "55-59",
                         "60-64"
                     ],
-                    "Selectable": "Yes"
+                    "Selectable": true
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
                     "DataSource": "Route",
+                    "Target": "sex",
                     "TargetValues": [
                         "Male",
                         "Female"
                     ],
-                    "Selectable": "Yes"
+                    "Selectable": true
                 },
                 {
                     "Name": "Inventory",
@@ -165,18 +161,15 @@
                         "D",
                         "E"
                     ],
-                    "Selectable": "Yes"
+                    "Selectable": true
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
                     "DataSource": "Metrics",
                     "Target": "Impacts",
-                    "Selectable": "Yes"
+                    "Selectable": true
                 },
-
-                //Prohibitions
-
                 {
                     "Name": "Prohibitions",
                     "Type": "Frames",
@@ -191,6 +184,5 @@
             "TimeZone": "GMT",
             "Url": "http://<domain>/<path>/creativespec.aspx"
         }
-
     ]
 }
