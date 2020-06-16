@@ -11,6 +11,9 @@
                 "$ref": "#/definitions/$and"
             },
             {
+                "$ref": "#/definitions/$defaultand"
+            },
+            {
                 "$ref": "#/definitions/$or"
             },
             {
@@ -42,6 +45,12 @@
                     "$ref": "#"
                 }
             }
+        },
+        "$defaultand": {
+            "$id": "#/$defaultand",
+            "title": "Default AND",
+            "description": "Default AND",
+            "$ref": "#"
         }
     }
 }
