@@ -18,7 +18,7 @@
             "title": "Array of AdvertiserBrand",
             "description": "Collection of AdvertiserBrand",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/datasource_object.json",
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/dataSource_object.json",
                 "required": []
             }
         }

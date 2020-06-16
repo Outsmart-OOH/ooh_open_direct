@@ -4,6 +4,6 @@
     "type": "object",
     "title": "Response for a single AdvertiserBrand",
     "description": "The schema of a response that gives a single AdvertiserBrand",
-    "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/datasource_object.json",
+    "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/dataSource_object.json",
     "required": []
 }
