@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/dataSource_object.json",
+    "type": "object",
+    "title": "DataSource Object",
+    "description": "DataSource object.",
+    "required": [
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "Name": { 
+            "type": "string"
+        },
+        "Type": {
+            "type": "string"
+        },
+        "DataSource": {
+            "type": "string"
+        },
+        "Target": {
+            "type": "string"
+        }
+    }
+}
