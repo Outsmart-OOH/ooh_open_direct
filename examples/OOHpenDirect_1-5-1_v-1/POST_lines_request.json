@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/lines/lines_request.json",
     "Comment": "Free form comment",
     "EndDate": "2014-12-10T18:00:00.000Z",
     "Name": "My Line 1",
