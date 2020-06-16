@@ -2,12 +2,11 @@
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/products/products_avails_request.json",
     "AccountId": "23873345",
     "EndDate": "2014-12-10T18:00:00.000Z",
-    "ProductIds": [ "456366" ],
+    "ProductIds": [
+        "456366"
+    ],
     "StartDate": "2014-12-05T06:00:00.000Z",
-
     "AvailabilityFields": [
-
-
         {
             "Name": "Inventory",
             "Type": "Frames",
@@ -32,11 +31,7 @@
             "DataSource": "GBP",
             "Target": "Fixed"
         }
-
-
     ],
-
-
     "Grouping": [
         {
             "Name": "Inventory",
@@ -45,10 +40,9 @@
             "Target": "frame_id"
         }
     ],
-
-    "$and": [
-        {
-            "Targeting": [
+    "Targeting": [
+        [
+            [
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
@@ -64,30 +58,31 @@
                     "Type": "Frames",
                     "DataSource": "Time",
                     "Target": "Days",
-                    "TargetValues": [ 5, 6 ]
-
+                    "TargetValues": [
+                        5,
+                        6
+                    ]
                 },
                 {
                     "Name": "Delivery",
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "ShareOfTime",
-                    "TargetValues": 10
-
+                    "TargetValues": [
+                        10
+                    ]
                 },
                 {
                     "Name": "Delivery",
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "Spot",
-                    "TargetValues": 5
-
+                    "TargetValues": [
+                        5
+                    ]
                 }
-
-            ]
-        },
-        {
-            "Targeting": [
+            ],
+            [
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
@@ -103,28 +98,30 @@
                     "Type": "Frames",
                     "DataSource": "Time",
                     "Target": "Days",
-                    "TargetValues": [ 5, 6 ]
-
+                    "TargetValues": [
+                        5,
+                        6
+                    ]
                 },
                 {
                     "Name": "Delivery",
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "ShareOfTime",
-                    "TargetValues": 20
-
+                    "TargetValues": [
+                        20
+                    ]
                 },
                 {
                     "Name": "Delivery",
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "Spot",
-                    "TargetValues": 5
-
+                    "TargetValues": [
+                        5
+                    ]
                 }
-
             ]
-        }
-
+        ]
     ]
-} 
+}

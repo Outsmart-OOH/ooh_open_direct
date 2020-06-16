@@ -2,11 +2,11 @@
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/products/products_avails_request.json",
     "AccountId": "23873345",
     "EndDate": "2014-12-10T18:00:00.000Z",
-    "ProductIds": [ "456367" ],
+    "ProductIds": [
+        "456367"
+    ],
     "StartDate": "2014-12-05T06:00:00.000Z",
-
     "AvailabilityFields": [
-
         {
             "Name": "Inventory",
             "Type": "Frames",
@@ -31,11 +31,7 @@
             "DataSource": "GBP",
             "Target": "Fixed"
         }
-
-
     ],
-
-
     "Grouping": [
         {
             "Name": "Inventory",
@@ -50,14 +46,12 @@
             "Target": "Days"
         }
     ],
-
     "Targeting": [
-
         {
-             "Name": "Inventory",
-             "Type": "Audience",
-             "DataSource": "Metrics",
-             "Target": "Impacts"
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Metrics",
+            "Target": "Impacts"
         },
         {
             "Name": "Inventory",
@@ -71,29 +65,28 @@
             ]
         },
         {
-             "Name": "Distribution",
-             "Type": "Audience",
-             "DataSource": "Space",
-             "Target": "tv_area",
-             "Distribution": [
-                  {
-                      "DistTargetValues":"North West",
-                      "DistQuantity":"40000"
-                  },
-                  {
-                      "DistTargetValues":"North East",
-                      "DistQuantity":"40000"
-                  },
-                  {
-                      "DistTargetValues":"London",
-                      "DistQuantity":"20000"
-                  },
-                  {
-                      "DistTargetValues":"Midlands",
-                      "DistQuantity":"80000"
-                  }    
-             ]
-         }
-
+            "Name": "Distribution",
+            "Type": "Audience",
+            "DataSource": "Space",
+            "Target": "tv_area",
+            "Distribution": [
+                {
+                    "DistTargetValues": "North West",
+                    "DistQuantity": 40000
+                },
+                {
+                    "DistTargetValues": "North East",
+                    "DistQuantity": 40000
+                },
+                {
+                    "DistTargetValues": "London",
+                    "DistQuantity": 20000
+                },
+                {
+                    "DistTargetValues": "Midlands",
+                    "DistQuantity": 80000
+                }
+            ]
+        }
     ]
-} 
+}
