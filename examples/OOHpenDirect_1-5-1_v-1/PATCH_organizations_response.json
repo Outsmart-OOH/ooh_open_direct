@@ -28,12 +28,11 @@
     ],
     "Fax": "2065551212",
     "Id": "12345678",
-    "Industry": ,
     "Name": "Contoso",
-    "AdvertiserBrands": null,
+    "AdvertiserBrands": [],
     "OrganizationType": "Specialist",
     "Phone": "2065550100",
-    "OOHProviderData": ,
+    "OOHProviderData": {},
     "Status": "Approved",
     "Url": "http://contoso.com"
 }

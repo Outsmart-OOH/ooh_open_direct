@@ -49,12 +49,6 @@
         "Id": {
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/organization/organization_id_string.json"
         },
-        "Industry": {
-            "$id": "#/properties/Industry",
-            "description": "An industry label for the organisation. Only required for advertiser organisation",
-            "type": "object",
-            "properties": {}
-        },
         "OrganizationType": {
             "$id": "#/properties/OrganizationType",
             "description": "The core activity that an organisation undertakes as a business e.g. advertiser, OOH Specialist or Media Agency",
