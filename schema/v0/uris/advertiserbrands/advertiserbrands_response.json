@@ -8,6 +8,6 @@
     "required": [
         "Id",
         "Name",
-        "OrganizationID"
+        "OrganizationId"
     ]
 }

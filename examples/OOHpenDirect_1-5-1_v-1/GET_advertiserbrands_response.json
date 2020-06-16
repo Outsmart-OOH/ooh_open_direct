@@ -2,31 +2,31 @@
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/advertiserbrands/advertiserbrands_collection_response.json",
     "AdvertiserBrands": [
         {
-            "Id": 1173,
+            "Id": "1173",
             "Name": "Marmite",
-            "OrganizationId": 345,
-            "ThirdPartyId": 27,
+            "OrganizationId": "345",
+            "ThirdPartyId": "27",
             "ThirdPartyDataSource": "Space"
         },
         {
-            "Id": 1174,
+            "Id": "1174",
             "Name": "PGTips",
-            "OrganizationId": 345,
-            "ThirdPartyId": 42,
+            "OrganizationId": "345",
+            "ThirdPartyId": "42",
             "ThirdPartyDataSource": "Space"
         },
         {
-            "Id": 1175,
+            "Id": "1175",
             "Name": "Lynx",
-            "OrganizationId": 345,
-            "ThirdPartyId": 109,
+            "OrganizationId": "345",
+            "ThirdPartyId": "109",
             "ThirdPartyDataSource": "Space"
         },
         {
-            "Id": 1176,
+            "Id": "1176",
             "Name": "Walls",
-            "OrganizationId": 345,
-            "ThirdPartyId": 240,
+            "OrganizationId": "345",
+            "ThirdPartyId": "240",
             "ThirdPartyDataSource": "Space"
         }
     ]
