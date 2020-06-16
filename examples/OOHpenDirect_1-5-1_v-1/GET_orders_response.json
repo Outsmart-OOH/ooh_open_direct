@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/orders/order_collection_response.json",
+  "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/orders/orders_collection_response.json",
   "Orders": [
     {
       "AccountId": "23873345",

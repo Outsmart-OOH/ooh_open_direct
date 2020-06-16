@@ -1,5 +1,6 @@
 {
-    "AccountId": "23873345",
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/orders/orders_request.json",
+  "AccountId": "23873345",
     "AdvertiserBrandId": "73",
     "Currency": "GBP",
     "EndDate": "2014-12-24T18:00:00.000Z",
