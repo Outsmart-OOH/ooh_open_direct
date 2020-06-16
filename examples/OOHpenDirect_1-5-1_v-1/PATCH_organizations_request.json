@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/organizations/organizations_request.json",
   "Id": "12345678",
   "Contacts": [
     {
@@ -12,4 +13,4 @@
       "Type": "Billing"
     }
   ]
-} 
+}
