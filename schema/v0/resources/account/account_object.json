@@ -48,6 +48,7 @@
         "ProviderData": {
             "$id": "#/proerties/ProviderData",
             "type": "string",
+            "maxLength": 1000,
             "title": "Provider Data",
             "description": ""
         }
