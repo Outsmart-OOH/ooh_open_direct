@@ -111,6 +111,13 @@
             "type": "string",
             "title": "Used to record the ID of the creative that plays against Targeted OOHbjects",
             "maxLength": 255
+        },
+        "Distribution": {
+            "$id": "#/properties/Distribution",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/distribution_object.json"
+            }
         }
     }
 }

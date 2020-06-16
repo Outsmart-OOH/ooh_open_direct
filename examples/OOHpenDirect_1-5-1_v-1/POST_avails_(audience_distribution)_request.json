@@ -75,7 +75,7 @@
              "Type": "Audience",
              "DataSource": "Space",
              "Target": "tv_area",
-             "DistributionArray": [
+             "Distribution": [
                   {
                       "DistTargetValues":"North West",
                       "DistQuantity":"40000"
