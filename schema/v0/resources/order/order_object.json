@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/orders/order_object.json",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/order/order_object.json",
     "type": "object",
     "title": "Order object",
     "description": "Template container for Order, still to be populated",
@@ -68,7 +68,7 @@
             "description": "The date and time using the ISO 8601 format for when the order expires. Publisher will only hold inventory up until the date and time indicated."
         },
         "Id": {
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/orders/order_id_string.json"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/order/order_id_string.json"
         },
         "Industry": {
             "$id": "#/properties/Industry",

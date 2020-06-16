@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/orders/order_id_string.json",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/order/order_id_string.json",
     "type": "string",
     "title": "Order ID",
     "description": "A system-generated opaque ID that uniquely identifies the Order",
