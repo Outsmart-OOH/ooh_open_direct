@@ -13,7 +13,7 @@
             "type": "string"
         },
         "AdvertiserBrands": {
-            "$id": "#/properties/lines",
+            "$id": "#/properties/advertiserBrands",
             "type": "array",
             "title": "Array of AdvertiserBrand",
             "description": "Collection of AdvertiserBrand",

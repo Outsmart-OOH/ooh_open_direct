@@ -13,10 +13,10 @@
             "type": "string"
         },
         "DataSources": {
-            "$id": "#/properties/lines",
+            "$id": "#/properties/datasources",
             "type": "array",
-            "title": "Array of AdvertiserBrand",
-            "description": "Collection of AdvertiserBrand",
+            "title": "Array of DataSources",
+            "description": "Collection of DataSources",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/dataSource_object.json",
                 "required": []
