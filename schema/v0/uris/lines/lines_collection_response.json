@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/lines/line_collection_response.json",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/lines/lines_collection_response.json",
     "type": "object",
     "title": "Response for a collection of lines",
     "description": "The schema of a response that gives a collection of Lines",
@@ -18,7 +18,7 @@
             "title": "Array of Lines",
             "description": "Collection of Lines",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/lines/line_object.json",
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/line/line_object.json",
                 "required": [
                     "Id",
                     "Name"

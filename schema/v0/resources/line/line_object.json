@@ -1,0 +1,104 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/line/line_object.json",
+    "type": "object",
+    "title": "Line object",
+    "description": "Template container for Line, still to be populated",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "BookingStatus": {
+            "$id": "#/properties/BookingStatus",
+            "type": "string",
+            "title": "Booking Status",
+            "description": "A value that determines whether the line is booked and is capable of delivering ads. For a states , see Booking Status Values."
+        },
+        "Comment": {
+            "$id": "#/properties/",
+            "type": "string",
+            "title": "Comment",
+            "description": "User notes related to this line."
+        },
+        "Cost": {
+            "$id": "#/properties/",
+            "type": "number",
+            "title": "Cost",
+            "description": "The projected cost of the line is based on the specified targeting. "
+        },
+        "EndDate": {
+            "$id": "#/properties/EndDate",
+            "type": "string",
+            "format": "date-time",
+            "title": "End Date",
+            "description": "The date and time that the line will stop."
+        },
+        "Id": {
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/resources/line/line_id_string.json"
+        },
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "Line Name",
+            "description": "The line's display name. The name must be unique."
+        },
+        "OrderId": {
+            "$id": "#/properties/",
+            "type": "string",
+            "title": "Order ID",
+            "description": "The ID of the order that this line belongs to."
+        },
+        "ProductId": {
+            "$id": "#/properties/",
+            "type": "string",
+            "title": "Product ID",
+            "description": "The ID of the product where the creatives run."
+        },
+        "ProviderData": {
+            "$id": "#/properties/",
+            "type": "string",
+            "title": "Provider Data",
+            "description": "An opaque CLOB of provider-defined data. "
+        },
+        "OOHProviderData": {
+            "$id": "#/properties/OOHProviderData",
+            "description": "The OOHProviderData object is used for Buyers to detail structured information",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/oohProviderData_object.json"
+        },
+        "ReservedExpiryDate": {
+            "$id": "#/properties/",
+            "type": "string",
+            "format": "date-time",
+            "title": "Reserved Expiry Date",
+            "description": "The date and time that the reserved inventory will expire. If the line is reserved, the expiry date must be set."
+        },
+        "StartDate": {
+            "$id": "#/properties/StartDate",
+            "type": "string",
+            "format": "date-time",
+            "title": "Start Date",
+            "description": "The date and time that the line will start."
+        },
+        "StateChangeReason": {
+            "$id": "#/properties/",
+            "type": "string",
+            "title": "State Change Reason",
+            "description": "The reason why the state was changed by the publisher. The reason must be specified if: The publisher declined the booking or reservation, The publisher or user canceled the flight."
+        },
+        "Stats": {
+            "$id": "#/properties/",
+            "type": "string",
+            "title": "Stats",
+            "description": "Reports on the schedule generated to fulfill the targeting requirements detailed in the Order Line (pre-flight stage), and the performance of the schedule when the campaign is in flight and/or completed."
+        },
+        "Targeting": {
+            "$id": "#/properties/Targeting",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/targetTypes_array.json"
+        }
+    }
+}
