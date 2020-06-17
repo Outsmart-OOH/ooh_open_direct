@@ -9,7 +9,7 @@
     "Name": "My Line 1",
     "OrderId": "1235872",
     "ProductId": "456366",
-    "OOHProviderData": [ { "PoNumber": "88873" } ],
+    "OOHProviderData": { "PoNumber": "88873" } ,
     "StartDate": "2014-12-05T06:00:00.000Z",
     "Targeting": [
         {
@@ -37,7 +37,7 @@
             "Type": "Frames",
             "DataSource": "ShareOfDisplay",
             "Target": "ShareOfTime",
-            "TargetValues": 20
+            "TargetValues": [20]
 
         },
         {
@@ -45,7 +45,7 @@
             "Type": "Frames",
             "DataSource": "ShareOfDisplay",
             "Target": "Spot",
-            "TargetValues": 5
+            "TargetValues": [5]
 
         }
 

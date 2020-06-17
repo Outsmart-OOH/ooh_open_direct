@@ -4,7 +4,7 @@
     "EndDate": "2014-12-10T18:00:00.000Z",
     "Name": "My Line 1",
     "ProductId": "456366",
-    "OOHProviderData": [ { "PoNumber": "88873" } ],
+    "OOHProviderData":  { "PoNumber": "88873" } ,
     "StartDate": "2014-12-05T06:00:00.000Z",
     "Targeting": [
         {
