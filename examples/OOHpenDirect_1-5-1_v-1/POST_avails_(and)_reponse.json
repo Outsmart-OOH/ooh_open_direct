@@ -5,6 +5,7 @@
         {
         "Currency": "GBP",
         "ProductId": "456366",
+        "Price": 680,
         "Targeting": [
             [
 
@@ -134,7 +135,7 @@
             ]
         ],
 
-        "Price": 680
+       
         }
     ]
 }
