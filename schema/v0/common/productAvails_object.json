@@ -27,6 +27,13 @@
         "Targeting": {
             "$id": "#/properties/Targeting",
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/targetTypes_array.json"
+        },
+        "Price": {
+            "$id": "#/properties/Price",
+            "type": "number",
+            "title": "Price",
+            "description": "The Price of the product"
         }
+
     }
 }
