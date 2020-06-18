@@ -72,7 +72,7 @@
             "Type": "Frames",
             "DataSource": "ShareOfDisplay",
             "Target": "ShareOfTime",
-            "TargetValues": 20
+            "TargetValues": [20]
 
         },
         {
@@ -80,7 +80,7 @@
             "Type": "Frames",
             "DataSource": "ShareOfDisplay",
             "Target": "Spot",
-            "TargetValues": 5
+            "TargetValues": [5]
 
         }
 

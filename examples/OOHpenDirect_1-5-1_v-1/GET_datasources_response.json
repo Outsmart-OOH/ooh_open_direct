@@ -18,7 +18,7 @@
             "Type": "Frames",
             "DataSource": "Space",
             "Target": "environment"
-        }
+        },
         {
             "Name": "Inventory",
             "Type": "Audience",

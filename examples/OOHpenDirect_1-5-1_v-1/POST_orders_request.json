@@ -1,19 +1,19 @@
 {
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/orders/orders_request.json",
-  "AccountId": "23873345",
+    "Id":"orderid",
+    "AccountId": "23873345",
     "AdvertiserBrandId": "73",
     "Currency": "GBP",
     "EndDate": "2014-12-24T18:00:00.000Z",
     "Name": "My Order",
-    "OOHProviderData": [
+    "OOHProviderData": 
         {
             "CampaignId": "B007",
             "CampaignName": "BARTYTIME",
-            "PoNumber":,
+            "PoNumber": "",
             "SalesOrderReference": "SPEC123",
             "BarterOrganizationID": "BAR987",
-            "Other":
-        }
-    ],
+            "Other":""
+        },
     "StartDate": "2014-11-24T06:00:00.000Z"
 } 

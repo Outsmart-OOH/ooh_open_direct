@@ -6,17 +6,16 @@
     "EndDate": "2014-12-24T18:00:00.000Z",
     "Id": "1235872",
     "Name": "My Order",
-    "OrderStatus": "Approved",
+    "OrderStatus": "APPROVED",
     "PreferredBillingMethod": "Electronic",
-    "OOHProviderData": [
+    "OOHProviderData": 
         {
             "CampaignId": "B007",
             "CampaignName": "BARTYTIME",
-            "PoNumber": ,
+            "PoNumber": "",
             "SalesOrderReference": "SPEC123",
             "BarterOrganizationID": "BAR987",
-            "Other":
-        }
-    ],
+            "Other":""
+        },
     "StartDate": "2014-11-24T06:00:00.000Z"
 }

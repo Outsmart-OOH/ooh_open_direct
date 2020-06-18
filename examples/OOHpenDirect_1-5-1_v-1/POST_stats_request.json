@@ -3,10 +3,10 @@
     "AccountId": "23873345",
     "OrderId": "3479",
     "LineId": "1",
-    "StatsStartDate": "2020-12-09T00:00:00.000Z", //if left blank defaults to StartDate of order line
-    "StatsEndDate": "2020-12-09T01:00:00.000Z", //if left blank defaults to EndDate of order line
+    "StatsStartDate": "2020-12-09T00:00:00.000Z", 
+    "StatsEndDate": "2020-12-09T01:00:00.000Z", 
 
-    //OutSmart Report Level 4 example
+    
 
     "StatsScheduled": [
         {

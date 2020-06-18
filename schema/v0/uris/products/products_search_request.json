@@ -6,8 +6,6 @@
     "description": "The schema of a request",
     "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/common/productSearch_object.json",
     "required": [
-        "Currency",
-        "DeliveryType",
-        "TargetTypes"
+        "Targeting"
     ]
 }

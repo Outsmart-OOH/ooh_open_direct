@@ -69,7 +69,7 @@
                 "18-24",
                 "25-29"
             ],
-            "Selectable": "Yes"
+            "Selectable": true
         },
         {
             "Name": "Inventory",
@@ -78,7 +78,7 @@
             "TargetValues": [
                 "Female"
             ],
-            "Selectable": "Yes"
+            "Selectable": true
         },
         {
             "Name": "Inventory",
@@ -90,14 +90,14 @@
                 "B",
                 "C1"
             ],
-            "Selectable": "Yes"
+            "Selectable": true
         },
         {
             "Name": "Inventory",
             "Type": "Audience",
             "DataSource": "Metrics",
             "Target": "Impacts",
-            "TargetValues": 8000
+            "TargetValues": [8000]
         }
 
     ]

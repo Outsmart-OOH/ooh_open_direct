@@ -13,28 +13,28 @@
                         "Type": "Frames",
                         "DataSource": "Space",
                         "Target": "frame_id",
-                        "TargetValues": "1234931339"
+                        "TargetValues": [1234931339]
                     },
                     {
                         "Name": "Delivery",
                         "Type": "Frames",
                         "DataSource": "ShareOfDisplay",
                         "Target": "ShareOfTime",
-                        "TargetValues": 20
+                        "TargetValues": [20]
                     },
                     {
                         "Name": "Inventory",
                         "Type": "Audience",
                         "DataSource": "Metrics",
                         "Target": "Impacts",
-                        "TargetValues": 15000
+                        "TargetValues": [15000]
                     },
                     {
                         "Name": "Investment",
                         "Type": "Total",
                         "DataSource": "GBP",
                         "Target": "Fixed",
-                        "TargetValues": 150
+                        "TargetValues": [150]
                     }
 
                 ],
@@ -45,28 +45,28 @@
                         "Type": "Frames",
                         "DataSource": "Space",
                         "Target": "frame_id",
-                        "TargetValues": "1235190735"
+                        "TargetValues": [1235190735]
                     },
                     {
                         "Name": "Delivery",
                         "Type": "Frames",
                         "DataSource": "ShareOfDisplay",
                         "Target": "ShareOfTime",
-                        "TargetValues": 20
+                        "TargetValues": [20]
                     },
                     {
                         "Name": "Inventory",
                         "Type": "Audience",
                         "DataSource": "Metrics",
                         "Target": "Impacts",
-                        "TargetValues": 25000
+                        "TargetValues": [25000]
                     },
                     {
                         "Name": "Investment",
                         "Type": "Total",
                         "DataSource": "GBP",
                         "Target": "Fixed",
-                        "TargetValues": 250
+                        "TargetValues": [250]
                     }
                 ],
 
@@ -76,28 +76,28 @@
                         "Type": "Frames",
                         "DataSource": "Space",
                         "Target": "frame_id",
-                        "TargetValues": "1234931338"
+                        "TargetValues": [1234931338]
                     },
                     {
                         "Name": "Delivery",
                         "Type": "Frames",
                         "DataSource": "ShareOfDisplay",
                         "Target": "ShareOfTime",
-                        "TargetValues": 20
+                        "TargetValues": [20]
                     },
                     {
                         "Name": "Inventory",
                         "Type": "Audience",
                         "DataSource": "Metrics",
                         "Target": "Impacts",
-                        "TargetValues": 10000
+                        "TargetValues": [10000]
                     },
                     {
                         "Name": "Investment",
                         "Type": "Total",
                         "DataSource": "GBP",
                         "Target": "Fixed",
-                        "TargetValues": 100
+                        "TargetValues": [100]
                     }
                 ],
                 [
@@ -107,28 +107,28 @@
                         "Type": "Frames",
                         "DataSource": "Space",
                         "Target": "frame_id",
-                        "TargetValues": "1235191547"
+                        "TargetValues": [1235191547]
                     },
                     {
                         "Name": "Delivery",
                         "Type": "Frames",
                         "DataSource": "ShareOfDisplay",
                         "Target": "ShareOfTime",
-                        "TargetValues": 20
+                        "TargetValues": [20]
                     },
                     {
                         "Name": "Inventory",
                         "Type": "Audience",
                         "DataSource": "Metrics",
                         "Target": "Impacts",
-                        "TargetValues": 30000
+                        "TargetValues": [30000]
                     },
                     {
                         "Name": "Investment",
                         "Type": "Total",
                         "DataSource": "GBP",
                         "Target": "Fixed",
-                        "TargetValues": 300
+                        "TargetValues": [300]
                     }
 
                 ]
