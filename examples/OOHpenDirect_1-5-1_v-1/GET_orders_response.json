@@ -9,7 +9,7 @@
       "Id": "1235872",
       "Name": "My Order",
       "PreferredBillingMethod": "Electronic",
-      "OOHProviderData": [
+      "OOHProviderData": 
         {
           "CampaignId": "B007",
           "CampaignName": "BARTYTIME",
@@ -18,7 +18,7 @@
           "BarterOrganizationID": "BAR987",
           "Other": ""
         }
-      ],
+      ,
       "StartDate": "2014-11-24T06:00:00.000Z"
     }
   ]
