@@ -75,6 +75,7 @@
             "Name": "Inventory",
             "Type": "Audience",
             "DataSource": "Route",
+            "Target": "sex",
             "TargetValues": [
                 "Female"
             ],
