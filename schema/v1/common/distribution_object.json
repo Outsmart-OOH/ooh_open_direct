@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/distribution_object.json",
+    "type": "object",
+    "title": "Distribution Object",
+    "description": "Distribution object.",
+    "required": [
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "DistTargetValues": { 
+            "type": "string"
+        },
+        "DistQuantity": {
+            "type": "number"
+        },
+        "DistPercentage": {
+            "type": "number"
+        }
+    }
+}

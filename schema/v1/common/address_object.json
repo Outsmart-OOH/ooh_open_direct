@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/address_object.json",
+    "type": "object",
+    "title": "Address Type",
+    "description": "Address object.",
+    "required": [
+        "AddressLine1",
+        "City",
+        "State",
+        "Country"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "AddressLine1": { 
+            "type": "string",
+            "maxLength": 255,
+            "pattern": "^[A-Za-z0-9-\\s]*$",
+            "description": "The first line of the address"
+        },
+        "AddressLine2": {
+            "type": "string",
+            "maxLength": 255,
+            "pattern": "^[A-Za-z0-9-\\s]*$",
+            "description": "The optional second line of the address"
+        },
+        "City": {
+            "type": "string",
+            "maxLength": 35,
+            "pattern": "^[A-Za-z-\\s]*$",
+            "description": "The name of the city in which the address is located"
+        },
+        "Country": {
+            "type": "string",
+            "maxLength": 2,
+            "description": "The name of the country in which the address is located"
+        },
+        "PostalCode": {
+            "type": "string",
+            "maxLength": 15,
+            "pattern": "^[A-Za-z0-9-\\s]*$",
+            "description": "The postal or zip code for the address"
+        },
+        "State": {
+            "type": "string",
+            "maxLength": 35,
+            "pattern": "^[A-Za-z]*$",
+            "description": "The name of the state/province/country in which the address is located"
+        }
+    }
+}

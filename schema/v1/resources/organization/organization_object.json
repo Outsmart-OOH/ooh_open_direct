@@ -1,0 +1,102 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/organization/organization_object.json",
+    "type": "object",
+    "title": "OOH Organisation Object",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "Address": {
+            "description": "The organisation's corporate headquarters address",
+            "$id": "#/properties/Address",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/address_object.json"
+        },
+        "AdvertiserBrands": {
+            "description": "Defines the details of a Brands associated with an organisation",
+            "$id": "#properties/AdvertiserBrands",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/advertiserBrand_object.json"
+            }
+        },
+        "Contacts": {
+            "$id": "#/properties/Contacts",
+            "description": "A list of one or more contacts with the organisation",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/contact_object.json"
+            }
+        },
+        "Disapproval Reason": {
+            "$id": "#/properties/DisapprovalReason",
+            "description": "The reason why the organisation was not registered. Must be specified if Status is Disapproved",
+            "type": "string",
+            "maxLength": 255
+        },
+        "Fax": {
+            "$id": "#/properties/Fax",
+            "description": "The organisation's fax number",
+            "type": "string",
+            "maxLength": 20
+        },
+        "Id": {
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/organization/organization_id_string.json"
+        },
+        "OrganizationType": {
+            "$id": "#/properties/OrganizationType",
+            "description": "The core activity that an organisation undertakes as a business e.g. advertiser, OOH Specialist or Media Agency",
+            "type": "string"
+        },
+        "Name": {
+            "$id": "#properties/Name",
+            "description": "The organization's display name",
+            "type": "string",
+            "maxLength": 128,
+            "minLength": 1
+        },
+        "Phone": {
+            "$id": "#/properties/Phone",
+            "description": "The organization's phone number",
+            "type": "string",
+            "maxLength": 20
+        },
+        "ProviderData": {
+            "$id": "#/properties/OOHProviderData",
+            "description": "An opaque CLOB of provider-defined data. ",
+            "type": "string",
+            "maxLength": 1000
+        },
+        "OOHProviderData": {
+            "$id": "#/properties/OOHProviderData",
+            "description": "Detail structured information that may be used to identify their order in a Seller's system using their own IDs or reference",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohProviderData_object.json"
+        },
+        "Status": {
+            "$id": "#/properties/Status",
+            "description": "A value that indicates the current state of the approval process. The approval process confirms the organizatoin's identity",
+            "type": "string",
+            "enum": [
+                "Pending",
+                "Approved",
+                "Disapproved",
+                "Limited"
+            ],
+            "maxLength": 15,
+            "readOnly": true
+        },
+        "Url": {
+            "$id": "#/properties/Url",
+            "description": "A URL to the organization's website",
+            "type": "string",
+            "maxLength": 255
+        }
+    }
+}

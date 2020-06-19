@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/orders/orders_request.json",
+    "type": "object",
+    "title": "Response for a single Order",
+    "description": "The schema of a response that gives a single Order",
+    "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/order/order_object.json",
+    "required": [
+        "Id",
+        "Currency",
+        "Name"
+    ]
+}
