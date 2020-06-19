@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/orders/orders_response.json",
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/orders/orders_response.json",
     "AccountId": "23873345",
     "AdvertiserBrandId": "73",
     "Currency": "GBP",

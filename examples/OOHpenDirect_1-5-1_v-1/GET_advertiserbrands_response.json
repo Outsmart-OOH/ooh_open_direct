@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/advertiserbrands/advertiserbrands_collection_response.json",
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/advertiserbrands/advertiserbrands_collection_response.json",
     "AdvertiserBrands": [
         {
             "Id": "1173",

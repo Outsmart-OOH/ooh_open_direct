@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v0/uris/lines/lines_response.json",
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/lines/lines_response.json",
     "BookingStatus": "Draft",
     "StateChangeReason": "",
     "Comment": "Free form comment",
