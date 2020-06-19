@@ -1,0 +1,45 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/organizations/organizations_response.json",
+    "Address": {
+        "AddressLine1": "221B Baker Street",
+        "City": "London",
+        "Country": "UK",
+        "PostalCode": "NW1 6XE",
+        "State": "NULL"
+    },
+    "Contacts": [
+        {
+            "Address": {
+                "AddressLine1": "221B Baker Street",
+                "City": "London",
+                "Country": "UK",
+                "PostalCode": "NW1 6XE",
+                "State": "NULL"
+            },
+            "Email": "watson@idealholmes",
+            "Honorific": "Mr",
+            "Fax": "2065551212",
+            "FirstName": "John",
+            "LastName": "Watson",
+            "Phone": "999-999-999",
+            "Title": "Dr",
+            "Type": "Billing"
+        }
+    ],
+    "Fax": "111111111",
+    "Id": "12345677",
+    "Industry": "Retail",
+    "Name": "IdealHolmes",
+    "AdvertiserBrands": [
+        "Professional Services",
+        "Detective Agency",
+        "Security",
+        "Travel",
+        "Pharmaceuticals",
+        "Millinery"
+    ],
+    "OrganizationType": "Advertiser",
+    "Phone": "2065550100",
+    "Status": "Approved",
+    "Url": "http://www.idealholmes.com"
+}

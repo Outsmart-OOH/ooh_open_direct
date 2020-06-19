@@ -1,0 +1,9 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/accounts/accounts_request.json",
+    "AdvertiserId": "1234987",
+    "BuyerId": "34587",
+    "ThirdPartyId": "98765",
+    "Name": "Brand A",
+    "Id": "abcd45",
+    "ProviderData": "Some provider Data"
+}
