@@ -2,7 +2,7 @@
 
 ## v1 Schema
 
-Published version of Schema to match v1 of OpenDirect OOH 1.5.1 v1
+Published version of Schema to match v1 of OpenDirect (OOH) 1.5.1 v1
 
 | Resource | URI | Verb | Request | Response |
 |-------------|--------------------|------|------------------------------|------------------------------------|
