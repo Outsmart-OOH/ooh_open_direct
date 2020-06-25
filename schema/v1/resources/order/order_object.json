@@ -5,7 +5,7 @@
     "title": "Order object",
     "description": "Template container for Order, still to be populated",
     "default": {},
-    "additionalProperties": true,
+    "additionalProperties": false,
     "properties": {
         "$schema": {
             "type": "string",
