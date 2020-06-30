@@ -1,7 +1,8 @@
 # OOH Open Direct Examples
 
-A folder for each endpoint that OOH Open Direct supports
-
-/accounts
-/organizations
-
+| Resource | URI                | Verb | Description                       | Request                                                                                                                                                | Response                                                                                                                                                 |
+| -------- | ------------------ | ---- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Account  | /accounts          | GET  |                                   |                                                                                                                                                        |                                                                                                                                                          |
+|          | /accounts          | POST | Media Owner creates a new account | [POST\_accounts\_request.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_accounts_request.json) | [POST\_accounts\_response.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_accounts_response.json) |
+|          | /accounts/{id}     | GET  |                                   |                                                                                                                                                        |                                                                                                                                                          |
+|          | /accounts?$filter= | GET  |                                   |                                                                                                                                                        |
