@@ -98,23 +98,11 @@
                     "TargetValues": ["Flexible"],
                     "Selectable": true
                 },
-                
-                {
-                    "Name": "Distribution",
-                    "Type": "Audience",
-                    "DataSource": "Space",
-                    "Target": "Impacts_tv_area",
-                    "TargetValues": ["Flexible"],
-                    "Selectable": true,
-                    "Minimum": 10000,
-                    "Increment": 1000,
-                    "Default": 10000
-                },
                 {
                     "Name": "Distribution",
                     "Type": "Investment",
                     "DataSource": "Space",
-                    "Target": "Impacts_tv_area",
+                    "Target": "tv_area",
                     "TargetValues": ["Flexible"],
                     "Selectable": true,
                     "Minimum": 5000,
