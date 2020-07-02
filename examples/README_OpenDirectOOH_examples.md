@@ -1,6 +1,6 @@
 # OpenDirect (OOH) Examples
 
-Index of OpenDirect Examples (Completed examples have url link to JSON code)
+Index of OpenDirect (OOH) Examples (Completed examples have url link to JSON code)
 
 ## Account
 
