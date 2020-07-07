@@ -1,0 +1,132 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/products/products_avails_request.json",
+    "AccountId": "23873345",
+    "StartDate": "2020-12-02T00:00:00.000Z",
+    "EndDate": "2020-12-14T00:00:00.000Z",
+    "ProductIds": [
+        "Talon1"
+    ],
+    
+    "AvailabilityFields": [
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "ShareOfTime"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id",
+            "Count":""
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Metrics",
+            "Target": "Impacts"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Metrics",
+            "Target": "Reach"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Metrics",
+            "Target": "Frequency"
+        },
+        {
+            "Name": "Investment",
+            "Type": "Total",
+            "DataSource": "GBP",
+            "Target": "Fixed"
+        }
+    ],
+    "Grouping": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "tv_area"
+        }
+    ],
+    "Targeting": [
+        [
+            {
+                "Name": "Distribution",
+                "Type": "Audience",
+                "DataSource": "Space",
+                "Target": "tv_area",
+                "TargetValues": ["South West"]
+            },
+            {
+                "Name": "Inventory",
+                "Type": "Frames",
+                "DataSource": "Space",
+                "Target": "frame_id",
+                "Count": 53,
+                "Minimum": 40,
+                "Maximum": 60
+            },
+            {
+                "Name": "Inventory",
+                "Type": "Audience",
+                "DataSource": "Metrics",
+                "Target": "Reach",
+                "TargetValues": ["717"],
+                "Minimum": 650,
+                "Maximum": 750
+            },
+            {
+                "Name": "Inventory",
+                "Type": "Audience",
+                "DataSource": "Metrics",
+                "Target": "Frequency",
+                "TargetValues": ["3"],
+                "Minimum": 2,
+                "Maximum": 6
+            }
+
+        ],
+        [
+            {
+                "Name": "Distribution",
+                "Type": "Audience",
+                "DataSource": "Space",
+                "Target": "tv_area",
+                "TargetValues": ["Wales"]
+            },
+            {
+                "Name": "Inventory",
+                "Type": "Frames",
+                "DataSource": "Space",
+                "Target": "frame_id",
+                "Count": 16,
+                "Minimum": 8,
+                "Maximum": 24
+            },
+            {
+                "Name": "Inventory",
+                "Type": "Audience",
+                "DataSource": "Metrics",
+                "Target": "Reach",
+                "TargetValues": ["102"],
+                "Minimum": 80,
+                "Maximum": 120
+            },
+            {
+                "Name": "Inventory",
+                "Type": "Audience",
+                "DataSource": "Metrics",
+                "Target": "Frequency",
+                "TargetValues": ["4"],
+                "Minimum": 3,
+                "Maximum": 6
+            }
+        ]
+    ]
+}
