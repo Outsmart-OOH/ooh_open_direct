@@ -24,37 +24,37 @@ The Technical sub-group is a part of the OOH Industry Standards Committee. This 
 
 ## Contributors
 
-Clear Channel Ben Price, Jamie Mills, Victor Porter, Karen Fornos Klein
+**Clear Channel** Ben Price, Jamie Mills, Victor Porter, Karen Fornos Klein
 
-Global Dan Sharp, Luke Howard, Matt Allard, Rob Brayshaw
+**Global** Dan Sharp, Luke Howard, Matt Allard, Rob Brayshaw
 
-JCDecaux Dom Kozak, Philippa Kings, Rebecca Lee
+**JCDecaux** Dom Kozak, Philippa Kings, Rebecca Lee
 
-Key Systems Jon Axworthy, Ross Lafar
+**Key Systems** Jon Axworthy, Ross Lafar
 
-Kinetic Alex Berry, Georgina Monet, Prasaant Patel
+**Kinetic** Alex Berry, Georgina Monet, Prasaant Patel
 
-Mediacom Nate Barker
+**Mediacom** Nate Barker
 
-Ocean Outdoor Angela Green, Doug Swan, Luka Djukic
+**Ocean Outdoor** Angela Green, Doug Swan, Luka Djukic
 
-Posterscope Daniel Conway, Steve Pavett, Gavin Lee
+**Posterscope** Daniel Conway, Steve Pavett, Gavin Lee
 
-Rapport Paul Sambrook, Ross Wilson, Gail Williams
+**Rapport** Paul Sambrook, Ross Wilson, Gail Williams
 
-Talon Outdoor Anant East
+**Talon Outdoor** Anant East
 
-Knitting Media Tim Harvey
+**Knitting Media** Tim Harvey
 
 ## Special Thanks to
 
-Tim Lumb OutSmart
+Tim Lumb **OutSmart**
 
-Gavin Lee Posterscope &amp; UK OOH Standards Committee Co-Chair (IPAO)
+Gavin Lee **Posterscope** &amp; UK OOH Standards Committee Co-Chair (IPAO)
 
-Mungo Knot Global &amp; UK OOH Standards Committee Co-Chair (Outsmart)
+Mungo Knot **Global** &amp; UK OOH Standards Committee Co-Chair (Outsmart)
 
-Richard Saturley World Out of Home Organisation
+Richard Saturley **World Out of Home Organisation**
 
 # Contents
 
