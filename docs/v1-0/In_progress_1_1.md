@@ -508,7 +508,7 @@ For details about the programming elements that this specification defines, see 
 
 # Resource Objects
 
-The OpenDirect API is a RESTful API that supports JSON. This section defines as JSON schemas the resource objects used by the API. 
+The OpenDirect API is a RESTful API that supports JSON. This section uses JSON schemas to define the resource objects used by the API. 
 For a diagram that shows the relationships between these resources, see Resource Model.
 
 
