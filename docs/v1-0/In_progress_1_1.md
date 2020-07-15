@@ -2,7 +2,7 @@
 
 An OpenDirect 1.5.1 Implementation for the Out-Of-Home Industry
 
-![OpenDirectSummary](OpenDirectSummary.png)
+![OpenDirectSummary](Pictures/OpenDirectSummary.png)
 
 # OpenDirect 1.5.1
 
