@@ -655,7 +655,7 @@ This section defines the reference data that an OpenDirect API must support. Ref
 
 Defines the possible ad formats
 
-![](RackMultipart20200715-4-1wm8p7k_html_a375c3a5a506771a.png)
+AdFormatType Schema: TBC
 
 ## 4.2 AdPosition
 
@@ -665,13 +665,13 @@ Not supported in the OpenDirect (OOH) 1.5.1 Schema
 
 Defines the availability status of a Frame in association with an order, line or other targeted time.
 
-![](RackMultipart20200715-4-1wm8p7k_html_2ec1abd621d77b36.png)
+Availability Schema: TBC
 
 ## 4.4 ContactType
 
 Defines the possible types of roles that a Contact plays in an Order
 
-![](RackMultipart20200715-4-1wm8p7k_html_9b1a8e42230e8fd2.png)
+ContactType Schema: TBC
 
 ## 4.5 Country
 
@@ -685,7 +685,7 @@ Defines the currency that the order is going to be transacted in to ISO 4217 cur
 
 Defines the possible types of delivery
 
-![](RackMultipart20200715-4-1wm8p7k_html_91ba82f251f7b6ef.png)
+ContactType Schema: TBC
 
 ## 4.8 FrequencyCapInterval
 
