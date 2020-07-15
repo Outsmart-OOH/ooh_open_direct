@@ -60,7 +60,7 @@ Richard Saturley **World Out of Home Organisation**
 
 # Contents
 
-[OpenDirect 1.5.1 2](#opendirect-ooh-151-v11)
+[OpenDirect 1.5.1 1.1](#opendirect-ooh-151-v11)
 
 [OpenDirect (OOH) 1.5.1 2](#_Toc44509214)
 
@@ -424,7 +424,7 @@ A collection of targeting criteria used to discover and target the digital and p
 - Investment: How the campaign is quantified for trading purposes (Fixed price, Cost Per Thousand Audience, Cost Per Frame).
 - Prohibitions: Information about any brand safety prohibitions that will affect the playout of certain brand types in certain locations e.g. fast food prohibitions on certain locations.
 
-![](RackMultipart20200715-4-1wm8p7k_html_cb1d453869f91244.png)
+![OpenDirectComparison.png](Pictures/OpenDirectComparison.png)
 
 ## Version Control
 
@@ -432,12 +432,7 @@ A collection of targeting criteria used to discover and target the digital and p
 | --- | --- | --- | --- | --- |
 | 0.2 | Tim Harvey | 16/03/20 | All | First Draft of OpenDirect (OOH) 1.5.1 |
 | 1.0 | Tim Harvey | 24/04/20 | All | Published Version of OpenDirect (OOH) 1.5.1 |
-|
- |
- |
- |
- |
- |
+
 
 ## Audience
 
