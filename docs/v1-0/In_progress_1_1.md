@@ -6,7 +6,7 @@ An OpenDirect 1.5.1 Implementation for the Out-Of-Home Industry
 
 # OpenDirect 1.5.1
 
-The OpenDirect Working Group is a working group within the IAB Technology Lab. Further details about the IAB Technology Lab can be found at: https://iabtechlab.com/working-groups/opendirect-working-group/
+The OpenDirect media trading API was devised by the OpenDirect Working Group, a working group within the IAB Technology Lab. Further details about the IAB Technology Lab can be found at: https://iabtechlab.com/working-groups/opendirect-working-group/
 
 # OpenDirect (OOH) 1.5.1
 
