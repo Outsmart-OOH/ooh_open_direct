@@ -441,7 +441,7 @@ Buy and Sell Side Tech providers can use the specifications in this document to 
 
 Publishers/Media-Owners also need to use this spec to make their inventory available to API requests from Tech Providers.
 
-1.
+
 # Introduction/Overview
 
 The OpenDirect API provides a standard way for publishers to integrate with tech provider partners so that they can offer premium guaranteed inventory programmatically. Using the API, buyers can build one system that can access inventory from multiple publishers without custom integrations for each one.
@@ -457,7 +457,7 @@ Some of the features supported in OpenDirect are:
 
 Additional features are added with each new update to further enable wider adoption and support the needs of the industry.
 
-  1.
+
 ## How it works
 
 At a high level, the workflow involves establishing a relationship between buyer and publisher, setting up accounts, and placing orders on the buyer side while publisher systems respond to API requests for order placement. The following table outlines general steps for using the API: Buy
@@ -469,7 +469,7 @@ At a high level, the workflow involves establishing a relationship between buyer
 | **3. Place Orders** After establishing accounts in the system, buyers can begin browsing publisher inventory and adding lines to orders. | **3. Respond to API Requests** Once buyers are set up in their OpenDirect system(s), they can begin browsing and booking inventory. On the publisher side, this is received as API requests that publisher systems must respond to. |
 | **4. Validate Delivery of Orders** Buyers can check the delivery status of In-flight and completed orders | **4. Report on Order Delivery** Request for order delivery progress and completion, based on the targeted metrics of the booked order, is received as API requests that publisher systems must respond to. |
 
-  1.
+
 ## Authorisation
 
 The OpenDirect API is a RESTful API that supports paging query parameters and uses OAuth to authenticate users. A publisher must support at least one &quot;full access&quot; user account (API credentials) per buying organization. Non-buying organizations may have optional user accounts. A publisher may support flexible permission schemes for additional user accounts.
@@ -482,7 +482,7 @@ OpenDirect users include:
 
 **Advertisers:** Advertisers represent the brands that purchase publisher inventory for advertising their brands. An advertiser may also be a buyer, but if the advertiser works with a buyer, the advertiser must provide formal consent to allow the buyer to act on its behalf. The Advertiser ID can be used to set up advertiser accounts in an agency or publisher&#39;s OpenDirect system.
 
-  1.
+
 ## Programming Elements
 
 For details about the programming elements that this specification defines, see the following sections.
@@ -505,20 +505,13 @@ For details about the programming elements that this specification defines, see 
 
 **OpenDirect Workflow:** Outlines the process for establishing an account and the calls required to create and process an order.
 
-1.
+
 # Resources
 
-The OpenDirect API is a RESTful API that supports JSON. This section defines the JSON resource objects used by the API. For a diagram that shows the relationships between these resources, see Resource Model.
+The OpenDirect API is a RESTful API that supports JSON. This section defines as JSON schemas the resource objects used by the API. 
+For a diagram that shows the relationships between these resources, see Resource Model.
 
-The table illustrations below use the following colour scheme to highlight the changes/additions the OpenDirect (OOH) 1.5.1 specification has made to OpenDirect 1.5.1
 
-Grey = This property has been omitted from the OpenDirect1.5.1 standard.
-
-Red = This property is an addition or amendment to the OpenDirect 1.5.1 standard.
-
-For a list of URIs that use these resources, see the URIs section.
-
-  1.
 ## Account
 
 An account defines a buyer-advertiser relationship. A buyer is typically an agency that places orders on behalf of several advertisers. Each account associates a buyer with one advertiser and is used to manage orders for one publisher. An advertiser may also work with several buyers, and therefore, advertisers have a separate account for each buyer they work with. If an advertiser represents itself, the account identifies the advertiser as both the buyer and the advertiser.
@@ -527,7 +520,12 @@ Before an agency may create accounts and perform buys on behalf of the advertise
 
 The Account owns the order.
 
-![](RackMultipart20200715-4-1wm8p7k_html_4224c29b1e76a464.png)
+| Resource         | URI                                            | Verb  | Request | Response |
+|------------------|------------------------------------------------|-------|---------|----------|
+| **Account**      | /accounts                                      | GET   |         | [accounts_collection_response.json](https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/accounts/accounts_collection_response.json) |
+|                  | /accounts                                      | POST  | [accounts_request.json](https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/accounts/accounts_request.json)        | [accounts_response.json](https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/accounts/accounts_response.json) |
+|                  | /accounts/{id}                                 | GET   |         | [accounts_response.json](https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/accounts/accounts_response.json) |
+|                  | /accounts?$filter=                             | GET   |         | [accounts_collection_response.json](https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/accounts/accounts_collection_response.json)|
 
   1.
 ## Assignment
