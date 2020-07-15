@@ -1,4 +1,4 @@
-# **OpenDirect (OOH) 1.5.1 v1.0**
+# **OpenDirect (OOH) 1.5.1 v1.1**
 
 An OpenDirect 1.5.1 Implementation for the Out-Of-Home Industry
 
