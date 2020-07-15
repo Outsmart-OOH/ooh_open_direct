@@ -520,27 +520,24 @@ Before an agency may create accounts and perform buys on behalf of the advertise
 
 The Account owns the order.
 
-Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/account/account_object.json
+Account Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/account/account_object.json
 
 ## Assignment
 
 Creative assignment not in scope for OpenDirect (OOH) 1.5.1
 
-  1.
 ## Creative
 
 Creative specification is not in scope for OpenDirect (OOH) 1.5.1
 
-  1.
 ## Line
 
 Line resources are included in an order and provide details about the product being booked, status, start and end dates, and other settings for the order item.
 
 Notes: The user may update a line only if it&#39;s in the Draft state. If the line is in the Reserved or Declined state, the user may call Reset to move the line back to the Draft state in order to update the line.
 
-![](RackMultipart20200715-4-1wm8p7k_html_2d9260a9abc6fab2.png)
+Line Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/line/line_object.json
 
-    1.
 ### Booking Status Values
 
 - **Draft** – Indicates that a draft of the line has been saved. The line may be updated only in this state. The line remains in this state until the user deletes, reserves, or books the line.
@@ -557,39 +554,34 @@ Notes: The user may update a line only if it&#39;s in the Draft state. If the li
 - **Declined** – Indicates that booking or reservation was declined by the publisher or failed. The line remains in this state unless the user resets the line, which moves it back to the Draft state. The StateChangeReason field must specify the reason why the booking or reservation was declined or failed.
 - **PendingChange** – this status is to be used for all asynchronous changes other than reservation and booking.
 
-  1.
 ## Order
 
 The Order resource specifies the plan&#39;s start and end dates, estimated budget, currency, and preferred billing method for all line items in the order.
 
 To specify the individual line item details of the order, use the LINE resource specified in section 2.5
 
-![](RackMultipart20200715-4-1wm8p7k_html_8225763394d1f65e.png)
+Order Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/order/order_object.json
 
-  1.
 ## Organisation
 
 The organization resource may represent an advertiser or agency (buyer). The Account determines the role that the organization plays by using the organization ID in place of the BuyerId or AdvertiserId. The organization&#39;s role may vary by account. For example, the organization may be an advertiser in one account and a buyer in another. An advertiser may create one or more organizations to meet their business needs. For example, they may create a single organization and then create accounts for each brand, subsidiary, or division. Or, they may create an organization for each brand. It is up to the advertiser to determine how they use Organization and Account to meet their organizational needs.
 
-![](RackMultipart20200715-4-1wm8p7k_html_f5310d3f2f794b48.png)
+Organization Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/organization/organization_object.json
 
-  1.
 ## Product
 
 A Product resource identifies anything from an ad placement to a Run of Network product in the publisher&#39;s product catalogue. Values for all supported fields are provided by the publisher.
 
-![](RackMultipart20200715-4-1wm8p7k_html_696de024bca43398.png)
+Product Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/products/product_object.json
 
-  1.
 ## Change Request
 
 When an order has already been placed and a change is needed, the ChangeRequest resource can be used to request a change and subsequently modify the order pending the approval of the change request.
 
 The Order filter request specified in section 7.6.3 can be used to find orders that have a booking status of &quot;PendingChange.&quot;
 
-![](RackMultipart20200715-4-1wm8p7k_html_6ff178714f614fae.png)
+Change Request Schema: TBC
 
-1.
 # Common Objects
 
 The following objects are common to one or more resources. For example, the CONTACT common object is used to provide values for both the PRODUCT and ORGANIZATION resources.
