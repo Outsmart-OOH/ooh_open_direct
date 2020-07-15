@@ -10,6 +10,8 @@ The OpenDirect media trading API was devised by the OpenDirect Working Group, a 
 
 # OpenDirect (OOH) 1.5.1
 
+OpenDirect (OOH) is an extension of the OpenDirect schema, particularly around the &#39;Product Target&#39; function, to accommodate the unique aspects of the &#39;real world&#39; Out-Of-Home Media (OOH) inventory in the dimensions of location, delivery, distribution, investment and display prohibitions. OpenDirect (OOH) has been developed by the members of the OOH industry organisations 'Outsmart' and the 'IPAO'.
+
 ## About Outsmart
 
 Outsmart is the UK trade body for the Out of Home advertising industry. Members include the biggest sellers of OOH advertising in the UK: Clear Channel UK, Global, JCDecaux and Ocean Outdoor.
