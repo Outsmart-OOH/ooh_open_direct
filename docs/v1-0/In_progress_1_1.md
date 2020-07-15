@@ -58,7 +58,7 @@ Richard Saturley **World Out of Home Organisation**
 
 # Contents
 
-[OpenDirect 1.5.1 2](#https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/docs/v1-0/In_progress_1_1.md#opendirect-ooh-151-v11)
+[OpenDirect 1.5.1 2](#opendirect-ooh-151-v11)
 
 [OpenDirect (OOH) 1.5.1 2](#_Toc44509214)
 
