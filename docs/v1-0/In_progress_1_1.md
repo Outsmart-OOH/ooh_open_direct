@@ -506,7 +506,7 @@ For details about the programming elements that this specification defines, see 
 **OpenDirect Workflow:** Outlines the process for establishing an account and the calls required to create and process an order.
 
 
-# Resources
+# Resource Objects
 
 The OpenDirect API is a RESTful API that supports JSON. This section defines as JSON schemas the resource objects used by the API. 
 For a diagram that shows the relationships between these resources, see Resource Model.
@@ -520,14 +520,8 @@ Before an agency may create accounts and perform buys on behalf of the advertise
 
 The Account owns the order.
 
-| Resource         | URI                                            | Verb  | Request | Response |
-|------------------|------------------------------------------------|-------|---------|----------|
-| **Account**      | /accounts                                      | GET   |         | [accounts_collection_response.json](https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/accounts/accounts_collection_response.json) |
-|                  | /accounts                                      | POST  | [accounts_request.json](https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/accounts/accounts_request.json)        | [accounts_response.json](https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/accounts/accounts_response.json) |
-|                  | /accounts/{id}                                 | GET   |         | [accounts_response.json](https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/accounts/accounts_response.json) |
-|                  | /accounts?$filter=                             | GET   |         | [accounts_collection_response.json](https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/accounts/accounts_collection_response.json)|
+Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/account/account_object.json
 
-  1.
 ## Assignment
 
 Creative assignment not in scope for OpenDirect (OOH) 1.5.1
