@@ -394,7 +394,7 @@ Creative Assignment has been omitted from the OpenDirect (OOH) 1.5.1 document as
 
 ## OpenDirect 1.5.1 &amp; OpenDirect (OOH) 1.5.1 Comparison
 
-A summary of the additions and extensions to OpenDirect 1.5.1 are summarised in red below and highlighted where relevant in this document in the same red text.
+A summary of the additions and extensions to OpenDirect 1.5.1 are summarised in red in the below diagram.
 
 The extensions were created to cover five key areas
 
@@ -431,7 +431,8 @@ A collection of targeting criteria used to discover and target the digital and p
 | **Version** | **Author** | **Date** | **Page** | **Description** |
 | --- | --- | --- | --- | --- |
 | 0.2 | Tim Harvey | 16/03/20 | All | First Draft of OpenDirect (OOH) 1.5.1 |
-| 1.0 | Tim Harvey | 24/04/20 | All | Published Version of OpenDirect (OOH) 1.5.1 |
+| 1.0 | Tim Harvey | 24/04/20 | All | Published Version of OpenDirect (OOH) 1.5.1 v1.0 |
+| 1.1 | Tim Harvey | 12/04/20 | All | Published Version of OpenDirect (OOH) 1.5.1 v1.1 |
 
 
 ## Audience
