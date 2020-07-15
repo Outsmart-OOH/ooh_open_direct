@@ -582,85 +582,70 @@ The Order filter request specified in section 7.6.3 can be used to find orders t
 
 Change Request Schema: TBC
 
+
 # Common Objects
 
 The following objects are common to one or more resources. For example, the CONTACT common object is used to provide values for both the PRODUCT and ORGANIZATION resources.
 
-  1.
 ## Address
 
 Defines address details for an Organization or Contact
 
-![](RackMultipart20200715-4-1wm8p7k_html_4ec504c2a2c2a7d4.png)
+Address Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/address_object.json
 
-  1.
 ## AdvertiserBrand
 
 Defines the details of a Brand associated with an organization
 
-![](RackMultipart20200715-4-1wm8p7k_html_e1286bcc36b202ce.png)
+AdvertiserBrand Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/advertiserBrand_object.json
 
-  1.
 ## Contact
 
 Defines details for an individual contact within an Organization
 
-![](RackMultipart20200715-4-1wm8p7k_html_ecfaf533a07048f4.png)
+Contact Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/contact_object.json
 
-  1.
 ## ProductAvails
 
 Defines the response to a request for product availability and pricing information at product Level
 
-![](RackMultipart20200715-4-1wm8p7k_html_7931f812b718dcb3.png)
+ProductAvails Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json
 
-  1.
 ## ProductAvailsSearch
 
 Defines search criteria used for requesting product availability and pricing within the given search criteria. This object is returned at OOHbject Level based on the OOHbject targeting criteria submitted.
 
-![](RackMultipart20200715-4-1wm8p7k_html_e816aba590fb23da.png)
+ProductAvailsSearch Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvailsSearch_object.json
 
-  1.
 ## ProductSearch
 
 The ProductSearch object is used to generate a general list of products independent of their availability. For example, an agency might be interested in looking up all products that are available in Shopping Malls to get an idea for what the options are. Alternatively, the ProductAvailsSearch returns a list of products within specified search criteria with live availability and pricing.
 
-![](RackMultipart20200715-4-1wm8p7k_html_a8bcda3a788e844d.png)
+ProductSearch Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productSearch_object.json
 
-  1.
 ## OOHProviderData
 
 The OOHProviderData object is used for Buyers to detail information that may be used to identify their order in a Seller&#39;s system using their own IDs or references. This would be mainly used for manually identifying orders in the event of the automated process needing manual intervention.
 
-![](RackMultipart20200715-4-1wm8p7k_html_39948026ea2bb33e.png)
+OOHProviderData Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohProviderData_object.json
 
-  1.
 ## Size
 
 Defines the height and width (in pixels) that a publisher accepts for a given resource (e.g. Product, Creative)
 
-![](RackMultipart20200715-4-1wm8p7k_html_9b8da5402e3231f7.png)
-
-  1.
-## Segment
-
-Defines constraints related to TargetTypes of a Product OOHbject
-
-![](RackMultipart20200715-4-1wm8p7k_html_641c923fa2f6d2b8.png)
+Size Schema:https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/size_object.json
 
 ## 3.10 Stats
 
 Published the schedule generated to fulfil the targeting requirements detailed in the Order Line (pre-flight stage), and the performance of the schedule when the campaign is in flight and/or completed.
 
-![](RackMultipart20200715-4-1wm8p7k_html_a3e3b0088fa9c7b3.png)
+Stats Schema: TBC
 
-  1.
 ## OOHbject
 
 A collection of targeting criteria used to discover and target the digital and physical presentation aspects of OOH media.
 
-![](RackMultipart20200715-4-1wm8p7k_html_6ca6b322ef36a2b0.png)
+OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json
 
 # 4 Reference Data
 
