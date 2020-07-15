@@ -424,7 +424,7 @@ A collection of targeting criteria used to discover and target the digital and p
 - Investment: How the campaign is quantified for trading purposes (Fixed price, Cost Per Thousand Audience, Cost Per Frame).
 - Prohibitions: Information about any brand safety prohibitions that will affect the playout of certain brand types in certain locations e.g. fast food prohibitions on certain locations.
 
-![OpenDirectComparison.png](Pictures/OpenDirectComparison.png)
+![OpenDirectComparison_1_1.png](Pictures/OpenDirectComparison_1_1.png)
 
 ## Version Control
 
