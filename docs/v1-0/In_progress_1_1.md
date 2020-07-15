@@ -2,7 +2,7 @@
 
 An OpenDirect 1.5.1 Implementation for the Out-Of-Home Industry
 
-![](RackMultipart20200715-4-1wm8p7k_html_d3100b1d42d8b845.png)
+![OpenDirectSummary](OpenDirectSummary.png)
 
 # OpenDirect 1.5.1
 
