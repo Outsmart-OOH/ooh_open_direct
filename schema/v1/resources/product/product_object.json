@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/products/product_object.json",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/product/product_object.json",
     "type": "object",
     "title": "Product object",
     "description": "A Product resource identifies anything from an ad placement to a Run of Network product in the publisher’s product catalogue.",
