@@ -582,6 +582,12 @@ The Order filter request specified in section 7.6.3 can be used to find orders t
 
 Change Request Schema: TBC
 
+## Stats
+
+A resource to publish the OOH display schedule generated to fulfil the campaign targeting requirements (pre-flight) and the performance of the schedule when the campaign is in flight and/or completed.
+
+Stats Schema: TBC
+
 
 # Common Objects
 
@@ -635,11 +641,17 @@ Defines the height and width (in pixels) that a publisher accepts for a given re
 
 Size Schema:https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/size_object.json
 
-## 3.10 Stats
+## StatsScheduled
 
-Published the schedule generated to fulfil the targeting requirements detailed in the Order Line (pre-flight stage), and the performance of the schedule when the campaign is in flight and/or completed.
+Time bound arrays of OOHbjects that describe the schedule that is created by the MediaOwner / Publisher to fullfill the line order requirements.
 
-Stats Schema: TBC
+StatsScheduled Schema: TBC
+
+## StatsDelivered
+
+Time bound arrays of OOHbjects that describe the delivery of the schedule created by the MediaOwner / Publisher to fullfill the line order requirements.
+
+StatsDelivered Schema: TBC
 
 ## OOHbject
 
