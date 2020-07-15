@@ -572,7 +572,7 @@ Organization Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_dir
 
 A Product resource identifies anything from an ad placement to a Run of Network product in the publisher&#39;s product catalogue. Values for all supported fields are provided by the publisher.
 
-Product Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/products/product_object.json
+Product Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/product/product_object.json
 
 ## Change Request
 
