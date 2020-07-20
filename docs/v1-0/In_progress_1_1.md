@@ -776,13 +776,13 @@ Examples of third-party **DataSource** include:
 - Nielson Total Audience Framework
 - Quividi /AdMobilize computer vision analytics segment
 
-### 4.16.1 Inventory Name OOHbject
+### 4.14.1 Inventory Name OOHbject
 
 The Inventory **Name** OOHbject allows an OOH media owner to describe (and OOH media buyer to buy) their inventory in terms of *Frames* and *Audience* then define the audience metrics that are available to targeted.
 
 #### Summary
 
-![OpenDirectSummary](Pictures/name_inventory.png)
+![Inventory OOHbject](Pictures/name_inventory.png)
 
 #### Inventory.Frames.SPACE
 
@@ -794,7 +794,8 @@ Further information can be found at [https://www.outsmart.org.uk/news/welcome-sp
 
 These classifications could be taken and used as a common format in countries/markets where no common standards currently exist.
 
-Alternatively, the Inventory.Frames OOHbject can reference a Media Owner / Publisher&#39;s own description of inventory e.g. Inventory.Frames.\&lt;MediaOwnerName\&gt;.TramWraps
+Alternatively, the Inventory.Frames OOHbject can reference a Media Owner / Publisher's own description of inventory e.g. 
+Inventory.Frames.<MediaOwnerName>.TramWraps
 
 #### Inventory.Audience.ROUTE
 
@@ -814,13 +815,13 @@ Further information on route can be found at [www.route.org.uk](http://www.route
 
 Allows the Media Owner / Publisher to define the audience metrics that are available to targeted and allows the buyer to specify these metrics when performing an availability check or setting up an order line.
 
-### 4.16.2 Delivery OOHbject
+### 4.14.2 Delivery OOHbject
 
 The Delivery OOHbject allows an OOH media owner to describe (and OOH media buyer to buy) how their campaign is delivered to selected inventory.
 
 #### Summary
 
-![](RackMultipart20200715-4-1wm8p7k_html_4c9b86d7dde40adc.png)
+![Delivery OOHbject](Pictures/name_delivery.png)
 
 #### Delivery.Frames.Time.Days
 
@@ -832,7 +833,7 @@ Booking line date 08/11/20 to 17/11/20
 
 Delivery.Frames.Time.Days = [1,2,3,4,5,6,7] based on ISO 8601
 
-The OOHbject field &#39;Selectable&#39; indicates if this array is further targetable e.g. the Days array of [1,2,3,4,5,6,7] is returned, and if the Days are flagged as &#39;Selectable&#39;, the buyer may select days [6,7].
+The OOHbject field *Selectable* indicates if this array is further targetable e.g. the Days array of [1,2,3,4,5,6,7] is returned, and if the Days are flagged as *Selectable*, the buyer may select days [6,7].
 
 #### Delivery.Frames.Time.Hours
 
@@ -844,39 +845,39 @@ Booking line date 08/11/20 00:00 to 17/11/20 00:00
 
 Delivery.Frames.Time.Hours = [1,2,3,4,……,24,25,26,…..48,……,72,…..,96,……120….144,145,….,168]
 
-The OOHbject field &#39;Selectable&#39; indicates if this array is further targetable e.g. the Hours array is returned, and if the Hours are flagged as&#39; Selectable&#39;, the buyer may select Hours [6,7,8,9,30,31,32,33].
+The OOHbject field *Selectable* indicates if this array is further targetable e.g. the Hours array is returned, and if the Hours are flagged as *Selectable*, the buyer may select Hours [6,7,8,9,30,31,32,33].
 
 The example below shows how the hours of 10am to 2pm on Day 1 and Day 2 would be targeted as an array selection.
 
 Hours[10,11,12,13,34,35,36,37]
 
-![](RackMultipart20200715-4-1wm8p7k_html_dfda879989d9abd2.png)
+![Time Array](Pictures/time_array.png)
 
 Practically, the booking UI should convert the days/hours selected from a calendar based UI into the hour array in the background.
 
 #### Delivery.Frames.ShareOfDisplay.ShareOfTime
 
-This OOHbject details the &#39;ShareOfTime&#39; that can be targeted within the product. The &#39;ShareOfTime&#39; can be described as the percentage of time the advert appears on screen vs the time the advert does not appear on screen over the flight of the campaign.
+This OOHbject details the *ShareOfTime* that can be targeted within the product. The *ShareOfTime* can be described as the percentage of time the advert appears on screen vs the time the advert does not appear on screen over the flight of the campaign.
 
 e.g.
 
-A fixed 1 in 4 loop/scrolling billboard with have a ShareOfTime value of 25
+A fixed 1 in 4 loop/scrolling billboard with have a *ShareOfTime* value of 25
 
-A classic paper/vinyl billboard will have a ShareOfTime value of 100
+A classic paper/vinyl billboard will have a *ShareOfTime* value of 100
 
 #### Delivery.Frames.ShareOfDisplay.Spot
 
-This OOHbject details the Spot Length (or array of lengths) in seconds that a digital advert can run for each time it appears on a frame. The Spot length will affect the frequency of play out within the campaign flight.
+This OOHbject details the *Spot* length (or array of lengths) in seconds that a digital advert can run for each time it appears on a frame. The *Spot* length will affect the frequency of play out within the campaign flight.
 
-e.g. if the Campaign flight is 10 hours, the ShareOfTime value is 20(%) and the creative is 1 hour long, it will play out 2 times.
+e.g. if the Campaign flight is 10 hours, the *ShareOfTime* value is 20(%) and the creative is 1 hour long, the *Spot* will play 2 times.
 
-if the Campaign flight is 10 hours, the ShareOfTime value is 20(%) and the creative is 10s long, it will play out 720 times.
+if the Campaign flight is 10 hours, the *ShareOfTime* value is 20(%) and the creative is 10s long, the *Spot* will play 720 times.
 
-If the Campaign flight is 10 hours, the ShareOfTime value is 100(%) and the creative is 10s long, it will play 3600 times.
+If the Campaign flight is 10 hours, the *ShareOfTime* value is 100(%) and the creative is 10s long, the *Spot* will play 3600 times.
 
 #### Delivery.Frames.ShareOfDisplay.SpotBreakLength (Optional)
 
-If the product delivers the campaign within a fixed loop, this OOHbject details the length of time in seconds between the Spots being played.
+If the product delivers the campaign within a fixed loop, the *SpotBreakLength* OOHbject details the length of time in seconds between the Spots being played.
 
 e.g. in a 30 second loop where the Spot length is 5 Seconds:
 
@@ -884,45 +885,45 @@ Spot = 5
 
 SpotBreakLength = 25
 
-#### Delivery.Audience.\&lt;DataSource\&gt;.ShareOfImpacts
+#### Delivery.Audience.DataSource.ShareOfImpacts
 
 An average % share of viewed impacts across the targeted OOHbjects according to the Audience DataSource identified.
 
-e.g. the campaign needs to be delivered to 30% of the available Affluent Female Shopper Audience over the flight of the campaign
+e.g. the campaign needs to be delivered to 30% of the available 'Affluent Female Shopper Audience' over the flight of the campaign
 
 ### 4.16.3 Investment OOHbject
 
-The Investment OOHbject allows an OOH media owner to describe (and OOH media buyer to buy) their inventory in terms of &#39;Frames&#39; and &#39;Audience&#39; Investment.
+The Investment OOHbject allows an OOH media owner to describe (and OOH media buyer to buy) their inventory in terms of *Frames* and *Audience* Investment.
 
 #### Summary
 
-![](RackMultipart20200715-4-1wm8p7k_html_f2b4400194690dd7.png)
+![Investment OOHbject](Pictures/name_investment.png)
 
-\&lt;Local\_Currency\&gt; is defined as the currency that the order is going to be transacted in to ISO 4217 currency codes e.g. GBP, USD, EUR
+*Local_Currency* is defined as the currency that the order is going to be transacted in to ISO 4217 currency codes e.g. GBP, USD, EUR
 
-#### Investment.Total.\&lt;Local\_Currency\&gt;.Fixed
+#### Investment.Total.Local_Currency.Fixed
 
 If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested total Product price or given total Product price based on the other OOHbject targeting values given.
 
-#### Investment.Frames.\&lt;Local\_Currency\&gt;.CPF
+#### Investment.Frames.Local_Currency.CPF
 
-If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested &#39;cost per frame&#39; price or given &#39;cost per frame&#39; price based on the other OOHbject Product targeting values given.
+If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested *cost per frame* price or a target *cost per frame* price based on the other OOHbject Product targeting values given.
 
-#### Investment.Audience.\&lt;Local\_Currency\&gt;.CPT
+#### Investment.Audience.Local_Currency.CPT
 
-If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested &#39;cost per thousand&#39; price or given &#39;cost per thousand&#39; price based on the other OOHbject Product targeting values given.
+If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested *cost per thousand* price or a target *cost per thousand* price based on the other OOHbject Product targeting values given.
 
 ### 4.16.4 Distribution OOHbject
 
 The Distribution OOHbject allows an OOH media owner to describe (and OOH media buyer to understand and specify) if their campaign Delivery is Distributed evenly or flexibly across the Campaign flight in terms of Time, audience and/or investment.
 
-Specific targets for Audience, Location &amp; Display Time would be made using arrays of Inventory and Delivery OOHbjects, rather than the Distribution OOHbject itself.
+Specific targets for Audience, Location and Display Time would be made using arrays of Inventory and Delivery OOHbjects, rather than the Distribution OOHbject itself.
 
 #### Summary
 
-![](RackMultipart20200715-4-1wm8p7k_html_6453027b785780b7.png)
+![Distribution OOHbject](Pictures/name_distribution.png)
 
-The segment array for every Distribution.x.x.x object gives a choice of an even &#39;Fixed&#39; distribution or a &#39;Flexible&#39; distribution that achieves the Campaign Inventory &amp; Delivery targets over the campaign flight.
+The segment array for every Distribution.x.x.x object gives a choice of an even *Fixed* distribution or a *Flexible* distribution that achieves the Campaign Inventory and Delivery targets over the campaign flight.
 
 #### Distribution.Frames.ShareOfDisplay.x
 
