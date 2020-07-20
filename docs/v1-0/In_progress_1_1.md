@@ -694,7 +694,11 @@ Defines the availability status of a Frame in association with an order, line or
 
 Defines the possible types of roles that a Contact plays in an Order
 
-ContactType Schema: TBC
+| Property | Description                                                                  | Type   | Constraints       |
+| -------- | ---------------------------------------------------------------------------- | ------ | ----------------- |
+| Billing  | The person to contact with billing inquiries                                 | String | Max 20 characters |
+| Buyer    | The person to contact with general questions about the order                 | String | Max 20 characters |
+| Creative | The person to contact if there is an issue with one of the order’s creatives | String | Max 20 characters |
 
 ## 4.5 Country
 
@@ -708,7 +712,11 @@ Defines the currency that the order is going to be transacted in to ISO 4217 cur
 
 Defines the possible types of delivery
 
-ContactType Schema: TBC
+| Property       | Description                                                      | Type   | Constraints       |
+| -------------- | ---------------------------------------------------------------- | ------ | ----------------- |
+| Exclusive      | 100% share of voice.                                             | String | Max 20 characters |
+| Guaranteed     | Guaranteed delivery of all booked display and/or impressions     | String | Max 20 characters |
+| Non-Guaranteed | Non-Guaranteed delivery of all booked display and/or impressions | String | Max 20 characters |
 
 ## 4.8 FrequencyCapInterval
 
@@ -734,19 +742,7 @@ Not supported in the OpenDirect (OOH) 1.5.1 Schema
 
 Rate Type is supported as a targeting attribute in the OpenDirect (OOH) 1.5.1 targeting OOHbject
 
-## 4.14 StatsScheduled
-
-Arrays of the requested OOHbjects that describe the schedule that is created by the MediaOwner / Publisher to fullfill the line order requirements
-
-![](RackMultipart20200715-4-1wm8p7k_html_a82aec1cbc6cbe81.png)
-
-## 4.15 StatsDelivered
-
-Arrays of the requested OOHbjects that record the delivery of the schedule created by the MediaOwner / Publisher to fullfill the line order requirements
-
-![](RackMultipart20200715-4-1wm8p7k_html_8c9b0ae5d72211e9.png)
-
-## 4.16 Targeting
+## 4.14 Targeting
 
 The OpenDirect criteria for targeting.
 
