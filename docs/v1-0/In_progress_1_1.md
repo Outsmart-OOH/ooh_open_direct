@@ -776,6 +776,8 @@ Examples of third-party **DataSource** include:
 - Nielson Total Audience Framework
 - Quividi /AdMobilize computer vision analytics segment
 
+
+
 ### 4.14.1 Inventory Name OOHbject
 
 The Inventory **Name** OOHbject allows an OOH media owner to describe (and OOH media buyer to buy) their inventory in terms of *Frames* and *Audience* then define the audience metrics that are available to targeted.
@@ -814,6 +816,7 @@ Further information on route can be found at [www.route.org.uk](http://www.route
 #### Inventory.Audience.Metrics
 
 Allows the Media Owner / Publisher to define the audience metrics that are available to targeted and allows the buyer to specify these metrics when performing an availability check or setting up an order line.
+
 
 
 ### 4.14.2 Delivery OOHbject
@@ -893,7 +896,8 @@ An average % share of viewed impacts across the targeted OOHbjects according to 
 e.g. the campaign needs to be delivered to 30% of the available 'Affluent Female Shopper Audience' over the flight of the campaign
 
 
-### 4.16.3 Investment OOHbject
+
+### 4.14.3 Investment OOHbject
 
 The Investment OOHbject allows an OOH media owner to describe (and OOH media buyer to buy) their inventory in terms of *Frames* and *Audience* Investment.
 
@@ -916,7 +920,8 @@ If this is made available, this dynamic OOHbject details (in terms of the local 
 If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested *cost per thousand* price or a target *cost per thousand* price based on the other OOHbject Product targeting values given.
 
 
-### 4.16.4 Distribution OOHbject
+
+### 4.14.4 Distribution OOHbject
 
 The Distribution OOHbject allows an OOH media owner to describe (and OOH media buyer to understand and specify) if their campaign Delivery is Distributed evenly or flexibly across the Campaign flight in terms of Time, audience and/or investment.
 
@@ -1000,7 +1005,8 @@ A third party DataSource can be used to identify the distribution location categ
 - region = Fixed, the same investment impacts will be delivered within each TV Area over the campaign flight to achieve the campaign investment target.
 
 
-### 4.16.5 Prohibitions OOHbject
+
+### 4.14.5 Prohibitions OOHbject
 
 The Prohibitions OOHbject allows an OOH media owner to describe (and OOH media buyer to understand) their inventory in terms of frame prohibitions from a named DataSource that will affect if their brand or advert can be displayed at a certain product locations.
 
@@ -1048,19 +1054,19 @@ The following shows an example response for /accounts.
 
 {
 
-&quot;Accounts&quot;: [
-
+ Accounts: [
+ 
 {
-
-&quot;AdvertiserId&quot;: &quot;B7EBC7F3-FBB3-4250-99F1-8D001088434B&quot;, &quot;BuyerId&quot;: &quot;4AA837B7-1A27-421E-9DDD-CAEF1AE884B5&quot;, &quot;Id&quot;:&quot;9B0878BE-7254-49BE-AFD4-B0A67C7C3D26&quot;,
-
+AdvertiserId: B7EBC7F3-FBB3-4250-99F1-8D001088434B,
+BuyerId: 4AA837B7-1A27-421E-9DDD-CAEF1AE884B5, 
+Id: 9B0878BE-7254-49BE-AFD4-B0A67C7C3D26
 },
 
 {
-
-&quot;AdvertiserId&quot;: &quot;16B55667-37CF-4447-A79D-88E6DAC4D7C2&quot;, &quot;BuyerId&quot;: &quot;4AA837B7-1A27-421E-9DDD-CAEF1AE884B5&quot;, &quot;Id&quot;:&quot;EAC93F5D-F448-44D6-8333-4E530D14C9DA&quot;,
-
-},
+AdvertiserId: 16B55667-37CF-4447-A79D-88E6DAC4D7C2, 
+BuyerId: 4AA837B7-1A27-421E-9DDD-CAEF1AE884B5,
+Id: EAC93F5D-F448-44D6-8333-4E530D14C9DA
+}
 
 ]
 
@@ -1068,7 +1074,7 @@ The following shows an example response for /accounts.
 
 The collection object may include additional publisher-defined properties. If there are no resources to return, the array must be empty.
 
-1.
+
 # OpenDirect General Support Requirements
 
 ## 6.1 Authentication
