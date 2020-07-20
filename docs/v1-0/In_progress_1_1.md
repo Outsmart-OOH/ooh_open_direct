@@ -815,6 +815,7 @@ Further information on route can be found at [www.route.org.uk](http://www.route
 
 Allows the Media Owner / Publisher to define the audience metrics that are available to targeted and allows the buyer to specify these metrics when performing an availability check or setting up an order line.
 
+
 ### 4.14.2 Delivery OOHbject
 
 The Delivery OOHbject allows an OOH media owner to describe (and OOH media buyer to buy) how their campaign is delivered to selected inventory.
@@ -891,6 +892,7 @@ An average % share of viewed impacts across the targeted OOHbjects according to 
 
 e.g. the campaign needs to be delivered to 30% of the available 'Affluent Female Shopper Audience' over the flight of the campaign
 
+
 ### 4.16.3 Investment OOHbject
 
 The Investment OOHbject allows an OOH media owner to describe (and OOH media buyer to buy) their inventory in terms of *Frames* and *Audience* Investment.
@@ -913,6 +915,7 @@ If this is made available, this dynamic OOHbject details (in terms of the local 
 
 If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested *cost per thousand* price or a target *cost per thousand* price based on the other OOHbject Product targeting values given.
 
+
 ### 4.16.4 Distribution OOHbject
 
 The Distribution OOHbject allows an OOH media owner to describe (and OOH media buyer to understand and specify) if their campaign Delivery is Distributed evenly or flexibly across the Campaign flight in terms of Time, audience and/or investment.
@@ -929,7 +932,7 @@ The segment array for every Distribution.x.x.x object gives a choice of an even 
 
 This OOHbject describes how the delivery of the campaign share of display time is distributed over the campaign flight times.
 
-The default setting for this Distribution OOHbject is &#39;Flexible&#39; meaning that the targeted &#39;ShareOfDisplay&#39; in terms of average ShareOfTime and total Spot frequency will be achieved in total over the campaign flight.
+The default setting for this Distribution OOHbject is *Flexible* meaning that the targeted *ShareOfDisplay* in terms of average *ShareOfTime* and total *Spot* frequency will be achieved in total over the campaign flight.
 
 - Day = Fixed, the averaged ShareOfTime and total Spot Frequency will be delivered at an equal pace on each selected Day over the campaign flight
 - Hour = Fixed, the averaged ShareOfTime and total Spot Frequency will be delivered at an equal pace on each selected Hour over the campaign flight
@@ -938,7 +941,7 @@ The default setting for this Distribution OOHbject is &#39;Flexible&#39; meaning
 
 This OOHbject describes how the delivery of the targeted campaign audience impact volume is distributed over the campaign flight time.
 
-The default setting for this Distribution OOHbject is &#39;Flexible&#39; meaning that the total targeted audience impact volume will be delivered over the campaign flight time, but different days or hours may have different audience delivery volumes.
+The default setting for this Distribution OOHbject is *Flexible*; meaning that the total targeted audience impact volume will be delivered over the campaign flight time, but different days or hours may have different audience delivery volumes.
 
 - Day = Fixed, the same volume of audience impacts will be delivered on each day to achieve the total audience target
 - Hour = Fixed, the same volume of audience impacts will be delivered on hour
@@ -951,11 +954,11 @@ This OOHbject can also be described as:
 
 If the Media Owner/Buyer can support such campaign metrics &amp; scheduling distribution
 
-#### Distribution.Audience.\&lt;DataSource\&gt;.Impacts.x
+#### Distribution.Audience.DataSource.Impacts.x
 
 This OOHbject describes how the delivery of the targeted campaign audience is distributed over the frame locations in the campaign flight.
 
-The default setting for this Distribution OOHbject is &#39;Flexible&#39; meaning that the targeted audience impact volume will be delivered over the campaign flight time, but different locations may have different audience delivery volumes.
+The default setting for this Distribution OOHbject is *Flexible* meaning that the targeted audience impact volume will be delivered over the campaign flight time, but different locations may have different audience delivery volumes.
 
 A third party DataSource can be used to identify the distribution location categories. For illustrative purposes, the UK SPACE dataSource has been used below:
 
@@ -966,26 +969,26 @@ A third party DataSource can be used to identify the distribution location categ
 - tv\_area = Fixed, the same volume of audience impacts will be delivered within each TV Area over the campaign flight.
 - region = Fixed, the same volume of audience impacts will be delivered within each TV Area over the campaign flight
 
-If the dataSource can be used to quantify audience metrics other than &#39;impacts&#39; the distribution object can also be used in the following way to reflect this:
+If the **Distribution** OOHbject audience needs to reference TargetValues other than *Impacts*; an Inventory.Audience.Metrics object should be added to the targeting array to reflect this:
 
-- Distribution.Audience.\&lt;DataSource\&gt;.Cover.x
-- Distribution.Audience. .\&lt;DataSource\&gt;.Reach.x
-- Distribution.Audience. .\&lt;DatasOurce\&gt;.Frequency.x
+- Inventory.Audience.Metrics.Cover
+- Inventory.Audience.Metrics.Reach
+- Inventory.Audience.Metrics.Frequency
 
 #### Distribution.Investment.Time.x
 
 This OOHbject describes how the delivery of the targeted campaign investment is distributed over time in the campaign flight.
 
-The default setting for this Distribution OOHbject is &#39;Flexible&#39; meaning that the targeted campaign investment will be delivered over the campaign flight time. Individual days or hours may have different investment pacing.
+The default setting for this Distribution OOHbject is *Flexible* meaning that the targeted campaign investment will be delivered over the campaign flight time. Individual days or hours may have different investment pacing.
 
 - Day = Fixed, the same investment will be delivered on each day to achieve the total investment target
 - Hour = Fixed, the same investment will be delivered in each hour to achieve the same investment target
 
-#### Distribution.Investment.\&lt;DataSource\&gt;.x
+#### Distribution.Investment.DataSource.x
 
 This OOHbject describes how the delivery of the targeted campaign investment is distributed over locations in the campaign flight.
 
-The default setting for this Distribution OOHbject is &#39;Flexible&#39; meaning that the targeted campaign investment will be delivered over total campaign locations. Individual frames and/or locations may have different investment pacing.
+The default setting for this Distribution OOHbject is *Flexible* meaning that the targeted campaign investment will be delivered over total campaign locations. Individual frames and/or locations may have different investment pacing.
 
 A third party DataSource can be used to identify the distribution location categories. For illustrative purposes, the UK SPACE DataSource has been used below:
 
@@ -996,13 +999,14 @@ A third party DataSource can be used to identify the distribution location categ
 - tv\_area = Fixed, the same investment will be delivered within each TV Area over the campaign flight to achieve the campaign investment target.
 - region = Fixed, the same investment impacts will be delivered within each TV Area over the campaign flight to achieve the campaign investment target.
 
+
 ### 4.16.5 Prohibitions OOHbject
 
 The Prohibitions OOHbject allows an OOH media owner to describe (and OOH media buyer to understand) their inventory in terms of frame prohibitions from a named DataSource that will affect if their brand or advert can be displayed at a certain product locations.
 
 #### Summary
 
-![](RackMultipart20200715-4-1wm8p7k_html_cc8fa6b7ddb996b0.png)
+![Prohibitions OOHbject](Pictures/name_prohibitions.png)
 
 This object is attached to the Product Targeting Object to expose all FrameIDs (via the Segment) which may be affected by any of the prohibitions listed.
 
@@ -1021,6 +1025,8 @@ this could be shown as:
 Prohibitions.Frames.SPACE.Alcohol = [1234931339, 1235190735]
 
 This is for descriptive purpose only and the master frame to prohibitions table may be managed elsewhere by the publisher/media owner.
+
+
 
 # 5 Collection Objects
 
