@@ -701,7 +701,7 @@ ContactType Schema: TBC
 
 ## 4.8 FrequencyCapInterval
 
-Not supported in the OpenDirect (OOH) 1.5.1 Schema
+Frequency is supported as a targeting attribute in the OpenDirect (OOH) 1.5.1 targeting OOHbject
 
 ## 4.9 Industry
 
@@ -709,7 +709,7 @@ Not supported in the OpenDirect (OOH) 1.5.1 Schema
 
 ## 4.10 InventoryType
 
-Not supported in the OpenDirect (OOH) 1.5.1 Schema
+Inventory Type is supported as a targeting attribute in the OpenDirect (OOH) 1.5.1 targeting OOHbject
 
 ## 4.11 Language
 
@@ -721,7 +721,7 @@ Not supported in the OpenDirect (OOH) 1.5.1 Schema
 
 ## 4.13 RateType
 
-Not supported in the OpenDirect (OOH) 1.5.1 Schema. See the Investment OOHbject
+Rate Type is supported as a targeting attribute in the OpenDirect (OOH) 1.5.1 targeting OOHbject
 
 ## 4.14 StatsScheduled
 
