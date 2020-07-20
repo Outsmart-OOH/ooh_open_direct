@@ -667,7 +667,11 @@ This section defines the reference data that an OpenDirect API must support. Ref
 
 Defines the possible ad formats
 
-AdFormatType Schema: TBC
+| Property   | Description                                                       | Type   | Constraints        |
+| ---------- | ----------------------------------------------------------------- | ------ | ------------------ |
+| Advertiser | An organisation that is mainly playing the roles of an advertiser | String | Max 254 Characters |
+| Specialist | An organisation who's main business is that of an OOH Specialist  | String | Max 254 Characters |
+| Agency     | An organisation who's main business is that of a Media Agency     | String | Max 254 Characters |
 
 ## 4.2 AdPosition
 
@@ -677,7 +681,14 @@ Not supported in the OpenDirect (OOH) 1.5.1 Schema
 
 Defines the availability status of a Frame in association with an order, line or other targeted time.
 
-Availability Schema: TBC
+| Property     | Description                                                                                                                | Type   | Constraints       |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------- |
+| Available    | The asset is available for the requested in charge period and targeting criteria                                           | String | Max 20 characters |
+| Invalid      | The requested asset is not valid (e.g. decommisioned, not recognised)                                                      | String | Max 20 characters |
+| Optioned     | The asset has been optioned for the requested in charge period and targeting criteria                                      | String | Max 20 characters |
+| Booked       | The asset has been booked for the requested in charge period and targeting criteria                                        | String | Max 20 characters |
+| NotAvailable | The asset is not available for the requested in charge period and targeting criteria (potentially for a number of reasons) | String | Max 20 characters |
+| NotPermitted | The asset falls outside of the scope of the requested Product (including due to prohibtions, juxtas etc)                   | String | Max 20 characters |
 
 ## 4.4 ContactType
 
