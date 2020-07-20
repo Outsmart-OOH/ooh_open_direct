@@ -756,9 +756,9 @@ The use of multiple objects to describe an OOH Product are at the discretion of 
 
 The core identification structure of an OOHbject is
 
-- \&lt;Name\&gt;.\&lt;Type\&gt;.\&lt;DataSource\&gt;.\&lt;Target\&gt;
+- **Name.Type.DataSource.Target**
 
-The key \&lt;Name\&gt; descriptions for OOH media targeting are:
+The key **Name** descriptions for OOH media targeting are:
 
 - Inventory: What a media owner / publisher sells in terms of Audience or Frames.
 - Delivery: How adverts are displayed from a start and end time, and the share of that display time.
@@ -766,9 +766,9 @@ The key \&lt;Name\&gt; descriptions for OOH media targeting are:
 - Investment: How the campaign is quantified for trading purposes (Fixes price, Cost Per Thousand Audience, Cost Per Frame).
 - Prohibitions: Information about any brand safety prohibitions that will affect the playout of certain brand types in certain locations e.g. fast food prohibitions on certain locations.
 
-The use of the \&lt;DataSource\&gt; in the OOHbject structure allows the identification and inclusion of third party data sources into the OpenDirect (OOH) schema, which both buyside and sell side may use to describe and discover their available Inventory, location and audiences in accordance with the third party schema. The third party schema may also be published and made discoverable as a collection object as detailed in Section 5 of this document.
+The use of the **DataSource** in the OOHbject structure allows the identification and inclusion of third party data sources into the OpenDirect (OOH) schema, which both buyside and sell side may use to describe and discover their available Inventory, location and audiences in accordance with the third party schema. The third party schema may also be published and made discoverable as a collection object as detailed in Section 5 of this document.
 
-Examples of third-party DataSource include:
+Examples of third-party **DataSource** include:
 
 - SPACE (UK OOH Industry frame inventory registry)
 - ROUTE (UK OOH Industry audience measurement JIC)
@@ -776,13 +776,13 @@ Examples of third-party DataSource include:
 - Nielson Total Audience Framework
 - Quividi /AdMobilize computer vision analytics segment
 
-### 4.16.1 Inventory OOHbject
+### 4.16.1 Inventory Name OOHbject
 
-The Inventory OOHbject allows an OOH media owner to describe (and OOH media buyer to buy) their inventory in terms of &#39;Frames&#39; and &#39;Audience&#39; then define the audience metrics that are available to targeted.
+The Inventory **Name** OOHbject allows an OOH media owner to describe (and OOH media buyer to buy) their inventory in terms of *Frames* and *Audience* then define the audience metrics that are available to targeted.
 
 #### Summary
 
-![](RackMultipart20200715-4-1wm8p7k_html_8f20712f1858cf3c.png)
+![OpenDirectSummary](Pictures/name_inventory.png)
 
 #### Inventory.Frames.SPACE
 
