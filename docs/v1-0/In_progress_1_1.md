@@ -182,16 +182,27 @@ Richard Saturley **World Out of Home Organisation**
 [6.8 Paging QueryParameters](#68-paging-queryparameters)
 
 
-[7URIs and General Request/Response Rules 48](#_Toc44509294)
+[7 URIs and General Request/Response Rules](#7-uris-and-general-requestresponse-rules)
+[7.1 URI Summary Table](#71-uri-summary-table)
+[7.2 Account](#72-account)
+[7.3 Account Assignments](#73-account-assignments)
+[7.4 Account Creative](#74-account-creative)
+[7.5 Account Orders](#75-account-orders)
+[7.6 Account Lines](#76-account-order-lines)
+[7.7 Organizations](#77-organizations)
+[7.8 Products](#78-products)
+[7.9 Change Request](#79-change-request)
+[7.10 Change Request Lines](710-change-request-lines)
+[7.11 Stats Reporting](#711-reporting)
+[7.12 Advertiser Brands](#712-advertiser-brands)
+[7.13 DataSources](#713-datasources)
 
 
+[8 OpenDirect Workflow](#8-opendirect-workflow)
 
-[8 OpenDirect Workflow 112](#_Toc44509344)
+[Appendix A: Specification Change Log](#appendix-a--specification-change-log)
 
-
-[Appendix A : Specification Change Log 119](#_Toc44509361)
-
-[Appendix B : Minimum OpenDirect (OOH) Resources &amp; Objects Required For An Initial Implementation 120](#_Toc44509362)
+[Appendix B: Minimum OpenDirect (OOH) Resources & Objects Required For An Initial Implementation](#appendix-b--minimum-opendirect-ooh-resources--objects-required-for-an-initial-implementation)
 
 # Executive Summary
 
@@ -1797,7 +1808,7 @@ GET: (optional) Gets a list of OOHbjects that match the specified filter criteri
 - Type
 - Target
 
-### 7.14.4 Datasource Examples
+### 7.13.4 Datasource Examples
 
 | URI                   | Verb | Description                                                                  | Request | Response |
 | --------------------- | ---- | ---------------------------------------------------------------------------- | ------- | -------- |
