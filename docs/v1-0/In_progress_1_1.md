@@ -1593,7 +1593,7 @@ The user must have permissions to reset the line. For example, advertisers, agen
 
 To reset a line, the line must be in the Reserved, Declined, or Expired booking state. If successfully reset, set the BookingStatus field to Draft and reset the StateChangeReason field.
 
-### Example Account Order Lines
+### 7.6.8 Example Account Order Lines
 
 | URI                                           | Verb  | Description                                                             | Request                                                                                                                                          | Response                                                                                                                                           |
 | --------------------------------------------- | ----- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1622,103 +1622,6 @@ GET: (required) Gets a list of all organizations that the user has access to. Th
 
 The list will contain a single organization for advertisers; however, for agencies, the list will include the agency&#39;s organization and the organizations of the advertisers whose accounts they manage
 
-#### Example Request
-
-GET https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/organizations HTTP/1.1
- Accept: application/json
- AccessToken: \&lt;OAuth token\&gt;
-
-#### Example Response
-
-HTTTP/1.1 200 OK
-
-Content-Type: application/json
-
-Content-Length: 1879
-
-{
-
-&quot;Organizations&quot;: [
-
-{
-
-&quot;Address&quot;: {
-
-&quot;AddressLine1&quot;: &quot;1234 Tiger Blvd&quot;,
-
-&quot;City&quot;: &quot;Redmond&quot;,
-
-&quot;Country&quot;: &quot;US&quot;,
-
-&quot;PostalCode&quot;: &quot;98123&quot;,
-
-&quot;State&quot;: &quot;WA&quot;
-
-},
-
-&quot;Contacts&quot;: [
-
-{
-
-&quot;Address&quot;: {
-
-&quot;AddressLine1&quot;: &quot;1234 Tiger Blvd&quot;,
-
-&quot;City&quot;: &quot;Redmond&quot;,
-
-&quot;Country&quot;: &quot;US&quot;,
-
-&quot;PostalCode&quot;: &quot;98123&quot;,
-
-&quot;State&quot;: &quot;WA&quot;
-
-},
-
-&quot;Email&quot;: &quot;jsilver@contoso.com&quot;,
-
-&quot;Honorific&quot;: &quot;Ms&quot;,
-
-&quot;Fax&quot;: &quot;2065551212&quot;,
-
-&quot;FirstName&quot;: &quot;Janet&quot;,
-
-&quot;LastName&quot;: &quot;Silver&quot;,
-
-&quot;Phone&quot;: &quot;2065550101&quot;,
-
-&quot;Title&quot;: &quot;Comptroller&quot;,
-
-&quot;Type&quot;: &quot;Billing&quot;
-
-}
-
-],
-
-&quot;Fax&quot;: &quot;2065551212&quot;,
-
-&quot;Id&quot;: &quot;12345678&quot;,
-
-&quot;Industry&quot;: ,
-
-&quot;Name&quot;: &quot;Contoso&quot;,
-
-&quot;AdvertiserBrands&quot;: ,
-
-&quot;OrganizationType&quot;:&quot;Specialist&quot;,
-
-&quot;Phone&quot;: &quot;2065550100&quot;,
-
-&quot;OOHProviderData&quot;: ,
-
-&quot;Status&quot;: &quot;Approved&quot;,
-
-&quot;Url&quot;: &quot;http://contoso.com&quot;
-
-}
-
-]
-
-}
 
 ### 7.7.2 /organization/{id}
 
@@ -1736,200 +1639,6 @@ The user must have permissions to perform the requested action. For example, adv
 
 An agency or third party may not update an advertiser&#39;s organization.
 
-#### Example GET Request
-
-GET https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/organizations/12345677 HTTP/1.1
- Accept: application/json
- AccessToken: \&lt;OAuth token\&gt;
-
-#### Example GET Response
-
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-
-Content-Length: 1879
-
-{
-
-&quot;Address&quot;: {
-
-&quot;AddressLine1&quot;: &quot;221B Baker Street&quot;,
-
-&quot;City&quot;: &quot;London&quot;,
-
-&quot;Country&quot;: &quot;UK&quot;,
-
-&quot;PostalCode&quot;: &quot;NW1 6XE&quot;,
-
-&quot;State&quot;: &quot;NULL&quot;
-
-},
-
-&quot;Contacts&quot;: [
-
-{
-
-&quot;Address&quot;: {
-
-&quot;AddressLine1&quot;: &quot;221B Baker Street&quot;,
-
-&quot;City&quot;: &quot;London&quot;,
-
-&quot;Country&quot;: &quot;UK&quot;,
-
-&quot;PostalCode&quot;: &quot;NW1 6XE&quot;,
-
-&quot;State&quot;: &quot;NULL&quot;
-
-},
-
-&quot;Email&quot;: &quot;watson@idealholmes&quot;,
-
-&quot;Honorific&quot;: &quot;Mr&quot;,
-
-&quot;Fax&quot;: &quot;2065551212&quot;,
-
-&quot;FirstName&quot;: &quot;John&quot;,
-
-&quot;LastName&quot;: &quot;Watson&quot;,
-
-&quot;Phone&quot;: &quot;999-999-999&quot;,
-
-&quot;Title&quot;: &quot;Dr&quot;,
-
-&quot;Type&quot;: &quot;Billing&quot;
-
-}
-
-],
-
-&quot;Fax&quot;: &quot;111111111&quot;,
-
-&quot;Id&quot;: &quot;12345677&quot;,
-
-&quot;Industry&quot;: &quot;Retail&quot;,
-
-&quot;Name&quot;: &quot;IdealHolmes&quot;,
-
-&quot;AdvertiserBrands&quot;: [&quot;12&quot;, &quot;67&quot;, &quot;67&quot;, &quot;45&quot;, &quot;89&quot;, &quot;99&quot;],
-
-&quot;OrganizationType&quot;: &quot;Advertiser&quot;,
-
-&quot;Phone&quot;: &quot;2065550100&quot;,
-
-&quot;OOHProviderData&quot;:,
-
-&quot;Status&quot;: &quot;Approved&quot;,
-
-&quot;Url&quot;: &quot;http://www.idealholmes.com&quot;
-
-}
-
-#### Example PATCH Request
-
-PATCH https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/organizations/12345678 HTTP/1.1
- Content-Type: application/json
- AccessToken: \&lt;OAuth token\&gt;
- {
-   &quot;Id&quot;: &quot;12345678&quot;,
-   &quot;Contacts&quot;: [
-     {
-       &quot;Email&quot;: &quot;bnicks@contoso.com&quot;,
-       &quot;Honorific&quot;: &quot;Mr&quot;,
-       &quot;Fax&quot;: &quot;2065551212&quot;,
-       &quot;FirstName&quot;: &quot;Bill&quot;,
-       &quot;LastName&quot;: &quot;Nicks&quot;,
-       &quot;Phone&quot;: &quot;2065550105&quot;,
-       &quot;Title&quot;: &quot;Comptroller&quot;,
-       &quot;Type&quot;: &quot;Billing&quot;
-     }
-   ]
- }
-
-#### Example PATCH Response
-
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-
-Content-Length: 1879
-
-{
-
-&quot;Address&quot;: {
-
-&quot;AddressLine1&quot;: &quot;1234 Tiger Blvd&quot;,
-
-&quot;City&quot;: &quot;Redmond&quot;,
-
-&quot;Country&quot;: &quot;US&quot;,
-
-&quot;PostalCode&quot;: &quot;98123&quot;,
-
-&quot;State&quot;: &quot;WA&quot;
-
-},
-
-&quot;Contacts&quot;: [
-
-{
-
-&quot;Address&quot;: {
-
-&quot;AddressLine1&quot;: &quot;1234 Tiger Blvd&quot;,
-
-&quot;City&quot;: &quot;Redmond&quot;,
-
-&quot;Country&quot;: &quot;US&quot;,
-
-&quot;PostalCode&quot;: &quot;98123&quot;,
-
-&quot;State&quot;: &quot;WA&quot;
-
-},
-
-&quot;Email&quot;: &quot;bnicks@contoso.com&quot;,
-
-&quot;Honorific&quot;: &quot;Mr&quot;,
-
-&quot;Fax&quot;: &quot;2065551212&quot;,
-
-&quot;FirstName&quot;: &quot;Bill&quot;,
-
-&quot;LastName&quot;: &quot;Nicks&quot;,
-
-&quot;Phone&quot;: &quot;2065550105&quot;,
-
-&quot;Title&quot;: &quot;Comptroller&quot;,
-
-&quot;Type&quot;: &quot;Billing&quot;
-
-}
-
-],
-
-&quot;Fax&quot;: &quot;2065551212&quot;,
-
-&quot;Id&quot;: &quot;12345678&quot;,
-
-&quot;Industry&quot;:,
-
-&quot;Name&quot;: &quot;Contoso&quot;,
-
-&quot;AdvertiserBrands&quot;: null,
-
-&quot;OrganizationType&quot;: &quot;Specialist&quot;,
-
-&quot;Phone&quot;: &quot;2065550100&quot;,
-
-&quot;OOHProviderData&quot;:,
-
-&quot;Status&quot;: &quot;Approved&quot;,
-
-&quot;Url&quot;: &quot;http://contoso.com&quot;
-
-}
 
 ### 7.7.3 /organizations?$filter=
 
@@ -1942,6 +1651,16 @@ GET: (optional) Gets a list of organizations that match the specified filter cri
 - Name
 - Status
 - One or more Organization IDs
+
+### 7.7.4 Organization Examples
+
+| URI                     | Verb  | Description                                                      | Request                                                                                                                                                            | Response                                                                                                                                                             |
+| ----------------------- | ----- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| /organizations          | GET   | A list array of all organizations available to the requestor (1) |                                                                                                                                                                    | [GET\_organizations\_response.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/GET_organizations_response.json)     |
+| /organizations          | POST  |                                                                  |                                                                                                                                                                    |                                                                                                                                                                      |
+| /organizations          | PATCH | Contact updated within an existing organization ID               | [PATCH\_organizations\_request.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/PATCH_organizations_request.json) | [PATCH\_organizations\_response.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/PATCH_organizations_response.json) |
+| /organizations          | GET   |                                                                  |                                                                                                                                                                    |                                                                                                                                                                      |
+| /organizations?$filter= | GET   |                                                                  |                                                                                                                                                                    ||
 
 ## 7.8 Products
 
