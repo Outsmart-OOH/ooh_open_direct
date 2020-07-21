@@ -60,53 +60,18 @@ Richard Saturley **World Out of Home Organisation**
 
 # Contents
 
-[OpenDirect 1.5.1 1.1](#opendirect-ooh-151-v11)
+[OpenDirect 1.5.1 v1.1](#opendirect-ooh-151-v11)
 
-[OpenDirect (OOH) 1.5.1 2](#_Toc44509214)
+[Executive Summary](#_Toc44509221)
 
-[About Outsmart 2](#_Toc44509215)
+[Version Control](#_Toc44509230)
 
-[About the UK OOH Industry Standards Committee 2](#_Toc44509216)
+[Audience](#_Toc44509231)
 
-[About the Technical Sub-Group 2](#_Toc44509217)
 
-[Contributors 2](#_Toc44509218)
+[1.Introduction/Overview](#_Toc44509232)
 
-[Special Thanks to 3](#_Toc44509219)
-
-[Contents 4](#_Toc44509220)
-
-[Executive Summary 10](#_Toc44509221)
-
-[OpenDirect 10](#_Toc44509222)
-
-[OpenDirect (OOH) 10](#_Toc44509223)
-
-[OpenDirect 1.5.1 &amp; OpenDirect (OOH) 1.5.1 Comparison 11](#_Toc44509224)
-
-[Buying Types 11](#_Toc44509225)
-
-[Brand Identification 11](#_Toc44509226)
-
-[OOH ProviderData 11](#_Toc44509227)
-
-[Stats 11](#_Toc44509228)
-
-[Targeting OOHbjects 11](#_Toc44509229)
-
-[Version Control 13](#_Toc44509230)
-
-[Audience 13](#_Toc44509231)
-
-[1.Introduction/Overview 14](#_Toc44509232)
-
-[1.1How it works 14](#_Toc44509233)
-
-[1.2Authorisation 15](#_Toc44509234)
-
-[1.3Programming Elements 15](#_Toc44509235)
-
-[2.Resources 16](#_Toc44509236)
+[2.Resources](#_Toc44509236)
 
 [2.1Account 16](#_Toc44509237)
 
@@ -116,8 +81,6 @@ Richard Saturley **World Out of Home Organisation**
 
 [2.4Line 17](#_Toc44509240)
 
-[2.4.1Booking Status Values 18](#_Toc44509241)
-
 [2.5Order 19](#_Toc44509242)
 
 [2.6Organisation 20](#_Toc44509243)
@@ -125,6 +88,7 @@ Richard Saturley **World Out of Home Organisation**
 [2.7Product 21](#_Toc44509244)
 
 [2.8Change Request 22](#_Toc44509245)
+
 
 [3.Common Objects 23](#_Toc44509246)
 
@@ -149,6 +113,7 @@ Richard Saturley **World Out of Home Organisation**
 [3.10 Stats 26](#_Toc44509256)
 
 [3.11OOHbject 27](#_Toc44509257)
+
 
 [4Reference Data 28](#_Toc44509258)
 
@@ -194,7 +159,9 @@ Richard Saturley **World Out of Home Organisation**
 
 [4.16.5 Prohibitions OOHbject 40](#_Toc44509279)
 
+
 [5Collection Objects 41](#_Toc44509280)
+
 
 [6OpenDirect General Support Requirements 43](#_Toc44509281)
 
@@ -222,139 +189,13 @@ Richard Saturley **World Out of Home Organisation**
 
 [6.8.1 Custom Headers 47](#_Toc44509293)
 
+
 [7URIs and General Request/Response Rules 48](#_Toc44509294)
 
-[7.1URI Summary Table 48](#_Toc44509295)
 
-[7.2 Account 51](#_Toc44509296)
-
-[7.2.1/accounts 51](#_Toc44509297)
-
-[7.2.2/accounts/{id} 52](#_Toc44509298)
-
-[7.2.3/accounts?$filter= 53](#_Toc44509299)
-
-[7.3Account Assignments 54](#_Toc44509300)
-
-[7.4Account Creative 54](#_Toc44509301)
-
-[7.5Account Orders 55](#_Toc44509302)
-
-[7.5.1/accounts/{id}/orders 55](#_Toc44509303)
-
-[7.5.2/accounts/{id}/orders/{id} 56](#_Toc44509304)
-
-[7.5.3/accounts/{id}/orders?$filter= 57](#_Toc44509305)
-
-[7.6Account Order Lines 59](#_Toc44509306)
-
-[7.6.1/accounts/{id}/orders/{id}/lines 59](#_Toc44509307)
-
-[7.6.2/accounts/{id}/orders/{id}/lines/{id} 62](#_Toc44509308)
-
-[7.6.3/accounts/{id}/orders/{id}/lines?$filter= 64](#_Toc44509309)
-
-[7.6.4accounts/{id}/orders/{id}/lines/{id}?book 64](#_Toc44509310)
-
-[7.6.5/accounts/{id}/orders/{id}/lines/{id}?reserve 66](#_Toc44509311)
-
-[7.6.6/accounts/{id}/orders/{id}/lines/{id}?cancel 67](#_Toc44509312)
-
-[7.6.7/accounts/{id}/orders/{id}/lines/{id}?reset 70](#_Toc44509313)
-
-[7.7Organizations 72](#_Toc44509314)
-
-[7.7.1/organizations 72](#_Toc44509315)
-
-[7.7.2/organization/{id} 73](#_Toc44509316)
-
-[7.7.3/organizations?$filter= 75](#_Toc44509317)
-
-[7.8Products 76](#_Toc44509318)
-
-[7.8.1/products 76](#_Toc44509319)
-
-[7.8.2/product/{id} 79](#_Toc44509320)
-
-[7.8.3/products/search 81](#_Toc44509321)
-
-[7.8.4/products/avails 85](#_Toc44509322)
-
-[7.9Change Request 96](#_Toc44509323)
-
-[7.9.1 /accounts/{id}/changerequest 96](#_Toc44509324)
-
-[7.9.2 /accounts/{id}/changerequest/{id} 98](#_Toc44509325)
-
-[7.9.3 /accounts/{id}/changerequest?$filter= 98](#_Toc44509326)
-
-[7.9.4 /accounts/{id}/changerequest/{id}/approve 99](#_Toc44509327)
-
-[7.9.5 /accounts/{id}/changerequest/{id}/reject 99](#_Toc44509328)
-
-[7.10 Change Request Lines 100](#_Toc44509329)
-
-[7.10.1 /accounts/{id}/changerequest/{id}/lines 100](#_Toc44509330)
-
-[7.10.2 /accounts/{id}/changerequest/{id} 100](#_Toc44509331)
-
-[7.10.3 /accounts/{id}/changerequest/lines?$filter= 100](#_Toc44509332)
-
-[7.11 Reporting 101](#_Toc44509333)
-
-[7.11.1 /accounts/{id}/orders/{id}/lines/stats 101](#_Toc44509334)
-
-[7.11.2 /accounts/{id}/orders/{id}/lines/{id}/stats 101](#_Toc44509335)
-
-[7.12 Advertiser Brands 108](#_Toc44509336)
-
-[7.12.1/advertiserbrands 108](#_Toc44509337)
-
-[7.12.2/advertiserbrands/{id} 109](#_Toc44509338)
-
-[7.12.3/advertiserbrands?$filter= 109](#_Toc44509339)
-
-[7.13 DataSources 110](#_Toc44509340)
-
-[7.13.1/datasources 110](#_Toc44509341)
-
-[7.13.2/datasources/{datasource} 111](#_Toc44509342)
-
-[7.13.3/datasources?$filter= 111](#_Toc44509343)
 
 [8 OpenDirect Workflow 112](#_Toc44509344)
 
-[8.1 Onboarding a Provider 112](#_Toc44509345)
-
-[8.2 Adding an Agency Organization 112](#_Toc44509346)
-
-[8.3 Adding A Third Party Organization 112](#_Toc44509347)
-
-[8.4 Adding an Advertiser Organization 112](#_Toc44509348)
-
-[8.5 Getting an OAuth 2.0 Access Token 112](#_Toc44509349)
-
-[8.6 Adding an Account 113](#_Toc44509350)
-
-[8.7 Get Product Inventory, Availability and Pricing 113](#_Toc44509351)
-
-[8.8 Creating an Order 114](#_Toc44509352)
-
-[8.9 Adding Lines to the Order 114](#_Toc44509353)
-
-[8.10 Uploading a Creative and Assigning It to a Line 114](#_Toc44509354)
-
-[8.11 Reserving, Booking, and Canceling a Line 114](#_Toc44509355)
-
-[8.12 Diagrams 115](#_Toc44509356)
-
-[8.12.1 Publisher Workflow Diagram 115](#_Toc44509357)
-
-[8.12.2 Agency and Advertiser Workflow Diagram 116](#_Toc44509358)
-
-[8.12.3 Booking State Diagram 117](#_Toc44509359)
-
-[8.12.4 Resource Model Diagram 118](#_Toc44509360)
 
 [Appendix A : Specification Change Log 119](#_Toc44509361)
 
