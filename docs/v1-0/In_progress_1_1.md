@@ -62,32 +62,36 @@ Richard Saturley **World Out of Home Organisation**
 
 [OpenDirect 1.5.1 v1.1](#opendirect-ooh-151-v11)
 
-[Executive Summary](#_Toc44509221)
+[Executive Summary](#executive-summary)
 
-[Version Control](#_Toc44509230)
+[OpenDirect 1.5.1 & OpenDirect (OOH) 1.5.1 Comparison](#opendirect-151--opendirect-ooh-151-comparison)
 
-[Audience](#_Toc44509231)
+[Version Control](#version-control)
+
+[Audience](#audience)
 
 
-[1.Introduction/Overview](#_Toc44509232)
+[1. Introduction/Overview](#1-introductionoverview)
 
-[2.Resources](#_Toc44509236)
+[2. Resources](#2-resource-objects)
 
-[2.1Account 16](#_Toc44509237)
+[2.1 Account](#21-account)
 
-[2.2Assignment 16](#_Toc44509238)
+[2.2 Assignment](#22-assignment)
 
-[2.3Creative 16](#_Toc44509239)
+[2.3Creative](#23-creative)
 
-[2.4Line 17](#_Toc44509240)
+[2.4 Line](#24-line)
 
-[2.5Order 19](#_Toc44509242)
+[2.5 Order](#25-order)
 
-[2.6Organisation 20](#_Toc44509243)
+[2.6 Organisation](#26-organization)
 
-[2.7Product 21](#_Toc44509244)
+[2.7 Product](#27-product)
 
-[2.8Change Request 22](#_Toc44509245)
+[2.8 Change Request](#28-change-request)
+
+[2.9 Stats](#29-stats)
 
 
 [3.Common Objects 23](#_Toc44509246)
@@ -233,7 +237,7 @@ OpenDirect (OOH) 1.5.1 uses the concept of &#39;OOHbjects&#39; which are used to
 
 Creative Assignment has been omitted from the OpenDirect (OOH) 1.5.1 document as this will be addressed in OpenDirect (OOH) 2.0 using the AdCom model as described in the IAB OpenDirect 2.0 documentation for Video and OOH media support.
 
-## OpenDirect 1.5.1 &amp; OpenDirect (OOH) 1.5.1 Comparison
+## OpenDirect 1.5.1 & OpenDirect (OOH) 1.5.1 Comparison
 
 A summary of the additions and extensions to OpenDirect 1.5.1 are summarised in red in the below diagram.
 
