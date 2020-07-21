@@ -1974,7 +1974,7 @@ GET: (optional) Gets a list of OOHbjects that match the specified filter criteri
 
 # 8 OpenDirect Workflow
 
-The following describes the calls that a client would make to get product avails and pricing, create an order and add lines to it, upload creatives and associate them with a line, and get a performance report. For a diagram that shows the flow, see Workflow Diagram.
+The following describes the calls that a client would make to get product avails and pricing, create an order and add lines to it, upload creatives and associate them with a line, and get a performance report. For a diagram that shows the flow, see 8.12.1 Workflow Diagram.
 
 ## 8.1 Onboarding a Provider
 
@@ -2028,8 +2028,6 @@ To get product availability and pricing information for specific products, send 
 
 The response includes a collection object that contains an array of ProductAvails objects. Each ProductAvails object contains the available quantity and pricing information for a product. The number of available impressions returned will be either the specified quantity, if the requested quantity is available, or less if there is fewer quantity available.
 
-Note that the caller should not use this call to determine the maximum available impressions. Instead, they should use /products or /products/search which returns the estimated daily availability and base pricing details. If they use the avails search for product catalogue purposes, they will likely display inaccurate pricing information to the user. For example, the pricing for 500,000,000 impressions may be less than the pricing for 100,000 impressions, which may lead the user to mistakenly believe that they&#39;re getting the impressions for $5.00 CPM instead of $15.00 CPM.
-
 ## 8.8 Creating an Order
 
 An order is the parent container for lines. To add an order, send a POST request to /accounts/{id}/orders. The body of the request is an Order object, which specifies directional start and end dates, estimated budget, currency, and preferred billing method. The response includes the Location header that contains the URI to the new order.
@@ -2066,25 +2064,25 @@ The following diagrams illustrate key aspects of OpenDirect workflow and system 
 
 The following diagram outlines the publisher workflow.
 
-![](RackMultipart20200715-4-1wm8p7k_html_e922cf1e07d2ec7c.gif)
+![PublisherWorkflow](Pictures/publisher_workflow.png)
 
 ### 8.12.2 Agency and Advertiser Workflow Diagram
 
 The following diagram outlines the workflow for creating an order.
 
-![](RackMultipart20200715-4-1wm8p7k_html_6717d76c6bf8b205.png)
+![AdvertiserWorkflow](Pictures/advertiser_workflow.png)
 
 ### 8.12.3 Booking State Diagram
 
 The following diagram shows the state changes of a Line resource. For details about each state, see BookingStatus.
 
-![](RackMultipart20200715-4-1wm8p7k_html_16d52e0e30697e4c.png)
+![BookingState](Pictures/booking_state.png)
 
 ### 8.12.4 Resource Model Diagram
 
 The following diagram shows the relationships between the OpenDirect resources. This model allows a buyer to work with many advertisers and an advertiser to work with many buyers. If the advertiser does their own buying, they&#39;d be both the advertiser and the buyer. For details about the resource objects, see Resources.
 
-![](RackMultipart20200715-4-1wm8p7k_html_6dc90eda94cf2330.gif) ![](RackMultipart20200715-4-1wm8p7k_html_2036aa9b434d5f6a.gif) ![](RackMultipart20200715-4-1wm8p7k_html_4d55d1c8b02b21af.gif)
+![ResourceModel](Pictures/resource_model.png)
 
 # Appendix A : Specification Change Log
 
@@ -2098,6 +2096,7 @@ The OpenDirect (OOH) standard is not about telling media owners how to trade, no
 
 The table below summarises the OpenDirect (OOH) Resources, Common Objects and Targeting OOHbjects required to achieve a basic implementation of OpenDirect (OOH) 1.5.1 based on a Media Owner&#39;s existing trading capabilities and trading tools.
 
-![](RackMultipart20200715-4-1wm8p7k_html_34b553e0ddf39c5a.png)
+![AppendixB](Pictures/AppendixB.png)
 
-OpenDirect 1.5.1 © 2016 Interactive Advertising Bureau, OpenDirect (OOH) 1.5.1 and OOHbjects © OutSmart and IPAO March 2020 - 165 -
+
+*OpenDirect 1.5.1 © 2016 Interactive Advertising Bureau, OpenDirect (OOH) 1.5.1 and OOHbjects © OutSmart and IPAO March 2020*
