@@ -1747,210 +1747,6 @@ POST: Adds a change request to the account.
 
 GET: Gets a list of all change requests that belong to the account.
 
-#### Example POST Request
-
-POST https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts/23873345/changerequest HTTP/1.1
-
-Content-Type: application/json
-
-AccessToken: \&lt;OAuth token\&gt;
-
-{
-
-&quot;AccountId&quot;: 23873345,
-
-&quot;Comments&quot;: &quot;comments why the Change is being requested/proposed&quot;,
-
-&quot;Contacts&quot;: [
-
-{
-
-&quot;Billing&quot;: &quot;@emailaddress&quot;,
-
-&quot;Buyer&quot;: &quot;@emailaddress&quot;,
-
-&quot;Creative&quot;: &quot;@emailaddress&quot;
-
-}
-
-],
-
-&quot;Id&quot;: null,
-
-&quot;OrderId&quot;: &quot;1235872&quot;,
-
-&quot;LineId&quot;: null, //can be used if change request is at Order and Line level
-
-&quot;OOHProviderData&quot;: [
-
-{
-
-&quot;CampaignId&quot;: &quot;optional provider data&quot;,
-
-&quot;CampaignName&quot;: &quot;optional provider data&quot;,
-
-&quot;PoNumber&quot;: &quot;optional provider data&quot;,
-
-&quot;SalesOrderReference&quot;: &quot;optional provider data&quot;,
-
-&quot;BarterOrganizationID&quot;: &quot;optional provider data&quot;,
-
-&quot;Other&quot;: &quot;optional&quot;
-
-}
-
-],
-
-&quot;RequesterId&quot;: &quot;OrganisationID of the Change Requester&quot;,
-
-&quot;Status&quot;: null,
-
-&quot;Webhook&quot;: &quot;URI which is called when the change is approved, rejected or modified by the Seller&quot;
-
-}
-
-#### Example POST Response
-
-HTTP/1.1 200 OK
-
-Location: https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts/23873345/changerequest/123456
-
-Content-Type: application/json
-
-Content-Length: 108
-
-{
-
-&quot;AccountId&quot;: 23873345,
-
-&quot;Comments&quot;: &quot;Request acknowledged&quot;,
-
-&quot;Contacts&quot;: [
-
-{
-
-&quot;Billing&quot;: &quot;@emailaddress&quot;,
-
-&quot;Buyer&quot;: &quot;@emailaddress&quot;,
-
-&quot;Creative&quot;: &quot;@emailaddress&quot;
-
-}
-
-],
-
-&quot;Id&quot;: 66,
-
-&quot;OrderId&quot;: &quot;1235872&quot;,
-
-&quot;LineId&quot;: null, //can be used if change request is at Order and Line level
-
-&quot;OOHProviderData&quot;: [
-
-{
-
-&quot;CampaignId&quot;: &quot;optional provider data&quot;,
-
-&quot;CampaignName&quot;: &quot;optional provider data&quot;,
-
-&quot;PoNumber&quot;: &quot;optional provider data&quot;,
-
-&quot;SalesOrderReference&quot;: &quot;optional provider data&quot;,
-
-&quot;BarterOrganizationID&quot;: &quot;optional provider data&quot;,
-
-&quot;Other&quot;: &quot;optional&quot;
-
-}
-
-],
-
-&quot;RequesterId&quot;: &quot;OrganisationID of the Change Requester&quot;,
-
-&quot;Status&quot;: &quot;PENDING&quot;, //The Change has not yet been approved/rejected, could also be APPROVED or REJECTED
-
-&quot;Webhook&quot;: &quot;URI which is called when the change is approved, rejected or modified by the Seller&quot;
-
-}
-
-#### Example GET Request
-
-GET https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts/23873345/changerequest HTTP/1.1
-
-Accept: application/json
-
-AccessToken: \&lt;OAuth token\&gt; Example
-
-#### Example GET Response
-
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-
-Content-Length: 187
-
-{
-
-&quot;changerequests&quot;: [
-
-{
-
-&quot;AccountId&quot;: 23873345,
-
-&quot;Comments&quot;: &quot;comments why the Change is being requested/proposed&quot;,
-
-&quot;Contacts&quot;: [
-
-{
-
-&quot;Billing&quot;: &quot;@emailaddress&quot;,
-
-&quot;Buyer&quot;: &quot;@emailaddress&quot;,
-
-&quot;Creative&quot;: &quot;@emailaddress&quot;
-
-}
-
-],
-
-&quot;Id&quot;: 66,
-
-&quot;OrderId&quot;: &quot;1235872&quot;,
-
-&quot;LineId&quot;: null, //can be used if change request is at Order and Line level
-
-&quot;OOHProviderData&quot;: [
-
-{
-
-&quot;CampaignId&quot;: &quot;optional provider data&quot;,
-
-&quot;CampaignName&quot;: &quot;optional provider data&quot;,
-
-&quot;PoNumber&quot;: &quot;optional provider data&quot;,
-
-&quot;SalesOrderReference&quot;: &quot;optional provider data&quot;,
-
-&quot;BarterOrganizationID&quot;: &quot;optional provider data&quot;,
-
-&quot;Other&quot;: &quot;optional&quot;
-
-}
-
-],
-
-&quot;RequesterId&quot;: &quot;OrganisationID of the Change Requester&quot;,
-
-&quot;Status&quot;: &quot;PENDING&quot;, //The Change has not yet been approved/rejected, could also be APPROVED or REJECTED
-
-&quot;Webhook&quot;: &quot;URI which is called when the change is approved, rejected or modified by the Seller&quot;
-
-}
-
-]
-
-}
-
 ### 7.9.2 /accounts/{id}/changerequest/{id}
 
 Gets a specified change request.
@@ -1992,6 +1788,19 @@ Rejects a change request for an account.
 
 PUT
 
+### 7.9.6 Change Request Examples
+
+| URI                                       | Verb   | Description                                                                                                                                                      | Request | Response |
+| ----------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------- |
+| /accounts/{id}/changerequest              | POST   | Adds a change request to the account                                                                                                                             |         |          |
+|                                           | GET    | Gets a list of all change requests that belong to the account                                                                                                    |         |          |
+| /accounts/{id}/changerequest/{id}         | GET    | Gets the specified change request                                                                                                                                |         |          |
+|                                           | PATCH  | Updates the specified change request                                                                                                                             |         |          |
+|                                           | DELETE | Deletes the specified change request. May delete the change request only if the request is in a PENDING state                                                    |         |          |
+| /accounts/{id}/changerequest?$filter=     | GET    | Gets a list of change requests that match the specified filter criteria. The user may use OData expressions and method calls with the following Order properties |         |          |
+| /accounts/{id}/changerequest/{id}/approve | PUT    | Gets all approved change requests for an account                                                                                                                 |         |          |
+| /accounts/{id}/changerequest/{id}/reject  | PUT    | Rejects a change request for an account                                                                                                                          |         ||
+
 ## 7.10 Change Request Lines
 
 Change requests at the line level for an order.
@@ -2016,8 +1825,6 @@ GET: Gets the specified line from the change request.
 
 PATCH: Updates the specified line in the change request. To update a line, the line must be in the Pending state.
 
-POST: Deletes the specified line from the change request. May delete a line only if it&#39;s in the Pending state. Must also delete assignments that reference the line.
-
 DELETE: Deletes the specified line from the change request. May delete a line only if it&#39;s in the Pending state. Must also delete assignments that reference the line.
 
 ### 7.10.3 /accounts/{id}/changerequest/lines?$filter=
@@ -2033,6 +1840,17 @@ GET: Gets a list of lines that match the specified filter criteria. The user may
 - EndDate
 
 May support getting a list by IDs.
+
+### 7.10.4 Change Request Lines Examples
+
+| URI                                         | Verb   | Description                                                                                                                                                       | Request | Response |
+| ------------------------------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------- |
+| /accounts/{id}/changerequest/{id}/lines     | GET    | Gets a list of all lines in the change request                                                                                                                    |         |          |
+|                                             | POST   | Adds a line to the change request                                                                                                                                 |         |          |
+| /accounts/{id}/changerequest/{id}           | GET    | Gets the specified line from the change request                                                                                                                   |         |          |
+|                                             | PATCH  | Updates the specified line in the change request. To update a line, the line must be in the Pending state                                                         |         |          |
+|                                             | DELETE | Deletes the specified line from the change request. May delete a line only if it&#39;s in the Pending state. Must also delete assignments that reference the line |         |          |
+| /accounts/{id}/changerequest/lines?$filter= | GET    | Gets a list of lines that match the specified filter criteria. The user may use OData expressions and method calls with the following Line properties             |         ||
 
 ## 7.11 Reporting
 
