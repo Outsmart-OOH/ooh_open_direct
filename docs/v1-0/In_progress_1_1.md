@@ -1268,80 +1268,49 @@ However, if the property is an array of any type and is NULL, the response must 
 
 ## 7.1 URI Summary Table
 
-| Resource  | URI  | Verbs  | Required  |
-| --- | --- | --- | --- |
-| Account  | /accounts  | GET, POST  | Yes  |
-|
- | /accounts/{id}  | GET  | Yes  |
-|
- | /accounts?$filter=  | GET  | Yes  |
-| Assignment  | /accounts/{id}/assignments  | GET, POST  | Yes  |
-|
- | /accounts/{id}/assignments/{id}  | GET, PATCH, DELETE  | Yes  |
-|
- | /accounts/{id}/assignments/{id}?disable  | PATCH  | Yes  |
-|
- | /accounts/{id}/assignments?$filter=  | GET  | No  |
-|
- | /accounts/{id}/creatives?$filter=  | GET  | No  |
-| Order  | /accounts/{id}/orders  | GET, POST  | Yes  |
-|
- |
- | GET, PATCH, DELETE  | Yes  |
-|
- | /accounts/{id}/orders/{id}  | GET  | No  |
-|
- | /accounts/{id}/orders?$filter=  | GET  | YES  |
-| Line  | /accounts/{id}/orders/{id}/lines  | GET, POST  | Yes  |
-|
- | /accounts/{id}/orders/{id}/lines/{id}  | GET, PATCH, DELETE  | Yes  |
-|
- | /accounts/{id}/orders/{id}/lines/{id}?book  | PATCH  | Yes  |
-|
- | /accounts/{id}/orders/{id}/lines/{id}?reserve  | PATCH  | Yes  |
-|
- | /accounts/{id}/orders/{id}/lines/{id}?cancel  | PATCH  | Yes  |
-|
- | /accounts/{id}/orders/{id}/lines/{id}?reset  | PATCH  | Yes  |
-| Organizations  | /organizations  | GET | Yes  |
-|
- | /organizations/{id}  | GET | Yes  |
-|
- | /organizations?$filter=  | GET  | No  |
-| Products  | /products  | GET  | Yes  |
-|
- | /products/{id}  | GET  | Yes  |
-|
- | /products/search  | POST  | Yes  |
-|
- | /products/avails  | POST  | Yes  |
-| Change Request  | /accounts/{id}/changerequest  | GET, POST  | No |
-|
- | /accounts/{id}/changerequest/{id}  | GET, PATCH, DELETE  | No |
-|
- | /accounts/{id}/changerequest?$filter=  | GET  | No |
-|
- | /accounts/{id}/changerequest/{id}/approve  | PUT  | No |
-|
- | /accounts/{id}/changerequest/{id}/reject  | PUT  | No  |
-| Change Request Lines  | /accounts/{id}/changerequest/{id}/lines  | GET, POST  | No |
-|
- | /accounts/{id}/changerequest//lines/{id}  | GET, PATCH  | No |
-|
- | /accounts/{id}/changerequest//lines?$filter=  | GET  | No |
-| Reporting | /accounts/{id}/orders/{id}/lines/stats | POST | No |
-|
- | /accounts/{id}/orders/{id}/lines/{id}/stats | POST | No |
-| Advertiser Brands | /advertiserbrands | GET | No |
-|
- | /advertiserbrands/{id}  | GET | No |
-|
- | /advertiserbrands?$filter=  | GET  | No  |
-| DataSources | /datasources | GET | No |
-|
- | /datasources/datasource | GET | No |
-|
- | /datasources?$filter=  | GET  | No  |
+| Resource             | URI                                           | Verbs              | Required |
+| -------------------- | --------------------------------------------- | ------------------ | -------- |
+| Account              | /accounts                                     | GET, POST          | Yes      |
+|                      | /accounts/{id}                                | GET                | Yes      |
+|                      | /accounts?$filter=                            | GET                | Yes      |
+| Assignment           | /accounts/{id}/assignments                    | GET, POST          | Yes      |
+|                      | /accounts/{id}/assignments/{id}               | GET, PATCH, DELETE | Yes      |
+|                      | /accounts/{id}/assignments/{id}?disable       | PATCH              | Yes      |
+|                      | /accounts/{id}/assignments?$filter=           | GET                | No       |
+|                      | /accounts/{id}/creatives?$filter=             | GET                | No       |
+| Order                | /accounts/{id}/orders                         | GET, POST          | Yes      |
+|                      |                                               | GET, PATCH, DELETE | Yes      |
+|                      | /accounts/{id}/orders/{id}                    | GET                | No       |
+|                      | /accounts/{id}/orders?$filter=                | GET                | YES      |
+| Line                 | /accounts/{id}/orders/{id}/lines              | GET, POST          | Yes      |
+|                      | /accounts/{id}/orders/{id}/lines/{id}         | GET, PATCH, DELETE | Yes      |
+|                      | /accounts/{id}/orders/{id}/lines/{id}?book    | PATCH              | Yes      |
+|                      | /accounts/{id}/orders/{id}/lines/{id}?reserve | PATCH              | Yes      |
+|                      | /accounts/{id}/orders/{id}/lines/{id}?cancel  | PATCH              | Yes      |
+|                      | /accounts/{id}/orders/{id}/lines/{id}?reset   | PATCH              | Yes      |
+| Organizations        | /organizations                                | GET                | Yes      |
+|                      | /organizations/{id}                           | GET                | Yes      |
+|                      | /organizations?$filter=                       | GET                | No       |
+| Products             | /products                                     | GET                | Yes      |
+|                      | /products/{id}                                | GET                | Yes      |
+|                      | /products/search                              | POST               | Yes      |
+|                      | /products/avails                              | POST               | Yes      |
+| Change Request       | /accounts/{id}/changerequest                  | GET, POST          | No       |
+|                      | /accounts/{id}/changerequest/{id}             | GET, PATCH, DELETE | No       |
+|                      | /accounts/{id}/changerequest?$filter=         | GET                | No       |
+|                      | /accounts/{id}/changerequest/{id}/approve     | PUT                | No       |
+|                      | /accounts/{id}/changerequest/{id}/reject      | PUT                | No       |
+| Change Request Lines | /accounts/{id}/changerequest/{id}/lines       | GET, POST          | No       |
+|                      | /accounts/{id}/changerequest//lines/{id}      | GET, PATCH         | No       |
+|                      | /accounts/{id}/changerequest//lines?$filter=  | GET                | No       |
+| Reporting            | /accounts/{id}/orders/{id}/lines/stats        | POST               | No       |
+|                      | /accounts/{id}/orders/{id}/lines/{id}/stats   | POST               | No       |
+| Advertiser Brands    | /advertiserbrands                             | GET                | No       |
+|                      | /advertiserbrands/{id}                        | GET                | No       |
+|                      | /advertiserbrands?$filter=                    | GET                | No       |
+| DataSources          | /datasources                                  | GET                | No       |
+|                      | /datasources/datasource                       | GET                | No       |
+|                      | /datasources?$filter=                         | GET                | No       |
 
 ## 7.2 Account
 
@@ -1369,99 +1338,6 @@ An organization may add as many accounts as needed to create a buying structure 
 
 For an advertiser, the list of accounts will include only accounts that they own. However, for an agency and a third party, the list of accounts will include the accounts that they own and the accounts that they manage on behalf of advertisers.
 
-#### Example POST Request
-
-POST https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts HTTP/1.1
-
-Content-Type: application/json AccessToken: \&lt;OAuth token\&gt; {
-
-&quot;AdvertiserId&quot;: &quot;1234987&quot;,
-
-&quot;BuyerId&quot;: &quot;34587&quot;,
-
-&quot;ThirdPartyId&quot;: &quot;98765&quot;,
-
-&quot;Name&quot;: &quot;Brand A&quot;,
-
-&quot;ProviderData&quot;: []
-
-}
-
-#### Example POST Response
-
-HTTP/1.1 200 OK
-
-Location: https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts/23873345
-
-Content-Type: application/json
-
-Content-Length: 379 {
-
-&quot;AdvertiserId&quot;: &quot;1234987&quot;,
-
-&quot;BuyerId&quot;: &quot;34587&quot;,
-
-&quot;ThirdPartyId&quot;: &quot;98765&quot;,
-
-&quot;Id&quot;: &quot;23873345&quot;,
-
-&quot;Name&quot;: &quot;Brand A&quot;,
-
-&quot;ProviderData&quot;: []
-
-}
-
-#### Example GET Request
-
-GET https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts HTTP/1.1
- Accept: application/json
- AccessToken: \&lt;OAuth token\&gt;
-
-#### Example GET Response
-
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-
-Content-Length: 187 {
-
-&quot;Accounts&quot;: [
-
-{
-
-&quot;AdvertiserId&quot;: &quot;1234987&quot;,
-
-&quot;BuyerId&quot;: &quot;1234987&quot;,
-
-&quot;&quot;ThirdPartyId&quot;&quot;: &quot;1234987&quot;,
-
-&quot;Id&quot;: &quot;9876542&quot;,
-
-&quot;Name&quot;: &quot;Brand B&quot;,
-
-&quot;ProviderData&quot;: []
-
-},
-
-{
-
-&quot;AdvertiserId&quot;: &quot;1234987&quot;,
-
-&quot;BuyerId&quot;: &quot;34587&quot;,
-
-&quot;&quot;ThirdPartyId&quot;&quot;: &quot;98765&quot;,
-
-&quot;Id&quot;: &quot;23873345&quot;,
-
-&quot;Name&quot;: &quot;Brand A&quot;,
-
-&quot;ProviderData&quot;: []
-
-}
-
-]
-
-}
 
 ### 7.2.2 /accounts/{id}
 
@@ -1475,35 +1351,6 @@ GET: Gets the specified account.
 
 The user must have permissions to perform the requested action. For example, advertisers and agencies may get the accounts that they own. In addition, an agency may get the accounts that they manage on behalf of advertisers.
 
-#### Example GET Request
-
-GET https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts/23873345 HTTP/1.1
- Accept: application/json
- AccessToken: \&lt;OAuth token\&gt; Example
-
-#### Example GET Response
-
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-
-Content-Length: 187
-
-{
-
-&quot;AdvertiserId&quot;: &quot;1234987&quot;,
-
-&quot;BuyerId&quot;: &quot;34587&quot;,
-
-&quot;ThirdPartyId&quot;: &quot;98765&quot;,
-
-&quot;Id&quot;: &quot;23873345&quot;,
-
-&quot;Name&quot;: &quot;Brand A&quot;,
-
-&quot;ProviderData&quot;: []
-
-}
 
 ### 7.2.3 /accounts?$filter=
 
@@ -1523,59 +1370,17 @@ May also support getting a list of IDs.
 
 Only an advertiser or a buyer or third-party who own the accounts can issue the request. User should be able to filter the accounts by any of the fields or field values of the owned account. Logical AND/OR condition of the fields shall be allowed.
 
-#### Example Request
+### 7.2.4 Examples
 
-GET https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts?buyerId=34587 HTTP/1.1
- Accept: application/json
- AccessToken: \&lt;OAuth token\&gt;
+| URI                | Verb | Description                       | Request                                                                                                                                                | Response                                                                                                                                                 |
+| ------------------ | ---- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| /accounts          | GET  | Get a list of all accounts        |                                                                                                                                                        | [GET\_accounts\_response.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/GET_accounts_response.json)   |
+| /accounts          | POST | Media Owner creates a new account | [POST\_accounts\_request.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_accounts_request.json) | [POST\_accounts\_response.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_accounts_response.json) |
+| /accounts/{id}     | GET  |                                   |                                                                                                                                                        |                                                                                                                                                          |
+| /accounts?$filter= | GET  |                                   |                                                                                                                                                        ||
 
-#### Example Response
 
-HTTP/1.1 200 OK
 
-Content-Type: application/json
-
-Content-Length: 187 {
-
-&quot;Accounts&quot;:
-
-[
-
-{
-
-&quot;AdvertiserId&quot;: &quot;1234568&quot;,
-
-&quot;BuyerId&quot;: &quot;34587&quot;,
-
-&quot;ThirdPartyId&quot;: &quot;98765&quot;,
-
-&quot;Id&quot;: &quot;23873450&quot;,
-
-&quot;Name&quot;: &quot;Brand B&quot;,
-
-&quot;ProviderData&quot;: []
-
-},
-
-{
-
-&quot;AdvertiserId&quot;: &quot;1234987&quot;,
-
-&quot;BuyerId&quot;: &quot;34587&quot;,
-
-&quot;ThirdPartyId&quot;: &quot;98765&quot;,
-
-&quot;Id&quot;: &quot;23873345&quot;,
-
-&quot;Name&quot;: &quot;Brand A&quot;,
-
-&quot;ProviderData&quot;: []
-
-}
-
-]
-
-}
 
 ## 7.3 Account Assignments
 
