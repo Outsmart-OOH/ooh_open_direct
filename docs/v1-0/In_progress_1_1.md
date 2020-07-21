@@ -76,113 +76,66 @@ Richard Saturley **World Out of Home Organisation**
 [2. Resources](#2-resource-objects)
 
 [2.1 Account](#21-account)
-
 [2.2 Assignment](#22-assignment)
-
 [2.3 Creative](#23-creative)
-
 [2.4 Line](#24-line)
-
 [2.5 Order](#25-order)
-
 [2.6 Organisation](#26-organization)
-
 [2.7 Product](#27-product)
-
 [2.8 Change Request](#28-change-request)
-
 [2.9 Stats](#29-stats)
-
 
 [3. Common Objects](#3-common-objects)
 
 [3.1 Address](#31-address)
-
 [3.2 AdvertiserBrand](#32-advertiserbrand)
-
 [3.3 Contact](#33-contact)
-
 [3.4 ProductAvails](#34-productavails)
-
 [3.5 ProductAvailsSearch](#35-productavailssearch)
-
 [3.6 ProductSearch](#36-productsearch)
-
 [3.7 OOHProviderData](#37-oohproviderdata)
-
 [3.8 Size](#38-size)
-
 [3.9 StatsScheduled](#39-statsscheduled)
-
 [3.10 StatsDelivered](#310-statsdelivered)
-
 [3.11 OOHbject](#311-oohbject)
-
 
 [4. Reference Data](#4-reference-data)
 
 [4.1 AdFormatType](#41-adformattype)
-
 [4.2 AdPosition](#42-adposition)
-
 [4.3 Availability](#43-availability)
-
 [4.4 ContactType](#44-contacttype)
-
 [4.5 Country](#45-country)
-
 [4.6 Currency](#46-currency)
-
 [4.7 DeliveryType](#47-deliverytype)
-
 [4.8 FrequencyCapInterval](#48-frequencycapinterval)
-
 [4.9 Industry](#49-industry)
-
 [4.10 InventoryType](#410-inventorytype)
-
 [4.11 Language](#411-language)
-
 [4.12 MaturityLevel](#412-maturitylevel)
-
 [4.13 RateType](#413-ratetype)
-
 [4.14 Targeting](#414-targeting)
-
 [4.14.1 Inventory OOHbject](#4141-inventory-oohbject)
-
 [4.14.2 Delivery OOHbject](#4142-delivery-oohbject)
-
 [4.14.3 Investment OOHbject](#4143-investment-oohbject)
-
 [4.14.4 Distribution OOHbject](#4144-distribution-oohbject)
-
 [4.14.5 Prohibitions OOHbject](#4145-prohibitions-oohbject)
 
-
 [5 Collection Objects](#5-collection-objects)
-
 
 [6 OpenDirect General Support Requirements 43](#6-opendirect-general-support-requirements)
 
 [6.1 Authentication](#61-authentication)
-
 [6.2 Versioning](#62-versioning)
-
 [6.3 HTTP Error Codes/ErrorHandling 43](#63-http-error-codeserrorhandling)
-
 [6.4 ErrorResponse](#64-errorresponse)
-
 [6.5 Data Format](#65-data-format)
-
 [6.6 Logical JSON operators](#66-logical-json-operators)
-
 [6.7 OOH Schedule & Delivery Reporting 46](#67-ooh-schedule--delivery-reporting)
-
 [6.8 Paging QueryParameters](#68-paging-queryparameters)
 
-
 [7 URIs and General Request/Response Rules](#7-uris-and-general-requestresponse-rules)
+
 [7.1 URI Summary Table](#71-uri-summary-table)
 [7.2 Account](#72-account)
 [7.3 Account Assignments](#73-account-assignments)
@@ -196,7 +149,6 @@ Richard Saturley **World Out of Home Organisation**
 [7.11 Stats Reporting](#711-reporting)
 [7.12 Advertiser Brands](#712-advertiser-brands)
 [7.13 DataSources](#713-datasources)
-
 
 [8 OpenDirect Workflow](#8-opendirect-workflow)
 
