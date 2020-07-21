@@ -119,52 +119,48 @@ Richard Saturley **World Out of Home Organisation**
 [3.11 OOHbject](#311-oohbject)
 
 
-[4Reference Data 28](#_Toc44509258)
+[4. Reference Data](#4-reference-data)
 
-[4.1AdFormatType 28](#_Toc44509259)
+[4.1 AdFormatType](#41-adformattype)
 
-[4.2AdPosition 28](#_Toc44509260)
+[4.2 AdPosition](#42-adposition)
 
-[4.3Availability 28](#_Toc44509261)
+[4.3 Availability](#43-availability)
 
-[4.4ContactType 28](#_Toc44509262)
+[4.4 ContactType](#44-contacttype)
 
-[4.5Country 28](#_Toc44509263)
+[4.5 Country](#45-country)
 
-[4.6Currency 28](#_Toc44509264)
+[4.6 Currency](#46-currency)
 
-[4.7DeliveryType 29](#_Toc44509265)
+[4.7 DeliveryType](#47-deliverytype)
 
-[4.8FrequencyCapInterval 29](#_Toc44509266)
+[4.8 FrequencyCapInterval](#48-frequencycapinterval)
 
-[4.9Industry 29](#_Toc44509267)
+[4.9 Industry](#49-industry)
 
-[4.10InventoryType 29](#_Toc44509268)
+[4.10 InventoryType](#410-inventorytype)
 
-[4.11Language 29](#_Toc44509269)
+[4.11 Language](#411-language)
 
-[4.12MaturityLevel 29](#_Toc44509270)
+[4.12 MaturityLevel](#412-maturitylevel)
 
-[4.13RateType 29](#_Toc44509271)
+[4.13 RateType](#413-ratetype)
 
-[4.14StatsScheduled 29](#_Toc44509272)
+[4.14 Targeting](#414-targeting)
 
-[4.15StatsDelivered 29](#_Toc44509273)
+[4.14.1 Inventory OOHbject](#4141-inventory-oohbject)
 
-[4.16Targeting 30](#_Toc44509274)
+[4.14.2 Delivery OOHbject](#4142-delivery-oohbject)
 
-[4.16.1 Inventory OOHbject 31](#_Toc44509275)
+[4.14.3 Investment OOHbject](#4143-investment-oohbject)
 
-[4.16.2 Delivery OOHbject 33](#_Toc44509276)
+[4.14.4 Distribution OOHbject](#4144-distribution-oohbject)
 
-[4.16.3 Investment OOHbject 36](#_Toc44509277)
-
-[4.16.4 Distribution OOHbject 37](#_Toc44509278)
-
-[4.16.5 Prohibitions OOHbject 40](#_Toc44509279)
+[4.14.5 Prohibitions OOHbject](#4145-prohibitions-oohbject)
 
 
-[5Collection Objects 41](#_Toc44509280)
+[5 Collection Objects](#5-collections-objects)
 
 
 [6OpenDirect General Support Requirements 43](#_Toc44509281)
@@ -623,7 +619,7 @@ Examples of third-party **DataSource** include:
 
 
 
-### 4.14.1 Inventory Name OOHbject
+### 4.14.1 Inventory OOHbject
 
 The Inventory **Name** OOHbject allows an OOH media owner to describe (and OOH media buyer to buy) their inventory in terms of *Frames* and *Audience* then define the audience metrics that are available to targeted.
 
