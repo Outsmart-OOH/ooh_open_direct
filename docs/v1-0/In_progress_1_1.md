@@ -1370,7 +1370,7 @@ May also support getting a list of IDs.
 
 Only an advertiser or a buyer or third-party who own the accounts can issue the request. User should be able to filter the accounts by any of the fields or field values of the owned account. Logical AND/OR condition of the fields shall be allowed.
 
-### 7.2.4 Examples
+### 7.2.4 Account Examples
 
 | URI                | Verb | Description                       | Request                                                                                                                                                | Response                                                                                                                                                 |
 | ------------------ | ---- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1408,163 +1408,6 @@ An advertiser or agency may add orders to accounts that they own. In addition; a
 
 For advertisers, the list will include only orders that they own. For agencies and third parties, the list will include the orders that they own and the orders that belong to accounts that they manage on behalf of advertisers.
 
-#### Example POST Request
-
-POST https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts/23873345/orders HTTP/1.1
-
-Content-Type: application/json
-
-AccessToken: \&lt;OAuth token\&gt;
-
-{
-
-&quot;AccountId&quot;: &quot;23873345&quot;,
-
-&quot;AdvertiserBrandId&quot;: &quot;73&quot;,
-
-&quot;Currency&quot;: &quot;GBP&quot;,
-
-&quot;EndDate&quot;: &quot;2014-12-24T18:00:00.000Z&quot;,
-
-&quot;Name&quot;: &quot;My Order&quot;,
-
-&quot;OOHProviderData&quot;: [
-
-{
-
-&quot;CampaignId&quot;: &quot;B007&quot;,
-
-&quot;CampaignName&quot;: &quot;BARTYTIME&quot;,
-
-&quot;PoNumber&quot;:,
-
-&quot;SalesOrderReference&quot;: &quot;SPEC123&quot;,
-
-&quot;BarterOrganizationId: &quot;BAR987&quot;,
-
-&quot;Other&quot;:
-
-}
-
-],
-
-&quot;StartDate&quot;: &quot;2014-11-24T06:00:00.000Z&quot;
-
-}
-
-#### Example POST Response
-
-HTTP/1.1 200 OK
-
-Location: https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts/23873345/orders/1235872
-
-Content-Type: application/json
-
-Content-Length: 108
-
-{
-
-&quot;AccountId&quot;: &quot;23873345&quot;,
-
-&quot;AdvertiserBrandId&quot;: &quot;73&quot;
-
-&quot;Currency&quot;: &quot;GBP&quot;,
-
-&quot;EndDate&quot;: &quot;2014-12-24T18:00:00.000Z&quot;,
-
-&quot;Id&quot;: &quot;1235872&quot;,
-
-&quot;Name&quot;: &quot;My Order&quot;,
-
-&quot;OrderStatus&quot;: &quot;Approved&quot;,
-
-&quot;PreferredBillingMethod&quot;: &quot;Electronic&quot;,
-
-&quot;OOHProviderData&quot;: [
-
-{
-
-&quot;CampaignId&quot;: &quot;B007&quot;,
-
-&quot;CampaignName&quot;: &quot;BARTYTIME&quot;,
-
-&quot;PoNumber&quot;:,
-
-&quot;SalesOrderReference&quot;: &quot;SPEC123&quot;,
-
-&quot;BarterOrganizationID&quot;: &quot;BAR987&quot;,
-
-&quot;Other&quot;:
-
-}
-
-],
-
-&quot;StartDate&quot;: &quot;2014-11-24T06:00:00.000Z&quot;
-
-}
-
-#### Example GET Request
-
-GET https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts/23873345/orders HTTP/1.1
- Accept: application/json
- AccessToken: \&lt;OAuth token\&gt; Example
-
-#### Example GET Response
-
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-
-Content-Length: 187
-
-{
-
-&quot;Orders&quot;: [
-
-{
-
-&quot;AccountId&quot;: &quot;23873345&quot;,
-
-&quot;AdvertiserBrandId &quot;: &quot;73&quot;,
-
-&quot;Currency&quot;: &quot;GBP&quot;,
-
-&quot;EndDate&quot;: &quot;2014-12-24T18:00:00.000Z&quot;,
-
-&quot;Id&quot;: &quot;1235872&quot;,
-
-&quot;Name&quot;: &quot;My Order&quot;,
-
-&quot;PreferredBillingMethod&quot;: &quot;Electronic&quot;,
-
-&quot;OOHProviderData&quot;: [
-
-{
-
-&quot;CampaignId&quot;: &quot;B007&quot;,
-
-&quot;CampaignName&quot;: &quot;BARTYTIME&quot;,
-
-&quot;PoNumber&quot;:,
-
-&quot;SalesOrderReference&quot;: &quot;SPEC123&quot;,
-
-&quot;BarterOrganizationID&quot;: &quot;BAR987&quot;,
-
-&quot;Other&quot;:
-
-}
-
-],
-
-&quot;StartDate&quot;: &quot;2014-11-24T06:00:00.000Z&quot;
-
-}
-
-]
-
-}
 
 ### 7.5.2 /accounts/{id}/orders/{id}
 
@@ -1584,119 +1427,6 @@ The user must have permissions to perform the requested action. For example, adv
 
 Only orders in the Draft booking state may be deleted.
 
-#### Example GET Request
-
-GET https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts/23873345/orders/1235872 HTTP/1.1
-Accept: application/json
-AccessToken: \&lt;OAuth token\&gt;
-
-#### Example GET Response
-
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-
-Content-Length: 158
-
-{
-
-&quot;AccountId&quot;: &quot;23873345&quot;,
-
-&quot;AdvertiserBrandId&quot;: &quot;73&quot;,
-
-&quot;Currency&quot;: &quot;GBP&quot;,
-
-&quot;EndDate&quot;: &quot;2014-12-24T18:00:00.000Z&quot;,
-
-&quot;Id&quot;: &quot;1235872&quot;,
-
-&quot;Name&quot;: &quot;My Order&quot;,
-
-&quot;PreferredBillingMethod&quot;: &quot;Electronic&quot;,
-
-&quot;OOHProviderData&quot;: [
-
-{
-
-&quot;CampaignId&quot;: &quot;B007&quot;,
-
-&quot;CampaignName&quot;: &quot;BARTYTIME&quot;,
-
-&quot;PoNumber&quot;:,
-
-&quot;SalesOrderReference&quot;: &quot;SPEC123&quot;,
-
-&quot;BarterOrganizationID&quot;: &quot;BAR987&quot;,
-
-&quot;Other&quot;:
-
-}
-
-],
-
-&quot;StartDate&quot;: &quot;2014-11-24T06:00:00.000Z&quot;
-
-}
-
-#### Example PATCH Request
-
-PATCH https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts/23873345/orders/1235872 HTTP/1.1
- Content-Type: application/json
- AccessToken: \&lt;OAuth token\&gt;
- {
-   &quot;StartDate&quot;: &quot;2014-12-05T18:00:00.000Z&quot;,
-   &quot;Name&quot;: &quot;My Better Order Name&quot;
- }
-
-#### Example PATCH Response
-
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-
-Content-Length: 358
-
-{
-
-&quot;AccountId&quot;: &quot;23873345&quot;,
-
-&quot;AdvertiserBrandId&quot;: &quot;73&quot;,
-
-&quot;Currency&quot;: &quot;GBP&quot;,
-
-&quot;EndDate&quot;: &quot;2014-12-24T18:00:00.000Z&quot;,
-
-&quot;Id&quot;: &quot;1235872&quot;,
-
-&quot;Name&quot;: &quot;My Better Order Name&quot;,
-
-&quot;OrderStatus&quot;: &quot;Approved&quot;,
-
-&quot;PreferredBillingMethod&quot;: &quot;Electronic&quot;,
-
-&quot;OOHProviderData&quot;: [
-
-{
-
-&quot;CampaignId&quot;: &quot;B007&quot;,
-
-&quot;CampaignName&quot;: &quot;BARTYTIME&quot;,
-
-&quot;PoNumber&quot;:,
-
-&quot;SalesOrderReference&quot;: &quot;SPEC123&quot;,
-
-&quot;BarterOrganizationID&quot;: &quot;BAR987&quot;,
-
-&quot;Other&quot;:
-
-}
-
-],
-
-&quot;StartDate&quot;: &quot;2014-12-05T18:00:00.000Z &quot;
-
-}
 
 ### 7.5.3 /accounts/{id}/orders?$filter=
 
@@ -1714,17 +1444,14 @@ May support getting a list by IDs.
 
 User should be either an advertiser or buyer who owns the orders.
 
-#### Example Request (GET)
+### 7.5.4 Order Examples
 
-https://\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/accounts/23873345/orders?AccountId=235634&amp;currency=USD HTTP/1.1
-
-Accept: application/json
-
-AccessToken: \&lt;OAuth token\&gt;
-
-#### Example Response (Get)
-
-Returns a list of all the orders setup for the specified AccountId in USD currency.
+| URI                            | Verb | Description                                                    | Request                                                                                                                                            | Response                                                                                                                                             |
+| ------------------------------ | ---- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| /accounts/{id}/orders          | GET  | Reqestor gets a list array of all orders against an account id |                                                                                                                                                    | [GET\_orders\_response.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/GET_orders_response.json)   |
+| /accounts/{id}/orders          | POST | Media Buyer creates a new order                                | [POST\_orders\_request.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_orders_request.json) | [POST\_orders\_response.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_orders_response.json) |
+| /accounts/{id}/orders/{id}     | GET  |                                                                |                                                                                                                                                    |                                                                                                                                                      |
+| /accounts/{id}/orders?$filter= | GET  |                                                                |                                                                                                                                                    ||
 
 ## 7.6 Account Order Lines
 
