@@ -1057,15 +1057,23 @@ The following shows an example response for /accounts.
  Accounts: [
  
 {
-AdvertiserId: B7EBC7F3-FBB3-4250-99F1-8D001088434B,
-BuyerId: 4AA837B7-1A27-421E-9DDD-CAEF1AE884B5, 
-Id: 9B0878BE-7254-49BE-AFD4-B0A67C7C3D26
+
+"AdvertiserId": "B7EBC7F3-FBB3-4250-99F1-8D001088434B",
+
+"BuyerId": "4AA837B7-1A27-421E-9DDD-CAEF1AE884B5", 
+
+"Id": "9B0878BE-7254-49BE-AFD4-B0A67C7C3D26"
+
 },
 
 {
-AdvertiserId: 16B55667-37CF-4447-A79D-88E6DAC4D7C2, 
-BuyerId: 4AA837B7-1A27-421E-9DDD-CAEF1AE884B5,
-Id: EAC93F5D-F448-44D6-8333-4E530D14C9DA
+
+"AdvertiserId": "16B55667-37CF-4447-A79D-88E6DAC4D7C2", 
+
+"BuyerId": "4AA837B7-1A27-421E-9DDD-CAEF1AE884B5",
+
+"Id": "EAC93F5D-F448-44D6-8333-4E530D14C9DA"
+
 }
 
 ]
@@ -1079,7 +1087,7 @@ The collection object may include additional publisher-defined properties. If th
 
 ## 6.1 Authentication
 
-Publishers must support authenticating advertiser and agency users. Publishers must use [OAuth 2.0](http://tools.ietf.org/html/draft-ietf-oauth-v2-15)for user authentication. Publishers must support the implicit and authorization code grant flows.
+Publishers must support authenticating advertiser and agency users. Publishers must use [OAuth 2.0](http://tools.ietf.org/html/draft-ietf-oauth-v2-15) for user authentication. Publishers must support the implicit and authorization code grant flows.
 
 Each request must include an AccessToken header that is set to the user&#39;s access token. If the token is not valid, the request must fail with HTTP status code 401 Unauthorized.
 
@@ -1126,11 +1134,22 @@ The following shows the body of an example error response.
 
 {
 
-&quot;Context&quot;: {&quot;logId&quot;:&quot;123abc&quot;},
+&quot;Context&quot;: {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id",
+            "TargetValues": [
+                1234931339,
+                1235190735,
+                1234931338,
+                1235191547
+            ]
+        }
 
-&quot;Message&quot;: &quot;The requested impressions are not available.&quot;, &quot;errorCode&quot;: &quot;ImpressionsNotAvailable&quot;,
+&quot;Message&quot;: &quot;Frames are not selectable in this product&quot;, &quot;errorCode&quot;: &quot;FramesNotSelectable&quot;,
 
-&quot;Link&quot;: &quot;https:\\\&lt;host\&gt;\help\impressions.aspx&quot;
+&quot;Link&quot;: &quot;https:\\\&lt;host\&gt;\help\SelectFrames.aspx&quot;
 
 },
 
