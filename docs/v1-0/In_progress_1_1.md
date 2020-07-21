@@ -120,7 +120,7 @@ Richard Saturley **World Out of Home Organisation**
 
 [5 Collection Objects](#5-collection-objects)
 
-[6 OpenDirect General Support Requirements 43](#6-opendirect-general-support-requirements)
+[6 OpenDirect General Support Requirements](#6-opendirect-general-support-requirements)
 
 [6.1 Authentication](#61-authentication)
 [6.2 Versioning](#62-versioning)
