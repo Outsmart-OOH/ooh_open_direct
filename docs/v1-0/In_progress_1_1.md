@@ -160,34 +160,26 @@ Richard Saturley **World Out of Home Organisation**
 [4.14.5 Prohibitions OOHbject](#4145-prohibitions-oohbject)
 
 
-[5 Collection Objects](#5-collections-objects)
+[5 Collection Objects](#5-collection-objects)
 
 
-[6OpenDirect General Support Requirements 43](#_Toc44509281)
+[6 OpenDirect General Support Requirements 43](#6-opendirect-general-support-requirements)
 
-[6.1 Authentication 43](#_Toc44509282)
+[6.1 Authentication](#61-authentication)
 
-[6.2 Versioning 43](#_Toc44509283)
+[6.2 Versioning](#62-versioning)
 
-[6.3 HTTP Error Codes/ErrorHandling 43](#_Toc44509284)
+[6.3 HTTP Error Codes/ErrorHandling 43](#63-http-error-codeserrorhandling)
 
-[6.4 ErrorResponse 44](#_Toc44509285)
+[6.4 ErrorResponse](#64-errorresponse)
 
-[6.5 Data Format 45](#_Toc44509286)
+[6.5 Data Format](#65-data-format)
 
-[6.6 Logical JSON operators 45](#_Toc44509287)
+[6.6 Logical JSON operators](#66-logical-json-operators)
 
-[6.7 OOH Schedule &amp; Delivery Reporting 46](#_Toc44509288)
+[6.7 OOH Schedule & Delivery Reporting 46](67-ooh-schedule--delivery-reporting)
 
-[6.7.1 Metrics 46](#_Toc44509289)
-
-[6.7.2 Fields Published 46](#_Toc44509290)
-
-[6.7.3 Granularity 46](#_Toc44509291)
-
-[6.8 Paging QueryParameters 47](#_Toc44509292)
-
-[6.8.1 Custom Headers 47](#_Toc44509293)
+[6.8 Paging QueryParameters](#68-paging-queryparameters)
 
 
 [7URIs and General Request/Response Rules 48](#_Toc44509294)
