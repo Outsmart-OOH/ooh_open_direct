@@ -1149,7 +1149,7 @@ The following shows the body of an example error response.
 
 &quot;Message&quot;: &quot;Frames are not selectable in this product&quot;, &quot;errorCode&quot;: &quot;FramesNotSelectable&quot;,
 
-&quot;Link&quot;: &quot;https:\\\&lt;host\&gt;\help\SelectFrames.aspx&quot;
+&quot;Link&quot;: &quot;https:\\host\help\SelectFrames.aspx&quot;
 
 },
 
@@ -1180,8 +1180,7 @@ Logical AND, OR operators are supported within JSON requests as $and, $or operat
 | **Operator** | **Description** | **Example** |
 | --- | --- | --- |
 | $and | Performs an AND operation on an array with at least two expressions and returns the document that meets all the expressions. | {&quot;$and&quot;:[{&quot;age&quot;:5},{&quot;name&quot;:&quot;Joe&quot;}]} |
-| : | Performs as alternative syntax to the $and operator. |
-{&quot;name&quot;:&quot;Joe&quot;,&quot;age&quot;:5} |
+| : | Performs as alternative syntax to the $and operator. | {&quot;name&quot;:&quot;Joe&quot;,&quot;age&quot;:5} |
 | $or | Performs an OR operation on an array with at least two expressions and returns the documents that meet at least one of the expressions. | {&quot;$or&quot;:[{&quot;age&quot;:4},{&quot;name&quot;:&quot;Joe&quot;}]} |
 
 Reference:
