@@ -1212,7 +1212,17 @@ This Stats object stores the data that shows how the scheduled of frames and tim
 
 ### 6.7.2 Fields Published
 
-![](RackMultipart20200715-4-1wm8p7k_html_578b68d289a6a6f0.png)
+| Terms             | Definitions                                                                                                                                           | Stats Object                    | Targeting OOHject Description                  | OOHbject Value   |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------- | ---------------- |
+| Spot Length       | The amount of time the advertiser has to play their creative in - If an advertisement is on screen for this length of time, this constitutes one play | StatsScheduled & StatsDelivered | Delivery.Frames.ShareOfDisplay.Spot            | StatsValue       |
+| Served Plays      | The number of times a creative (with a defined spot length) has started playing but it may not have been fully played                                 | StatsDelivered                  | Delivery.Frames.ShareOfDisplay.Spot            | StatsCountServed |
+| Delivered Plays   | The number of times a creative (with a defined spot length is fully played)                                                                           | StatsScheduled & StatsDelivered | Delivery.Frames.ShareOfDisplay.Spot            | StatsCount       |
+| Delivered Impacts | The number of times that a creative has been viewed - as defined by the 'audience DataSource' impact scores                                           | StatsScheduled & StatsDelivered | Inventory.Audience.<DataSource>.Impacts        | StatCount        |
+| Share of Time     | An Average % share of total time across the dimensions reported on for the campaign (e.g. play, hour. panel, geography)                               | StatsScheduled & StatsDelivered | Delivery.Frames.ShareOfDisplay.ShareOfTime     | StatsAverage     |
+| Share of Impacts  | An average % share of viewed impacts across the dimensions reported on for the campaign (e.g. play, hour. panel, geography)                           | StatsScheduled & StatsDelivered | Delivery.Audience.<DataSource>.ShareOfAudience | StatsAverage     |
+| Reach             | The number of individuals reached by a campaign                                                                                                       | StatsScheduled & StatsDelivered | Inventory.Audience.<DataSource>.Reach          | StatsValue       |
+| Frequency         | The frequency of exposure by each unique individual                                                                                                   | StatsScheduled & StatsDelivered | Inventory.Audience.<DataSource>.Reach          | StatsValue       |
+| CreativeId        | The ID of the creative file that is played out in the Spot                                                                                            | StatsScheduled & StatsDelivered | Delivery.Frames.ShareOfDisplay.Spot.CreativeId | StatsValue       |
 
 ### 6.7.3 Granularity
 
