@@ -177,7 +177,7 @@ Richard Saturley **World Out of Home Organisation**
 
 [6.6 Logical JSON operators](#66-logical-json-operators)
 
-[6.7 OOH Schedule & Delivery Reporting 46](67-ooh-schedule--delivery-reporting)
+[6.7 OOH Schedule & Delivery Reporting 46](#67-ooh-schedule--delivery-reporting)
 
 [6.8 Paging QueryParameters](#68-paging-queryparameters)
 
