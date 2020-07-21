@@ -2096,7 +2096,7 @@ The OpenDirect (OOH) standard is not about telling media owners how to trade, no
 
 The table below summarises the OpenDirect (OOH) Resources, Common Objects and Targeting OOHbjects required to achieve a basic implementation of OpenDirect (OOH) 1.5.1 based on a Media Owner&#39;s existing trading capabilities and trading tools.
 
-![AppendixB](Pictures/AppendixB.png)
+![MinimumResources](Pictures/minimum_resources.png)
 
 
 *OpenDirect 1.5.1 © 2016 Interactive Advertising Bureau, OpenDirect (OOH) 1.5.1 and OOHbjects © OutSmart and IPAO March 2020*
