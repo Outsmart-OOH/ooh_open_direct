@@ -283,7 +283,7 @@ Buy and Sell Side Tech providers can use the specifications in this document to 
 Publishers/Media-Owners also need to use this spec to make their inventory available to API requests from Tech Providers.
 
 
-# Introduction/Overview
+# 1. Introduction/Overview
 
 The OpenDirect API provides a standard way for publishers to integrate with tech provider partners so that they can offer premium guaranteed inventory programmatically. Using the API, buyers can build one system that can access inventory from multiple publishers without custom integrations for each one.
 
@@ -299,7 +299,7 @@ Some of the features supported in OpenDirect are:
 Additional features are added with each new update to further enable wider adoption and support the needs of the industry.
 
 
-## How it works
+## 1.1 How it works
 
 At a high level, the workflow involves establishing a relationship between buyer and publisher, setting up accounts, and placing orders on the buyer side while publisher systems respond to API requests for order placement. The following table outlines general steps for using the API: Buy
 
@@ -311,7 +311,7 @@ At a high level, the workflow involves establishing a relationship between buyer
 | **4. Validate Delivery of Orders** Buyers can check the delivery status of In-flight and completed orders | **4. Report on Order Delivery** Request for order delivery progress and completion, based on the targeted metrics of the booked order, is received as API requests that publisher systems must respond to. |
 
 
-## Authorisation
+## 1.2 Authorisation
 
 The OpenDirect API is a RESTful API that supports paging query parameters and uses OAuth to authenticate users. A publisher must support at least one &quot;full access&quot; user account (API credentials) per buying organization. Non-buying organizations may have optional user accounts. A publisher may support flexible permission schemes for additional user accounts.
 
@@ -324,7 +324,7 @@ OpenDirect users include:
 **Advertisers:** Advertisers represent the brands that purchase publisher inventory for advertising their brands. An advertiser may also be a buyer, but if the advertiser works with a buyer, the advertiser must provide formal consent to allow the buyer to act on its behalf. The Advertiser ID can be used to set up advertiser accounts in an agency or publisher&#39;s OpenDirect system.
 
 
-## Programming Elements
+## 1.3 Programming Elements
 
 For details about the programming elements that this specification defines, see the following sections.
 
@@ -347,13 +347,13 @@ For details about the programming elements that this specification defines, see 
 **OpenDirect Workflow:** Outlines the process for establishing an account and the calls required to create and process an order.
 
 
-# Resource Objects
+# 2 Resource Objects
 
 The OpenDirect API is a RESTful API that supports JSON. This section uses JSON schemas to define the resource objects used by the API. 
 For a diagram that shows the relationships between these resources, see Resource Model.
 
 
-## Account
+## 2.1 Account
 
 An account defines a buyer-advertiser relationship. A buyer is typically an agency that places orders on behalf of several advertisers. Each account associates a buyer with one advertiser and is used to manage orders for one publisher. An advertiser may also work with several buyers, and therefore, advertisers have a separate account for each buyer they work with. If an advertiser represents itself, the account identifies the advertiser as both the buyer and the advertiser.
 
@@ -363,15 +363,15 @@ The Account owns the order.
 
 Account Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/account/account_object.json
 
-## Assignment
+## 2.2 Assignment
 
 Creative assignment not in scope for OpenDirect (OOH) 1.5.1
 
-## Creative
+## 2.3 Creative
 
 Creative specification is not in scope for OpenDirect (OOH) 1.5.1
 
-## Line
+## 2.4 Line
 
 Line resources are included in an order and provide details about the product being booked, status, start and end dates, and other settings for the order item.
 
@@ -379,7 +379,7 @@ Notes: The user may update a line only if it&#39;s in the Draft state. If the li
 
 Line Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/line/line_object.json
 
-### Booking Status Values
+### 2.4.1 Booking Status Values
 
 - **Draft** – Indicates that a draft of the line has been saved. The line may be updated only in this state. The line remains in this state until the user deletes, reserves, or books the line.
 - **PendingReservation** – Indicates that the reservation is in progress. If approved, the state moves to Reserved; otherwise, it moves to Declined. Any user action requested in this state must fail.
@@ -395,7 +395,7 @@ Line Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/mast
 - **Declined** – Indicates that booking or reservation was declined by the publisher or failed. The line remains in this state unless the user resets the line, which moves it back to the Draft state. The StateChangeReason field must specify the reason why the booking or reservation was declined or failed.
 - **PendingChange** – this status is to be used for all asynchronous changes other than reservation and booking.
 
-## Order
+## 2.5 Order
 
 The Order resource specifies the plan&#39;s start and end dates, estimated budget, currency, and preferred billing method for all line items in the order.
 
@@ -403,19 +403,19 @@ To specify the individual line item details of the order, use the LINE resource 
 
 Order Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/order/order_object.json
 
-## Organisation
+## 2.6 Organisation
 
 The organization resource may represent an advertiser or agency (buyer). The Account determines the role that the organization plays by using the organization ID in place of the BuyerId or AdvertiserId. The organization&#39;s role may vary by account. For example, the organization may be an advertiser in one account and a buyer in another. An advertiser may create one or more organizations to meet their business needs. For example, they may create a single organization and then create accounts for each brand, subsidiary, or division. Or, they may create an organization for each brand. It is up to the advertiser to determine how they use Organization and Account to meet their organizational needs.
 
 Organization Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/organization/organization_object.json
 
-## Product
+## 2.7 Product
 
 A Product resource identifies anything from an ad placement to a Run of Network product in the publisher&#39;s product catalogue. Values for all supported fields are provided by the publisher.
 
 Product Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/product/product_object.json
 
-## Change Request
+## 2.8 Change Request
 
 When an order has already been placed and a change is needed, the ChangeRequest resource can be used to request a change and subsequently modify the order pending the approval of the change request.
 
@@ -423,78 +423,78 @@ The Order filter request specified in section 7.6.3 can be used to find orders t
 
 Change Request Schema: TBC
 
-## Stats
+## 2.9 Stats
 
 A resource to publish the OOH display schedule generated to fulfil the campaign targeting requirements (pre-flight) and the performance of the schedule when the campaign is in flight and/or completed.
 
 Stats Schema: TBC
 
 
-# Common Objects
+# 3 Common Objects
 
 The following objects are common to one or more resources. For example, the CONTACT common object is used to provide values for both the PRODUCT and ORGANIZATION resources.
 
-## Address
+## 3.1 Address
 
 Defines address details for an Organization or Contact
 
 Address Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/address_object.json
 
-## AdvertiserBrand
+## 3.2 AdvertiserBrand
 
 Defines the details of a Brand associated with an organization
 
 AdvertiserBrand Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/advertiserBrand_object.json
 
-## Contact
+## 3.3 Contact
 
 Defines details for an individual contact within an Organization
 
 Contact Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/contact_object.json
 
-## ProductAvails
+## 3.4 ProductAvails
 
 Defines the response to a request for product availability and pricing information at product Level
 
 ProductAvails Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json
 
-## ProductAvailsSearch
+## 3.5 ProductAvailsSearch
 
 Defines search criteria used for requesting product availability and pricing within the given search criteria. This object is returned at OOHbject Level based on the OOHbject targeting criteria submitted.
 
 ProductAvailsSearch Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvailsSearch_object.json
 
-## ProductSearch
+## 3.6 ProductSearch
 
 The ProductSearch object is used to generate a general list of products independent of their availability. For example, an agency might be interested in looking up all products that are available in Shopping Malls to get an idea for what the options are. Alternatively, the ProductAvailsSearch returns a list of products within specified search criteria with live availability and pricing.
 
 ProductSearch Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productSearch_object.json
 
-## OOHProviderData
+## 3.7 OOHProviderData
 
 The OOHProviderData object is used for Buyers to detail information that may be used to identify their order in a Seller&#39;s system using their own IDs or references. This would be mainly used for manually identifying orders in the event of the automated process needing manual intervention.
 
 OOHProviderData Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohProviderData_object.json
 
-## Size
+## 3.8 Size
 
 Defines the height and width (in pixels) that a publisher accepts for a given resource (e.g. Product, Creative)
 
 Size Schema:https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/size_object.json
 
-## StatsScheduled
+## 3.9 StatsScheduled
 
 Time bound arrays of OOHbjects that describe the schedule that is created by the MediaOwner / Publisher to fullfill the line order requirements.
 
 StatsScheduled Schema: TBC
 
-## StatsDelivered
+## 3.10 StatsDelivered
 
 Time bound arrays of OOHbjects that describe the delivery of the schedule created by the MediaOwner / Publisher to fullfill the line order requirements.
 
 StatsDelivered Schema: TBC
 
-## OOHbject
+## 3.11 OOHbject
 
 A collection of targeting criteria used to discover and target the digital and physical presentation aspects of OOH media.
 
@@ -924,7 +924,7 @@ The following shows an example response for /accounts.
 The collection object may include additional publisher-defined properties. If there are no resources to return, the array must be empty.
 
 
-# OpenDirect General Support Requirements
+# 6 OpenDirect General Support Requirements
 
 ## 6.1 Authentication
 
