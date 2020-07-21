@@ -1899,85 +1899,6 @@ Gets a list of advertiserbrands in the Media Owner / Publisher sell side system.
 
 GET: (required) Gets a list of all Advertiser Brands
 
-#### Example Request
-
-GET https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/advertiserbrands HTTP/1.1
-
-Accept: application/json
-
-AccessToken: \&lt;OAuth token\&gt;
-
-#### Example Response
-
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-
-Content-Length: x
-
-{
-
-[
-
-{
-
-&quot;Id&quot;: 1173,
-
-&quot;Name&quot;: &quot;Marmite&quot;,
-
-&quot;OrganizationId&quot;: 345,
-
-&quot;ThirdPartyId&quot;: 27,
-
-&quot;ThirdPartyDataSource&quot;: &quot;Space&quot;
-
-},
-
-{
-
-&quot;Id&quot;: 1174,
-
-&quot;Name&quot;: &quot;PGTips&quot;,
-
-&quot;OrganizationId&quot;: 345,
-
-&quot;ThirdPartyId&quot;: 42,
-
-&quot;ThirdPartyDataSource&quot;: &quot;Space&quot;
-
-},
-
-{
-
-&quot;Id&quot;: 1175,
-
-&quot;Name&quot;: &quot;Lynx&quot;,
-
-&quot;OrganizationId&quot;: 345,
-
-&quot;ThirdPartyId&quot;: 109,
-
-&quot;ThirdPartyDataSource&quot;: &quot;Space&quot;
-
-},
-
-{
-
-&quot;Id&quot;: 1176,
-
-&quot;Name&quot;: &quot;Walls&quot;,
-
-&quot;OrganizationId&quot;: 345,
-
-&quot;ThirdPartyId&quot;: 240,
-
-&quot;ThirdPartyDataSource&quot;: &quot;Space&quot;
-
-}
-
-]
-
-}
 
 ### 7.12.2 /advertiserbrands/{id}
 
@@ -1987,35 +1908,6 @@ Gets a specified Advertiser Brand.
 
 GET: (required) Gets the specified Advertiser Brand.
 
-#### Example GET Request
-
-GET https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/organizations/advertiserbrands/1173 HTTP/1.1
-
-Accept: application/json
-
-AccessToken: \&lt;OAuth token\&gt;
-
-#### Example GET Response
-
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-
-Content-Length: x
-
-{
-
-&quot;Id&quot;: 1173,
-
-&quot;Name&quot;: &quot;Marmite&quot;,
-
-&quot;OrganizationId&quot;: 345,
-
-&quot;ThirdPartyId&quot;: 27,
-
-&quot;ThirdPartyDataSource&quot;: &quot;Space&quot;
-
-}
 
 ### 7.12.3 /advertiserbrands?$filter=
 
@@ -2031,6 +1923,14 @@ GET: (optional) Gets a list of Advertiser Brands that match the specified filter
 - One or more ThirdPartyIds
 - ThirdPartyDataSource
 
+### 7.12.4 Advertiser Brand Examples
+
+| URI                        | Verb | Description                                                                          | Request | Response |
+| -------------------------- | ---- | ------------------------------------------------------------------------------------ | ------- | -------- |
+| /advertiserbrands          | GET  | (required) Gets a list of all Advertiser Brands<br>                                  |         |          |
+| /advertiserbrands/{id}     | GET  | (required) Gets the specified Advertiser Brand                                       |         |          |
+| /advertiserbrands?$filter= | GET  | (optional) Gets a list of Advertiser Brands that match the specified filter criteria |         ||
+
 ## 7.13 DataSources
 
 DataSources lists all targetable OOHbjects in the sell side system that are defined using third party DataSources
@@ -2043,101 +1943,6 @@ Gets a list of all third party defined OOHbjects in the sell side system
 
 GET: (required) Gets a list of all DataSourced OOHbjects in the sell side system
 
-#### Example Request
-
-GET https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/datasources HTTP/1.1
-
-Accept: application/json
-
-AccessToken: \&lt;OAuth token\&gt;
-
-#### Example Response
-
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-
-Content-Length: x
-
-{
-
-[
-
-{
-
-&quot;Name&quot;: &quot;Inventory&quot;,
-
-&quot;Type&quot;: &quot;Frames&quot;,
-
-&quot;DataSource&quot;: &quot;Space&quot;,
-
-&quot;Target&quot;: &quot;frame\_id&quot;
-
-},
-
-{
-
-&quot;Name&quot;: &quot;Inventory&quot;,
-
-&quot;Type&quot;: &quot;Frames&quot;,
-
-&quot;DataSource&quot;: &quot;Space&quot;,
-
-&quot;Target&quot;: &quot;format&quot;
-
-},
-
-{
-
-&quot;Name&quot;: &quot;Inventory&quot;,
-
-&quot;Type&quot;: &quot;Frames&quot;,
-
-&quot;DataSource&quot;: &quot;Space&quot;,
-
-&quot;Target&quot;: &quot;environment&quot;
-
-}
-
-{
-
-&quot;Name&quot;: &quot;Inventory&quot;,
-
-&quot;Type&quot;: &quot;Audience&quot;,
-
-&quot;DataSource&quot;: &quot;Route&quot;,
-
-&quot;Target&quot;: &quot;age&quot;
-
-},
-
-{
-
-&quot;Name&quot;: &quot;Inventory&quot;,
-
-&quot;Type&quot;: &quot;Audience&quot;,
-
-&quot;DataSource&quot;: &quot;Route&quot;,
-
-&quot;Target&quot;: &quot;sex&quot;
-
-},
-
-{
-
-&quot;Name&quot;: &quot;Inventory&quot;,
-
-&quot;Type&quot;: &quot;Audience&quot;,
-
-&quot;DataSource&quot;: &quot;Route&quot;,
-
-&quot;Target&quot;: &quot;affluence&quot;
-
-}
-
-]
-
-}
 
 ### 7.13.2 /datasources/{datasource}
 
@@ -2146,66 +1951,6 @@ Gets a specified list of targetable OOHbjects by DataSource.
 #### Verbs
 
 GET: (required) Gets OOHbjects by the specified DataSource.
-
-#### Example GET Request
-
-GET https: //\&lt;host\&gt;/\&lt;path\&gt;/\&lt;version\&gt;/datasources/route HTTP/1.1
-
-Accept: application/json
-
-AccessToken: \&lt;OAuth token\&gt;
-
-#### Example GET Response
-
-HTTP/1.1 200 OK
-
-Content-Type: application/json
-
-Content-Length: x
-
-{
-
-[
-
-{
-
-&quot;Name&quot;: &quot;Inventory&quot;,
-
-&quot;Type&quot;: &quot;Audience&quot;,
-
-&quot;DataSource&quot;: &quot;Route&quot;,
-
-&quot;Target&quot;: &quot;age&quot;
-
-},
-
-{
-
-&quot;Name&quot;: &quot;Inventory&quot;,
-
-&quot;Type&quot;: &quot;Audience&quot;,
-
-&quot;DataSource&quot;: &quot;Route&quot;,
-
-&quot;Target&quot;: &quot;sex&quot;
-
-},
-
-{
-
-&quot;Name&quot;: &quot;Inventory&quot;,
-
-&quot;Type&quot;: &quot;Audience&quot;,
-
-&quot;DataSource&quot;: &quot;Route&quot;,
-
-&quot;Target&quot;: &quot;affluence&quot;
-
-}
-
-]
-
-}
 
 ### 7.13.3 /datasources?$filter=
 
@@ -2218,6 +1963,14 @@ GET: (optional) Gets a list of OOHbjects that match the specified filter criteri
 - Name
 - Type
 - Target
+
+### 7.14.4 Datasource Examples
+
+| URI                   | Verb | Description                                                                  | Request | Response |
+| --------------------- | ---- | ---------------------------------------------------------------------------- | ------- | -------- |
+| /datasources          | GET  | (required) Gets a list of all DataSourced OOHbjects in the sell side system  |         |          |
+| /datasources/{id}     | GET  | (required) Gets OOHbjects by the specified DataSource                        |         |          |
+| /datasources?$filter= | GET  | (optional) Gets a list of OOHbjects that match the specified filter criteria |         ||
 
 # 8 OpenDirect Workflow
 
