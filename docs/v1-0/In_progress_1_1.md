@@ -79,7 +79,7 @@ Richard Saturley **World Out of Home Organisation**
 
 [2.2 Assignment](#22-assignment)
 
-[2.3Creative](#23-creative)
+[2.3 Creative](#23-creative)
 
 [2.4 Line](#24-line)
 
@@ -94,29 +94,29 @@ Richard Saturley **World Out of Home Organisation**
 [2.9 Stats](#29-stats)
 
 
-[3.Common Objects 23](#_Toc44509246)
+[3. Common Objects](#3-common-objects)
 
-[3.1Address 23](#_Toc44509247)
+[3.1 Address](#31-address)
 
-[3.2AdvertiserBrand 23](#_Toc44509248)
+[3.2 AdvertiserBrand](#32-advertiserbrand)
 
-[3.3Contact 23](#_Toc44509249)
+[3.3 Contact](#33-contact)
 
-[3.4ProductAvails 24](#_Toc44509250)
+[3.4 ProductAvails](#34-productavails)
 
-[3.5ProductAvailsSearch 24](#_Toc44509251)
+[3.5 ProductAvailsSearch](#35-productavailssearch)
 
-[3.6ProductSearch 25](#_Toc44509252)
+[3.6 ProductSearch](#36-productsearch)
 
-[3.7OOHProviderData 25](#_Toc44509253)
+[3.7 OOHProviderData](#37-oohproviderdata)
 
-[3.8Size 25](#_Toc44509254)
+[3.8 Size](#38-size)
 
-[3.9Segment 25](#_Toc44509255)
+[3.9 StatsScheduled](#39-statsscheduled)
 
-[3.10 Stats 26](#_Toc44509256)
+[3.10 StatsDelivered](#310-statsdelivered)
 
-[3.11OOHbject 27](#_Toc44509257)
+[3.11 OOHbject](#311-oohbject)
 
 
 [4Reference Data 28](#_Toc44509258)
