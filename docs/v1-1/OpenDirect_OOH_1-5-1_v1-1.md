@@ -549,7 +549,7 @@ The use of multiple objects to describe an OOH Product are at the discretion of 
 
 The core identification structure of an OOHbject is
 
-- **Name.Type.DataSource.Target**
+- **Name,Type,DataSource,Target**
 
 The key **Name** descriptions for OOH media targeting are:
 
@@ -579,7 +579,7 @@ The Inventory **Name** OOHbject allows an OOH media owner to describe (and OOH m
 
 ![Inventory OOHbject](Pictures/name_inventory.png)
 
-#### Inventory.Frames.SPACE
+#### Inventory,Frames,SPACE,x
 
 As the initial implementation of OpenDirect (OOH) 1.5.1 is in the UK, this object uses the UK Outsmart industry bodies&#39; SPACE register for the identification of Frame inventory.
 
@@ -592,7 +592,7 @@ These classifications could be taken and used as a common format in countries/ma
 Alternatively, the Inventory.Frames OOHbject can reference a Media Owner / Publisher's own description of inventory e.g. 
 Inventory.Frames.<MediaOwnerName>.TramWraps
 
-#### Inventory.Audience.ROUTE
+#### Inventory,Audience,ROUTE,x
 
 As the initial implementation of OpenDirect (OOH) 1.5.1 is in the UK, this object uses the Route dataset to describe and segment OOH audiences.
 
@@ -606,7 +606,7 @@ Route has over 400 categories of audience classification and reports the audienc
 
 Further information on route can be found at [www.route.org.uk](http://www.route.org.uk/)
 
-#### Inventory.Audience.Metrics
+#### Inventory,Audience,Metrics
 
 Allows the Media Owner / Publisher to define the audience metrics that are available to targeted and allows the buyer to specify these metrics when performing an availability check or setting up an order line.
 
@@ -620,7 +620,7 @@ The Delivery OOHbject allows an OOH media owner to describe (and OOH media buyer
 
 ![Delivery OOHbject](Pictures/name_delivery.png)
 
-#### Delivery.Frames.Time.Days
+#### Delivery,Frames,Time,Days
 
 If this is made available, this dynamic OOHbject details an array of numbered days that can be targeted within in the product. This dynamic array takes the form of the days available from the booking line start and end date
 
@@ -632,7 +632,7 @@ Delivery.Frames.Time.Days = [1,2,3,4,5,6,7] based on ISO 8601
 
 The OOHbject field *Selectable* indicates if this array is further targetable e.g. the Days array of [1,2,3,4,5,6,7] is returned, and if the Days are flagged as *Selectable*, the buyer may select days [6,7].
 
-#### Delivery.Frames.Time.Hours
+#### Delivery,Frames,Time,Hours
 
 If this is made available, this dynamic OOHbject details an array of numbered hours that can be targeted within in the product. This dynamic array takes the form of the hours available from the specified booking line start and end date
 
@@ -652,7 +652,7 @@ Hours[10,11,12,13,34,35,36,37]
 
 Practically, the booking UI should convert the days/hours selected from a calendar based UI into the hour array in the background.
 
-#### Delivery.Frames.ShareOfDisplay.ShareOfTime
+#### Delivery,Frames,ShareOfDisplay,ShareOfTime
 
 This OOHbject details the *ShareOfTime* that can be targeted within the product. The *ShareOfTime* can be described as the percentage of time the advert appears on screen vs the time the advert does not appear on screen over the flight of the campaign.
 
@@ -662,7 +662,7 @@ A fixed 1 in 4 loop/scrolling billboard with have a *ShareOfTime* value of 25
 
 A classic paper/vinyl billboard will have a *ShareOfTime* value of 100
 
-#### Delivery.Frames.ShareOfDisplay.Spot
+#### Delivery,Frames,ShareOfDisplay,Spot
 
 This OOHbject details the *Spot* length (or array of lengths) in seconds that a digital advert can run for each time it appears on a frame. The *Spot* length will affect the frequency of play out within the campaign flight.
 
@@ -672,7 +672,7 @@ if the Campaign flight is 10 hours, the *ShareOfTime* value is 20(%) and the cre
 
 If the Campaign flight is 10 hours, the *ShareOfTime* value is 100(%) and the creative is 10s long, the *Spot* will play 3600 times.
 
-#### Delivery.Frames.ShareOfDisplay.SpotBreakLength (Optional)
+#### Delivery,Frames,ShareOfDisplay,SpotBreakLength (Optional)
 
 If the product delivers the campaign within a fixed loop, the *SpotBreakLength* OOHbject details the length of time in seconds between the Spots being played.
 
@@ -682,7 +682,7 @@ Spot = 5
 
 SpotBreakLength = 25
 
-#### Delivery.Audience.DataSource.ShareOfImpacts
+#### Delivery,Audience,DataSource,ShareOfImpacts
 
 An average % share of viewed impacts across the targeted OOHbjects according to the Audience DataSource identified.
 
@@ -700,15 +700,15 @@ The Investment OOHbject allows an OOH media owner to describe (and OOH media buy
 
 *Local_Currency* is defined as the currency that the order is going to be transacted in to ISO 4217 currency codes e.g. GBP, USD, EUR
 
-#### Investment.Total.Local_Currency.Fixed
+#### Investment,Total,Local_Currency,Fixed
 
 If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested total Product price or given total Product price based on the other OOHbject targeting values given.
 
-#### Investment.Frames.Local_Currency.CPF
+#### Investment,Frames,Local_Currency,CPF
 
 If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested *cost per frame* price or a target *cost per frame* price based on the other OOHbject Product targeting values given.
 
-#### Investment.Audience.Local_Currency.CPT
+#### Investment,Audience,Local_Currency,CPT
 
 If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested *cost per thousand* price or a target *cost per thousand* price based on the other OOHbject Product targeting values given.
 
@@ -726,7 +726,7 @@ Specific targets for Audience, Location and Display Time would be made using arr
 
 The segment array for every Distribution.x.x.x object gives a choice of an even *Fixed* distribution or a *Flexible* distribution that achieves the Campaign Inventory and Delivery targets over the campaign flight.
 
-#### Distribution.Frames.ShareOfDisplay.x
+#### Distribution,Frames,ShareOfDisplay,x
 
 This OOHbject describes how the delivery of the campaign share of display time is distributed over the campaign flight times.
 
@@ -735,7 +735,7 @@ The default setting for this Distribution OOHbject is *Flexible* meaning that th
 - Day = Fixed, the averaged ShareOfTime and total Spot Frequency will be delivered at an equal pace on each selected Day over the campaign flight
 - Hour = Fixed, the averaged ShareOfTime and total Spot Frequency will be delivered at an equal pace on each selected Hour over the campaign flight
 
-#### Distribution.Audience.Time.Impacts.x
+#### Distribution,Audience,Time,Impacts,x
 
 This OOHbject describes how the delivery of the targeted campaign audience impact volume is distributed over the campaign flight time.
 
@@ -752,7 +752,7 @@ This OOHbject can also be described as:
 
 If the Media Owner/Buyer can support such campaign metrics &amp; scheduling distribution
 
-#### Distribution.Audience.DataSource.Impacts.x
+#### Distribution,Audience,DataSource,Impacts,x
 
 This OOHbject describes how the delivery of the targeted campaign audience is distributed over the frame locations in the campaign flight.
 
@@ -773,7 +773,7 @@ If the **Distribution** OOHbject audience needs to reference TargetValues other 
 - Inventory.Audience.Metrics.Reach
 - Inventory.Audience.Metrics.Frequency
 
-#### Distribution.Investment.Time.x
+#### Distribution,Investment,Time,x
 
 This OOHbject describes how the delivery of the targeted campaign investment is distributed over time in the campaign flight.
 
@@ -782,7 +782,7 @@ The default setting for this Distribution OOHbject is *Flexible* meaning that th
 - Day = Fixed, the same investment will be delivered on each day to achieve the total investment target
 - Hour = Fixed, the same investment will be delivered in each hour to achieve the same investment target
 
-#### Distribution.Investment.DataSource.x
+#### Distribution,Investment,DataSource,x
 
 This OOHbject describes how the delivery of the targeted campaign investment is distributed over locations in the campaign flight.
 
