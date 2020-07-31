@@ -369,7 +369,9 @@ Product Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/m
 
 ## 2.8 Change Request
 
-When an order has already been placed and a change is needed, the ChangeRequest resource can be used to request a change and subsequently modify the order pending the approval of the change request.
+When an order has already been placed and a change is needed, the ChangeRequest resource can be used to request a change (at Account level) and subsequently modify the order pending the approval of the change request.
+
+![ChangeRequestSummart](Pictures/change_request.png)
 
 The Order filter request specified in section 7.6.3 can be used to find orders that have a booking status of &quot;PendingChange.&quot;
 
@@ -1608,9 +1610,9 @@ GET: Gets a list of all lines in the change request.
 
 POST: Adds a line to the change request.
 
-### 7.10.2 /accounts/{id}/changerequest/{id}
+### 7.10.2 /accounts/{id}/changerequest/{id}/lines/{id}
 
-Gets a specified change request for an account.
+Gets a specified change request at the line level for an order.
 
 #### Verbs
 
@@ -1618,7 +1620,7 @@ GET: Gets the specified line from the change request.
 
 PATCH: Updates the specified line in the change request. To update a line, the line must be in the Pending state.
 
-DELETE: Deletes the specified line from the change request. May delete a line only if it&#39;s in the Pending state. Must also delete assignments that reference the line.
+DELETE: Deletes the specified line from the change request. May delete a line only if it's in the Pending state. Must also delete assignments that reference the line.
 
 ### 7.10.3 /accounts/{id}/changerequest/lines?$filter=
 
@@ -1640,7 +1642,7 @@ May support getting a list by IDs.
 | ------------------------------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------- |
 | /accounts/{id}/changerequest/{id}/lines     | GET    | Gets a list of all lines in the change request                                                                                                                    |         |          |
 |                                             | POST   | Adds a line to the change request                                                                                                                                 |         |          |
-| /accounts/{id}/changerequest/{id}           | GET    | Gets the specified line from the change request                                                                                                                   |         |          |
+| /accounts/{id}/changerequest/{id}/lines/{id}    | GET    | Gets the specified line from the change request                                                                                                                   |         |          |
 |                                             | PATCH  | Updates the specified line in the change request. To update a line, the line must be in the Pending state                                                         |         |          |
 |                                             | DELETE | Deletes the specified line from the change request. May delete a line only if it&#39;s in the Pending state. Must also delete assignments that reference the line |         |          |
 | /accounts/{id}/changerequest/lines?$filter= | GET    | Gets a list of lines that match the specified filter criteria. The user may use OData expressions and method calls with the following Line properties             |         ||
