@@ -740,7 +740,7 @@ e.g.
 - Time,Days = Fixed, the same volume of Frames will be delivered on each selected Day over the campaign flight
 - Time,Hours = Fixed, the same volume of Frames will be delivered on each selected Hour over the campaign flight
 - (DataSource),frame_id = Fixed, a fixed volume of frames will deliver the campaign targeting objectives.
-- (DataSource),region = Fixed, a volume of frames per region will deliver the campaign targeting objectives (there will be fliexibility within the region which frames are actually used to deliver the campaign targets)
+- (DataSource),region = Fixed, a fixed volume of frames per region will deliver the campaign targeting objectives (there will be fliexibility within the region which frames are actually used to deliver the campaign targets)
 
 #### Distribution,Audience,x,y
 
