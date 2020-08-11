@@ -730,7 +730,7 @@ The segment array for every Distribution.z.x.y object gives a choice of an even 
 
 #### Distribution,Frames,x,y
 
-This OOHbject describes how the delivery of the campaign display is distributed over the campaign to frames, times or <DataSource> locations.
+This OOHbject describes how the delivery of the campaign display is distributed over the campaign to frames, times or (DataSource) locations.
 
 The default setting for this Distribution OOHbject is *Flexible* meaning that the targeted *ShareOfDisplay* in terms of average *ShareOfTime* and total *Spot* frequency will be achieved in total over the campaign flight.
 
@@ -740,19 +740,19 @@ e.g.
 
 #### Distribution,Audience,x,y
 
-This OOHbject describes how the delivery of the targeted campaign audience is distributed over the campaign flight to audience, time or <DataSource> locations.
+This OOHbject describes how the delivery of the targeted campaign audience is distributed over the campaign flight to audience, time or (DataSource) locations.
 
 The default setting for this Distribution OOHbject is *Flexible*; meaning that the total targeted audience impact volume will be delivered over the campaign flight time, but different days, hours and/or locations may have different audience delivery volumes.
 
 e.g.
 - Time,Day = Fixed, the same volume of audience impacts will be delivered on each day to achieve the total audience target
 - Time,Hour = Fixed, the same volume of audience impacts will be delivered on hour
-- <DataSource>,frame_id = Fixed, the same volume of audience impacts will be delivered at each Frame location over the campaign flight.
-- <DataSource>,postal_sector = Fixed, the same volume of audience impacts will be delivered within each Postal Sector over the campaign flight.
-- <DataSource>,town = Fixed, the same volume of audience impacts will be delivered within each Town over the campaign flight.
-- <DataSource>,conurbation = Fixed, the same volume of audience impacts will be delivered within each Conurbation over the campaign flight.
-- <DataSource>,tv_area = Fixed, the same volume of audience impacts will be delivered within each TV Area over the campaign flight.
-- <DataSource>,region = Fixed, the same volume of audience impacts will be delivered within each TV Area over the campaign flight.
+- (DataSource),frame_id = Fixed, the same volume of audience impacts will be delivered at each Frame location over the campaign flight.
+- (DataSource),postal_sector = Fixed, the same volume of audience impacts will be delivered within each Postal Sector over the campaign flight.
+- (DataSource),town = Fixed, the same volume of audience impacts will be delivered within each Town over the campaign flight.
+- (DataSource),conurbation = Fixed, the same volume of audience impacts will be delivered within each Conurbation over the campaign flight.
+- (DataSource),tv_area = Fixed, the same volume of audience impacts will be delivered within each TV Area over the campaign flight.
+- (DataSource),region = Fixed, the same volume of audience impacts will be delivered within each TV Area over the campaign flight.
 
 The addition of Inventory,Audience,Metrics,x OOHbject to the targeting array determines the Audience metrics being used e.g.
 
@@ -771,12 +771,12 @@ The default setting for this Distribution OOHbject is *Flexible* meaning that th
 e.g.
 - Time,Day = Fixed, the same investment will be delivered on each day to achieve the total investment target
 - Time,Hour = Fixed, the same investment will be delivered in each hour to achieve the same investment target
-- <DataSource>,frame_id= Fixed, the same investment will be delivered at each Frame location over the campaign flight to achieve the campaign investment target.
-- <DataSource>,postal_sector = Fixed, the same investment will be delivered within each Postal Sector over the campaign flight to achieve the campaign investment target.
-- <DataSource>,town = Fixed, the same investment will be delivered within each Town over the campaign flight to achieve the campaign investment target.
-- <DataSource>,conurbation = Fixed, the same investment will be delivered within each Conurbation over the campaign flight to achieve the campaign investment target.
-- <DataSource>,tv_area = Fixed, the same investment will be delivered within each TV Area over the campaign flight to achieve the campaign investment target.
-- <DataSource>,region = Fixed, the same investment impacts will be delivered within each TV Area over the campaign flight to achieve the campaign investment target.
+- (DataSource),frame_id= Fixed, the same investment will be delivered at each Frame location over the campaign flight to achieve the campaign investment target.
+- (DataSource),postal_sector = Fixed, the same investment will be delivered within each Postal Sector over the campaign flight to achieve the campaign investment target.
+- (DataSource),town = Fixed, the same investment will be delivered within each Town over the campaign flight to achieve the campaign investment target.
+- (DataSource),conurbation = Fixed, the same investment will be delivered within each Conurbation over the campaign flight to achieve the campaign investment target.
+- (DataSource),tv_area = Fixed, the same investment will be delivered within each TV Area over the campaign flight to achieve the campaign investment target.
+- (DataSource),region = Fixed, the same investment impacts will be delivered within each TV Area over the campaign flight to achieve the campaign investment target.
 
 
 
