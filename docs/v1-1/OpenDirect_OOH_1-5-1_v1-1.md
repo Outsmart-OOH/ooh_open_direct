@@ -732,11 +732,15 @@ The segment array for every Distribution.z.x.y object gives a choice of an even 
 
 This OOHbject describes how the delivery of the campaign display is distributed over the campaign to frames, times or (DataSource) locations.
 
-The default setting for this Distribution OOHbject is *Flexible* meaning that the targeted *ShareOfDisplay* in terms of average *ShareOfTime* and total *Spot* frequency will be achieved in total over the campaign flight.
+The default setting for this Distribution OOHbject is *Flexible* meaning that the targeted *ShareOfDisplay* and/or frame volumes will be achieved in total over the campaign flight.
 
 e.g.
-- Time,Days = Fixed, the averaged ShareOfTime and total Spot Frequency will be delivered at an equal pace on each selected Day over the campaign flight
-- Time,Hours = Fixed, the averaged ShareOfTime and total Spot Frequency will be delivered at an equal pace on each selected Hour over the campaign flight
+- ShareOfDisplay,Days = Fixed, the ShareOfTime and/or total Spot Frequency will be delivered over each selected Day over the campaign flight
+- ShareOfDisplay,Hours = Fixed, the averaged ShareOfTime and/or total Spot Frequency will be delivered on each selected Hour over the campaign flight
+- Time,Days = Fixed, the same volume of Frames will be delivered on each selected Day over the campaign flight
+- Time,Hours = Fixed, the same volume of Frames will be delivered on each selected Hour over the campaign flight
+- (DataSource),frame_id = Fixed, a fixed volume of frames will deliver the campaign targeting objectives.
+- (DataSource),region = Fixed, a volume of frames per region will deliver the campaign targeting objectives (there will be fliexibility within the region which frames are actually used to deliver the campaign targets)
 
 #### Distribution,Audience,x,y
 
