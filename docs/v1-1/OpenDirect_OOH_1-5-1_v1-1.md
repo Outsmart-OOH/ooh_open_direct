@@ -225,7 +225,7 @@ A collection of targeting criteria used to discover and target the digital and p
 | --- | --- | --- | --- | --- |
 | 0.2 | Tim Harvey | 16/03/20 | All | First Draft of OpenDirect (OOH) 1.5.1 |
 | 1.0 | Tim Harvey | 24/04/20 | All | PDF Published Version of OpenDirect (OOH) 1.5.1 v1.0 |
-| 1.1 | Tim Harvey | 12/04/20 | See Github Log | Github Published Version of OpenDirect (OOH) 1.5.1 v1.1 |
+| 1.1 | Tim Harvey | from 12/04/20 | See Github Log | Github Published Version of OpenDirect (OOH) 1.5.1 v1.1 |
 
 
 ## Audience
