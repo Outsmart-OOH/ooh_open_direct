@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/lines/lines_response.json",
     
-    "BookingStatus": "Draft",
+    "BookingStatus": "Cancelled",
     "StateChangeReason": "",
     "Comment": "Free form comment",
     "Cost": 8000,
