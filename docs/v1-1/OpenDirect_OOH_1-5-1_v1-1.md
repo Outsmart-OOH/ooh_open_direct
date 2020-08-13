@@ -654,6 +654,11 @@ Hours[10,11,12,13,34,35,36,37]
 
 Practically, the booking UI should convert the days/hours selected from a calendar based UI into the hour array in the background.
 
+#### Delivery,Frames,Time,TimeZone
+
+This OOHbject can be used in the targeting array to indicate if the days and/or hour delivery of the campaign happens in the local time zone (e.g. the local time of where the advert is displayed) or Coordinated Universal Time (e.g. UTC playout would ensure the advert plays at the same exact moment around the world).
+The TargetValues are "Local" or "UTC". The default is "Local" time
+
 #### Delivery,Frames,ShareOfDisplay,ShareOfTime
 
 This OOHbject details the *ShareOfTime* that can be targeted within the product. The *ShareOfTime* can be described as the percentage of time the advert appears on screen vs the time the advert does not appear on screen over the flight of the campaign.
