@@ -128,7 +128,7 @@ Richard Saturley **World Out of Home Organisation**
 [6.4 ErrorResponse](#64-errorresponse)
 [6.5 Data Format](#65-data-format)
 [6.6 Logical JSON operators](#66-logical-json-operators)
-[6.7 Stats (OOH Schedule & Delivery Reporting 46)](#67-stats-ooh-schedule--delivery-reporting)
+[6.7 Stats (OOH Schedule & Delivery Reporting)](#67-stats-ooh-schedule--delivery-reporting)
 [6.8 Paging QueryParameters](#68-paging-queryparameters)
 
 [7 URIs and General Request/Response Rules](#7-uris-and-general-requestresponse-rules)
