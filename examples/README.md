@@ -1,6 +1,6 @@
-# OpenDirect (OOH) Examples
+# OpenDirect (OOH) JSON Examples
 
-Please reference section 7 in the main OpenDirect (OOH) document to navigate theis JSON examples folder. 
+Please reference section 7 in the main OpenDirect (OOH) document to help navigate the JSON examples folder. 
 
 [7.1 URI Summary Table](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/docs/v1-1/OpenDirect_OOH_1-5-1_v1-1.md#71-uri-summary-table)
 
