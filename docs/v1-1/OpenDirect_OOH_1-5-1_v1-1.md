@@ -972,7 +972,7 @@ Reference:
 
 [https://restdb.io/docs/querying-with-the-api](https://restdb.io/docs/querying-with-the-api)
 
-## 6.7 OOH Schedule &amp; Delivery Reporting
+## 6.7 Stats (OOH Schedule &amp; Delivery Reporting)
 
 A method to publish the OOH display schedule generated to fulfil the campaign targeting requirements (pre-flight) and the performance of the schedule when the campaign is in flight and/or completed.
 
