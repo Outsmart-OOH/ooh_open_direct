@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/products/products_avails_request.json",
     "AccountId": "23873345",
     "EndDate": "2014-12-10T18:00:00.000Z",
-    "ProductIds": [ "456367" ],
+    "ProductIds": [ "456366" ],
     "StartDate": "2014-12-05T06:00:00.000Z",
 
     "AvailabilityFields": [
@@ -47,42 +47,6 @@
     ],
 
     "Targeting": [
-        {
-            "Name": "Inventory",
-            "Type": "Frames",
-            "DataSource": "Space",
-            "Target": "frame_id",
-            "TargetValues": [
-                1234931339,
-                1235190735,
-                1234931338,
-                1235191547
-            ]
-        },
-        {
-            "Name": "Delivery",
-            "Type": "Frames",
-            "DataSource": "Time",
-            "Target": "Days",
-            "TargetValues": [ 5, 6 ]
-
-        },
-        {
-            "Name": "Delivery",
-            "Type": "Frames",
-            "DataSource": "ShareOfDisplay",
-            "Target": "ShareOfTime",
-            "TargetValues": [20]
-
-        },
-        {
-            "Name": "Delivery",
-            "Type": "Frames",
-            "DataSource": "ShareOfDisplay",
-            "Target": "Spot",
-            "TargetValues": [5]
-
-        }
 
     ]
 } 
