@@ -128,7 +128,7 @@ Richard Saturley **World Out of Home Organisation**
 [6.4 ErrorResponse](#64-errorresponse)
 [6.5 Data Format](#65-data-format)
 [6.6 Logical JSON operators](#66-logical-json-operators)
-[6.7 OOH Schedule & Delivery Reporting 46](#67-ooh-schedule--delivery-reporting)
+[6.7 Stats (OOH Schedule & Delivery Reporting)](#67-stats-ooh-schedule--delivery-reporting)
 [6.8 Paging QueryParameters](#68-paging-queryparameters)
 
 [7 URIs and General Request/Response Rules](#7-uris-and-general-requestresponse-rules)
@@ -654,6 +654,11 @@ Hours[10,11,12,13,34,35,36,37]
 
 Practically, the booking UI should convert the days/hours selected from a calendar based UI into the hour array in the background.
 
+#### Delivery,Frames,Time,TimeZone
+
+This OOHbject can be used in the targeting array to indicate if the days and/or hour delivery of the campaign happens in the local time zone (e.g. the local time of where the advert is displayed) or Coordinated Universal Time (e.g. UTC playout would ensure the advert plays at the same exact moment around the world).
+The TargetValues are "Local" or "UTC". The default is "Local" time
+
 #### Delivery,Frames,ShareOfDisplay,ShareOfTime
 
 This OOHbject details the *ShareOfTime* that can be targeted within the product. The *ShareOfTime* can be described as the percentage of time the advert appears on screen vs the time the advert does not appear on screen over the flight of the campaign.
@@ -967,7 +972,7 @@ Reference:
 
 [https://restdb.io/docs/querying-with-the-api](https://restdb.io/docs/querying-with-the-api)
 
-## 6.7 OOH Schedule &amp; Delivery Reporting
+## 6.7 Stats (OOH Schedule &amp; Delivery Reporting)
 
 A method to publish the OOH display schedule generated to fulfil the campaign targeting requirements (pre-flight) and the performance of the schedule when the campaign is in flight and/or completed.
 
@@ -1500,7 +1505,7 @@ Logical JSON operators are supported in this request as defined in Section 6.6
 | URI              | Verb | Description                                                                                                                                                                                                                                                  | Request                                                                                                                                                                          | Response                                                                                                                                                                    |
 | ---------------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | /products        | GET  | Gets a list of all products available to the requestor. This product array of 1 product is described in terms of frames, type, format, environment, buyable days, share of time, spot, distribution, age, sex, affluence, audience metric and prohibitions.  |                                                                                                                                                                                  | [GET\_products\_response.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/GET_products_response.json)                      |
-| /products/{id}   | GET  |                                                                                                                                                                                                                                                              |                                                                                                                                                                                  |                                                                                                                                                                             |
+| /products/{id}   | GET  | Gets the specified product from the publisher’s product catalogue                                                                                                                                                                                            |                                                                                                                                                                                  | [GET\_products\_id\_response.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/GET_products_id_response.json)               |
 | /products/search | POST | Search request against the available product catalouge for products that have inventory meeting the criteria of moving digital image, 6 sheet format, in a railstation enivrionment with a creative spot length of 5 seconds                                 | [POST\_products\_search\_request.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_products_search_request.json)            |                                                                                                                                                                             |
 | /products/avails | POST | Example of using the $and logic when performing an availability search to check availbility of one array of frames at 10% ShareOfTime and a different array of frames at 20% ShareOfTime. All $ands listed                                                   | [POST\_avails\_(and)\_request\_001.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_avails_(and)_request_001.json)         | [POST\_avails\_(and)\_reponse.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_avails_(and)_reponse.json)             |
 | /products/avails | POST | Example of using the $and logic when performing an availability search to check availbility of one array of frames at 10% ShareOfTime and a different array of frames at 20% ShareOfTime. $ands appear only at array level                                   | [POST\_avails\_(and)\_request\_002.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_avails_(and)_request_002.json)         | [POST\_avails\_(and)\_reponse.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_avails_(and)_reponse.json)             |
