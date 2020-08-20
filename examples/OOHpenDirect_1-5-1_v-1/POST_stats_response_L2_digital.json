@@ -5,7 +5,7 @@
     "ReportPublishDate": "2020-12-20T00:00:00.000Z",
     "ReportStartDate": "2020-12-09T00:00:00.000Z",
     "ReportEndDate": "2020-12-10T01:00:00.000Z",
-    "ReportLevel": "1", //This Report is hour level(?) with all frames recognised in SPACE 
+    "ReportLevel": "2", //This Report is hour level(?) with all frames recognised in SPACE 
     "Report": [
         {
             "StartDate": "2020-12-09",
