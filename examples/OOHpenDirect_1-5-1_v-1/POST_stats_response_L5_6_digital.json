@@ -1,0 +1,65 @@
+{
+    "AccountId": "23873345",
+    "OrderId": "3479",
+    "LineId": "L1",
+    "ReportPublishDate": "2020-12-20T00:00:00.000Z",
+    "ReportStartDate": "2020-12-09T00:00:00.000Z",
+    "ReportEndDate": "2020-12-10T01:00:00.000Z",
+    "ReportLevel": "1", //This Report is playout level with all frames recognised in SPACE with CreativeID
+    "Report": [
+        {
+            "StartDate": "2020-12-09",
+            "StartTime": "00:00:00",
+            "EndDate":"2020-12-09",
+            "EndTime":"00:00:10",
+            "FrameID":"1234158956",
+            "CreativeID":"capad653",
+            "ShareOfTime":"16.66%"
+        },
+        {
+            "StartDate": "2020-12-09",
+            "StartTime": "00:01:00",
+            "EndDate":"2020-12-09",
+            "EndTime":"00:01:10",
+            "FrameID":"1234158956",
+            "CreativeID":"capad653",
+            "ShareOfTime":"16.66%"
+        },
+        {
+            "StartDate": "2020-12-09",
+            "StartTime": "00:02:00",
+            "EndDate":"2020-12-09",
+            "EndTime":"00:02:10",
+            "FrameID":"1234158956",
+            "CreativeID":"capad653",
+            "ShareOfTime":"16.66%"
+        },
+        {
+            "StartDate": "2020-12-09",
+            "StartTime": "00:03:00",
+            "EndDate":"2020-12-09",
+            "EndTime":"00:03:10",
+            "FrameID":"1234158956",
+            "CreativeID":"capad653",
+            "ShareOfTime":"16.66%"
+        },
+        {
+            "StartDate": "2020-12-09",
+            "StartTime": "00:04:00",
+            "EndDate":"2020-12-09",
+            "EndTime":"00:04:10",
+            "FrameID":"1234158956",
+            "CreativeID":"capad653",
+            "ShareOfTime":"16.66%"
+        },
+        {
+            "StartDate": "etc",
+            "StartTime": "etc",
+            "EndDate":"etc",
+            "EndTime":"etc",
+            "FrameID":"etc",
+            "CreativeID":"etc",
+            "ShareOfTime":"etc"
+        }
+    ]
+}

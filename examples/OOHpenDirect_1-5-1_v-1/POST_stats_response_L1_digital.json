@@ -1,0 +1,44 @@
+{
+    "AccountId": "23873345",
+    "OrderId": "3479",
+    "LineId": "L1",
+    "ReportPublishDate": "2020-12-20T00:00:00.000Z",
+    "ReportStartDate": "2020-12-09T00:00:00.000Z",
+    "ReportEndDate": "2020-12-10T01:00:00.000Z",
+    "ReportLevel": "1", //This Report is hour level with all frames unrecognised in SPACE 
+    "Report": [
+        {
+            "StartDate": "2020-12-09",
+            "StartTime": "00:00:00",
+            "EndDate":"2020-12-09",
+            "EndTime":"01:00:00",
+            "ShareOfTime":"16.66",
+            "FrameID":"asdvgHSO135",
+            "BookedPlays":"60",
+            "DeliveredPlays":"60",
+            "Delivery":"100%"
+        },
+        {
+            "StartDate": "2020-12-09",
+            "StartTime": "01:00:00",
+            "EndDate":"2020-12-09",
+            "EndTime":"02:00:00",
+            "ShareOfTime":"16.66",
+            "FrameID":"asdvgHSO135",
+            "BookedPlays":"60",
+            "DeliveredPlays":"60",
+            "Delivery":"100%"
+        },
+        {
+            "StartDate": "etc",
+            "StartTime": "etc",
+            "EndDate":"etc",
+            "EndTime":"etc",
+            "ShareOfTime":"etc",
+            "FrameID":"etc",
+            "BookedPlays":"etc",
+            "DeliveredPlays":"etc",
+            "Delivery":"etc"
+        }
+    ]
+}
