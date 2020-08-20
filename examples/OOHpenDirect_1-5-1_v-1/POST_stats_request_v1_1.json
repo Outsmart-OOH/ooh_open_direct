@@ -3,9 +3,11 @@
     "AccountId": "23873345",
     "OrderId": "3479",
     "LineId": "L1",
-    "ReportStartDate": "2020-12-09T00:00:00.000Z", //If ReportStartDate & ReportEndDate fields are left balnk it defaults to the Campaign start and end date
-    "ReportEndDate": "2020-12-10T00:00:00.000Z", //Route understands this as 23:59:59
-    "ReportLevel": "1", 
+    "ReportStartDate": "2020-12-09", //If ReportStartDate & ReportEndDate fields are left balnk it defaults to the Campaign start and end date
+    "ReportEndDate": "2020-12-10", 
+    "ReportFields":[],
+    "ReportGranularity":[], //Flight, Week, Day, Hour, Spot
+    
     "Webhook": "URI which is to be notified when the stats information is available to be called from the Media Owner"
 
 }
