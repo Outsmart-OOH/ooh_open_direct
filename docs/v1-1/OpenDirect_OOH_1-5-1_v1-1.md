@@ -1086,8 +1086,8 @@ However, if the property is an array of any type and is NULL, the response must 
 | Change Request Lines | /accounts/{id}/changerequest/{id}/lines       | GET, POST          | No       |
 |                      | /accounts/{id}/changerequest//lines/{id}      | GET, PATCH         | No       |
 |                      | /accounts/{id}/changerequest//lines?$filter=  | GET                | No       |
-| Reporting            | /accounts/{id}/orders/{id}/lines/stats        | POST               | No       |
-|                      | /accounts/{id}/orders/{id}/lines/{id}/stats   | POST               | No       |
+| Reporting            | /accounts/{id}/orders/{id}/lines/stats        | GET                | No       |
+|                      | /accounts/{id}/orders/{id}/lines/{id}/stats   | GET                | No       |
 | Advertiser Brands    | /advertiserbrands                             | GET                | No       |
 |                      | /advertiserbrands/{id}                        | GET                | No       |
 |                      | /advertiserbrands?$filter=                    | GET                | No       |
