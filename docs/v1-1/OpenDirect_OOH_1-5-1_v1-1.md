@@ -968,7 +968,7 @@ A method to publish the OOH display schedule generated to fulfil the campaign ta
 | **/accounts/{id}/orders/{id}/lines/stats** | Aggregates the spot, impacts, time and spend for all lines in the order. |
 | **/accounts/{id}/orders/{id}/lines/{id}/stats** | Aggregates the spot, impacts, time and spend for the specified line. |
 
-The &#39;Stats&#39; Common Object enables the publishing of the schedule and the delivery of the schedule to the following fields and granularity:
+The &#39;Stats&#39; resource enables the publishing of the schedule and the delivery of the schedule to the following fields and granularity:
 
 ### 6.7.1 Report Fields
 
@@ -986,7 +986,8 @@ The &#39;Stats&#39; Common Object enables the publishing of the schedule and the
 
 ### 6.7.2 Granularity
 
-The Schedule and Delivery data can be requested and or served at Flight, Weekm Day, Hour and/or Spot level of granularity
+The Schedule and Delivery data can be requested and or served at Flight, Week, Day, Hour and/or Spot level of granularity
+
 
 ## 6.8 Paging QueryParameters
 
