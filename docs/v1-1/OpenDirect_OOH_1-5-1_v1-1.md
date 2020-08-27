@@ -381,7 +381,7 @@ Change Request Schema: TBC
 
 A resource to publish the OOH display schedule generated to fulfil the campaign targeting requirements (pre-flight) and the performance of the schedule when the campaign is in flight and/or completed.
 
-Stats Schema: TBC
+Stats Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats_object.json
 
 
 # 3 Common Objects
