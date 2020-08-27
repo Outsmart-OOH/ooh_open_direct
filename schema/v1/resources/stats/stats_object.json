@@ -28,7 +28,7 @@
             "$id": "#/properties/",
             "type": "string",
             "title": "AccountId",
-            "description": "The Order the Stats are for"
+            "description": "The Order Line the Stats are for"
         },
         "ReportStartDate": {
             "$id": "#/properties/",
