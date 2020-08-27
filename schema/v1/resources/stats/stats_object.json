@@ -92,7 +92,6 @@
         "Webhook": {
             "$id": "#/properties/",
             "type": "string",
-            "format": "date",
             "title": "Webhook",
             "description": "URI of the webhook to respond to"
         }
