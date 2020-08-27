@@ -3,11 +3,11 @@
     "AccountId": "23873345",
     "OrderId": "3479",
     "LineId": "L1",
-    "ReportStartDate": "2020-12-09", //If ReportStartDate & ReportEndDate fields are left balnk it defaults to the Campaign start and end date
+    "ReportStartDate": "2020-12-09 //If ReportStartDate & ReportEndDate fields are left balnk it defaults to the Campaign start and end date",
     "ReportEndDate": "2020-12-10", 
-    "ReportFields":[],
-    "ReportGranularity":[], //Flight, Week, Day, Hour, Spot
-    
+    "ReportFields":["StartDate", "EndDate","SpotLength","ShareOfTime","FrameID","CreativeID","BookedPlays", "DeliveredPlays","Delivery"],
+    "ReportGranularity":"Hour",
+    "ReportFormat":"Verbose",
     "Webhook": "URI which is to be notified when the stats information is available to be called from the Media Owner"
 
 }

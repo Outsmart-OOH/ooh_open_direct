@@ -5,13 +5,10 @@
     "ReportPublishDate": "2020-12-20T00:00:00.000Z",
     "ReportStartDate": "2020-12-09T00:00:00.000Z",
     "ReportEndDate": "2020-12-10T01:00:00.000Z",
-    "ReportLevel": "3 or 4", //This Report is hour level with all frames recognised in SPACE with CreativeID
     "Report": [
         {
-            "StartDate": "2020-12-09",
-            "StartTime": "00:00:00",
-            "EndDate":"2020-12-09",
-            "EndTime":"01:00:00",
+            "StartDate": "2020-12-09T00:00:00Z",
+            "EndDate":"2020-12-09T01:00:00Z",
             "SpotLength":"10",
             "ShareOfTime":"16.66",
             "FrameID":"1234158956",
@@ -21,10 +18,8 @@
             "Delivery":"100%"
         },
         {
-            "StartDate": "2020-12-09",
-            "StartTime": "00:00:00",
-            "EndDate":"2020-12-09",
-            "EndTime":"01:00:00",
+            "StartDate": "2020-12-09T00:00:00Z",
+            "EndDate":"2020-12-09T01:00:00Z",
             "SpotLength":"10",
             "ShareOfTime":"16.66",
             "FrameID":"1234158956",
@@ -34,10 +29,8 @@
             "Delivery":"100%"
         },
         {
-            "StartDate": "2020-12-09",
-            "StartTime": "01:00:00",
-            "EndDate":"2020-12-09",
-            "EndTime":"02:00:00",
+            "StartDate": "2020-12-09T01:00:00Z",
+            "EndDate":"2020-12-09T02:00:00Z",
             "SpotLength":"10",
             "ShareOfTime":"16.66",
             "FrameID":"1234158956",
@@ -47,10 +40,8 @@
             "Delivery":"100%"
         },
         {
-            "StartDate": "2020-12-09",
-            "StartTime": "01:00:00",
-            "EndDate":"2020-12-09",
-            "EndTime":"02:00:00",
+            "StartDate": "2020-12-09T01:00:00Z",
+            "EndDate":"2020-12-09T02:00:00Z",
             "SpotLength":"10",
             "ShareOfTime":"16.66",
             "FrameID":"1234158956",
