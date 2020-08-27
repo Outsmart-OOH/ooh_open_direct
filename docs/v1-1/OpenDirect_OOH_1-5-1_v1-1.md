@@ -92,9 +92,7 @@ Richard Saturley **World Out of Home Organisation**
 [3.6 ProductSearch](#36-productsearch)
 [3.7 OOHProviderData](#37-oohproviderdata)
 [3.8 Size](#38-size)
-[3.9 StatsScheduled](#39-statsscheduled)
-[3.10 StatsDelivered](#310-statsdelivered)
-[3.11 OOHbject](#311-oohbject)
+[3.9 OOHbject](#39-oohbject)
 
 [4. Reference Data](#4-reference-data)
 
@@ -436,23 +434,12 @@ Defines the height and width (in pixels) that a publisher accepts for a given re
 
 Size Schema:https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/size_object.json
 
-## 3.9 StatsScheduled
-
-Time bound arrays of OOHbjects that describe the schedule that is created by the MediaOwner / Publisher to fullfill the line order requirements.
-
-StatsScheduled Schema: TBC
-
-## 3.10 StatsDelivered
-
-Time bound arrays of OOHbjects that describe the delivery of the schedule created by the MediaOwner / Publisher to fullfill the line order requirements.
-
-StatsDelivered Schema: TBC
-
-## 3.11 OOHbject
+## 3.9 OOHbject
 
 A collection of targeting criteria used to discover and target the digital and physical presentation aspects of OOH media.
 
 OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json
+
 
 # 4 Reference Data
 
@@ -981,35 +968,25 @@ A method to publish the OOH display schedule generated to fulfil the campaign ta
 | **/accounts/{id}/orders/{id}/lines/stats** | Aggregates the spot, impacts, time and spend for all lines in the order. |
 | **/accounts/{id}/orders/{id}/lines/{id}/stats** | Aggregates the spot, impacts, time and spend for the specified line. |
 
-The &#39;Stats&#39; Common Object enables the publishing of the schedule (StatsScheduled), and the delivery of the schedule (StatsDelivered) to the following fields, granularity &amp; metrics:
+The &#39;Stats&#39; Common Object enables the publishing of the schedule and the delivery of the schedule to the following fields and granularity:
 
-### 6.7.1 Metrics
+### 6.7.1 Report Fields
 
-**StatsScheduled**
+| Field          | Definition                                                                                                                                            |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| StartDate      | The Start Date and Time in UTC  for the Stat                                                                                                          |
+| EndDate        | The End Date and Time in UTC for the Stat                                                                                                             |
+| SpotLength     | The amount of time the advertiser has to play their creative in - If an advertisement is on screen for this length of time, this constitutes one play |
+| ShareOfTime    | An Average % share of total time across the dimensions reported on for the campaign (e.g. play, hour. panel, geography)                               |
+| FrameID        | The ID of the Frame that the delivery is carried out upon                                                                                             |
+| CreativeID     | The ID of the creative file that is played out in the Spot                                                                                            |
+| BookedPlays    | The number of times a creative (with a defined spot length) has started playing but it may not have been fully played                                 |
+| DeliveredPlays | The number of times a creative (with a defined spot length is fully played)                                                                           |
+| Delivery       | % of Delivered Plays vs Booked Plays                                                                                                                  |
 
-This Stats object stores the schedule of frames and times that are created to fulfil the booking line requirements as described in the Line Targeting object. This object is created at the time of the line reservation and booking and may be subject to change up until (and in some cases for the duration) of the campaign flight.
+### 6.7.2 Granularity
 
-**StatsDelivered**
-
-This Stats object stores the data that shows how the scheduled of frames and times was delivered on the OOH network.
-
-### 6.7.2 Fields Published
-
-| Terms             | Definitions                                                                                                                                           | Stats Object                    | Targeting OOHject Description                  | OOHbject Value   |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------- | ---------------- |
-| Spot Length       | The amount of time the advertiser has to play their creative in - If an advertisement is on screen for this length of time, this constitutes one play | StatsScheduled & StatsDelivered | Delivery.Frames.ShareOfDisplay.Spot            | StatsValue       |
-| Served Plays      | The number of times a creative (with a defined spot length) has started playing but it may not have been fully played                                 | StatsDelivered                  | Delivery.Frames.ShareOfDisplay.Spot            | StatsCountServed |
-| Delivered Plays   | The number of times a creative (with a defined spot length is fully played)                                                                           | StatsScheduled & StatsDelivered | Delivery.Frames.ShareOfDisplay.Spot            | StatsCount       |
-| Delivered Impacts | The number of times that a creative has been viewed - as defined by the 'audience DataSource' impact scores                                           | StatsScheduled & StatsDelivered | Inventory.Audience.DataSource.Impacts        | StatCount        |
-| Share of Time     | An Average % share of total time across the dimensions reported on for the campaign (e.g. play, hour. panel, geography)                               | StatsScheduled & StatsDelivered | Delivery.Frames.ShareOfDisplay.ShareOfTime     | StatsAverage     |
-| Share of Impacts  | An average % share of viewed impacts across the dimensions reported on for the campaign (e.g. play, hour. panel, geography)                           | StatsScheduled & StatsDelivered | Delivery.Audience.DataSource.ShareOfAudience | StatsAverage     |
-| Reach             | The number of individuals reached by a campaign                                                                                                       | StatsScheduled & StatsDelivered | Inventory.Audience.DataSource.Reach          | StatsValue       |
-| Frequency         | The frequency of exposure by each unique individual                                                                                                   | StatsScheduled & StatsDelivered | Inventory.Audience.DataSource.Reach          | StatsValue       |
-| CreativeId        | The ID of the creative file that is played out in the Spot                                                                                            | StatsScheduled & StatsDelivered | Delivery.Frames.ShareOfDisplay.Spot.CreativeId | StatsValue       |
-
-### 6.7.3 Granularity
-
-The Schedule and Delivery data can be requested and or served at Day, Hour and/or Spot level of granularity
+The Schedule and Delivery data can be requested and or served at Flight, Weekm Day, Hour and/or Spot level of granularity
 
 ## 6.8 Paging QueryParameters
 
