@@ -6,8 +6,11 @@
     "description": "The schema of a response that gives a single Order",
     "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/order/order_object.json",
     "required": [
-        "Id",
+        "AccountId",
+        "AdvertiserBrandId",
         "Currency",
+        "StartDate",
+        "EndDate",
         "Name"
     ]
 }
