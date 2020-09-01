@@ -96,5 +96,8 @@
             "title": "Webhook",
             "description": "URI of the webhook to respond to"
         }
-    }
+    
+    },
+
+    "Required": ["AccountId", "OrderId", "LineId"]
 }
