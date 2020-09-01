@@ -141,7 +141,7 @@ Richard Saturley **World Out of Home Organisation**
 [7.8 Products](#78-products)
 [7.9 Change Request](#79-change-request)
 [7.10 Change Request Lines](710-change-request-lines)
-[7.11 Stats Reporting](#711-reporting)
+[7.11 Stats Reporting](#711-stats-reporting)
 [7.12 Advertiser Brands](#712-advertiser-brands)
 [7.13 DataSources](#713-datasources)
 
