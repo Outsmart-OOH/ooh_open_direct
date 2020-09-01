@@ -2,6 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats_object.json",
     "AccountId": "23873345",
     "OrderId": "3479",
+    "LineId": "",
     "ReportStartDate": "2020-12-09",
     "ReportEndDate": "2020-12-10",
     "ReportFields": [
