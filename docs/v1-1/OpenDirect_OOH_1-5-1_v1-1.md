@@ -1611,7 +1611,7 @@ May support getting a list by IDs.
 |                                             | DELETE | Deletes the specified line from the change request. May delete a line only if it&#39;s in the Pending state. Must also delete assignments that reference the line |         |          |
 | /accounts/{id}/changerequest/lines?$filter= | GET    | Gets a list of lines that match the specified filter criteria. The user may use OData expressions and method calls with the following Line properties             |         ||
 
-## 7.11 Reporting
+## 7.11 Stats (Reporting)
 
 Reporting occurs at the line level. The Media Owner / Publisher may support the following POST calls to generate a spot, impacts time and spend served report.
 
