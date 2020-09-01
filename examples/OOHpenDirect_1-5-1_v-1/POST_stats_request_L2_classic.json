@@ -1,0 +1,20 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats_object.json",
+    "AccountId": "23873345",
+    "OrderId": "3479",
+    "LineId": "3",
+    "ReportStartDate": "2020-12-09",
+    "ReportEndDate": "2020-12-10",
+    "ReportFields": [
+        "StartDate",
+        "EndDate",
+        "ShareOfTime",
+        "FrameID",
+        "BookedPlays",
+        "DeliveredPlays",
+        "Delivery"
+    ],
+    "ReportGranularity": "Flight",
+    "ReportFormat": "Verbose",
+    "Webhook": "URI which is to be notified when the stats information is available to be called from the Media Owner"
+}

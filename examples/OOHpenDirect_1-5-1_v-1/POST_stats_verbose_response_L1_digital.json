@@ -1,7 +1,7 @@
 {
     "AccountId": "23873345",
     "OrderId": "3479",
-    "LineId": "L1",
+    "LineId": "2",
     "ReportPublishDate": "2020-12-20T00:00:00.000Z",
     "ReportStartDate": "2020-12-09T00:00:00.000Z",
     "ReportEndDate": "2020-12-10T01:00:00.000Z",
@@ -11,7 +11,7 @@
             "EndDate":"2020-12-09T01:00:00",
             "SpotLength":"10",
             "ShareOfTime":"16.66",
-            "FrameID":"asdvgHSO135",
+            "FrameReference":"asdvgHSO135",
             "BookedPlays":"60",
             "DeliveredPlays":"60",
             "Delivery":"100%"
@@ -21,7 +21,7 @@
             "EndDate":"2020-12-09T02:00:00Z",
             "SpotLength":"10",
             "ShareOfTime":"16.66",
-            "FrameID":"asdvgHSO135",
+            "FrameReference":"asdvgHSO135",
             "BookedPlays":"60",
             "DeliveredPlays":"60",
             "Delivery":"100%"
@@ -33,7 +33,7 @@
             "EndTime":"etc",
             "SpotLength":"etc",
             "ShareOfTime":"etc",
-            "FrameID":"etc",
+            "FrameReference":"etc",
             "BookedPlays":"etc",
             "DeliveredPlays":"etc",
             "Delivery":"etc"

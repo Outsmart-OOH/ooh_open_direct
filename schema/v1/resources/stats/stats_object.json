@@ -55,6 +55,7 @@
                     "EndDate",
                     "SpotLength",
                     "ShareOfTime",
+                    "FrameReference",
                     "FrameID",
                     "CreativeID",
                     "BookedPlays",
