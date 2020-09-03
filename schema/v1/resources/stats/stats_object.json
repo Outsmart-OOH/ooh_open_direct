@@ -48,6 +48,7 @@
             "$id": "#/properties/",
             "description": "The fields that are to be included in the Stats report",
             "type": "array",
+            "default":["StartDate","EndDate","SpotLength","ShareOfTime","FrameID","BookedPlays","DeliveredPlays"],
             "items": {
                 "type": "string",
                 "enum": [
@@ -69,6 +70,7 @@
             "$id": "#/properties/",
             "description": "The time granularity of the Stats report",
             "type": "string",
+            "default":"Flight",
             "enum": [
                 "Flight",
                 "Week",
@@ -83,6 +85,7 @@
             "$id": "#/properties/",
             "description": "The time granularity of the Stats report",
             "type": "string",
+            "default":"Verbose",
             "enum": [
                 "Verbose",
                 "NonVerbose"
