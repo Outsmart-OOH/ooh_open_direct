@@ -1,0 +1,37 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/organization/organization_object.json",
+    "Address": {
+        "AddressLine1": "1234 Tiger Blvd",
+        "City": "Redmond",
+        "Country": "US",
+        "PostalCode": "98123",
+        "State": "WA"
+    },
+    "Contacts": [
+        {
+            "Address": {
+                "AddressLine1": "1234 Tiger Blvd",
+                "City": "Redmond",
+                "Country": "US",
+                "PostalCode": "98123",
+                "State": "WA"
+            },
+            "Email": "bnicks@contoso.com",
+            "Honorific": "Mr",
+            "Fax": "2065551212",
+            "FirstName": "Bill",
+            "LastName": "Nicks",
+            "Phone": "2065550105",
+            "Title": "Comptroller",
+            "Type": "Billing"
+        }
+    ],
+    "Fax": "2065551212",
+    "Name": "Contoso",
+    "AdvertiserBrands": [],
+    "OrganizationType": "Specialist",
+    "Phone": "2065550100",
+    "OOHProviderData": {},
+    "Status": "Approved",
+    "Url": "http://contoso.com"
+}
