@@ -66,13 +66,13 @@
             },
             "readOnly": true
         },
-        "ReportGranularity": {
+        "TimeGranularity": {
             "$id": "#/properties/",
             "description": "The time granularity of the Stats report",
             "type": "string",
             "default":"Flight",
             "enum": [
-                "Flight",
+                "All",
                 "Week",
                 "Day",
                 "Hour",

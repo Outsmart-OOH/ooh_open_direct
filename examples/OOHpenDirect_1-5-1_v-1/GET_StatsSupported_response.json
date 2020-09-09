@@ -1,0 +1,23 @@
+{
+    "$schema": "",
+    "AccountId": "",
+    "OrderId": "",
+    "LineId": "",
+    "ReportStartDate": "",
+    "ReportEndDate": "",
+    "ReportFields": [
+        "StartDate",
+        "EndDate",
+        "SpotLength",
+        "ShareOfTime",
+        "FrameID",
+        "FrameReference",
+        "CreativeID",
+        "BookedPlays",
+        "DeliveredPlays",
+        "Delivery"
+    ],
+    "TimeGranularity": ["All","Week","Day","Hour","Spot"],
+    "ReportFormat": ["Verbose","NonVerbose"],
+    "Webhook": "URI which is to be notified when the stats information is available to be called from the Media Owner"
+}
