@@ -6,8 +6,8 @@
     "ReportStartTime": "",
     "ReportEndTime": "",
     "ReportFields": [
-        "StartDate",
-        "EndDate",
+        "StartTime",
+        "EndTime",
         "SpotLength",
         "ShareOfTime",
         "FrameID",

@@ -2,13 +2,13 @@
     "AccountId": "23873345",
     "OrderId": "3479",
     "LineId": "6",
-    "ReportPublishDate": "2020-12-20T00:00:00.000Z",
-    "ReportStartDate": "2020-12-09T00:00:00.000Z",
-    "ReportEndDate": "2020-12-10T01:00:00.000Z",
+    "ReportPublishTime": "2020-12-20T00:00:00.000Z",
+    "ReportStartTime": "2020-12-09T00:00:00.000Z",
+    "ReportEndTime": "2020-12-10T01:00:00.000Z",
     "Report": [
         {
-            "StartDate": "2020-12-09T00:00:00Z",
-            "EndDate":"2020-12-09T01:00:00Z",
+            "StartTime": "2020-12-09T00:00:00Z",
+            "EndTime":"2020-12-09T01:00:00Z",
             "SpotLength":"10",
             "ShareOfTime":"16.66",
             "FrameID":"1234158956",
@@ -18,8 +18,8 @@
             "Delivery":"100%"
         },
         {
-            "StartDate": "2020-12-09T00:00:00Z",
-            "EndDate":"2020-12-09T01:00:00Z",
+            "StartTime": "2020-12-09T00:00:00Z",
+            "EndTime":"2020-12-09T01:00:00Z",
             "SpotLength":"10",
             "ShareOfTime":"16.66",
             "FrameID":"1234158956",
@@ -29,8 +29,8 @@
             "Delivery":"100%"
         },
         {
-            "StartDate": "2020-12-09T01:00:00Z",
-            "EndDate":"2020-12-09T02:00:00Z",
+            "StartTime": "2020-12-09T01:00:00Z",
+            "EndTime":"2020-12-09T02:00:00Z",
             "SpotLength":"10",
             "ShareOfTime":"16.66",
             "FrameID":"1234158956",
@@ -40,8 +40,8 @@
             "Delivery":"100%"
         },
         {
-            "StartDate": "2020-12-09T01:00:00Z",
-            "EndDate":"2020-12-09T02:00:00Z",
+            "StartTime": "2020-12-09T01:00:00Z",
+            "EndTime":"2020-12-09T02:00:00Z",
             "SpotLength":"10",
             "ShareOfTime":"16.66",
             "FrameID":"1234158956",
@@ -51,9 +51,7 @@
             "Delivery":"100%"
         },
         {
-            "StartDate": "etc",
             "StartTime": "etc",
-            "EndDate":"etc",
             "EndTime":"etc",
             "ShareOfTime":"etc",
             "FrameID":"etc",

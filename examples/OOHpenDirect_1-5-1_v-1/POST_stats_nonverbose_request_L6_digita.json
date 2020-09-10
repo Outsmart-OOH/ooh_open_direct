@@ -3,11 +3,11 @@
     "AccountId": "23873345",
     "OrderId": "3479",
     "LineId": "8",
-    "ReportStartDate": "2020-12-09",
-    "ReportEndDate": "2020-12-10",
+    "ReportStartTime": "2020-12-09",
+    "ReportEndTime": "2020-12-10",
     "ReportFields": [
-        "StartDate",
-        "EndDate",
+        "StartTime",
+        "EndTime",
         "FrameID",
         "CreativeID",
         "ShareOfTime"

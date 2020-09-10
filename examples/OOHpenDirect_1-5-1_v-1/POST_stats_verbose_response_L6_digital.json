@@ -2,42 +2,40 @@
     "AccountId": "23873345",
     "OrderId": "3479",
     "LineId": "8",
-    "ReportPublishDate": "2020-12-20T00:00:00.000Z",
-    "ReportStartDate": "2020-12-09T00:00:00.000Z",
-    "ReportEndDate": "2020-12-10T01:00:00.000Z",
+    "ReportPublishTime": "2020-12-20T00:00:00.000Z",
+    "ReportStartTime": "2020-12-09T00:00:00.000Z",
+    "ReportEndTime": "2020-12-10T01:00:00.000Z",
     "Report": [ 
         {
-            "StartDate": "2020-12-09T00:00:00Z",
-            "EndDate":"2020-12-09T00:00:10Z",
+            "StartTime": "2020-12-09T00:00:00Z",
+            "EndTime":"2020-12-09T00:00:10Z",
             "FrameID":"1234158956",
             "CreativeID":"capad653",
             "ShareOfTime":"16.66%"
         },
         {
-            "StartDate": "2020-12-09T00:02:00Z",
-            "EndDate":"2020-12-09T00:02:10Z",
+            "StartTime": "2020-12-09T00:02:00Z",
+            "EndTime":"2020-12-09T00:02:10Z",
             "FrameID":"1234158956",
             "CreativeID":"capad653",
             "ShareOfTime":"16.66%"
         },
         {
-            "StartDate": "2020-12-09T00:03:00Z",
-            "EndDate":"2020-12-09T00:03:10Z",
+            "StartTime": "2020-12-09T00:03:00Z",
+            "EndTime":"2020-12-09T00:03:10Z",
             "FrameID":"1234158956",
             "CreativeID":"capad653",
             "ShareOfTime":"16.66%"
         },
         {
-            "StartDate": "2020-12-09T00:04:00Z",
-            "EndDate":"2020-12-09T00:04:10Z",
+            "StartTime": "2020-12-09T00:04:00Z",
+            "EndTime":"2020-12-09T00:04:10Z",
             "FrameID":"1234158956",
             "CreativeID":"capad653",
             "ShareOfTime":"16.66%"
         },
         {
-            "StartDate": "etc",
             "StartTime": "etc",
-            "EndDate":"etc",
             "EndTime":"etc",
             "FrameID":"etc",
             "CreativeID":"etc",
