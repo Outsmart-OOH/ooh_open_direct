@@ -30,14 +30,14 @@
             "title": "AccountId",
             "description": "The Order Line the Stats are for"
         },
-        "ReportStartDate": {
+        "ReportStartTime": {
             "$id": "#/properties/",
             "type": "string",
             "format": "date",
             "title": "Start Date",
             "description": "The date report will start. if left blank, it will revert to the LineID start date"
         },
-        "ReportEndDate": {
+        "ReportEndTime": {
             "$id": "#/properties/",
             "type": "string",
             "format": "date",
