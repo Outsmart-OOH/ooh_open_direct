@@ -52,8 +52,8 @@
             "items": {
                 "type": "string",
                 "enum": [
-                    "StartDate",
-                    "EndDate",
+                    "StartTime",
+                    "EndTime",
                     "SpotLength",
                     "ShareOfTime",
                     "FrameReference",

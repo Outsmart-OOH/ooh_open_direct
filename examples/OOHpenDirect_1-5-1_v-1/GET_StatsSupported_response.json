@@ -3,8 +3,8 @@
     "AccountId": "",
     "OrderId": "",
     "LineId": "",
-    "ReportStartDate": "",
-    "ReportEndDate": "",
+    "ReportStartTime": "",
+    "ReportEndTime": "",
     "ReportFields": [
         "StartDate",
         "EndDate",
