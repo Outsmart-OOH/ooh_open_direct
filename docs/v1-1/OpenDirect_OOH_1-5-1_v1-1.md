@@ -813,9 +813,9 @@ For GET calls that return a collection of resources, such as /accounts/{id}/orde
 | /organizations/organizations?$filter | organizations | [Organization](#_bookmark3) |
 | /advertiserbrands/advertiserbrands?$filter | advertiserbrands | AdvertiserBrand |
 | /accounts/accounts?$filter | accounts | Account |
-| /accounts/{id}/assignments/accounts/{id}/assignments?$filter | assignments | Assignment |
-| /accounts/{id}/orders/accounts/{id}/orders?$filter | orders | Order\_Campaign\_Assignment |
-| /accounts/{id}/orders/{id}/lines/accounts/{id}/orders/lines?$filter | lines | Lines\_Assignment |
+| /accounts/{id}/assignments?$filter | assignments | Assignment |
+| /accounts/{id}/orders?$filter | orders | Order\_Campaign\_Assignment |
+| /accounts/{id}/orders/{id}/lines?$filter | lines | Lines\_Assignment |
 | /products/products/search (POST) | products | Product\_Assignment |
 | /products/avails (POST) | avails | ProductAvails\_Assignment |
 | /oohbjects/dataSources/oohbjects/dataSources?filter | dataSources | Data Sources |
