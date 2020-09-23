@@ -21,27 +21,27 @@
         "OrderId": {
             "$id": "#/properties/",
             "type": "string",
-            "title": "AccountId",
+            "title": "OrderId",
             "description": "The Order the Stats are for"
         },
         "LineId": {
             "$id": "#/properties/",
             "type": "string",
-            "title": "AccountId",
+            "title": "LineId",
             "description": "The Order Line the Stats are for"
         },
         "ReportStartTime": {
             "$id": "#/properties/",
             "type": "string",
             "format": "date",
-            "title": "Start Date",
+            "title": "ReportStartTime",
             "description": "The date report will start. if left blank, it will revert to the LineID start date"
         },
         "ReportEndTime": {
             "$id": "#/properties/",
             "type": "string",
             "format": "date",
-            "title": "Start Date",
+            "title": "ReportEndTime",
             "description": "The date report will end. if left blank, it will revert to the LineID end date"
         },
         "ReportFields": {
@@ -83,7 +83,7 @@
         },
         "ReportFormat": {
             "$id": "#/properties/",
-            "description": "The time granularity of the Stats report",
+            "description": "requests the rerport output as a Verbose or Non-Verbose data format",
             "type": "string",
             "default":"Verbose",
             "enum": [
