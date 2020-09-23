@@ -502,11 +502,28 @@ The following objects are common to one or more resources. For example, the CONT
 
 Defines address details for an Organization or Contact
 
+| Attribute    | Description                                                           | Type                    |
+| ------------ | --------------------------------------------------------------------- | ----------------------- |
+| AddressLine1 | The first line of the address                                         | String (255)            |
+| AddressLine2 | The optional second line of the address                               | String (255)            |
+| City         | The name of the city in which the address is located                  | String (35)             |
+| State        | The name of the state/province/county in which the address is located | String (35)             |
+| Country      | The name of the country in which the address is located               | ISO 3166-1 country code |
+| PostalCode   | The postal or zip code for the address                                | String (255)            |
+
 Address Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/address_object.json
 
 ## 3.2 AdvertiserBrand
 
 Defines the details of a Brand associated with an organization
+
+| Attribute            | Description                                                     | Type         |
+| -------------------- | --------------------------------------------------------------- | ------------ |
+| Id                   | A system-generated opaque ID that uniquely identifies the brand | String (255) |
+| Name                 | The brand's display name                                        | String (255) |
+| OrganizationId       | The ID of the organization that owns the brand                  | String (36)  |
+| ThirdPartyID         | A Third Party ID for the AdvertiserBrand (e.g. Space)           | String (36)  |
+| ThirdPartyDataSource | The Third Party Data Source for the Advertiser Brand ID         | String (255) |
 
 AdvertiserBrand Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/advertiserBrand_object.json
 
@@ -514,11 +531,29 @@ AdvertiserBrand Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_
 
 Defines details for an individual contact within an Organization
 
+| Attribute | Description                                                                | Type        |
+| --------- | -------------------------------------------------------------------------- | ----------- |
+| Honorific | The contact's honorific such as Mr, Mrs                                    | String (20) |
+| Title     | The contact’s job title                                                    | String (20) |
+| FirstName | The contact’s first name                                                   | String (20) |
+| LastName  | The contact’s last name                                                    | String (20) |
+| Email     | The contact’s email address                                                | String (20) |
+| Phone     | The contact’s phone number                                                 | String (20) |
+| Type      | The type of contact that this resource represents (e.g. billing, creative) | String (20) |
+| Address   | The contact’s address                                                      | Object      |
+
 Contact Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/contact_object.json
 
 ## 3.4 ProductAvails
 
 Defines the response to a request for product availability and pricing information at product Level
+
+| Attribute | Description                                                                                                                                                      | Type                    |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| ProductId | ID that identifies the product for which availability and pricing information is provided                                                                        | String(36)              |
+| Targeting | The OOHbject targeting criteria, quantities & distribution variables returend as specified from the availability request                                         | Object                  |
+| Currency  | The currency used to specify Price. Currency is set for the PRODUCT resource specified in section 2.7 and uses CURRENCY reference data specified in section 4.5. | String (3) \[ISO-4217\] |
+| Price     | The product’s price based on OOHbject Targeting                                                                                                                  | Decimal                 |
 
 ProductAvails Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json
 
@@ -526,11 +561,27 @@ ProductAvails Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_di
 
 Defines search criteria used for requesting product availability and pricing within the given search criteria. This object is returned at OOHbject Level based on the OOHbject targeting criteria submitted.
 
+| Attribute          | Description                                                                                                                                                      | Type               |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| ProductIds         | A list of IDs that identify the products on which to get availability and pricing information                                                                    | Array              |
+| Targeting          | The Inventory, Delivery, Investement and Distribution OOHbject variables to be targeted for the availability request                                             | Array \[OOHbject\] |
+| AccountId          | The ID of the account that identifies the buyer, advertiser and any other stakeholders                                                                           | String(36)         |
+| Currency           | The currency used to specify Price. Currency is set for the PRODUCT resource specified in section 2.7 and uses CURRENCY reference data specified in section 4.5. | Max 3 Char         |
+| AdvertiserBrandId  | An ID that uniquely identifies the Brand being advertised                                                                                                        | String (36)        |
+| AvailabilityFields | Defines the OOHbject metrics that availability is returned as                                                                                                    | Array \[OOHbject\] |
+| Grouping           | Defines the OOHbject metric that the availability output is grouped as                                                                                           | Array \[OOHbject\] |
+| StartDate          | The desired start date for inventory delivery                                                                                                                    | ISO-8601           |
+| EndDate            | The desired end date for inventory delivery                                                                                                                      | ISO-8601           |
+
 ProductAvailsSearch Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvailsSearch_object.json
 
 ## 3.6 ProductSearch
 
 The ProductSearch object is used to generate a general list of products independent of their availability. For example, an agency might be interested in looking up all products that are available in Shopping Malls to get an idea for what the options are. Alternatively, the ProductAvailsSearch returns a list of products within specified search criteria with live availability and pricing.
+
+| Attribute | Description                                                                                                       | Type   |
+| --------- | ----------------------------------------------------------------------------------------------------------------- | ------ |
+| Targeting | The OOHbject targeting criteria, quantities & distribution variableds to be targeted for the availability request | Object |
 
 ProductSearch Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productSearch_object.json
 
@@ -538,17 +589,45 @@ ProductSearch Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_di
 
 The OOHProviderData object is used for Buyers to detail information that may be used to identify their order in a Seller&#39;s system using their own IDs or references. This would be mainly used for manually identifying orders in the event of the automated process needing manual intervention.
 
+| Attribute            | Description                                                                                                                                                                                                                                                                                                                                          | Type         |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| CampaignId           | Provided by the Buyer to uniquely identify the Advertising Campaign for which the Order is being placed                                                                                                                                                                                                                                              | String (255) |
+| CampaignName         | A descriptive name provided by the Buyer which is associated with the Advertising Campaign for which the Order is being placed                                                                                                                                                                                                                       | String (255) |
+| PoNumber             | Provided by Buyer as a reference to be used by Buyers for any offline contact related to the Order                                                                                                                                                                                                                                                   | String (255) |
+| SalesOrderReference  | Provided by the Media Owner as a reference to be used by Buyers for any offline contact related to the Order                                                                                                                                                                                                                                         | String (255) |
+| BarterOrganizationId | The OrganizationID of a Barter Company can be added here to flag a Barter transaction                                                                                                                                                                                                                                                                | String (255) |
+| Other                | An opaque CLOB of provider-defined data. Providers may use this field as needed (for example, to store an ID that correlates this object with resources within their system). Note that any provider that edits this object may override the data in this field. The data should include a marker that you can identify to ensure the data is yours. | CLOB (10000) |
+
 OOHProviderData Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohProviderData_object.json
 
 ## 3.8 Size
 
 Defines the height and width (in pixels) that a publisher accepts for a given resource (e.g. Product, Creative)
 
+| Attribute | Description                                    | Type    |
+| --------- | ---------------------------------------------- | ------- |
+| Height    | The height of accepted creative size in pixels | Integer |
+| Width     | The width of accepted creative size in pixels. | integer |
+
 Size Schema:https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/size_object.json
 
 ## 3.9 OOHbject
 
 A collection of targeting criteria used to discover and target the digital and physical presentation aspects of OOH media.
+
+| Attribute    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Type                                                               |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Name         | The key objects for describing OOH media campaigns and products are:<br>• Inventory: What a media owner / publisher sells in terms of Audience or Frames.<br>• Delivery: How adverts are displayed from a start and end time, and the share of that display time.<br>• Distribution: How the adverts are distributed across the times and locations booked by audience and/or investment.<br>• Investment: How the campaign is quantified for trading purposes (Fixes price, Cost Per Thousand Audience, Cost Per Frame).<br>• Prohibitions: Information about any brand safety prohibitions that will affect the playout of certain brand types in certain locations e.g. fast food prohibitions on certain locations. | enum (Inventory, Delivery, Distribution, Investment, Prohibitions) |
+| Type         | How the OOHbject is being quantified:<br>• Frames<br>• Audience<br>• Investment                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | enum (Frames, Audience, Investment)                                |
+| DataSource   | The identification and inclusion of third party data sources into the OOHpenDirect schema, which both buyside and sell side may use to describe and discover their available Inventory, location and audiences in accordance with the third party schema                                                                                                                                                                                                                                                                                                                                                                                                                                                                | String (255)                                                       |
+| Target       | Description of the OOHbject Metric                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | String (255)                                                       |
+| TargetValues | Array of one or more values                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Array                                                              |
+| Selectable   | Defines whether a Buyer can select from the given list of TargetValues or whether the targetValues are fixed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Boolean                                                            |
+| Count        | Count of TargetValues                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | number                                                             |
+| Minimum      | Defines the minimum number of TargetValues that must be selected                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | number                                                             |
+| Maximum      | Defines the maximum number of TargetValues that must be selected                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | number                                                             |
+| Increment    | Defines the increments that are permitted for the targeting values                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | number                                                             |
+| Default      | Defines the default TargetValue(s) that are selected if the Buyer does not specify any TargetValue(s) or the target is not selectable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | String (255) or Number                                             |
 
 OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json
 
