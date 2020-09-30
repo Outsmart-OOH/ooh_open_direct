@@ -20,10 +20,10 @@
                     "DataSource": "Space",
                     "Target": "frame_id",
                     "TargetValues": [
-                        1234931339,
-                        1235190735,
-                        1234931338,
-                        1235191547
+                        "1234931339",
+                        "1235190735",
+                        "1234931338",
+                        "1235191547"
                     ]
                 },
                 {
@@ -31,7 +31,7 @@
                     "Type": "Frames",
                     "DataSource": "Time",
                     "Target": "Days",
-                    "TargetValues": [ 5, 6 ]
+                    "TargetValues": [ "5", "6" ]
 
                 },
                 {
@@ -39,7 +39,7 @@
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "ShareOfTime",
-                    "TargetValues": [20]
+                    "TargetValues": ["20"]
 
                 },
                 {
@@ -47,7 +47,7 @@
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "Spot",
-                    "TargetValues": [5]
+                    "TargetValues": ["5"]
 
                 }
 

@@ -21,21 +21,21 @@
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "ShareOfTime",
-                    "TargetValues": [10]
+                    "TargetValues": ["10"]
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
                     "DataSource": "Metrics",
                     "Target": "Impacts",
-                    "TargetValues": [10000]
+                    "TargetValues": ["10000"]
                 },
                 {
                     "Name": "Investment",
                     "Type": "Total",
                     "DataSource": "GBP",
                     "Target": "Fixed",
-                    "TargetValues": [100]
+                    "TargetValues": ["100"]
                 }
 
             ],
@@ -53,21 +53,21 @@
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "ShareOfTime",
-                    "TargetValues": [10]
+                    "TargetValues": ["10"]
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
                     "DataSource": "Metrics",
                     "Target": "Impacts",
-                    "TargetValues": [18000]
+                    "TargetValues": ["18000"]
                 },
                 {
                     "Name": "Investment",
                     "Type": "Total",
                     "DataSource": "GBP",
                     "Target": "Fixed",
-                    "TargetValues": [180]
+                    "TargetValues": ["180"]
                 }
             ],
 
@@ -84,21 +84,21 @@
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "ShareOfTime",
-                    "TargetValues": [20]
+                    "TargetValues": ["20"]
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
                     "DataSource": "Metrics",
                     "Target": "Impacts",
-                    "TargetValues": [10000]
+                    "TargetValues": ["10000"]
                 },
                 {
                     "Name": "Investment",
                     "Type": "Total",
                     "DataSource": "GBP",
                     "Target": "Fixed",
-                    "TargetValues": [100]
+                    "TargetValues": ["100"]
                 }
             ],
             [
@@ -115,21 +115,21 @@
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "ShareOfTime",
-                    "TargetValues": [20]
+                    "TargetValues": ["20"]
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
                     "DataSource": "Metrics",
                     "Target": "Impacts",
-                    "TargetValues": [30000]
+                    "TargetValues": ["30000"]
                 },
                 {
                     "Name": "Investment",
                     "Type": "Total",
                     "DataSource": "GBP",
                     "Target": "Fixed",
-                    "TargetValues": [300]
+                    "TargetValues": ["300"]
                 }
 
             ]
