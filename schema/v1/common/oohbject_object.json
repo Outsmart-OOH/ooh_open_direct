@@ -46,7 +46,11 @@
             "items": {
                 "$id": "#/properties/TargetValues/items",
                 "title": "Target Value item",
-                "type": "string"
+                "oneOf": [
+                    {
+                        "type": "string"
+                    }
+                ]
             }
         },
         "Selectable": {
