@@ -92,7 +92,7 @@
         },
         "Stats": {
             "$id": "#/properties/",
-            "type": "string",
+            "type": "object",
             "title": "Stats",
             "description": "Reports on the schedule generated to fulfill the targeting requirements detailed in the Order Line (pre-flight stage), and the performance of the schedule when the campaign is in flight and/or completed."
         },
