@@ -77,7 +77,7 @@ Richard Saturley **World Out of Home Organisation**
 [2.3 Creative](#23-creative)
 [2.4 Line](#24-line)
 [2.5 Order](#25-order)
-[2.6 Organisation](#26-organization)
+[2.6 Organization](#26-organization)
 [2.7 Product](#27-product)
 [2.8 Change Request](#28-change-request)
 [2.9 Stats](#29-stats)
@@ -397,9 +397,11 @@ To specify the individual line item details of the order, use the LINE resource 
 
 Order Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/order/order_object.json
 
-## 2.6 Organisation
+## 2.6 Organization
 
-The organization resource may represent an advertiser or agency (buyer). The Account determines the role that the organization plays by using the organization ID in place of the BuyerId or AdvertiserId. The organization&#39;s role may vary by account. For example, the organization may be an advertiser in one account and a buyer in another. An advertiser may create one or more organizations to meet their business needs. For example, they may create a single organization and then create accounts for each brand, subsidiary, or division. Or, they may create an organization for each brand. It is up to the advertiser to determine how they use Organization and Account to meet their organizational needs.
+The organization resource may represent an advertiser or agency (buyer). The Account determines the role that the organization plays by using the organization ID in place of the BuyerId or AdvertiserId. The organization's role may vary by account. For example, the organization may be an advertiser in one account and a buyer in another. An advertiser may create one or more organizations to meet their business needs. For example, they may create a single organization and then create accounts for each brand, subsidiary, or division. Or, they may create an organization for each brand. It is up to the advertiser to determine how they use Organization and Account to meet their organizational needs.
+
+At the moment the Sell Side creates all Organizations, this is not a schema nor API function that will be used by the Buy Side. It is up to the Sell Side to populate the Organization data according to the schema guideline. If the Organization schema is opened to the Buy Side, it is advised that the schema should then identify required fields to match Sell Side expectations.
 
 | Attribute          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Type                                           |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
