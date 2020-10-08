@@ -273,6 +273,8 @@ OpenDirect users include:
 
 **Advertisers:** Advertisers represent the brands that purchase publisher inventory for advertising their brands. An advertiser may also be a buyer, but if the advertiser works with a buyer, the advertiser must provide formal consent to allow the buyer to act on its behalf. The Advertiser ID can be used to set up advertiser accounts in an agency or publisher&#39;s OpenDirect system.
 
+**Third Party:** A group media agency may use a specilaist buying agency to buy OOH Media. In this case the Buyer will be the specialist, and the Third Party will be the organization upon who's behalf an Order is being placed (the group media agency).
+
 
 ## 1.3 Programming Elements
 
