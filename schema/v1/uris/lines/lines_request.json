@@ -9,6 +9,7 @@
         "EndDate",
         "ProductId",
         "StartDate",
-        "Targeting"
+        "Targeting",
+        "Name"
     ]
 }
