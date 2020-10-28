@@ -4,7 +4,7 @@
     "StateChangeReason": "Declined",
     "Comment": "Free form comment",
     "Cost": 0,
-    "EndDate": "2014-12-10T18:00:00.000Z",
+    "EndDate": "2020-11-08T00:00:00.000Z",
     "Id": "345233",
     "Name": "My Line 1",
     "OrderId": "1235872",
@@ -12,7 +12,7 @@
     "OOHProviderData": {
         "PoNumber": "88873"
     },
-    "StartDate": "2014-12-05T06:00:00.000Z",
+    "StartDate": "2020-11-02T00:00:00.000Z",
     "Targeting": [
         {
             "Name": "Inventory",
@@ -32,7 +32,7 @@
             "DataSource": "Time",
             "Target": "Days",
             "TargetValues": [
-                "5"
+                "6"
             ]
         },
         {
@@ -65,6 +65,71 @@
             ]
         }
     ],
+    "ProductUnAvails": [
+        {
+            "Currency": "GBP",
+            "ProductId": "456366",
+            "Targeting": [
+                [
+                    {
+                        "Name": "Inventory",
+                        "Type": "Frames",
+                        "DataSource": "Space",
+                        "Target": "frame_id",
+                        "TargetValues": [
+                            "1234931339"
+                        ]
+                    },
+                    {
+                        "Name": "Delivery",
+                        "Type": "Frames",
+                        "DataSource": "Time",
+                        "Target": "Days",
+                        "TargetValues": [
+                            "6"
+                        ]
+                    },
+                    {
+                        "Name": "Delivery",
+                        "Type": "Frames",
+                        "DataSource": "Time",
+                        "Target": "Hours",
+                        "TargetValues": [
+                            "7"
+                        ]
+                    },
+                    {
+                        "Name": "Delivery",
+                        "Type": "Frames",
+                        "DataSource": "ShareOfDisplay",
+                        "Target": "ShareOfTime",
+                        "TargetValues": [
+                            "20"
+                        ]
+                    },
+                    {
+                        "Name": "Inventory",
+                        "Type": "Audience",
+                        "DataSource": "Metrics",
+                        "Target": "Impacts",
+                        "TargetValues": [
+                            "600"
+                        ]
+                    },
+                    {
+                        "Name": "Inventory",
+                        "Type": "Frames",
+                        "DataSource": "MediaOwner",
+                        "Target": "UnavailabilityReason",
+                        "TargetValues": [
+                            "OptionedElsewhere"
+                        ]
+                    }
+                ]
+            ],
+            "Price": 25
+        }
+    ],
     "ProductAvails": [
         {
             "Currency": "GBP",
@@ -83,39 +148,20 @@
                     {
                         "Name": "Delivery",
                         "Type": "Frames",
-                        "DataSource": "ShareOfDisplay",
-                        "Target": "ShareOfTime",
+                        "DataSource": "Time",
+                        "Target": "Days",
                         "TargetValues": [
-                            "20"
+                            "6"
                         ]
                     },
                     {
-                        "Name": "Inventory",
-                        "Type": "Audience",
-                        "DataSource": "Metrics",
-                        "Target": "Impacts",
-                        "TargetValues": [
-                            "15000"
-                        ]
-                    },
-                    {
-                        "Name": "Investment",
-                        "Type": "Total",
-                        "DataSource": "GBP",
-                        "Target": "Fixed",
-                        "TargetValues": [
-                            "150"
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "Name": "Inventory",
+                        "Name": "Delivery",
                         "Type": "Frames",
-                        "DataSource": "Space",
-                        "Target": "frame_id",
+                        "DataSource": "Time",
+                        "Target": "Hours",
                         "TargetValues": [
-                            "1235190735"
+                            "8",
+                            "9"
                         ]
                     },
                     {
@@ -128,59 +174,12 @@
                         ]
                     },
                     {
-                        "Name": "Inventory",
-                        "Type": "Audience",
-                        "DataSource": "Metrics",
-                        "Target": "Impacts",
-                        "TargetValues": [
-                            "25000"
-                        ]
-                    },
-                    {
-                        "Name": "Investment",
-                        "Type": "Total",
-                        "DataSource": "GBP",
-                        "Target": "Fixed",
-                        "TargetValues": [
-                            "250"
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "Name": "Inventory",
-                        "Type": "Frames",
-                        "DataSource": "Space",
-                        "Target": "frame_id",
-                        "TargetValues": [
-                            "1234931338"
-                        ]
-                    },
-                    {
                         "Name": "Delivery",
                         "Type": "Frames",
                         "DataSource": "ShareOfDisplay",
-                        "Target": "ShareOfTime",
+                        "Target": "Spot",
                         "TargetValues": [
-                            "20"
-                        ]
-                    },
-                    {
-                        "Name": "Inventory",
-                        "Type": "Audience",
-                        "DataSource": "Metrics",
-                        "Target": "Impacts",
-                        "TargetValues": [
-                            "10000"
-                        ]
-                    },
-                    {
-                        "Name": "Investment",
-                        "Type": "Total",
-                        "DataSource": "GBP",
-                        "Target": "Fixed",
-                        "TargetValues": [
-                            "100"
+                            "5"
                         ]
                     }
                 ],
@@ -191,12 +190,34 @@
                         "DataSource": "Space",
                         "Target": "frame_id",
                         "TargetValues": [
+                            "1235190735",
+                            "1234931338",
                             "1235191547"
                         ]
                     },
                     {
                         "Name": "Delivery",
                         "Type": "Frames",
+                        "DataSource": "Time",
+                        "Target": "Days",
+                        "TargetValues": [
+                            "6"
+                        ]
+                    },
+                    {
+                        "Name": "Delivery",
+                        "Type": "Frames",
+                        "DataSource": "Time",
+                        "Target": "Hours",
+                        "TargetValues": [
+                            "7",
+                            "8",
+                            "9"
+                        ]
+                    },
+                    {
+                        "Name": "Delivery",
+                        "Type": "Frames",
                         "DataSource": "ShareOfDisplay",
                         "Target": "ShareOfTime",
                         "TargetValues": [
@@ -204,26 +225,17 @@
                         ]
                     },
                     {
-                        "Name": "Inventory",
-                        "Type": "Audience",
-                        "DataSource": "Metrics",
-                        "Target": "Impacts",
+                        "Name": "Delivery",
+                        "Type": "Frames",
+                        "DataSource": "ShareOfDisplay",
+                        "Target": "Spot",
                         "TargetValues": [
-                            "30000"
-                        ]
-                    },
-                    {
-                        "Name": "Investment",
-                        "Type": "Total",
-                        "DataSource": "GBP",
-                        "Target": "Fixed",
-                        "TargetValues": [
-                            "300"
+                            "5"
                         ]
                     }
                 ]
             ],
-            "Price": 800
+            "Price": 7975
         }
     ]
 }
