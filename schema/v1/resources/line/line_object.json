@@ -100,6 +100,21 @@
             "$id": "#/properties/Targeting",
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
         },
+        "ProductUnAvails": {
+            "$id": "#/properties/Products",
+            "type": "array",
+            "title": "Array of ProductAvails",
+            "description": "This Object is used to show the EXCEPTION where the draft/reserve/booking request failed because of a change in product availability between booking states",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json",
+                "required": [
+                    "Currency",
+                    "ProductId",
+                    "Targeting",
+                    "Price"
+                ]
+            }
+        },
         "ProductAvails": {
             "$id": "#/properties/Products",
             "type": "array",
