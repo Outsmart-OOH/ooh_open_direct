@@ -1,16 +1,16 @@
 {
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/lines/lines_response.json",
     "BookingStatus": "Draft",
-    "StateChangeReason": "Declined",
+    "StateChangeReason": "Availability Issue",
     "Comment": "Free form comment",
     "Cost": 0,
     "EndDate": "2020-11-08T00:00:00.000Z",
     "Id": "345233",
-    "Name": "My Line 1",
+    "Name": "Big Line 1",
     "OrderId": "1235872",
     "ProductId": "456366",
     "OOHProviderData": {
-        "PoNumber": "88873"
+        "PoNumber": "88888"
     },
     "StartDate": "2020-11-02T00:00:00.000Z",
     "Targeting": [
