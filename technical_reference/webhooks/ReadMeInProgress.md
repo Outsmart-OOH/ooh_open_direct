@@ -10,15 +10,13 @@
 
 ## Table of Contents
 
-**[Table of Contents]**(#_ozeiak7glhs3) 
+[Introduntion & Context](#introduction--context) 
 
-**[Intro &amp; context](#_ptndkf2zy1pc) 
+[Process Summary](#_104rahkjueom) 
 
-**[Process Summary](#_104rahkjueom) 
+[Webhooks](#_s10bqgkxg4cj) 
 
-**[Webhooks](#_s10bqgkxg4cj) 
-
-**[Anatomy of a webhook message](#_b4htub4nmawl) 
+[Anatomy of a webhook message](#_b4htub4nmawl) 
 
 [Headers](#_y8ong0llri03) 
 
