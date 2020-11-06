@@ -1,14 +1,11 @@
 
-## **OpenDirect (OOH) 1.5.1 v1.1 webooks**
-v0.1
+# **OpenDirect (OOH) 1.5.1 v1.1 webooks**
 
 **Version history**
 
 | **Version** | **Date** | **Changes** |
 | --- | --- | --- |
-| v0.1 | Aug 21th, 2020 | First draft, high level outline, to jumpstart a discussion on how webhooks could be used, and to what extent a webhook set-up should be standardized in the OpenDirect (OOH) 1.5.1 standard. |
-
-##
+| v1.0 | Nov 12th, 2020 | First version describing how a webhook set-up should be standardized in an implementation of the OpenDirect (OOH) 1.5.1 standard. All changes and versioning of this document will now be handled in Github |
 
 
 ## Table of Contents
