@@ -10,43 +10,39 @@
 
 ## Table of Contents
 
-##
+**[Table of Contents](#_ozeiak7glhs3) 
 
+**[Intro &amp; context](#_ptndkf2zy1pc) 
 
-**[Table of Contents](#_ozeiak7glhs3) 3**
+**[Process Summary](#_104rahkjueom) 
 
-**[Intro &amp; context](#_ptndkf2zy1pc) 4**
+**[Webhooks](#_s10bqgkxg4cj) 
 
-**[Process Summary](#_104rahkjueom) 5**
+**[Anatomy of a webhook message](#_b4htub4nmawl) 
 
-**[Webhooks](#_s10bqgkxg4cj) 6**
+[Headers](#_y8ong0llri03) 
 
-**[Anatomy of a webhook message](#_b4htub4nmawl) 8**
+[Events &amp; payloads](#_m05h8rn3xecq)
 
-[Headers](#_y8ong0llri03) 8
+[Example message](#_s4gbzos6utz4) 
 
-[Events &amp; payloads](#_m05h8rn3xecq) 9
+[Body](#_bafsjpgcm8gi) 
 
-[Example message](#_s4gbzos6utz4) 10
+**[Sending webhook messages](#_ebtjzd8gxioh)
 
-[Body](#_bafsjpgcm8gi) 10
+[Retry mechanism](#_prunsxfyqjhd) 
 
-**[Sending webhook messages](#_ebtjzd8gxioh) 12**
+**[Receiving messages](#_b3gicfsapuvr)
 
-[Retry mechanism](#_prunsxfyqjhd) 12
+[Returning the correct response code](#_x4ikkfd533rl) 
 
-**[Receiving messages](#_b3gicfsapuvr) 13**
+**[Securing webhooks](#_yhxg8eeaz7dr) 
 
-[Returning the correct response code](#_x4ikkfd533rl) 13
-
-**[Securing webhooks](#_yhxg8eeaz7dr) 14**
-
-##
 
 
 ## Intro &amp; context
 
-The OOH OpenDirect standardsuggests webhook feedback for several operations. This document describes how to set these up and how they should behave.This document is meant to be a document to start &amp; facilitate a discussion on how &amp; to what extent to standardize implementation of webhooks in the OpenDirect (OOH) 1.5.1 standard.
+[The OOH OpenDirect standard](https://github.com/Outsmart-OOH/ooh_open_direct) suggests webhook feedback for several operations. This document describes how to set these up and how they should behave.This document is meant to be a document to start &amp; facilitate a discussion on how &amp; to what extent to standardize implementation of webhooks in the OpenDirect (OOH) 1.5.1 standard.
 
 The document should be limited to anything that relates to platform &amp; technology independent mechanisms, purely to facilitate easy, reliable, efficient and secure communication between two Open Direct v1.5.1 systems.
 
