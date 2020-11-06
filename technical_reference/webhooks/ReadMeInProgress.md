@@ -18,10 +18,7 @@
 
 [Anatomy of a webhook message](#anatomy-of-a-webhook-message) 
 
-[Headers](#headers) 
-[Events & Payloads](#events--payloads)
-[Example Message](#example-message) 
-[Body](#body) 
+([Headers](#headers) , [Events & Payloads](#events--payloads), [Example Message](#example-message) , [Body](#body) )
 
 [Sending Webhook Messages](#sending-webhook-messages)
 
