@@ -16,25 +16,17 @@
 
 [Webhooks](#webhooks) 
 
-[Anatomy of a webhook message](#anatomy-of-a-webhook-message) 
+[Anatomy of a webhook message](#anatomy-of-a-webhook-message) ([Headers](#headers) , [Events & Payloads](#events--payloads), [Example Message](#example-message) , [Body](#body) )
 
-([Headers](#headers) , [Events & Payloads](#events--payloads), [Example Message](#example-message) , [Body](#body) )
+[Sending Webhook Messages](#sending-webhook-messages) ([Retry Mechanism](#retry-mechanism))
 
-[Sending Webhook Messages](#sending-webhook-messages)
+[Receiving messages](#receiving-messages)([Returning the correct response code](#_x4ikkfd533rl))
 
-[Retry Mechanism](#retry-mechanism) 
-
-[Receiving messages](#receiving-messages)
-
-[Returning the correct response code](#_x4ikkfd533rl) 
-
-[Securing Webhooks](#securing-webhooks) 
-
-[HMAC](#hmac)
-[Canonicalized Headers](#canonicalized-headers)
-[Registering The Shared Key](#registering-the-shared-key)
-[Reccomendations](#recommendations)
-[IP-Whitelisting](#ip-whitelisting)
+[Securing Webhooks](#securing-webhooks) ([HMAC](#hmac),
+[Canonicalized Headers](#canonicalized-headers),
+[Registering The Shared Key](#registering-the-shared-key),
+[Reccomendations](#recommendations),
+[IP-Whitelisting](#ip-whitelisting))
 
 ## Introduction & Context
 
