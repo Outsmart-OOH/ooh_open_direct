@@ -20,7 +20,7 @@
 
 [Sending Webhook Messages](#sending-webhook-messages) ([Retry Mechanism](#retry-mechanism))
 
-[Receiving messages](#receiving-messages)([Returning the correct response code](#_x4ikkfd533rl))
+[Receiving messages](#receiving-messages) ([Returning the correct response code](#_x4ikkfd533rl))
 
 [Securing Webhooks](#securing-webhooks) ([HMAC](#hmac),
 [Canonicalized Headers](#canonicalized-headers),
