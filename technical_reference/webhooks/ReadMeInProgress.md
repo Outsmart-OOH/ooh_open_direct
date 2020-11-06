@@ -5,7 +5,7 @@
 
 | **Version** | **Date** | **Changes** |
 | --- | --- | --- |
-| v1.0 | Nov 12th, 2020 | First version describing how a webhook set-up should be standardized in an implementation of the OpenDirect (OOH) 1.5.1 standard. All changes and versioning of this document will now be handled in Github |
+| v1.0 | Nov 12th, 2020 | First version describing how a webhook set-up should be standardized in an implementation of the OpenDirect (OOH) standard. All changes and versioning of this document will now be handled in Github |
 
 
 ## Table of Contents
@@ -42,13 +42,9 @@
 
 ## Intro &amp; context
 
-[The OOH OpenDirect standard](https://github.com/Outsmart-OOH/ooh_open_direct) suggests webhook feedback for several operations. This document describes how to set these up and how they should behave.This document is meant to be a document to start &amp; facilitate a discussion on how &amp; to what extent to standardize implementation of webhooks in the OpenDirect (OOH) 1.5.1 standard.
+[The OOH OpenDirect standard](https://github.com/Outsmart-OOH/ooh_open_direct) suggests webhook feedback for several operations. This document describes how to set these up and how they should behave, thus standardizing implementation of webhooks in an implementation of [the OOH OpenDirect standard](https://github.com/Outsmart-OOH/ooh_open_direct).
 
-The document should be limited to anything that relates to platform &amp; technology independent mechanisms, purely to facilitate easy, reliable, efficient and secure communication between two Open Direct v1.5.1 systems.
-
-Initial content has been added by Signkick, based on what&#39;s already in place for Signkick&#39;s system. This also inspired on best practices seen in e.g. the GitHub webhook documentation and the Adyen webhook documentation, among others, to make sure it matches developer experiences seen in other big platforms. Again to facilitate easy implementation across different technologies and companies.
-
-Unless decided otherwise, it would probably be good if changes are proposed using &#39;suggesting&#39; mode, so that it&#39;s easy to see for everyone what&#39;s changed since last viewed, and to use the commenting capabilities of Google Docs.
+This document is limited to anything that relates to platform & technology independent mechanisms, purely to facilitate easy, reliable, efficient and secure communication between two Open Direct v1.5.1 systems.
 
 ## Process Summary
 
