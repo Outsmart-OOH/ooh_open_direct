@@ -1,22 +1,5 @@
-##
 
-
-##
-
-
-##
-
-
-#
-##
-
-
-#
 ## **OpenDirect (OOH) 1.5.1 v1.1 webooks**
-
-##
-
-
 v0.1
 
 **Version history**
