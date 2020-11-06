@@ -50,7 +50,7 @@ This document is limited to anything that relates to platform & technology indep
 
 The diagram below shows a summary flow of the webhook functional process in the form of a GET /stats request (Campaign Order Line upsite and performance report request)
 
-![](RackMultipart20201106-4-1j715z5_html_47e2a4037718dd3.png)
+![Process Summary](pictures/Diagram1.png)
 
 ##
 
