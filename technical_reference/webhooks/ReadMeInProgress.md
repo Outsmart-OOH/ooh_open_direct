@@ -1,20 +1,20 @@
-###
-
-
-###
-
-
-###
+##
 
 
 ##
-###
 
 
 ##
-### **OpenDirect (OOH) 1.5.1 v1.1 webooks**
 
-###
+
+#
+##
+
+
+#
+## **OpenDirect (OOH) 1.5.1 v1.1 webooks**
+
+##
 
 
 v0.1
@@ -25,10 +25,10 @@ v0.1
 | --- | --- | --- |
 | v0.1 | Aug 21th, 2020 | First draft, high level outline, to jumpstart a discussion on how webhooks could be used, and to what extent a webhook set-up should be standardized in the OpenDirect (OOH) 1.5.1 standard. |
 
-###
+##
 
 
-### Table of Contents
+## Table of Contents
 
 ##
 
@@ -64,7 +64,7 @@ v0.1
 ##
 
 
-### Intro &amp; context
+## Intro &amp; context
 
 The OOH OpenDirect standardsuggests webhook feedback for several operations. This document describes how to set these up and how they should behave.This document is meant to be a document to start &amp; facilitate a discussion on how &amp; to what extent to standardize implementation of webhooks in the OpenDirect (OOH) 1.5.1 standard.
 
@@ -74,16 +74,16 @@ Initial content has been added by Signkick, based on what&#39;s already in place
 
 Unless decided otherwise, it would probably be good if changes are proposed using &#39;suggesting&#39; mode, so that it&#39;s easy to see for everyone what&#39;s changed since last viewed, and to use the commenting capabilities of Google Docs.
 
-### Process Summary
+## Process Summary
 
 The diagram below shows a summary flow of the webhook functional process in the form of a GET /stats request (Campaign Order Line upsite and performance report request)
 
-![](RackMultipart20201106-4-b2ytpx_html_47e2a4037718dd3.png)
+![](RackMultipart20201106-4-1j715z5_html_47e2a4037718dd3.png)
 
-###
+##
 
 
-### Webhooks
+## Webhooks
 
 For asynchronous processing within the OpenDirect standard, webhooks offer a way to receive instant notifications on updates for any of these operations. Within the current OpenDirect (OOH) 1.5.1 standard, this is mostly needed for order line status changes and change requests, usually awaiting manual intervention.
 
@@ -91,12 +91,12 @@ Polling could be used as an alternative for the webhooks, and it&#39;s probably 
 
 The image below is taken from OpenDirect (OOH) 1.5.1 v1.1, and shows which state transitions require a webhook callback.
 
-![](RackMultipart20201106-4-b2ytpx_html_449d2d4255af445e.png)
+![](RackMultipart20201106-4-1j715z5_html_449d2d4255af445e.png)
 
 ##
 
 
-### Anatomy of a webhook message
+## Anatomy of a webhook message
 
 ## Headers
 
@@ -104,22 +104,18 @@ The application/json content type should be used for all messages.
 
 Headers are also used to send meta-information about what kind of event is sent, if there are retries and security information.
 
-| **X-OohWebhook-Signature**** Authorization** | HMAC-SHA512 signature of the message for sender authenticity verification |
+| **Authorization** | HMAC-SHA512 signature of the message for sender authenticity verification |
 | --- | --- |
 | **X-OohWebhook-Event** | Name of the event, e.g. &#39;OrderLineStateChange&#39;. For now, this seems to also be the only event that needs to be supported. |
 | **X-OohWebhook-MessageId** | A UUID for the event instance. Should be kept the same across redeliveries of the same event instance, see &#39;delivery id&#39; below. For each new webhook call that is not a retry, a new message-id should be generated. |
 | **X-OohWebhook-DeliveryId** | A UUID for a single call to a webhook. This is useful to identify redeliveries of the same event instance (so having the same event-id), if supported &amp; enabled at the caller for the callee. |
 
-###
+##
 
 
 ## Events &amp; payloads
 
 **Events &amp; payloads can be found throughout the OOH OpenDirect standard. The payload of webhook messages should be the same as their corresponding GET endpoints. All webhook supported messages need a corresponding GET endpoint to also** facilitate long-polling and/or a manual refresh of information.
-
-Events &amp; payloads can be found throughout the OOH OpenDirect standard.
-
-We can consider going for &#39;fat&#39; or &#39;thin&#39; event messages. &#39;Fat&#39; events contain the whole message, meaning the receiving system can immediately process the message, and no subsequent calls might be necessary to find out anything more. &#39;Thin&#39; events are just a notification, and at least one subsequent call is probably necessary to find out what the update actually was. An argument against fat-events could be that the message body could get too big at some point. For these scenarios, the same principles could be applied as for normal response bodies, like pagination.
 
 ##
 
@@ -237,7 +233,7 @@ _Headers_
 ##
 
 
-### Sending webhook messages
+## Sending webhook messages
 
 For a system offering a OpenDirect OOH API, the starting point is that for any message supporting webhook feedback, a URI is sent in the request body using the field &quot;webhook&quot;. When an event is triggered in the OpenDirect system supporting webhook feedback, it should send a message using the HTTP POST method to the webhook URI that was sent with the original request.
 
@@ -253,10 +249,10 @@ In case of an error response or time-out, the caller should try to deliver the r
 ##
 
 
-###
+##
 
 
-### Receiving messages
+## Receiving messages
 
 To receive a message as an OpenDirect client, the OpenDirect client needs to communicate a webhook URI to the OpenDirect server. A field for this called &quot;webhook&quot; is present on any request that facilitates this.
 
@@ -275,15 +271,13 @@ should be returned when the message is properly received. In most cases, it&#39;
 ##
 
 
-### Securing webhooks
+## Securing webhooks
 
 Next to using HTTPS to encrypt the communication, additional security measures can be taken to properly secure the webhook calls.
 
 **HMAC**
 
-HMAC
-# 1
- is a way to verify if the message is coming from a trusted sender, and that its contents haven&#39;t been changed since it was sent. In order to be able to verify the sender of the incoming calls, a SecretKey in the form of a UUID must be shared between both the client and server systems. The SecretKey could either be provided by the organisation offering the API, or configured in a UI of the OD151 system by the client system organization.
+HMAC is a way to verify if the message is coming from a trusted sender, and that its contents haven&#39;t been changed since it was sent. In order to be able to verify the sender of the incoming calls, a SecretKey in the form of a UUID must be shared between both the client and server systems. The SecretKey could either be provided by the organisation offering the API, or configured in a UI of the OD151 system by the client system organization.
 
 Based on the request body (payload) and the shared SecretKey, an HMAC (hash-based message authentication code) signature should be generated by the calling system and provided in the &quot;Authorization&quot;HTTP header, using the SHA512 hash function.
 
@@ -309,13 +303,13 @@ where:
 
 - message- body represents the request message payload
 
-- _ **canonicalized-ooh-webhook-headers** _represents the canonicalized x-OohWebHook headers
+- _ **canonicalized-ooh-webhook-headers** _represents the canonicalized headers
 
-- **hmac-sha512** represents the hashing function-based message authentication code using the SHA512 cryptographic hashing algorithm and the secret key
+- **sha512** represents the hashing function-based message authentication code using the SHA512 cryptographic hashing algorithm and the secret key
 
 **Canonicalized headers**
 
-The webhook headers should be canonicalized, so that both buyer &amp; seller include in the same way when hashing the message. The headers should be are canonicalized by:
+The webhook headers should be canonicalized, so that both buyer &amp; seller include in the same way when hashing the message. The headers should be canonicalized by:
 
 - Lower-casing the header names,
 - Sorting the headers ascending by name ascending,
@@ -343,7 +337,7 @@ sha512 (
 
 secretKey,
 
-&quot;{\&quot;myExampleKeyInJsonBody&quot;:\&quot;myExampleValueInJsonBody\&quot;}JsonBodyHere}\nx-oohwebhook-deliveryid:10c18c70-a76a-4254-a7b6-d9ec86a5ffd5\nx-oohwebhook-event:OrderLine.ReservationConfirmed\nx-oohwebhook-eventid:5778e93f-2905-4b61-bba1-443ac6410b3c&quot;
+&quot;{\&quot;myExampleKeyInJsonBody&quot;:\&quot;myExampleValueInJsonBody\&quot;}}\nx-oohwebhook-deliveryid:10c18c70-a76a-4254-a7b6-d9ec86a5ffd5\nx-oohwebhook-event:OrderLine.ReservationConfirmed\nx-oohwebhook-eventid:5778e93f-2905-4b61-bba1-443ac6410b3c&quot;
 
 )
 
@@ -351,7 +345,7 @@ secretKey,
 
 **To be able to sign and verify messages using HMAC, we need a shared key. This key has to be generated once, and would probably be good to refresh it every couple of months or so. The shared key needed for HMAC signing, can be generated by either the buyer or the seller. They could be exchanged in an automated way by e.g. an API, but any secure way of exchanging the key will do.**
 
-![](RackMultipart20201106-4-b2ytpx_html_e91a92f977309066.png)
+![](RackMultipart20201106-4-1j715z5_html_e91a92f977309066.png)
 
 **Recommendations**
 
@@ -360,7 +354,3 @@ The shared cryptographic secret key should be different for each buyer.
 **IP-whitelisting**
 
 Additionally, IP-whitelisting could be set-up to secure the webhook endpoints. Since this can be circumvented using IP-spoofing, it&#39;s recommended that it is used in combination with content signing using HMAC.
-
-[1](#sdfootnote1anc)More about HMAC: https://en.wikipedia.org/wiki/HMAC
-
-Online HMAC generator tool: https://www.freeformatter.com/hmac-generator.html
