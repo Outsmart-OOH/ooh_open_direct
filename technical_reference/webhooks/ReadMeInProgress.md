@@ -10,33 +10,36 @@
 
 ## Table of Contents
 
-[Introduntion & Context](#introduction--context) 
+[Introduction & Context](#introduction--context) 
 
-[Process Summary](#_104rahkjueom) 
+[Process Summary](#process-summary) 
 
-[Webhooks](#_s10bqgkxg4cj) 
+[Webhooks](#webhooks) 
 
-[Anatomy of a webhook message](#_b4htub4nmawl) 
+[Anatomy of a webhook message](#anatomy-of-a-webhook-message) 
 
-[Headers](#_y8ong0llri03) 
+[Headers](#headers) 
 
-[Events &amp; payloads](#_m05h8rn3xecq)
+[Events & Payloads](#events--payloads)
 
-[Example message](#_s4gbzos6utz4) 
+[Example Message](#example-message) 
 
-[Body](#_bafsjpgcm8gi) 
+[Body](#body) 
 
-**[Sending webhook messages](#_ebtjzd8gxioh)
+[Sending Webhook Messages](#sending-webhook-messages)
 
-[Retry mechanism](#_prunsxfyqjhd) 
+[Retry Mechanism](#retry-mechanism) 
 
-**[Receiving messages](#_b3gicfsapuvr)
+[Receiving messages](#receiving-messages)
 
 [Returning the correct response code](#_x4ikkfd533rl) 
 
-**[Securing webhooks](#_yhxg8eeaz7dr) 
-
-
+[Securing Webhooks](#securing-webhooks) 
+[HMAC](#hmac)
+[Canonicalized Headers](#canonicalized-headers)
+[Registering The Shared Key](#registering-the-shared-key)
+[Reccomendations](#recommendations)
+[IP-Whitelisting](#ip-whitelisting)
 
 ## Introduction & Context
 
