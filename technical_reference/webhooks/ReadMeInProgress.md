@@ -19,11 +19,8 @@
 [Anatomy of a webhook message](#anatomy-of-a-webhook-message) 
 
 [Headers](#headers) 
-
 [Events & Payloads](#events--payloads)
-
 [Example Message](#example-message) 
-
 [Body](#body) 
 
 [Sending Webhook Messages](#sending-webhook-messages)
@@ -35,6 +32,7 @@
 [Returning the correct response code](#_x4ikkfd533rl) 
 
 [Securing Webhooks](#securing-webhooks) 
+
 [HMAC](#hmac)
 [Canonicalized Headers](#canonicalized-headers)
 [Registering The Shared Key](#registering-the-shared-key)
