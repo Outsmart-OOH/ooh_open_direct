@@ -63,7 +63,7 @@ Polling could be used as an alternative for the webhooks, and it&#39;s probably 
 
 The image below is taken from OpenDirect (OOH) 1.5.1 v1.1, and shows which state transitions require a webhook callback.
 
-![](RackMultipart20201106-4-1j715z5_html_449d2d4255af445e.png)
+![Use of Webhooks in OpenDirect(OOH)](pictures/Diagram2.png)
 
 ##
 
