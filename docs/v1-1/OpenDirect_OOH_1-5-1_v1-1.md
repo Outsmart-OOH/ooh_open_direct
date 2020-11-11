@@ -534,7 +534,16 @@ AdvertiserBrand Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_
 
 ## 3.3 Contact
 
-Defines details for an individual contact within an Organization
+Defines details for an individual contact within an Organization.
+The following fields are a minimum requirement for a contact record:
+* FirstName
+* LastName
+* Email 
+* Type 
+
+If a Media Owner / Publisher requires a contact to be submitted with an Order, the Media Owner must show the Agency and/or Third Party buyer how to register contacts, and if they need to exist in an Organisation. 
+
+In OpenDirect the contacts can be listed in the Organisation object, but a contact does not have to be assigned to an Organisation ID.
 
 | Attribute | Description                                                                | Type        |
 | --------- | -------------------------------------------------------------------------- | ----------- |
