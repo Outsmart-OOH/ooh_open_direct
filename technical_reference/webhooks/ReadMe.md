@@ -12,6 +12,10 @@
 
 [Introduction & Context](#introduction--context) 
 
+[Key Contributers](#key-contributers) 
+
+[cOOHding.Club Members](#introduction--context) 
+
 [Process Summary](#process-summary) 
 
 [Webhooks](#webhooks) 
@@ -39,20 +43,20 @@ This document is limited to anything that relates to platform & technology indep
 * Alex Radu, Posterscope
 
 ## cOOhding.Club Members
-Anant East, Talon
-Denis Garcia, Global
-Rob Brayshaw, Global
-Matt Allard, Global
-Ioana Dima, VIOOH
-Jack Paget, VIOOH
-Joao Baptista, Clearchannel 
-Karen Fornos Klein, Clearchannel 
-Miles Talmey, Clearchannel
-Luka Djukic, Ocean Outdoor
-Prasaant Patel, Kinetic
-Rebecca Lee, JCDecaux
-Steve Pavett, Posterscope
-Daniel Conway, Posterscope
+* Anant East, Talon
+* Denis Garcia, Global
+* Rob Brayshaw, Global
+* Matt Allard, Global
+* Ioana Dima, VIOOH
+* Jack Paget, VIOOH
+* Joao Baptista, Clearchannel 
+* Karen Fornos Klein, Clearchannel 
+* Miles Talmey, Clearchannel
+* Luka Djukic, Ocean Outdoor
+* Prasaant Patel, Kinetic
+* Rebecca Lee, JCDecaux
+* Steve Pavett, Posterscope
+* Daniel Conway, Posterscope
 
 ## Process Summary
 
