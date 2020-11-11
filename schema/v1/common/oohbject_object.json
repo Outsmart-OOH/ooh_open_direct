@@ -83,37 +83,20 @@
             "type": "number",
             "title": "Defines the default number of TargetValues that are selected if the Buyer does not specify any TargetValues or the target is not selectable"
         },
-        "StatsValues": {
-            "$id": "#/properties/StatsValues",
-            "type": "integer",
-            "title": "Used for reporting of Scheduled and Delivered Target values"
-        },
-        "StatsCount": {
-            "$id": "#/properties/StatsCount",
-            "type": "integer",
-            "title": "Used for counting of Scheduled and Delivered Target values"
-        },
-        "StatsAverage": {
-            "$id": "#/properties/StatsAverage",
-            "type": "integer",
-            "title": "Used for averaging of Scheduled and Delivered Target values"
-        },
-        "StatsCountServed": {
-            "$id": "#/properties/StatsCountServed",
-            "type": "integer",
-            "title": "The number of times a creative (with a defined spot length) has started playing against Targeted values,  but it may not have been fully played"
-        },
-        "CreativeId": {
-            "$id": "#/properties/CreativeId",
-            "type": "string",
-            "title": "Used to record the ID of the creative that plays against Targeted OOHbjects",
-            "maxLength": 255
-        },
-        "Distribution": {
-            "$id": "#/properties/Distribution",
+        "Availability": {
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/distribution_object.json"
+                "type": "string",
+                "enum": [
+                    "Availabile (Default)",
+                    "Partial",
+                    "Unavailable Prohibition",
+                    "Unavailable Optioned",
+                    "Unavailable Booked",
+                    "Unavailable Invalid Request",
+                    "Unavailable Part Of A Pack",
+                    "Unavailable"
+                ]
             }
         }
     }

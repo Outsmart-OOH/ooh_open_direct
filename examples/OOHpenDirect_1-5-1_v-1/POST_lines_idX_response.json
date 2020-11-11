@@ -3,6 +3,7 @@
     "BookingStatus": "None",
     "StateChangeReason": "Availability Issue",
     "Comment": "Free form comment",
+    "ErrorDescription":"",
     "Cost": 8000,
     "EndDate": "2020-11-08T00:00:00.000Z",
     "Id": "345233",
@@ -112,15 +113,6 @@
                         "Target": "Impacts",
                         "TargetValues": [
                             "600"
-                        ]
-                    },
-                    {
-                        "Name": "Inventory",
-                        "Type": "Frames",
-                        "DataSource": "MediaOwner",
-                        "Target": "UnavailabilityReason",
-                        "TargetValues": [
-                            "OptionedElsewhere"
                         ]
                     }
                 ]
