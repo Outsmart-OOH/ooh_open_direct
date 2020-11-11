@@ -13,8 +13,7 @@
                         "Target": "frame_id",
                         "TargetValues": [
                             "1234931339"
-                        ],
-                        "Availability": "Available (Default)"
+                        ]
                     },
                     {
                         "Name": "Delivery",
@@ -24,7 +23,7 @@
                         "TargetValues": [
                             "15"
                         ],
-                        "Availability":"Partial"
+                        "Availability": ["Partial"]
                     },
                     {
                         "Name": "Inventory",
@@ -43,15 +42,6 @@
                         "TargetValues": [
                             "150"
                         ]
-                    },
-                    {
-                        "Name": "Inventory",
-                        "Type": "Frames",
-                        "DataSource": "MediaOwner",
-                        "Target": "AvailabiltyStatus",
-                        "TargetValues": [
-                            "PartiallyAvailable", ""
-                        ]
                     }
                 ],
                 [
@@ -63,7 +53,7 @@
                         "TargetValues": [
                             "1235190735"
                         ],
-                        "Availability":"Unavailable",
+                        "Availability": ["Unavailable Prohibition"]
                     },
                     {
                         "Name": "Delivery",
@@ -90,15 +80,6 @@
                         "Target": "Fixed",
                         "TargetValues": [
                             "0"
-                        ]
-                    },
-                    {
-                        "Name": "Inventory",
-                        "Type": "Frames",
-                        "DataSource": "MediaOwner",
-                        "Target": "UnavailabilityReason",
-                        "TargetValues": [
-                            "Prohibition"
                         ]
                     }
                 ],
@@ -110,7 +91,8 @@
                         "Target": "frame_id",
                         "TargetValues": [
                             "1234931338"
-                        ]
+                        ],
+                        "Availability": ["Unavailable Optioned"]
                     },
                     {
                         "Name": "Delivery",
@@ -137,15 +119,6 @@
                         "Target": "Fixed",
                         "TargetValues": [
                             "0"
-                        ]
-                    },
-                    {
-                        "Name": "Inventory",
-                        "Type": "Frames",
-                        "DataSource": "MediaOwner",
-                        "Target": "UnavailabilityReason",
-                        "TargetValues": [
-                            "Optioned"
                         ]
                     }
                 ],
@@ -157,7 +130,8 @@
                         "Target": "frame_id",
                         "TargetValues": [
                             "1235191547"
-                        ]
+                        ],
+                        "Availability": ["Unavailable Booked"]
                     },
                     {
                         "Name": "Delivery",
@@ -184,15 +158,6 @@
                         "Target": "Fixed",
                         "TargetValues": [
                             "0"
-                        ]
-                    },
-                    {
-                        "Name": "Inventory",
-                        "Type": "Frames",
-                        "DataSource": "MediaOwner",
-                        "Target": "UnavailabilityReason",
-                        "TargetValues": [
-                            "Not Available"
                         ]
                     }
                 ]
