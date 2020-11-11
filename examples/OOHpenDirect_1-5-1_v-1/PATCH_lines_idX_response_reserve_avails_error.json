@@ -78,7 +78,8 @@
                         "Target": "frame_id",
                         "TargetValues": [
                             "1234931339"
-                        ]
+                        ],
+                        "Availability": ["Partial"]
                     },
                     {
                         "Name": "Delivery",
@@ -87,7 +88,8 @@
                         "Target": "Days",
                         "TargetValues": [
                             "6"
-                        ]
+                        ],
+                        "Availability": ["Partial"]
                     },
                     {
                         "Name": "Delivery",
@@ -96,7 +98,8 @@
                         "Target": "Hours",
                         "TargetValues": [
                             "7"
-                        ]
+                        ],
+                        "Availability": ["Unavailable Booked"]
                     },
                     {
                         "Name": "Delivery",
@@ -105,7 +108,8 @@
                         "Target": "ShareOfTime",
                         "TargetValues": [
                             "20"
-                        ]
+                        ],
+                        "Availability": ["Unavailable Booked"]
                     },
                     {
                         "Name": "Inventory",
@@ -114,128 +118,13 @@
                         "Target": "Impacts",
                         "TargetValues": [
                             "600"
-                        ]
-                    },
-                    {
-                        "Name": "Inventory",
-                        "Type": "Frames",
-                        "DataSource": "MediaOwner",
-                        "Target": "UnavailabilityReason",
-                        "TargetValues": [
-                            "OptionedElsewhere"
-                        ]
+                        ],
+                        "Availability": ["Unavailable Booked"]
                     }
                 ]
             ],
             "Price": 25
         }
-    ],
-    "ProductAvails": [
-        {
-            "Currency": "GBP",
-            "ProductId": "456366",
-            "Targeting": [
-                [
-                    {
-                        "Name": "Inventory",
-                        "Type": "Frames",
-                        "DataSource": "Space",
-                        "Target": "frame_id",
-                        "TargetValues": [
-                            "1234931339"
-                        ]
-                    },
-                    {
-                        "Name": "Delivery",
-                        "Type": "Frames",
-                        "DataSource": "Time",
-                        "Target": "Days",
-                        "TargetValues": [
-                            "6"
-                        ]
-                    },
-                    {
-                        "Name": "Delivery",
-                        "Type": "Frames",
-                        "DataSource": "Time",
-                        "Target": "Hours",
-                        "TargetValues": [
-                            "8",
-                            "9"
-                        ]
-                    },
-                    {
-                        "Name": "Delivery",
-                        "Type": "Frames",
-                        "DataSource": "ShareOfDisplay",
-                        "Target": "ShareOfTime",
-                        "TargetValues": [
-                            "20"
-                        ]
-                    },
-                    {
-                        "Name": "Delivery",
-                        "Type": "Frames",
-                        "DataSource": "ShareOfDisplay",
-                        "Target": "Spot",
-                        "TargetValues": [
-                            "5"
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "Name": "Inventory",
-                        "Type": "Frames",
-                        "DataSource": "Space",
-                        "Target": "frame_id",
-                        "TargetValues": [
-                            "1235190735",
-                            "1234931338",
-                            "1235191547"
-                        ]
-                    },
-                    {
-                        "Name": "Delivery",
-                        "Type": "Frames",
-                        "DataSource": "Time",
-                        "Target": "Days",
-                        "TargetValues": [
-                            "6"
-                        ]
-                    },
-                    {
-                        "Name": "Delivery",
-                        "Type": "Frames",
-                        "DataSource": "Time",
-                        "Target": "Hours",
-                        "TargetValues": [
-                            "7",
-                            "8",
-                            "9"
-                        ]
-                    },
-                    {
-                        "Name": "Delivery",
-                        "Type": "Frames",
-                        "DataSource": "ShareOfDisplay",
-                        "Target": "ShareOfTime",
-                        "TargetValues": [
-                            "20"
-                        ]
-                    },
-                    {
-                        "Name": "Delivery",
-                        "Type": "Frames",
-                        "DataSource": "ShareOfDisplay",
-                        "Target": "Spot",
-                        "TargetValues": [
-                            "5"
-                        ]
-                    }
-                ]
-            ],
-            "Price": 7975
-        }
     ]
+    
 }
