@@ -3,9 +3,9 @@
 
 **Version history**
 
-| **Version** | **Date** | **Changes** |
-| --- | --- | --- |
-| v1.0 | Nov 12th, 2020 | First version describing how a webhook set-up should be standardized in an implementation of the OpenDirect (OOH) standard. All changes and versioning of this document will now be handled in Github |
+| **Version** | **Date** | **Changes** | **Author**|
+| --- | --- | --- | --- |
+| v1.0 | Nov 12th, 2020 | First version describing how a webhook set-up should be standardized in an implementation of the OpenDirect (OOH) standard. All changes and versioning of this document will now be handled in Github |Tim Harvey|
 
 
 ## Table of Contents
@@ -37,6 +37,22 @@ This document is limited to anything that relates to platform & technology indep
 ## Key Contributers
 * Sebastiaan Schinkel, SignKick
 * Alex Radu, Posterscope
+
+## cOOhding.Club Members
+Anant East, Talon
+Denis Garcia, Global
+Rob Brayshaw, Global
+Matt Allard, Global
+Ioana Dima, VIOOH
+Jack Paget, VIOOH
+Joao Baptista, Clearchannel 
+Karen Fornos Klein, Clearchannel 
+Miles Talmey, Clearchannel
+Luka Djukic, Ocean Outdoor
+Prasaant Patel, Kinetic
+Rebecca Lee, JCDecaux
+Steve Pavett, Posterscope
+Daniel Conway, Posterscope
 
 ## Process Summary
 
