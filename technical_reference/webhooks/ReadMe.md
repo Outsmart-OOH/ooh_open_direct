@@ -34,6 +34,10 @@
 
 This document is limited to anything that relates to platform & technology independent mechanisms, purely to facilitate easy, reliable, efficient and secure communication between two Open Direct v1.5.1 systems.
 
+## Key Contributers
+* Sebastiaan Schinkel, SignKick
+* Alex Radu, Posterscope
+
 ## Process Summary
 
 The diagram below shows a summary flow of the webhook functional process in the form of a GET /stats request (Campaign Order Line upsite and performance report request)
@@ -126,7 +130,7 @@ _Headers_
 
  &nbsp;&nbsp;&nbsp;&nbsp;&quot;Target&quot;: &quot;frame\_id&quot;,
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;TargetValues&quot;: [
+ &nbsp;&nbsp;&nbsp;&quot;TargetValues&quot;: [
 
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234931339, 1235190735, 1234931338, 1235191547
 
