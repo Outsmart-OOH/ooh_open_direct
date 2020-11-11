@@ -116,27 +116,27 @@ _Headers_
 
 &quot;Targeting&quot;: [
 
-{
+ {
 
-&quot;Name&quot;: &quot;Inventory&quot;,
+ &quot;Name&quot;: &quot;Inventory&quot;,
 
-&quot;Type&quot;: &quot;Frames&quot;,
+ &quot;Type&quot;: &quot;Frames&quot;,
 
-&quot;DataSource&quot;: &quot;Space&quot;,
+ &quot;DataSource&quot;: &quot;Space&quot;,
 
-&quot;Target&quot;: &quot;frame\_id&quot;,
+ &quot;Target&quot;: &quot;frame\_id&quot;,
 
-&quot;TargetValues&quot;: [
+ &quot;TargetValues&quot;: [
 
-1234931339,
+  1234931339,
 
-1235190735,
+  1235190735,
 
-1234931338,
+  1234931338,
 
-1235191547
+  1235191547
 
-]
+ ]
 
 },
 
