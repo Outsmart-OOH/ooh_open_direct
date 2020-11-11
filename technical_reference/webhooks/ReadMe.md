@@ -116,73 +116,73 @@ _Headers_
 
 &quot;Targeting&quot;: [
 
- {
+ &nbsp;&nbsp;&nbsp;&nbsp;{
 
- &quot;Name&quot;: &quot;Inventory&quot;,
+ &nbsp;&nbsp;&nbsp;&nbsp;&quot;Name&quot;: &quot;Inventory&quot;,
 
- &quot;Type&quot;: &quot;Frames&quot;,
+ &nbsp;&nbsp;&nbsp;&nbsp;&quot;Type&quot;: &quot;Frames&quot;,
 
- &quot;DataSource&quot;: &quot;Space&quot;,
+ &nbsp;&nbsp;&nbsp;&nbsp;&quot;DataSource&quot;: &quot;Space&quot;,
 
- &quot;Target&quot;: &quot;frame\_id&quot;,
+ &nbsp;&nbsp;&nbsp;&nbsp;&quot;Target&quot;: &quot;frame\_id&quot;,
 
- &quot;TargetValues&quot;: [
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;TargetValues&quot;: [
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234931339,
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234931339,
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1235190735,
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1235190735,
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234931338,
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234931338,
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1235191547
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1235191547
 
- ]
+ &nbsp;&nbsp;&nbsp;&nbsp;]
 
-},
+&nbsp;&nbsp;&nbsp;&nbsp;},
 
-{
+&nbsp;&nbsp;&nbsp;&nbsp;{
 
-&quot;Name&quot;: &quot;Delivery&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;Name&quot;: &quot;Delivery&quot;,
 
-&quot;Type&quot;: &quot;Frames&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;Type&quot;: &quot;Frames&quot;,
 
-&quot;DataSource&quot;: &quot;Time&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;DataSource&quot;: &quot;Time&quot;,
 
-&quot;Target&quot;: &quot;Days&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;Target&quot;: &quot;Days&quot;,
 
-&quot;TargetValues&quot;: [5, 6]
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;TargetValues&quot;: [5, 6]
 
-},
+&nbsp;&nbsp;&nbsp;&nbsp;},
 
-{
+&nbsp;&nbsp;&nbsp;&nbsp;{
 
-&quot;Name&quot;: &quot;Delivery&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;Name&quot;: &quot;Delivery&quot;,
 
-&quot;Type&quot;: &quot;Frames&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;Type&quot;: &quot;Frames&quot;,
 
-&quot;DataSource&quot;: &quot;ShareOfDisplay&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;DataSource&quot;: &quot;ShareOfDisplay&quot;,
 
-&quot;Target&quot;: &quot;ShareOfTime&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;Target&quot;: &quot;ShareOfTime&quot;,
 
-&quot;TargetValues&quot;: [20]
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;TargetValues&quot;: [20]
 
-},
+&nbsp;&nbsp;&nbsp;&nbsp;},
 
-{
+&nbsp;&nbsp;&nbsp;&nbsp;{
 
-&quot;Name&quot;: &quot;Delivery&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;Name&quot;: &quot;Delivery&quot;,
 
-&quot;Type&quot;: &quot;Frames&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;Type&quot;: &quot;Frames&quot;,
 
-&quot;DataSource&quot;: &quot;ShareOfDisplay&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;DataSource&quot;: &quot;ShareOfDisplay&quot;,
 
-&quot;Target&quot;: &quot;Spot&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;Target&quot;: &quot;Spot&quot;,
 
-&quot;TargetValues&quot;: [5]
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;TargetValues&quot;: [5]
 
-}
+&nbsp;&nbsp;&nbsp;&nbsp;}
 
-]
+&nbsp;&nbsp;&nbsp;&nbsp;]
 
 }
 
