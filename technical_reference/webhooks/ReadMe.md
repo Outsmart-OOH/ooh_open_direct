@@ -20,7 +20,7 @@
 
 [Webhooks](#webhooks) 
 
-[Anatomy of a webhook message](#anatomy-of-a-webhook-message) ([Headers](#headers) , [Events & Payloads](#events--payloads), [Example Message](#example-message) , [Body](#body) )
+[Anatomy of a webhook message](#anatomy-of-a-webhook-message) ([Headers](#headers) ,[Encoding](#encoding), [Events & Payloads](#events--payloads), [Example Message](#example-message) , [Body](#body) )
 
 [Sending Webhook Messages](#sending-webhook-messages) ([Retry Mechanism](#retry-mechanism))
 
