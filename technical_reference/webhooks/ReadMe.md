@@ -79,6 +79,9 @@ The image below is taken from OpenDirect (OOH) 1.5.1 v1.1, and shows which state
 
 ## Anatomy of a webhook message
 
+### Encoding
+Default encoding should be Unicode (UTF-8)
+
 ### Headers
 
 The application/json content type should be used for all messages.
