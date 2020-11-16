@@ -105,104 +105,67 @@ Events & payloads can be found throughout the OOH OpenDirect standard. The paylo
 _Headers_
 ```json
 "Authorization": "NjRiN2JlMzIzZTNmM2ZmZTRkZDMxNmMzMmYyNTI5MTAwNzkyZmFjMmNhODJmMGYyZjYxN2JmMTA5NzVjMmQwMzA1YzhhODI4MjYzNWU4OTA5YWNhMjMzYjg3YTNkYWE5ZTdiYzE5MTBiYTBjODRhYTE1YWFmM2EzODViNDFmZjQ"
- "X-OohWebhook-Event": "OrderLine.ReservationConfirmed"
+"X-OohWebhook-Event": "OrderLine.ReservationConfirmed"
 "X-OohWebhook-EventId": "5778e93f-2905-4b61-bba1-443ac6410b3c"
 "X-OohWebhook-DeliveryId": "10c18c70-a76a-4254-a7b6-d9ec86a5ffd5"
 ```
 ### Body
 
+```json
 {
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/lines/lines_response.json",
+    
+    "BookingStatus": "Reserved",
+    "StateChangeReason": "",
+    "Comment": "Free form comment",
+    "Cost": 8000,
+    "EndDate": "2014-12-10T18:00:00.000Z",
+    "Id": "345233",
+    "Name": "My Line 1",
+    "OrderId": "1235872",
+    "ProductId": "456366",
+    "OOHProviderData":  { "PoNumber": "88873" } ,
+    "StartDate": "2014-12-05T06:00:00.000Z",
+    "Targeting": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id",
+            "TargetValues": [
+                "1234931339",
+                "1235190735",
+                "1234931338",
+                "1235191547"
+                ]
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "Time",
+            "Target": "Days",
+            "TargetValues": [ "5", "6" ]
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "ShareOfTime",
+            "TargetValues": ["20"]
 
-&quot;$schema&quot;: &quot;https://raw.githubusercontent.com/Outsmart-OOH/ooh\_open\_direct/master/schema/v1/uris/lines/lines\_response.json&quot;,
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "Spot",
+            "TargetValues": ["5"]
 
-&quot;BookingStatus&quot;: &quot;Reserved&quot;,
+        }
 
-&quot;StateChangeReason&quot;: &quot;&quot;,
-
-&quot;Comment&quot;: &quot;Free form comment&quot;,
-
-&quot;Cost&quot;: 8000,
-
-&quot;EndDate&quot;: &quot;2014-12-10T18:00:00.000Z&quot;,
-
-&quot;Id&quot;: &quot;345233&quot;,
-
-&quot;Name&quot;: &quot;My Line 1&quot;,
-
-&quot;OrderId&quot;: &quot;1235872&quot;,
-
-&quot;ProductId&quot;: &quot;456366&quot;,
-
-&quot;OOHProviderData&quot;: { &quot;PoNumber&quot;: &quot;88873&quot; } ,
-
-&quot;StartDate&quot;: &quot;2014-12-05T06:00:00.000Z&quot;,
-
-&quot;Targeting&quot;: [
-
- &nbsp;&nbsp;&nbsp;&nbsp;{
-
- &nbsp;&nbsp;&nbsp;&nbsp;&quot;Name&quot;: &quot;Inventory&quot;,
-
- &nbsp;&nbsp;&nbsp;&nbsp;&quot;Type&quot;: &quot;Frames&quot;,
-
- &nbsp;&nbsp;&nbsp;&nbsp;&quot;DataSource&quot;: &quot;Space&quot;,
-
- &nbsp;&nbsp;&nbsp;&nbsp;&quot;Target&quot;: &quot;frame\_id&quot;,
-
- &nbsp;&nbsp;&nbsp;&quot;TargetValues&quot;: [
-
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234931339, 1235190735, 1234931338, 1235191547
-
- &nbsp;&nbsp;&nbsp;&nbsp;]
-
-&nbsp;&nbsp;&nbsp;&nbsp;},
-
-&nbsp;&nbsp;&nbsp;&nbsp;{
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;Name&quot;: &quot;Delivery&quot;,
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;Type&quot;: &quot;Frames&quot;,
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;DataSource&quot;: &quot;Time&quot;,
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;Target&quot;: &quot;Days&quot;,
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;TargetValues&quot;: [5, 6]
-
-&nbsp;&nbsp;&nbsp;&nbsp;},
-
-&nbsp;&nbsp;&nbsp;&nbsp;{
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;Name&quot;: &quot;Delivery&quot;,
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;Type&quot;: &quot;Frames&quot;,
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;DataSource&quot;: &quot;ShareOfDisplay&quot;,
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;Target&quot;: &quot;ShareOfTime&quot;,
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;TargetValues&quot;: [20]
-
-&nbsp;&nbsp;&nbsp;&nbsp;},
-
-&nbsp;&nbsp;&nbsp;&nbsp;{
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;Name&quot;: &quot;Delivery&quot;,
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;Type&quot;: &quot;Frames&quot;,
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;DataSource&quot;: &quot;ShareOfDisplay&quot;,
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;Target&quot;: &quot;Spot&quot;,
-
-&nbsp;&nbsp;&nbsp;&nbsp;&quot;TargetValues&quot;: [5]
-
-&nbsp;&nbsp;&nbsp;&nbsp;}
-
-]
-
+    ]
 }
-
+```
 
 ## Sending webhook messages
 
