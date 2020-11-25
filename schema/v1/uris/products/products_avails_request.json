@@ -4,5 +4,14 @@
     "type": "object",
     "title": "Request for Products Avails using Product Avails Search",
     "description": "The schema of a request",
-    "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvailsSearch_object.json"
+    "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvailsSearch_object.json",
+    "required": [
+        "AccountId",
+        "StartDate",
+        "EndDate",
+        "ProductIds",
+        "AvailabilityFields",
+        "Grouping",
+        "Targeting"
+    ]
 }
