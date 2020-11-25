@@ -37,14 +37,7 @@
         },
         "Targeting": {
             "$id": "#/properties/Targeting",
-            "type": "array",
-            "title": "Array of OOHbjects used for targeting the Availabiliy Query",
-            "description": "Targeting OOHbjects for the Availability Query",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json",
-                "required": []
-            }
-            
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
         }
     }
 }
