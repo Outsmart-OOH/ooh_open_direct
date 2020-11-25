@@ -41,53 +41,10 @@
             "title": "Array of OOHbjects used for targeting the Availabiliy Query",
             "description": "Targeting OOHbjects for the Availability Query",
             "items": {
-                "oneOf": [
-                    {
-                        "$ref": "#/Targeting/definitions/$and"
-                    },
-                    {
-                        "$ref": "#/Targeting/definitions/$defaultand"
-                    },
-                    {
-                        "$ref": "#/Targeting/definitions/$or"
-                    },
-                    {
-                        "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json"
-                    }
-                ]
-            },
-            "definitions": {
-                "$and": {
-                    "$id": "#/$and",
-                    "type": "object",
-                    "title": "AND",
-                    "description": "Logical AND",
-                    "additionalProperties": false,
-                    "properties": {
-                        "$and": {
-                            "$ref": "#"
-                        }
-                    }
-                },
-                "$or": {
-                    "$id": "#/$or",
-                    "type": "object",
-                    "title": "OR",
-                    "description": "Logical OR",
-                    "additionalProperties": false,
-                    "properties": {
-                        "$or": {
-                            "$ref": "#"
-                        }
-                    }
-                },
-                "$defaultand": {
-                    "$id": "#/$defaultand",
-                    "title": "Default AND",
-                    "description": "Default AND",
-                    "$ref": "#"
-                }
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json",
+                "required": []
             }
+            
         }
     }
 }
