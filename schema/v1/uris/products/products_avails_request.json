@@ -4,45 +4,5 @@
     "type": "object",
     "title": "Request for Products Avails using Product Avails Search",
     "description": "The schema of a request",
-    "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvailsSearch_object.json",
-    "required": [
-        "AccountId",
-        "StartDate",
-        "EndDate",
-        "ProductIds",
-        "AvailabilityFields",
-        "Grouping",
-        "Targeting"
-    ],
-    "additionalProperties": false,
-    "properties": {
-        "$schema": {
-            "type": "string"
-        },
-        "AvailabilityFields": {
-            "$id": "#/properties/AvailabilityFields",
-            "type": "array",
-            "title": "Array of OOHbjects used to identify the Availability Fields",
-            "description": "Availability Field OOHbjects",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json",
-                "required": []
-            }
-        },
-        "Grouping": {
-            "$id": "#/properties/Grouping",
-            "type": "array",
-            "title": "Array of OOHbjects used to identify the Availability Fields to Group By",
-            "description": "Availability Field OOHbjects to Group By",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json",
-                "required": []
-            }
-        },
-        "Targeting": {
-            "$id": "#/properties/Targeting",
-            "type": "array",
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
-        }
-    }
+    "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvailsSearch_object.json"
 }
