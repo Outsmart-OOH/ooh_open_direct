@@ -22,8 +22,7 @@
                         "Target": "ShareOfTime",
                         "TargetValues": [
                             "15"
-                        ],
-                        "Availability": ["Partial"]
+                        ]
                     },
                     {
                         "Name": "Inventory",
@@ -42,7 +41,18 @@
                         "TargetValues": [
                             "150"
                         ]
+                    },
+                    {
+                        "Name": "Inventory",
+                        "Type": "Availablility", 
+                        "DataSource": "<MediaOwner>",
+                        "Target": "Available",
+                        "TargetValues": [
+                            "Partial"
+                        ]
                     }
+                    
+                    
                 ],
                 [
                     {

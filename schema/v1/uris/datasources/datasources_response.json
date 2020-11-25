@@ -2,8 +2,26 @@
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/datasources/datasources_response.json",
     "type": "object",
-    "title": "Response for a single AdvertiserBrand",
-    "description": "The schema of a response that gives a single AdvertiserBrand",
+    "title": "Response for a Datasource URI request",
+    "description": "The schema of a response that gives the all data available from a DataSource useed in the Sell Side System",
     "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/dataSource_object.json",
-    "required": []
+    "required": [
+        "DataSources"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string"
+        },
+        "DataSources": {
+            "$id": "#/properties/datasources",
+            "type": "array",
+            "title": "Array of DataSources",
+            "description": "Collection of DataSources",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/dataSource_object.json",
+                "required": []
+            }
+        }
+    }
 }

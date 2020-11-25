@@ -15,6 +15,18 @@
             "Target": "frame_id"
         },
         {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Time",
+            "Target": "Days"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Time",
+            "Target": "Hours"
+        },
+        {
             "Name": "Delivery",
             "Type": "Frames",
             "DataSource": "ShareOfDisplay",
@@ -31,6 +43,18 @@
             "Type": "Total",
             "DataSource": "GBP",
             "Target": "Fixed"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Availability",
+            "DataSource": "<Media Owner>",
+            "Target":"Unavailable"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Availability",
+            "DataSource": "<Media Owner>",
+            "Target":"Available"
         }
 
 

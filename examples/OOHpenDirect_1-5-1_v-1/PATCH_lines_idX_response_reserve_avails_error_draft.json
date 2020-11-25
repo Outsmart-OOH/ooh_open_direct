@@ -78,8 +78,7 @@
                         "Target": "frame_id",
                         "TargetValues": [
                             "1234931339"
-                        ],
-                        "Availability": ["Partial"]
+                        ]
                     },
                     {
                         "Name": "Delivery",
@@ -88,8 +87,7 @@
                         "Target": "Days",
                         "TargetValues": [
                             "6"
-                        ],
-                        "Availability": ["Partial"]
+                        ]
                     },
                     {
                         "Name": "Delivery",
@@ -98,8 +96,7 @@
                         "Target": "Hours",
                         "TargetValues": [
                             "7"
-                        ],
-                        "Availability": ["Unavailable Booked"]
+                        ]
                     },
                     {
                         "Name": "Delivery",
@@ -108,8 +105,7 @@
                         "Target": "ShareOfTime",
                         "TargetValues": [
                             "20"
-                        ],
-                        "Availability": ["Unavailable Booked"]
+                        ]
                     },
                     {
                         "Name": "Inventory",
@@ -118,9 +114,19 @@
                         "Target": "Impacts",
                         "TargetValues": [
                             "600"
-                        ],
-                        "Availability": ["Unavailable Booked"]
-                    }
+                        ]
+                
+                    },
+                    {
+                        "Name": "Inventory",
+                        "Type": "Availablility", 
+                        "DataSource": "<MediaOwner>",
+                        "Target": "Unavailable",
+                        "TargetValues": [
+                            "Booked"
+                        ]
+                    },
+
                 ]
             ],
             "Price": 25
