@@ -6,6 +6,10 @@
     "description": "The schema of a request",
     "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvailsSearch_object.json",
     "required": [
+        "AccountId",
+        "StartDate",
+        "EndDate",
+        "ProductIds",
         "AvailabilityFields",
         "Grouping",
         "Targeting"
@@ -37,6 +41,7 @@
         },
         "Targeting": {
             "$id": "#/properties/Targeting",
+            "type": "array",
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
         }
     }
