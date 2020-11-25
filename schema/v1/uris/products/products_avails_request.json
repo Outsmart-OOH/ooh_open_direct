@@ -11,10 +11,6 @@
         "Targeting"
     ],
     "additionalProperties": false,
-
-    
-
-
     "properties": {
         "$schema": {
             "type": "string"
@@ -47,13 +43,13 @@
             "items": {
                 "oneOf": [
                     {
-                        "$ref": "#/definitions/$and"
+                        "$ref": "#/Targeting/definitions/$and"
                     },
                     {
-                        "$ref": "#/definitions/$defaultand"
+                        "$ref": "#/Targeting/definitions/$defaultand"
                     },
                     {
-                        "$ref": "#/definitions/$or"
+                        "$ref": "#/Targeting/definitions/$or"
                     },
                     {
                         "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json"
