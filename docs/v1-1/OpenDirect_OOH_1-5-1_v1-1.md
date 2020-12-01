@@ -1128,7 +1128,7 @@ The following shows the body of an example error response.
                        1235191547]
                  },
      "Message": "Frames are not selectable in this product", 
-     "errorCode": "FramesNotSelectable",
+     "ErrorCode": "FramesNotSelectable",
      "Link": "https://publisher.com/opendirect/help/SelectFrames.aspx"
 
      },
