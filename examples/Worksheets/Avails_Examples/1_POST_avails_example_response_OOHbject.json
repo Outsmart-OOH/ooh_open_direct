@@ -3,7 +3,7 @@
     "ProductAvails": [
         {
             "Currency": "GBP",
-            "ProductId": "456366",
+            "ProductId": "456367",
             "Targeting": [
                 [
                     {
@@ -44,15 +44,13 @@
                     },
                     {
                         "Name": "Inventory",
-                        "Type": "Availablility", 
-                        "DataSource": "<MediaOwner>",
-                        "Target": "Available",
+                        "Type": "Frames",
+                        "DataSource": "Unavailability",
+                        "Target": "Reason",
                         "TargetValues": [
                             "Partial"
                         ]
                     }
-                    
-                    
                 ],
                 [
                     {
@@ -62,8 +60,7 @@
                         "Target": "frame_id",
                         "TargetValues": [
                             "1235190735"
-                        ],
-                        "Availability": ["Unavailable Prohibition"]
+                        ]
                     },
                     {
                         "Name": "Delivery",
@@ -90,6 +87,15 @@
                         "Target": "Fixed",
                         "TargetValues": [
                             "0"
+                        ]
+                    },
+                    {
+                        "Name": "Inventory",
+                        "Type": "Frames",
+                        "DataSource": "Unavailability",
+                        "Target": "Reason",
+                        "TargetValues": [
+                            "Prohibition"
                         ]
                     }
                 ],
@@ -101,8 +107,7 @@
                         "Target": "frame_id",
                         "TargetValues": [
                             "1234931338"
-                        ],
-                        "Availability": ["Unavailable Optioned"]
+                        ]
                     },
                     {
                         "Name": "Delivery",
@@ -129,6 +134,15 @@
                         "Target": "Fixed",
                         "TargetValues": [
                             "0"
+                        ]
+                    },
+                    {
+                        "Name": "Inventory",
+                        "Type": "Frames",
+                        "DataSource": "Unavailability",
+                        "Target": "Reason",
+                        "TargetValues": [
+                            "Optioned"
                         ]
                     }
                 ],
@@ -140,8 +154,7 @@
                         "Target": "frame_id",
                         "TargetValues": [
                             "1235191547"
-                        ],
-                        "Availability": ["Unavailable Booked"]
+                        ]
                     },
                     {
                         "Name": "Delivery",
@@ -168,6 +181,15 @@
                         "Target": "Fixed",
                         "TargetValues": [
                             "0"
+                        ]
+                    },
+                    {
+                        "Name": "Inventory",
+                        "Type": "Frames",
+                        "DataSource": "Unavailability",
+                        "Target": "Reason",
+                        "TargetValues": [
+                            "Booked"
                         ]
                     }
                 ]
