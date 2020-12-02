@@ -1109,46 +1109,41 @@ If the request generates a 400 Bad Request status code, the response must contai
 
 The following shows the body of an example error response.
 
-{
-
-&quot;Errors&quot;: [
+```json
 
 {
 
-&quot;Context&quot;: {
-            "Name": "Inventory",
-            "Type": "Frames",
-            "DataSource": "Space",
-            "Target": "frame_id",
-            "TargetValues": [
-                1234931339,
-                1235190735,
-                1234931338,
-                1235191547
-            ]
-        }
+ "Errors": [
+     {
 
-&quot;Message&quot;: &quot;Frames are not selectable in this product&quot;, &quot;errorCode&quot;: &quot;FramesNotSelectable&quot;,
+     "Context": {
+                "Name": "Inventory",
+                "Type": "Frames",
+                "DataSource": "Space",
+                "Target": "frame_id",
+                "TargetValues": [
+                       1234931339,
+                       1235190735,
+                       1234931338,
+                       1235191547]
+                 },
+     "Message": "Frames are not selectable in this product", 
+     "ErrorCode": "FramesNotSelectable",
+     "Link": "https://publisher.com/opendirect/help/SelectFrames.aspx"
 
-&quot;Link&quot;: &quot;https:\\host\help\SelectFrames.aspx&quot;
+     },
+     {
+     "Context":{},
+     "Message":"",
+     "ErrorCode": "",
+     "Link": ""
+     }
 
-},
-
-{
-
-&quot;Context&quot;:{},
-
-&quot;Message&quot;:&quot;&quot;,
-
-&quot;ErrorCode&quot;: &quot;&quot;,
-
-&quot;Link&quot;: &quot;&quot;
-
-},
-
-]
+  ]
 
 }
+```
+
 
 ## 6.5 Data Format
 
