@@ -22,7 +22,8 @@
                         "Target": "ShareOfTime",
                         "TargetValues": [
                             "15"
-                        ]
+                        ],
+                        "UnavailbilityReason":["partial"]
                     },
                     {
                         "Name": "Inventory",
@@ -41,15 +42,6 @@
                         "TargetValues": [
                             "150"
                         ]
-                    },
-                    {
-                        "Name": "Inventory",
-                        "Type": "Frames",
-                        "DataSource": "Unavailability",
-                        "Target": "Reason",
-                        "TargetValues": [
-                            "Partial"
-                        ]
                     }
                 ],
                 [
@@ -60,7 +52,8 @@
                         "Target": "frame_id",
                         "TargetValues": [
                             "1235190735"
-                        ]
+                        ],
+                        "UnavailbilityReason":["Prohibition"]
                     },
                     {
                         "Name": "Delivery",
@@ -87,15 +80,6 @@
                         "Target": "Fixed",
                         "TargetValues": [
                             "0"
-                        ]
-                    },
-                    {
-                        "Name": "Inventory",
-                        "Type": "Frames",
-                        "DataSource": "Unavailability",
-                        "Target": "Reason",
-                        "TargetValues": [
-                            "Prohibition"
                         ]
                     }
                 ],
@@ -107,7 +91,8 @@
                         "Target": "frame_id",
                         "TargetValues": [
                             "1234931338"
-                        ]
+                        ],
+                        "UnavailbilityReason":["Optioned","PartOfPack"]
                     },
                     {
                         "Name": "Delivery",
@@ -134,15 +119,6 @@
                         "Target": "Fixed",
                         "TargetValues": [
                             "0"
-                        ]
-                    },
-                    {
-                        "Name": "Inventory",
-                        "Type": "Frames",
-                        "DataSource": "Unavailability",
-                        "Target": "Reason",
-                        "TargetValues": [
-                            "Optioned", "PartOfPack"
                         ]
                     }
                 ],
@@ -154,7 +130,8 @@
                         "Target": "frame_id",
                         "TargetValues": [
                             "1235191547"
-                        ]
+                        ],
+                        "UnavailbilityReason":["Booked"]
                     },
                     {
                         "Name": "Delivery",
@@ -181,15 +158,6 @@
                         "Target": "Fixed",
                         "TargetValues": [
                             "0"
-                        ]
-                    },
-                    {
-                        "Name": "Inventory",
-                        "Type": "Frames",
-                        "DataSource": "Unavailability",
-                        "Target": "Reason",
-                        "TargetValues": [
-                            "Booked"
                         ]
                     }
                 ]
