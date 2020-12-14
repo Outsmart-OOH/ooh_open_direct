@@ -23,8 +23,7 @@
                         "Target": "ShareOfTime",
                         "TargetValues": [
                             "15"
-                        ],
-                        "AvailsReason":["partial"]
+                        ]
                     },
                     {
                         "Name": "Inventory",
@@ -43,7 +42,7 @@
                         "TargetValues": [
                             "150"
                         ]
-                    },
+                    }
                    
                 ]
             ],

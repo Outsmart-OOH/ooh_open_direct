@@ -160,5 +160,9 @@
             ],
             "Price": 150
         }
-    ]
+    ],
+    "ProductPartialAvails": [],
+    "ProductProhibition": [],
+    "ProductOptioned": [],
+    "ProductFullyBooked": []
 }
