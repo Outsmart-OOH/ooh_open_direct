@@ -23,7 +23,7 @@
                         "TargetValues": [
                             "15"
                         ],
-                        "UnavailbilityReason":["partial"]
+                        "AvailsReason":["partial"]
                     },
                     {
                         "Name": "Inventory",
@@ -42,7 +42,8 @@
                         "TargetValues": [
                             "150"
                         ]
-                    }
+                    },
+                   
                 ],
                 [
                     {
@@ -53,7 +54,7 @@
                         "TargetValues": [
                             "1235190735"
                         ],
-                        "UnavailbilityReason":["Prohibition"]
+                        "AvailsReason":["Prohibition"]
                     },
                     {
                         "Name": "Delivery",
@@ -62,7 +63,8 @@
                         "Target": "ShareOfTime",
                         "TargetValues": [
                             "0"
-                        ]
+                        ],
+                        "AvailsReason":["Booked"]
                     },
                     {
                         "Name": "Inventory",
@@ -92,7 +94,7 @@
                         "TargetValues": [
                             "1234931338"
                         ],
-                        "UnavailbilityReason":["Optioned","PartOfPack"]
+                        "AvailsReason":["PartOfPack"]
                     },
                     {
                         "Name": "Delivery",
@@ -101,7 +103,8 @@
                         "Target": "ShareOfTime",
                         "TargetValues": [
                             "0"
-                        ]
+                        ],
+                        "AvailsReason":["Optioned"]
                     },
                     {
                         "Name": "Inventory",
@@ -131,7 +134,7 @@
                         "TargetValues": [
                             "1235191547"
                         ],
-                        "UnavailbilityReason":["Booked"]
+                        
                     },
                     {
                         "Name": "Delivery",
@@ -140,7 +143,8 @@
                         "Target": "ShareOfTime",
                         "TargetValues": [
                             "0"
-                        ]
+                        ],
+                        "AvailsReason":["Booked"]
                     },
                     {
                         "Name": "Inventory",
