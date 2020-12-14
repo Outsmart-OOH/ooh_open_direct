@@ -3,7 +3,7 @@
     "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/products/products_avails_collection_response.json",
     "type": "object",
     "title": "Response for a collection of ProductAvails",
-    "description": "The schema of a response that gives a collection of ProductAvails",
+    "description": "The schema of a response that gives a collection of ProductAvails and Unavailability Reasons",
     "required": [
         "ProductAvails"
     ],
@@ -13,6 +13,66 @@
             "type": "string"
         },
         "ProductAvails": {
+            "$id": "#/properties/Products",
+            "type": "array",
+            "title": "Array of ProductAvails",
+            "description": "Collection of ProductAvails",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json",
+                "required": [
+                    "Currency",
+                    "ProductId",
+                    "Targeting",
+                    "Price"
+                ]
+            }
+        },
+        "ProductPartialAvails": {
+            "$id": "#/properties/Products",
+            "type": "array",
+            "title": "Array of ProductAvails",
+            "description": "Collection of ProductAvails",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json",
+                "required": [
+                    "Currency",
+                    "ProductId",
+                    "Targeting",
+                    "Price"
+                ]
+            }
+        },
+        "ProductProhibition": {
+            "$id": "#/properties/Products",
+            "type": "array",
+            "title": "Array of ProductAvails",
+            "description": "Collection of ProductAvails",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json",
+                "required": [
+                    "Currency",
+                    "ProductId",
+                    "Targeting",
+                    "Price"
+                ]
+            }
+        },
+        "ProductOptioned": {
+            "$id": "#/properties/Products",
+            "type": "array",
+            "title": "Array of ProductAvails",
+            "description": "Collection of ProductAvails",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json",
+                "required": [
+                    "Currency",
+                    "ProductId",
+                    "Targeting",
+                    "Price"
+                ]
+            }
+        },
+        "ProductFullyBooked": {
             "$id": "#/properties/Products",
             "type": "array",
             "title": "Array of ProductAvails",

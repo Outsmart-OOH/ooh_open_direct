@@ -46,7 +46,7 @@
                    
                 ]
             ],
-            "Price": 10
+            "Price": 150
         }
     ],
     
@@ -68,7 +68,7 @@
                     
                 ]
             ],
-            "Price": 15
+            "Price": 140
         }
     ],
     "ProductOptioned": [
@@ -89,7 +89,7 @@
            
                 ]
             ],
-            "Price": 30
+            "Price": 140
         }
     ],
     "ProductFullyBooked": [
@@ -113,7 +113,7 @@
                     
                 ]
             ],
-            "Price": 25
+            "Price": 280
         }
     ]
 }

@@ -21,7 +21,7 @@
                         "DataSource": "ShareOfDisplay",
                         "Target": "ShareOfTime",
                         "TargetValues": [
-                            "15"
+                            "20"
                         ]
                     },
                     {
@@ -39,7 +39,7 @@
                         "DataSource": "GBP",
                         "Target": "Fixed",
                         "TargetValues": [
-                            "150"
+                            "170"
                         ]
                     }
                 ],
@@ -59,7 +59,7 @@
                         "DataSource": "ShareOfDisplay",
                         "Target": "ShareOfTime",
                         "TargetValues": [
-                            "0"
+                            "20"
                         ]
                     },
                     {
@@ -68,7 +68,7 @@
                         "DataSource": "Metrics",
                         "Target": "Impacts",
                         "TargetValues": [
-                            "0"
+                            "9000"
                         ]
                     },
                     {
@@ -77,7 +77,7 @@
                         "DataSource": "GBP",
                         "Target": "Fixed",
                         "TargetValues": [
-                            "0"
+                            "140"
                         ]
                     }
                 ],
@@ -97,7 +97,7 @@
                         "DataSource": "ShareOfDisplay",
                         "Target": "ShareOfTime",
                         "TargetValues": [
-                            "0"
+                            "20"
                         ]
                     },
                     {
@@ -106,7 +106,7 @@
                         "DataSource": "Metrics",
                         "Target": "Impacts",
                         "TargetValues": [
-                            "0"
+                            "9500"
                         ]
                     },
                     {
@@ -115,7 +115,7 @@
                         "DataSource": "GBP",
                         "Target": "Fixed",
                         "TargetValues": [
-                            "0"
+                            "141"
                         ]
                     }
                 ],
@@ -135,7 +135,7 @@
                         "DataSource": "ShareOfDisplay",
                         "Target": "ShareOfTime",
                         "TargetValues": [
-                            "0"
+                            "20"
                         ]
                     },
                     {
@@ -144,7 +144,7 @@
                         "DataSource": "Metrics",
                         "Target": "Impacts",
                         "TargetValues": [
-                            "0"
+                            "8000"
                         ]
                     },
                     {
@@ -153,12 +153,12 @@
                         "DataSource": "GBP",
                         "Target": "Fixed",
                         "TargetValues": [
-                            "0"
+                            "130"
                         ]
                     }
                 ]
             ],
-            "Price": 150
+            "Price": 581
         }
     ],
     "ProductPartialAvails": [],
