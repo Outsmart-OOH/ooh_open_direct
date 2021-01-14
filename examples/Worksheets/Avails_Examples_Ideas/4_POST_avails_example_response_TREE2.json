@@ -9,6 +9,7 @@
                     "Status": "Available",
                     "Reason": "",
                     "Comment":"",
+                    "Context":"",
                     "Targeting": [
                         {}
                     ]
@@ -17,6 +18,7 @@
                     "Status": "Partially Available",
                     "Reason": "",
                     "Comment":"",
+                    "Context":"",
                     "Targeting": [
                         {
                             "Name": "Inventory",
@@ -60,6 +62,7 @@
                     "Status": "Unavailable",
                     "Reason": "Prohibition",
                     "Comment": "",
+                    "Context":"",
                     "Targeting": [
                         {
                             "Name": "Inventory",
@@ -103,6 +106,7 @@
                     "Status": "Unavailable",
                     "Reason": "Optioned",
                     "Comment": "",
+                    "Context":"",
                     "Targeting": [
                         {
                             "Name": "Inventory",
@@ -146,6 +150,7 @@
                     "Status": "Unavailable",
                     "Reason": "Booked",
                     "Comment": "",
+                    "Context":"",
                     "Targeting": [
                         {
                             "Name": "Inventory",
