@@ -17,14 +17,19 @@
             "type": "string",
             "title": "Name",
             "description": "The key objects for describing OOH media campaigns and products",
-            "maxLength": 255
+            "maxLength": 255,
+            "default":"Delivery"
         },
         "Type": {
             "$id": "#/properties/Type",
             "type": "string",
             "title": "Type",
             "description": "How the OOHbject is being quantified",
-            "maxLength": 255
+            "maxLength": 255,
+            "enum": [
+                "Frames",
+                "Audience"
+            ]
         },
         "DataSource": {
             "$id": "#/properties/DataSource",
