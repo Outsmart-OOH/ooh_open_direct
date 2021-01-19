@@ -1,106 +1,106 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats_object.json",
-  "type": "object",
-  "title": "Stats object",
-  "description": "Object that describes the request for Reporting Stats",
-  "default": {},
-  "additionalProperties": false,
-  "properties": {
-      "$schema": {
-          "type": "string",
-          "format": "uri",
-          "description": "$schema only included to aid validation of JSON, should not be used in real calls."
-      },
-      "AccountId": {
-          "$id": "#/properties/AccountId",
-          "type": "string",
-          "title": "AccountId",
-          "description": "The Account the Stats are for"
-      },
-      "OrderId": {
-          "$id": "#/properties/OrderId",
-          "type": "string",
-          "title": "OrderId",
-          "description": "The Order the Stats are for"
-      },
-      "LineId": {
-          "$id": "#/properties/LineId",
-          "type": "string",
-          "title": "LineId",
-          "description": "The Order Line the Stats are for"
-      },
-      "ReportStartTime": {
-          "$id": "#/properties/ReportStartTime",
-          "type": "string",
-          "format": "date",
-          "title": "ReportStartTime",
-          "description": "The date report will start. if left blank, it will revert to the LineID start date"
-      },
-      "ReportEndTime": {
-          "$id": "#/properties/ReportEndTime",
-          "type": "string",
-          "format": "date",
-          "title": "ReportEndTime",
-          "description": "The date report will end. if left blank, it will revert to the LineID end date"
-      },
-      "ReportFields": {
-          "$id": "#/properties/ReportFields",
-          "description": "The fields that are to be included in the Stats report",
-          "type": "array",
-          "default":["StartDate","EndDate","SpotLength","ShareOfTime","FrameID","BookedPlays","DeliveredPlays"],
-          "items": {
-              "type": "string",
-              "enum": [
-                  "StartTime",
-                  "EndTime",
-                  "SpotLength",
-                  "ShareOfTime",
-                  "FrameReference",
-                  "FrameID",
-                  "CreativeID",
-                  "BookedPlays",
-                  "DeliveredPlays",
-                  "Delivery"
-              ]
-          },
-          "readOnly": true
-      },
-      "TimeGranularity": {
-          "$id": "#/properties/TimeGranularity",
-          "description": "The time granularity of the Stats report",
-          "type": "string",
-          "default":"Flight",
-          "enum": [
-              "All",
-              "Week",
-              "Day",
-              "Hour",
-              "Spot"
-          ],
-          "maxLength": 15,
-          "readOnly": true
-      },
-      "ReportFormat": {
-          "$id": "#/properties/ReportFormat",
-          "description": "requests the rerport output as a Verbose or Non-Verbose data format",
-          "type": "string",
-          "default":"Verbose",
-          "enum": [
-              "Verbose",
-              "NonVerbose"
-          ],
-          "maxLength": 15,
-          "readOnly": true
-      },
-      "Webhook": {
-          "$id": "#/properties/Webhook",
-          "type": "string",
-          "title": "Webhook",
-          "description": "URI of the webhook to respond to"
-      }
-  
-  },
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats_object.json",
+    "type": "object",
+    "title": "Stats object",
+    "description": "Object that describes the request for Reporting Stats",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "AccountId": {
+            "$id": "#/properties/AccountId",
+            "type": "string",
+            "title": "AccountId",
+            "description": "The Account the Stats are for"
+        },
+        "OrderId": {
+            "$id": "#/properties/OrderId",
+            "type": "string",
+            "title": "OrderId",
+            "description": "The Order the Stats are for"
+        },
+        "LineId": {
+            "$id": "#/properties/LineId",
+            "type": "string",
+            "title": "LineId",
+            "description": "The Order Line the Stats are for"
+        },
+        "ReportStartTime": {
+            "$id": "#/properties/ReportStartTime",
+            "type": "string",
+            "format": "date",
+            "title": "ReportStartTime",
+            "description": "The date report will start. if left blank, it will revert to the LineID start date"
+        },
+        "ReportEndTime": {
+            "$id": "#/properties/ReportEndTime",
+            "type": "string",
+            "format": "date",
+            "title": "ReportEndTime",
+            "description": "The date report will end. if left blank, it will revert to the LineID end date"
+        },
+        "ReportFields": {
+            "$id": "#/properties/ReportFields",
+            "description": "The fields that are to be included in the Stats report",
+            "type": "array",
+            "default":["StartDate","EndDate","SpotLength","ShareOfTime","FrameID","BookedPlays","DeliveredPlays"],
+            "items": {
+                "type": "string",
+                "enum": [
+                    "StartTime",
+                    "EndTime",
+                    "SpotLength",
+                    "ShareOfTime",
+                    "FrameReference",
+                    "FrameID",
+                    "CreativeID",
+                    "BookedPlays",
+                    "DeliveredPlays",
+                    "Delivery"
+                ]
+            },
+            "readOnly": true
+        },
+        "TimeGranularity": {
+            "$id": "#/properties/TimeGranularity",
+            "description": "The time granularity of the Stats report",
+            "type": "string",
+            "default":"Flight",
+            "enum": [
+                "All",
+                "Week",
+                "Day",
+                "Hour",
+                "Spot"
+            ],
+            "maxLength": 15,
+            "readOnly": true
+        },
+        "ReportFormat": {
+            "$id": "#/properties/ReportFormat",
+            "description": "requests the rerport output as a Verbose or Non-Verbose data format",
+            "type": "string",
+            "default":"Verbose",
+            "enum": [
+                "Verbose",
+                "NonVerbose"
+            ],
+            "maxLength": 15,
+            "readOnly": true
+        },
+        "Webhook": {
+            "$id": "#/properties/Webhook",
+            "type": "string",
+            "title": "Webhook",
+            "description": "URI of the webhook to respond to"
+        }
+    
+    },
 
-  "Required": ["AccountId", "OrderId", "LineId"]
+    "Required": ["AccountId", "OrderId", "LineId"]
 }
