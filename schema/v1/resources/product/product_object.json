@@ -1,169 +1,169 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/product/product_object.json",
-    "type": "object",
-    "title": "Product object",
-    "description": "A Product resource identifies anything from an ad placement to a Run of Network product in the publisher’s product catalogue.",
-    "default": {},
-    "additionalProperties": false,
-    "properties": {
-        "$schema": {
-            "type": "string",
-            "format": "uri",
-            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
-        },
-        "ActiveDate": {
-            "$id": "#/properties/AdvertiserId",
-            "type": "string",
-            "format": "date-time",
-            "title": "Active Date",
-            "description": "The date and time, in UTC, that the product may become part of the bookable inventory. Use ISO-8602 format for the time and date.",
-            "minLength": 1,
-            "maxLength": 26
-        },
-        "AdFormatTypes": {
-            "$id": "#/properties/AdFormatTypes",
-            "type": "array",
-            "title": "Ad Format Types",
-            "description": "A list of ad types that the product supports.",
-            "items": {
-                "$id": "#/properties/AdFormatTypes/items",
-                "type": "string",
-                "enum": [
-                    "HTML5",
-                    "Flash",
-                    "Image",
-                    "Video",
-                    "Print Poster"
-                ]
-            }
-        },
-        "AllowNoCreative": {
-            "$id": "#/properties/AllowNoCreative",
-            "type": "boolean",
-            "title": "Allow No Creative",
-            "description": "A Boolean value that indicates whether line items assigned to this order may be booked before creative is assigned. "
-        },
-        "Geometry": {
-            "$id": "#/properties/AdvertiserId",
-            "type": "array",
-            "title": "Geometry",
-            "description": "A list of ad format sizes that the product supports.",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/size_object.json"
-            }
-        },
-        "BasePrice": {
-            "$id": "#/properties/BasePrice",
-            "type": "number",
-            "title": "Base price",
-            "description": "The product’s base retail price; this is not the rate card price. The actual price may be more if targeting is specified."
-        },
-        "Currency": {
-            "$id": "#/properties/Currency",
-            "type": "string",
-            "title": "Currency",
-            "description": "Identifies the currency for BasePrice and MinSpend."
-        },
-        "DeliveryType": {
-            "$id": "#/properties/DeliveryType",
-            "type": "string",
-            "enum": [
-                "Exclusive",
-                "Guaranteed",
-                "Non-Guranteed"
-            ],
-            "title": "Delivery Type",
-            "description": "The type of delivery. For example, exclusive, guaranteed or non-guaranteed."
-        },
-        "Description": {
-            "$id": "#/properties/Description",
-            "type": "string",
-            "title": "Description",
-            "description": "The product’s description."
-        },
-        "Icon": {
-            "$id": "#/properties/Icon",
-            "type": "string",
-            "title": "Icon",
-            "description": "URL to a thumbnail icon of the product. May be used to display next to the product in the product catalog."
-        },
-        "Id": {
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/product/product_id_string.json"
-        },
-        "Languages": {
-            "$id": "#/properties/Languages",
-            "type": "array",
-            "title": "The Languages Schema",
-            "description": "An explanation about the purpose of this instance.",
-            "items": {
-                "$id": "#/properties/Languages/items",
-                "type": "string"
-            }
-        },
-        "LeadTime": {
-            "$id": "#/properties/LeadTime",
-            "type": "string",
-            "title": "The Leadtime Schema",
-            "description": "An explanation about the purpose of this instance."
-        },
-        "Name": {
-            "$id": "#/properties/Name",
-            "type": "string",
-            "title": "Product Name",
-            "description": "The product's display name. The name must be unique."
-        },
-        "ReservedExpiryTime": {
-            "$id": "#/properties/ReservedExpiryTime",
-            "type": "string",
-            "title": "Reserved expiry time",
-            "description": "An explanation about the purpose of this instance."
-        },
-        "AdvertiserIdAccess": {
-            "$id": "#/properties/AdvertiserIdAccess",
-            "type": "array",
-            "title": "Advertister ID Access",
-            "description": "List of AdvertiserIDs with access to this Product. NULL = all accounts can access this product.",
-            "items": {
-                "$id": "#/properties/AdvertiserIdAccess/items",
-                "type": "string"
-            }
-        },
-        "BuyerIdAccess": {
-            "$id": "#/properties/BuyerIdAccess",
-            "type": "array",
-            "title": "Buyer ID Access",
-            "description": "List of BuyerIDs with access to this Product. NULL = all accounts can access this product.",
-            "items": {
-                "$id": "#/properties/BuyerIdAccess/items",
-                "type": "string"
-            }
-        },
-        "ThirdPartyIdAccess": {
-            "$id": "#/properties/ThirdPartyIdAccess",
-            "type": "array",
-            "title": "Third Party ID Access",
-            "description": "List of ThirdPartyIDs with access to this Product. NULL = all accounts can access this product.",
-            "items": {
-                "$id": "#/properties/ThirdPartyIdAccess/items",
-                "type": "string"
-            }
-        },
-        "TargetTypes": {
-            "$id": "#/properties/TargetTypes",
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
-        },
-        "TimeZone": {
-            "$id": "#/properties/TimeZone",
-            "type": "string",
-            "title": "Timezone",
-            "description": "The time zone that the product runs in."
-        },
-        "Url": {
-            "$id": "#/properties/Url",
-            "type": "string",
-            "title": "The Url Schema",
-            "description": "A URL to the specification that describes the creative requirements."
-        }
-    }
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/product/product_object.json",
+  "type": "object",
+  "title": "Product object",
+  "description": "A Product resource identifies anything from an ad placement to a Run of Network product in the publisher’s product catalogue.",
+  "default": {},
+  "additionalProperties": false,
+  "properties": {
+      "$schema": {
+          "type": "string",
+          "format": "uri",
+          "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+      },
+      "ActiveDate": {
+          "$id": "#/properties/AdvertiserId",
+          "type": "string",
+          "format": "date-time",
+          "title": "Active Date",
+          "description": "The date and time, in UTC, that the product may become part of the bookable inventory. Use ISO-8602 format for the time and date.",
+          "minLength": 1,
+          "maxLength": 26
+      },
+      "AdFormatTypes": {
+          "$id": "#/properties/AdFormatTypes",
+          "type": "array",
+          "title": "Ad Format Types",
+          "description": "A list of ad types that the product supports.",
+          "items": {
+              "$id": "#/properties/AdFormatTypes/items",
+              "type": "string",
+              "enum": [
+                  "HTML5",
+                  "Flash",
+                  "Image",
+                  "Video",
+                  "Print Poster"
+              ]
+          }
+      },
+      "AllowNoCreative": {
+          "$id": "#/properties/AllowNoCreative",
+          "type": "boolean",
+          "title": "Allow No Creative",
+          "description": "A Boolean value that indicates whether line items assigned to this order may be booked before creative is assigned. "
+      },
+      "Geometry": {
+          "$id": "#/properties/Geometry",
+          "type": "array",
+          "title": "Geometry",
+          "description": "A list of ad format sizes that the product supports.",
+          "items": {
+              "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/size_object.json"
+          }
+      },
+      "BasePrice": {
+          "$id": "#/properties/BasePrice",
+          "type": "number",
+          "title": "Base price",
+          "description": "The product’s base retail price; this is not the rate card price. The actual price may be more if targeting is specified."
+      },
+      "Currency": {
+          "$id": "#/properties/Currency",
+          "type": "string",
+          "title": "Currency",
+          "description": "Identifies the currency for BasePrice and MinSpend."
+      },
+      "DeliveryType": {
+          "$id": "#/properties/DeliveryType",
+          "type": "string",
+          "enum": [
+              "Exclusive",
+              "Guaranteed",
+              "Non-Guranteed"
+          ],
+          "title": "Delivery Type",
+          "description": "The type of delivery. For example, exclusive, guaranteed or non-guaranteed."
+      },
+      "Description": {
+          "$id": "#/properties/Description",
+          "type": "string",
+          "title": "Description",
+          "description": "The product’s description."
+      },
+      "Icon": {
+          "$id": "#/properties/Icon",
+          "type": "string",
+          "title": "Icon",
+          "description": "URL to a thumbnail icon of the product. May be used to display next to the product in the product catalog."
+      },
+      "Id": {
+          "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/product/product_id_string.json"
+      },
+      "Languages": {
+          "$id": "#/properties/Languages",
+          "type": "array",
+          "title": "The Languages Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "items": {
+              "$id": "#/properties/Languages/items",
+              "type": "string"
+          }
+      },
+      "LeadTime": {
+          "$id": "#/properties/LeadTime",
+          "type": "string",
+          "title": "The Leadtime Schema",
+          "description": "An explanation about the purpose of this instance."
+      },
+      "Name": {
+          "$id": "#/properties/Name",
+          "type": "string",
+          "title": "Product Name",
+          "description": "The product's display name. The name must be unique."
+      },
+      "ReservedExpiryTime": {
+          "$id": "#/properties/ReservedExpiryTime",
+          "type": "string",
+          "title": "Reserved expiry time",
+          "description": "An explanation about the purpose of this instance."
+      },
+      "AdvertiserIdAccess": {
+          "$id": "#/properties/AdvertiserIdAccess",
+          "type": "array",
+          "title": "Advertister ID Access",
+          "description": "List of AdvertiserIDs with access to this Product. NULL = all accounts can access this product.",
+          "items": {
+              "$id": "#/properties/AdvertiserIdAccess/items",
+              "type": "string"
+          }
+      },
+      "BuyerIdAccess": {
+          "$id": "#/properties/BuyerIdAccess",
+          "type": "array",
+          "title": "Buyer ID Access",
+          "description": "List of BuyerIDs with access to this Product. NULL = all accounts can access this product.",
+          "items": {
+              "$id": "#/properties/BuyerIdAccess/items",
+              "type": "string"
+          }
+      },
+      "ThirdPartyIdAccess": {
+          "$id": "#/properties/ThirdPartyIdAccess",
+          "type": "array",
+          "title": "Third Party ID Access",
+          "description": "List of ThirdPartyIDs with access to this Product. NULL = all accounts can access this product.",
+          "items": {
+              "$id": "#/properties/ThirdPartyIdAccess/items",
+              "type": "string"
+          }
+      },
+      "TargetTypes": {
+          "$id": "#/properties/TargetTypes",
+          "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
+      },
+      "TimeZone": {
+          "$id": "#/properties/TimeZone",
+          "type": "string",
+          "title": "Timezone",
+          "description": "The time zone that the product runs in."
+      },
+      "Url": {
+          "$id": "#/properties/Url",
+          "type": "string",
+          "title": "The Url Schema",
+          "description": "A URL to the specification that describes the creative requirements."
+      }
+  }
 }
