@@ -1,0 +1,92 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json",
+    "type": "object",
+    "title": "OOHbject Type",
+    "description": "OOHbject object.",
+    "required": [
+        "Name",
+        "Type",
+        "DataSource",
+        "Target"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "Name",
+            "description": "The key objects for describing OOH media campaigns and products",
+            "maxLength": 255,
+            "default":"Delivery"
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "Type",
+            "description": "How the OOHbject is being quantified",
+            "maxLength": 255,
+            "enum": [
+                "Frames",
+                "Audience"
+            ]
+        },
+        "DataSource": {
+            "$id": "#/properties/DataSource",
+            "type": "string",
+            "title": "The identification and inclusion of third party data sources",
+            "maxLength": 255
+        },
+        "Target": {
+            "$id": "#/properties/Target",
+            "type": "string",
+            "title": "Description of the OOHbject Metric",
+            "maxLength": 255
+        },
+        "TargetValues": {
+            "$id": "#/properties/TargetValues",
+            "type": "array",
+            "title": "Array of one or more values ",
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/TargetValues/items",
+                "title": "Target Value item",
+                "oneOf": [
+                    {
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        "Selectable": {
+            "$id": "#/properties/Selectable",
+            "type": "boolean",
+            "title": "Defines whether a Buyer can select from the given list of TargetValues  or whether the targetValues are fixed"
+        },
+        "Count": {
+            "$id": "#/properties/Count",
+            "type": "integer",
+            "title": "Count of TargetValues"
+        },
+        "Minimum": {
+            "$id": "#/properties/Minimum",
+            "type": "number",
+            "title": "Defines the minimum number of TargetValues that must be selected"
+        },
+        "Maximum": {
+            "$id": "#/properties/Maximum",
+            "type": "number",
+            "title": "Defines the maximum number of TargetValues that must be selected"
+        },
+        "Increment": {
+            "$id": "#/properties/Increment",
+            "type": "number",
+            "title": "Defines the increments that are permitted for the targeting values"
+        },
+        "Default": {
+            "$id": "#/properties/Default",
+            "type": "number",
+            "title": "Defines the default number of TargetValues that are selected if the Buyer does not specify any TargetValues or the target is not selectable"
+        }
+    }
+}

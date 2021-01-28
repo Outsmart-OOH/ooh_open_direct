@@ -22,7 +22,7 @@
                 "required": [
                     "Currency",
                     "ProductId",
-                    "Availability",
+                    "Targeting",
                     "Price"
                 ]
             }

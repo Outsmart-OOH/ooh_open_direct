@@ -24,9 +24,9 @@
             "$id": "#/properties/Currency",
             "type": "string"
         },
-        "Availability": {
-            "$id": "#/properties/Availability",
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object.json"
+        "Targeting": {
+            "$id": "#/properties/Targeting",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
         },
         "Price": {
             "$id": "#/properties/Price",

@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json",
+    "type": "object",
+    "title": "OOHbject Type",
+    "description": "OOHbject object.",
+    "required": [
+        "Name",
+        "Type",
+        "DataSource",
+        "Target"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "Name",
+            "description": "The key objects for describing OOH media campaigns and products",
+            "maxLength": 255,
+            "default":"Distribution"
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "Type",
+            "description": "How the OOHbject is being quantified",
+            "maxLength": 255,
+            "enum": [
+                "Frames",
+                "Audience",
+                "Investment"
+            ]
+        },
+        "DataSource": {
+            "$id": "#/properties/DataSource",
+            "type": "string",
+            "title": "The identification and inclusion of third party data sources",
+            "maxLength": 255
+        },
+        "Target": {
+            "$id": "#/properties/Target",
+            "type": "string",
+            "title": "Description of the OOHbject Metric",
+            "maxLength": 255
+        },
+        "TargetValues": {
+            "$id": "#/properties/TargetValues",
+            "type": "array",
+            "title": "Array of one or more values ",
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/TargetValues/items",
+                "title": "Target Value item",
+                "oneOf": [
+                    {
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    }
+}
