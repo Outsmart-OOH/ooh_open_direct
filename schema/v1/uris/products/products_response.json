@@ -8,6 +8,7 @@
     "required": [
         "Id",
         "Name",
-        "TargetTypes"
+        "TargetTypes",
+        "AvailsGroupBy"
     ]
 }

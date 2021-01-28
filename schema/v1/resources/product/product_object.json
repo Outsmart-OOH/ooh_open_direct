@@ -153,6 +153,10 @@
             "$id": "#/properties/TargetTypes",
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
         },
+        "AvailsGroupBy": {
+            "$id": "#/properties/AvailsGroupBy",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
+        },
         "TimeZone": {
             "$id": "#/properties/TimeZone",
             "type": "string",
