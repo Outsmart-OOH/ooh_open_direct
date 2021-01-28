@@ -45,7 +45,7 @@
             "description": "A Boolean value that indicates whether line items assigned to this order may be booked before creative is assigned. "
         },
         "Geometry": {
-            "$id": "#/properties/AdvertiserId",
+            "$id": "#/properties/Geometry",
             "type": "array",
             "title": "Geometry",
             "description": "A list of ad format sizes that the product supports.",

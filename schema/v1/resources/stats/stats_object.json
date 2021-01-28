@@ -13,39 +13,39 @@
             "description": "$schema only included to aid validation of JSON, should not be used in real calls."
         },
         "AccountId": {
-            "$id": "#/properties/",
+            "$id": "#/properties/AccountId",
             "type": "string",
             "title": "AccountId",
             "description": "The Account the Stats are for"
         },
         "OrderId": {
-            "$id": "#/properties/",
+            "$id": "#/properties/OrderId",
             "type": "string",
             "title": "OrderId",
             "description": "The Order the Stats are for"
         },
         "LineId": {
-            "$id": "#/properties/",
+            "$id": "#/properties/LineId",
             "type": "string",
             "title": "LineId",
             "description": "The Order Line the Stats are for"
         },
         "ReportStartTime": {
-            "$id": "#/properties/",
+            "$id": "#/properties/ReportStartTime",
             "type": "string",
             "format": "date",
             "title": "ReportStartTime",
             "description": "The date report will start. if left blank, it will revert to the LineID start date"
         },
         "ReportEndTime": {
-            "$id": "#/properties/",
+            "$id": "#/properties/ReportEndTime",
             "type": "string",
             "format": "date",
             "title": "ReportEndTime",
             "description": "The date report will end. if left blank, it will revert to the LineID end date"
         },
         "ReportFields": {
-            "$id": "#/properties/",
+            "$id": "#/properties/ReportFields",
             "description": "The fields that are to be included in the Stats report",
             "type": "array",
             "default":["StartDate","EndDate","SpotLength","ShareOfTime","FrameID","BookedPlays","DeliveredPlays"],
@@ -67,7 +67,7 @@
             "readOnly": true
         },
         "TimeGranularity": {
-            "$id": "#/properties/",
+            "$id": "#/properties/TimeGranularity",
             "description": "The time granularity of the Stats report",
             "type": "string",
             "default":"Flight",
@@ -82,7 +82,7 @@
             "readOnly": true
         },
         "ReportFormat": {
-            "$id": "#/properties/",
+            "$id": "#/properties/ReportFormat",
             "description": "requests the rerport output as a Verbose or Non-Verbose data format",
             "type": "string",
             "default":"Verbose",
@@ -94,7 +94,7 @@
             "readOnly": true
         },
         "Webhook": {
-            "$id": "#/properties/",
+            "$id": "#/properties/Webhook",
             "type": "string",
             "title": "Webhook",
             "description": "URI of the webhook to respond to"
