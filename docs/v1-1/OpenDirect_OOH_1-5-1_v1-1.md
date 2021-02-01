@@ -1738,7 +1738,7 @@ May support getting a list by IDs.
 
 ### 7.9.4 /accounts/{id}/changerequest/{id}/approve
 
-Gets all approved change requests for an account.
+Approves a change request for an account.
 
 #### Verbs
 
@@ -1762,7 +1762,7 @@ PUT
 |                                           | PATCH  | Updates the specified change request                                                                                                                             |         |          |
 |                                           | DELETE | Deletes the specified change request. May delete the change request only if the request is in a PENDING state                                                    |         |          |
 | /accounts/{id}/changerequest?$filter=     | GET    | Gets a list of change requests that match the specified filter criteria. The user may use OData expressions and method calls with the following Order properties |         |          |
-| /accounts/{id}/changerequest/{id}/approve | PUT    | Gets all approved change requests for an account                                                                                                                 |         |          |
+| /accounts/{id}/changerequest/{id}/approve | PUT    | Approves a change request for an account                                                                                                                 |         |          |
 | /accounts/{id}/changerequest/{id}/reject  | PUT    | Rejects a change request for an account                                                                                                                          |         ||
 
 ## 7.10 Change Request Lines
