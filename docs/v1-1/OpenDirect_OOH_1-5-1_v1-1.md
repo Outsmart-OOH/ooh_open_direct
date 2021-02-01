@@ -656,15 +656,16 @@ OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/
 
 This section defines the reference data that an OpenDirect API must support. Reference data provides enumerated values for a resource property. The publisher must return only those values that they support. For example, a resource, such as Order, uses Currency reference data for the currency property to supply the list of currencies that the publisher supports.
 
-## 4.1 AdFormatType
+## 4.1 OrganizationType
 
-Defines the possible ad formats
+Defines the types of organization involved in the OpenDirect transaction.
 
 | Property   | Description                                                       | Type   | Constraints        |
 | ---------- | ----------------------------------------------------------------- | ------ | ------------------ |
 | Advertiser | An organisation that is mainly playing the roles of an advertiser | String | Max 254 Characters |
-| Specialist | An organisation who's main business is that of an OOH Specialist  | String | Max 254 Characters |
-| Agency     | An organisation who's main business is that of a Media Agency     | String | Max 254 Characters |
+| Specialist | An organisation whose main business is that of an OOH Specialist  | String | Max 254 Characters |
+| Agency     | An organisation whose main business is that of a Media Agency     | String | Max 254 Characters |
+| Barter     | An organisation whose main business is that of a Barter Company   | String | Max 254 Characters |
 
 ## 4.2 AdPosition
 
