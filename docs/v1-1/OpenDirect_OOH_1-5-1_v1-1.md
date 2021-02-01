@@ -1239,7 +1239,7 @@ However, if the property is an array of any type and is NULL, the response must 
 | Resource             | URI                                           | Verbs              | Required |
 | -------------------- | --------------------------------------------- | ------------------ | -------- |
 | Account              | /accounts                                     | GET, POST          | Yes      |
-|                      | /accounts/{id}                                | GET                | Yes      |
+|                      | /accounts/{id}                                | GET, PATCH         | Yes      |
 |                      | /accounts?$filter=                            | GET                | Yes      |
 | Assignment           | /accounts/{id}/assignments                    | GET, POST          | Yes      |
 |                      | /accounts/{id}/assignments/{id}               | GET, PATCH, DELETE | Yes      |
@@ -1247,10 +1247,9 @@ However, if the property is an array of any type and is NULL, the response must 
 |                      | /accounts/{id}/assignments?$filter=           | GET                | No       |
 |                      | /accounts/{id}/creatives?$filter=             | GET                | No       |
 | Order                | /accounts/{id}/orders                         | GET, POST          | Yes      |
-|                      |                                               | GET, PATCH, DELETE | Yes      |
-|                      | /accounts/{id}/orders/{id}                    | GET                | No       |
+|                      | /accounts/{id}/orders/{id}                    | GET, PATCH, DELETE | Yes      |
 |                      | /accounts/{id}/orders?$filter=                | GET                | YES      |
-| Line                 | /accounts/{id}/orders/{id}/lines              | GET, POST          | Yes      |
+| Lines                | /accounts/{id}/orders/{id}/lines              | GET, POST          | Yes      |
 |                      | /accounts/{id}/orders/{id}/lines/{id}         | GET, PATCH, DELETE | Yes      |
 |                      | /accounts/{id}/orders/{id}/lines/{id}?book    | PATCH              | Yes      |
 |                      | /accounts/{id}/orders/{id}/lines/{id}?reserve | PATCH              | Yes      |
@@ -1263,17 +1262,17 @@ However, if the property is an array of any type and is NULL, the response must 
 |                      | /products/{id}                                | GET                | Yes      |
 |                      | /products/search                              | POST               | Yes      |
 |                      | /products/avails                              | POST               | Yes      |
-| Change Request       | /accounts/{id}/changerequest                  | GET, POST          | No       |
+| ChangeRequest        | /accounts/{id}/changerequest                  | GET, POST          | No       |
 |                      | /accounts/{id}/changerequest/{id}             | GET, PATCH, DELETE | No       |
 |                      | /accounts/{id}/changerequest?$filter=         | GET                | No       |
 |                      | /accounts/{id}/changerequest/{id}/approve     | PUT                | No       |
 |                      | /accounts/{id}/changerequest/{id}/reject      | PUT                | No       |
-| Change Request Lines | /accounts/{id}/changerequest/{id}/lines       | GET, POST          | No       |
-|                      | /accounts/{id}/changerequest//lines/{id}      | GET, PATCH         | No       |
-|                      | /accounts/{id}/changerequest//lines?$filter=  | GET                | No       |
+| ChangeRequest/Lines  | /accounts/{id}/changerequest/{id}/lines       | GET, POST          | No       |
+|                      | /accounts/{id}/changerequest/lines/{id}       | GET, PATCH         | No       |
+|                      | /accounts/{id}/changerequest/lines?$filter=   | GET                | No       |
 | Reporting            | /accounts/{id}/orders/{id}/lines/stats        | GET                | No       |
 |                      | /accounts/{id}/orders/{id}/lines/{id}/stats   | GET                | No       |
-| Advertiser Brands    | /advertiserbrands                             | GET                | No       |
+| AdvertiserBrands     | /advertiserbrands                             | GET                | No       |
 |                      | /advertiserbrands/{id}                        | GET                | No       |
 |                      | /advertiserbrands?$filter=                    | GET                | No       |
 | DataSources          | /datasources                                  | GET                | No       |
