@@ -656,15 +656,16 @@ OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/
 
 This section defines the reference data that an OpenDirect API must support. Reference data provides enumerated values for a resource property. The publisher must return only those values that they support. For example, a resource, such as Order, uses Currency reference data for the currency property to supply the list of currencies that the publisher supports.
 
-## 4.1 AdFormatType
+## 4.1 OrganizationType
 
-Defines the possible ad formats
+Defines the types of organization involved in the OpenDirect transaction.
 
 | Property   | Description                                                       | Type   | Constraints        |
 | ---------- | ----------------------------------------------------------------- | ------ | ------------------ |
 | Advertiser | An organisation that is mainly playing the roles of an advertiser | String | Max 254 Characters |
-| Specialist | An organisation who's main business is that of an OOH Specialist  | String | Max 254 Characters |
-| Agency     | An organisation who's main business is that of a Media Agency     | String | Max 254 Characters |
+| Specialist | An organisation whose main business is that of an OOH Specialist  | String | Max 254 Characters |
+| Agency     | An organisation whose main business is that of a Media Agency     | String | Max 254 Characters |
+| Barter     | An organisation whose main business is that of a Barter Company   | String | Max 254 Characters |
 
 ## 4.2 AdPosition
 
@@ -1238,7 +1239,7 @@ However, if the property is an array of any type and is NULL, the response must 
 | Resource             | URI                                           | Verbs              | Required |
 | -------------------- | --------------------------------------------- | ------------------ | -------- |
 | Account              | /accounts                                     | GET, POST          | Yes      |
-|                      | /accounts/{id}                                | GET                | Yes      |
+|                      | /accounts/{id}                                | GET, PATCH         | Yes      |
 |                      | /accounts?$filter=                            | GET                | Yes      |
 | Assignment           | /accounts/{id}/assignments                    | GET, POST          | Yes      |
 |                      | /accounts/{id}/assignments/{id}               | GET, PATCH, DELETE | Yes      |
@@ -1246,10 +1247,9 @@ However, if the property is an array of any type and is NULL, the response must 
 |                      | /accounts/{id}/assignments?$filter=           | GET                | No       |
 |                      | /accounts/{id}/creatives?$filter=             | GET                | No       |
 | Order                | /accounts/{id}/orders                         | GET, POST          | Yes      |
-|                      |                                               | GET, PATCH, DELETE | Yes      |
-|                      | /accounts/{id}/orders/{id}                    | GET                | No       |
+|                      | /accounts/{id}/orders/{id}                    | GET, PATCH, DELETE | Yes      |
 |                      | /accounts/{id}/orders?$filter=                | GET                | YES      |
-| Line                 | /accounts/{id}/orders/{id}/lines              | GET, POST          | Yes      |
+| Lines                | /accounts/{id}/orders/{id}/lines              | GET, POST          | Yes      |
 |                      | /accounts/{id}/orders/{id}/lines/{id}         | GET, PATCH, DELETE | Yes      |
 |                      | /accounts/{id}/orders/{id}/lines/{id}?book    | PATCH              | Yes      |
 |                      | /accounts/{id}/orders/{id}/lines/{id}?reserve | PATCH              | Yes      |
@@ -1262,17 +1262,17 @@ However, if the property is an array of any type and is NULL, the response must 
 |                      | /products/{id}                                | GET                | Yes      |
 |                      | /products/search                              | POST               | Yes      |
 |                      | /products/avails                              | POST               | Yes      |
-| Change Request       | /accounts/{id}/changerequest                  | GET, POST          | No       |
+| ChangeRequest        | /accounts/{id}/changerequest                  | GET, POST          | No       |
 |                      | /accounts/{id}/changerequest/{id}             | GET, PATCH, DELETE | No       |
 |                      | /accounts/{id}/changerequest?$filter=         | GET                | No       |
 |                      | /accounts/{id}/changerequest/{id}/approve     | PUT                | No       |
 |                      | /accounts/{id}/changerequest/{id}/reject      | PUT                | No       |
-| Change Request Lines | /accounts/{id}/changerequest/{id}/lines       | GET, POST          | No       |
-|                      | /accounts/{id}/changerequest//lines/{id}      | GET, PATCH         | No       |
-|                      | /accounts/{id}/changerequest//lines?$filter=  | GET                | No       |
+| ChangeRequest/Lines  | /accounts/{id}/changerequest/{id}/lines       | GET, POST          | No       |
+|                      | /accounts/{id}/changerequest/lines/{id}       | GET, PATCH         | No       |
+|                      | /accounts/{id}/changerequest/lines?$filter=   | GET                | No       |
 | Reporting            | /accounts/{id}/orders/{id}/lines/stats        | GET                | No       |
 |                      | /accounts/{id}/orders/{id}/lines/{id}/stats   | GET                | No       |
-| Advertiser Brands    | /advertiserbrands                             | GET                | No       |
+| AdvertiserBrands     | /advertiserbrands                             | GET                | No       |
 |                      | /advertiserbrands/{id}                        | GET                | No       |
 |                      | /advertiserbrands?$filter=                    | GET                | No       |
 | DataSources          | /datasources                                  | GET                | No       |
@@ -1738,7 +1738,7 @@ May support getting a list by IDs.
 
 ### 7.9.4 /accounts/{id}/changerequest/{id}/approve
 
-Gets all approved change requests for an account.
+Approves a change request for an account.
 
 #### Verbs
 
@@ -1762,7 +1762,7 @@ PUT
 |                                           | PATCH  | Updates the specified change request                                                                                                                             |         |          |
 |                                           | DELETE | Deletes the specified change request. May delete the change request only if the request is in a PENDING state                                                    |         |          |
 | /accounts/{id}/changerequest?$filter=     | GET    | Gets a list of change requests that match the specified filter criteria. The user may use OData expressions and method calls with the following Order properties |         |          |
-| /accounts/{id}/changerequest/{id}/approve | PUT    | Gets all approved change requests for an account                                                                                                                 |         |          |
+| /accounts/{id}/changerequest/{id}/approve | PUT    | Approves a change request for an account                                                                                                                 |         |          |
 | /accounts/{id}/changerequest/{id}/reject  | PUT    | Rejects a change request for an account                                                                                                                          |         ||
 
 ## 7.10 Change Request Lines

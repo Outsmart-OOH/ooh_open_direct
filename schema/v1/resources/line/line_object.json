@@ -19,13 +19,13 @@
             "description": "A value that determines whether the line is booked and is capable of delivering ads. For a states , see Booking Status Values."
         },
         "Comment": {
-            "$id": "#/properties/",
+            "$id": "#/properties/Comment",
             "type": "string",
             "title": "Comment",
             "description": "User notes related to this line."
         },
         "Cost": {
-            "$id": "#/properties/",
+            "$id": "#/properties/Cost",
             "type": "number",
             "title": "Cost",
             "description": "The projected cost of the line is based on the specified targeting. "
@@ -47,19 +47,19 @@
             "description": "The line's display name. The name must be unique."
         },
         "OrderId": {
-            "$id": "#/properties/",
+            "$id": "#/properties/OrderId",
             "type": "string",
             "title": "Order ID",
             "description": "The ID of the order that this line belongs to."
         },
         "ProductId": {
-            "$id": "#/properties/",
+            "$id": "#/properties/ProductId",
             "type": "string",
             "title": "Product ID",
             "description": "The ID of the product where the creatives run."
         },
         "ProviderData": {
-            "$id": "#/properties/",
+            "$id": "#/properties/ProviderData",
             "type": "string",
             "title": "Provider Data",
             "description": "An opaque CLOB of provider-defined data. "
@@ -71,7 +71,7 @@
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohProviderData_object.json"
         },
         "ReservedExpiryDate": {
-            "$id": "#/properties/",
+            "$id": "#/properties/ReservedExpiryDate",
             "type": "string",
             "format": "date-time",
             "title": "Reserved Expiry Date",
@@ -85,7 +85,7 @@
             "description": "The date and time that the line will start."
         },
         "StateChangeReason": {
-            "$id": "#/properties/",
+            "$id": "#/properties/StateChangeReason",
             "type": "string",
             "title": "State Change Reason",
             "description": "The reason why the state was changed by the publisher. The reason must be specified if: The publisher declined the booking or reservation, The publisher or user canceled the flight."
@@ -102,9 +102,9 @@
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
         },
         "ProductUnAvails": {
-            "$id": "#/properties/Products",
+            "$id": "#/properties/ProductUnAvails",
             "type": "array",
-            "title": "Array of ProductAvails",
+            "title": "Array of ProductUnAvails",
             "description": "This Object is used to show the EXCEPTION where the draft/reserve/booking request failed because of a change in product availability between booking states",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json",
@@ -117,7 +117,7 @@
             }
         },
         "ProductAvails": {
-            "$id": "#/properties/Products",
+            "$id": "#/properties/ProductAvails",
             "type": "array",
             "title": "Array of ProductAvails",
             "description": "This Object is used to return the latest Product Avails in the event of the line draft/reserve/booking request failing because of a change in product availability between booking states",
