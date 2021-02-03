@@ -18,7 +18,7 @@
             "title": "Name",
             "description": "The key objects for describing OOH media campaigns and products",
             "maxLength": 255,
-            "default":"Inventory"
+            "enum":["Investment"]
         },
         "Type": {
             "$id": "#/properties/Type",
