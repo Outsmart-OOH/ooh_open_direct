@@ -34,7 +34,7 @@
                 "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/contact_object.json"
             }
         },
-        "Disapproval Reason": {
+        "DisapprovalReason": {
             "$id": "#/properties/DisapprovalReason",
             "description": "The reason why the organisation was not registered. Must be specified if Status is Disapproved",
             "type": "string",
@@ -52,7 +52,13 @@
         "OrganizationType": {
             "$id": "#/properties/OrganizationType",
             "description": "The core activity that an organisation undertakes as a business e.g. advertiser, OOH Specialist or Media Agency",
-            "type": "string"
+            "type": "string",
+            "enum": [
+                "Advertiser",
+                "Specialist",
+                "Agency",
+                "Barter"
+            ]
         },
         "Name": {
             "$id": "#properties/Name",

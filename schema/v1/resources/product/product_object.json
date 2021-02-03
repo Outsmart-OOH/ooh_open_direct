@@ -71,7 +71,7 @@
             "enum": [
                 "Exclusive",
                 "Guaranteed",
-                "Non-Guranteed"
+                "Non-Guaranteed"
             ],
             "title": "Delivery Type",
             "description": "The type of delivery. For example, exclusive, guaranteed or non-guaranteed."

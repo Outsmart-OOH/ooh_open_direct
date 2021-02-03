@@ -91,6 +91,7 @@
             "description": "The reason why the state was changed by the publisher. The reason must be specified if: The publisher declined the booking or reservation, The publisher or user canceled the flight."
         },
         "Stats": {
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats_object.json",
             "$id": "#/properties/",
             "type": "object",
             "title": "Stats",

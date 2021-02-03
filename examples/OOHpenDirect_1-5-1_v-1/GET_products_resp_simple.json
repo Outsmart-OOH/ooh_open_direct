@@ -19,8 +19,8 @@
     "LeadTime": "T1H",
     "Name": "Metro",
     "ReservedExpiryTime": "P7D",
-    "AdvertiserIdAccess": [],
-    "BuyerIdAccess": [],
+    "AdvertiserIdAccess": ["adid1","adid2","adid3"],
+    "BuyerIdAccess": ["Buyidx"],
     "ThirdPartyIdAccess": [],
     "TargetTypes": [
         {
