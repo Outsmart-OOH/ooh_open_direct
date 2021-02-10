@@ -20,7 +20,7 @@
                 "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_inventory_object.json"
             },
             {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_delivery_inventory_object.json"
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_delivery_object.json"
             }
         ]
     },
