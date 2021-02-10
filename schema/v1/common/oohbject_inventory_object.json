@@ -30,25 +30,10 @@
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_datasource_string.json"
         },
         "Target": {
-            "$id": "#/properties/Target",
-            "type": "string",
-            "title": "Description of the OOHbject Metric",
-            "maxLength": 255
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_target_string.json"
         },
         "TargetValues": {
-            "$id": "#/properties/TargetValues",
-            "type": "array",
-            "title": "Array of one or more values ",
-            "additionalItems": true,
-            "items": {
-                "$id": "#/properties/TargetValues/items",
-                "title": "Target Value item",
-                "oneOf": [
-                    {
-                        "type": "string"
-                    }
-                ]
-            }
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_targetValues_string.json"
         },
         "Selectable": {
             "$id": "#/properties/Selectable",
