@@ -24,21 +24,10 @@
             "default": "Inventory"
         },
         "Type": {
-            "$id": "#/properties/Type",
-            "type": "string",
-            "title": "Type",
-            "description": "How the OOHbject is being quantified",
-            "maxLength": 255,
-            "enum": [
-                "Frames",
-                "Audience"
-            ]
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_type_string.json"
         },
         "DataSource": {
-            "$id": "#/properties/DataSource",
-            "type": "string",
-            "title": "The identification and inclusion of third party data sources",
-            "maxLength": 255
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_datasource_string.json"
         },
         "Target": {
             "$id": "#/properties/Target",
