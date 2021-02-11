@@ -13,15 +13,10 @@
     "additionalProperties": false,
     "properties": {
         "Name": {
-            "$id": "#/properties/Name",
-            "type": "string",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_name_string.json",
             "enum": [
                 "Inventory"
-            ],
-            "title": "Name",
-            "description": "The key objects for describing OOH media campaigns and products",
-            "maxLength": 255,
-            "default": "Inventory"
+            ]
         },
         "Type": {
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_type_string.json"
@@ -33,12 +28,10 @@
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_target_string.json"
         },
         "TargetValues": {
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_targetValues_string.json"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_targetValues_array.json"
         },
         "Selectable": {
-            "$id": "#/properties/Selectable",
-            "type": "boolean",
-            "title": "Defines whether a Buyer can select from the given list of TargetValues  or whether the targetValues are fixed"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_selectable_boolean.json"
         },
         "Count": {
             "$id": "#/properties/Count",
