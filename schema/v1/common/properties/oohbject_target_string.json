@@ -1,0 +1,9 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_target_string.json",
+    "type": "string",
+    "title": "Description of the OOHbject Metric",
+    "description": "Description of the OOHbject Metric",
+    "minLength": 1,
+    "maxLength": 255
+}
