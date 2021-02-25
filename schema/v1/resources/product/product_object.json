@@ -151,7 +151,7 @@
         },
         "TargetTypes": {
             "$id": "#/properties/TargetTypes",
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes(product)_array.json"
         },
         "AvailsGroupBy": {
             "$id": "#/properties/AvailsGroupBy",
