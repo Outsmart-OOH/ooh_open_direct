@@ -1,0 +1,7 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_default_number.json",
+    "type": "number",
+    "title": "Defines the default number of TargetValues",
+    "description": "Defines the default number of TargetValues that are selected if the Buyer does not specify any TargetValues or the target is not selectable"
+}

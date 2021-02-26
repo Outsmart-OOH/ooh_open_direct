@@ -5,9 +5,5 @@
     "title": "Type",
     "description": "How the OOHbject is being quantified",
     "minLength": 1,
-    "maxLength": 255,
-    "enum": [
-        "Frames",
-        "Audience"
-    ]
+    "maxLength": 255
 }

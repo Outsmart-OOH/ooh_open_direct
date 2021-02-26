@@ -13,47 +13,28 @@
     "additionalProperties": false,
     "properties": {
         "Name": {
-            "$id": "#/properties/Name",
-            "type": "string",
-            "title": "Name",
-            "description": "The key objects for describing OOH media campaigns and products",
-            "maxLength": 255,
-            "enum":["Prohibition"]
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_name_string.json",
+            "enum": [
+                "Prohibition"
+            ]
         },
         "Type": {
-            "$id": "#/properties/Type",
-            "type": "string",
-            "title": "Type",
-            "description": "How the OOHbject is being quantified",
-            "maxLength": 255,
-            "enum":["Frames"]
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_type_string.json",
+            "enum": [
+                "Frames"
+            ]
         },
         "DataSource": {
-            "$id": "#/properties/DataSource",
-            "type": "string",
-            "title": "The identification and inclusion of third party data sources",
-            "maxLength": 255
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_datasource_string.json"
         },
         "Target": {
-            "$id": "#/properties/Target",
-            "type": "string",
-            "title": "Description of the OOHbject Metric",
-            "maxLength": 255
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_target_string.json"
         },
         "TargetValues": {
-            "$id": "#/properties/TargetValues",
-            "type": "array",
-            "title": "Array of one or more values ",
-            "additionalItems": true,
-            "items": {
-                "$id": "#/properties/TargetValues/items",
-                "title": "Target Value item",
-                "oneOf": [
-                    {
-                        "type": "string"
-                    }
-                ]
-            }
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_targetValues_array.json"
+        },
+        "Selectable": {
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_selectable_boolean.json"
         }
     }
 }
