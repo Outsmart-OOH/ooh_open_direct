@@ -189,6 +189,59 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "Status": "UNAVAILABLE",
+                    "Reason": "Duplication",
+                    "Comment":"",
+                    "Context":
+                    {
+                        "Name": "Inventory",
+                        "Type": "Frames",
+                        "DataSource": "Space",
+                        "Target": "frame_id",
+                        "TargetValues": [
+                            "1234931338"
+                        ]
+                    },
+                    "Targeting": [
+                        {
+                            "Name": "Inventory",
+                            "Type": "Frames",
+                            "DataSource": "Space",
+                            "Target": "frame_id",
+                            "TargetValues": [
+                                "1234931339"
+                            ]
+                        },
+                        {
+                            "Name": "Delivery",
+                            "Type": "Frames",
+                            "DataSource": "ShareOfDisplay",
+                            "Target": "ShareOfTime",
+                            "TargetValues": [
+                                "15"
+                            ]
+                        },
+                        {
+                            "Name": "Inventory",
+                            "Type": "Audience",
+                            "DataSource": "Metrics",
+                            "Target": "Impacts",
+                            "TargetValues": [
+                                "10000"
+                            ]
+                        },
+                        {
+                            "Name": "Investment",
+                            "Type": "Total",
+                            "DataSource": "GBP",
+                            "Target": "Fixed",
+                            "TargetValues": [
+                                "150"
+                            ]
+                        }
+                    ]
                 }
             ],
             "Price": 150
