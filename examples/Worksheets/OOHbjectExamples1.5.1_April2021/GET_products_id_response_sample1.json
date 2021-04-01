@@ -12,7 +12,7 @@
     "DeliveryType": "Guaranteed",
     "Description": "All Digital 6-sheets in Metropolis",
     "Icon": "http://<domain>/<path>/icon.jpg",
-    "Id": "456369",
+    "Id": "456500",
     "Languages": [
         "EN"
     ],
@@ -78,9 +78,9 @@
             "Target": "Days",
             "TargetValues": [],
             "Selectable": true,
-            "Minimum": 1,
-            "Maximum": 7,
-            "Increment": 1,
+            "Minimum": 7,
+            "Maximum": 364,
+            "Increment": 7,
             "Default": 7
         },
         {
@@ -166,7 +166,20 @@
             "Type": "Audience",
             "DataSource": "Metrics",
             "Target": "Impacts",
-            "Selectable": true
+            "Selectable": true,
+            "Minimum": 100000,
+            "Maximum": 10000000,
+            "Increment": 1
+        },
+        {
+            "Name": "Investment",
+            "Type": "Total",
+            "DataSource": "GBP",
+            "Target": "Fixed",
+            "Selectable": true,
+            "Minimum": 5000,
+            "Maximum": 5000000,
+            "Increment": 1
         },
         {
             "Name": "Prohibitions",
@@ -179,7 +192,62 @@
             ]
         }
     ],
-    "AvailsGroupBy": [],
+    "AvailsGroupBy": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_type"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "format"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "environment"
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "Time",
+            "Target": "Days"
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "ShareOfTime"
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "Spot"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Metrics",
+            "Target": "Impacts"
+        },
+        {
+            "Name": "Investment",
+            "Type": "Total",
+            "DataSource": "GBP",
+            "Target": "Fixed"
+        }
+    ],
     "TimeZone": "GMT",
     "Url": "http://<domain>/<path>/creativespec.aspx"
 }
