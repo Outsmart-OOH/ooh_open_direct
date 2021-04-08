@@ -95,7 +95,7 @@
             "Type": "Audience",
             "DataSource": "Metrics",
             "Target": "Impacts",
-            "TargetValues": ["8000"]
+            "TargetValues": ["800000"]
         }
 
     ]

@@ -52,7 +52,7 @@
             "Type": "Frames",
             "DataSource": "Space",
             "Target": "frame_id",
-            "Minimum": 5,
+            "Minimum": 4,
             "Maximum": 5
         },
         {
