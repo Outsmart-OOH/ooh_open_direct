@@ -1,0 +1,112 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/products/products_avails_request.json",
+    "AccountId": "23873345",
+    "EndDate": "2014-12-10T18:00:00.000Z",
+    "ProductIds": [ "456500" ],
+    "StartDate": "2014-12-05T06:00:00.000Z",
+
+    "AvailabilityFields": [
+
+
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Time",
+            "Target": "Days"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Time",
+            "Target": "Hours"
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "ShareOfTime"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Metrics",
+            "Target": "Impacts"
+        },
+        {
+            "Name": "Investment",
+            "Type": "Total",
+            "DataSource": "GBP",
+            "Target": "Fixed"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Availability",
+            "DataSource": "<Media Owner>",
+            "Target":"Unavailable"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Availability",
+            "DataSource": "<Media Owner>",
+            "Target":"Available"
+        }
+
+
+    ],
+
+
+    "Grouping": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id"
+        }
+    ],
+
+    "Targeting": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id",
+            "TargetValues": [
+                "1234931339",
+                "1235190735",
+                "1234931338",
+                "1235191547"
+            ]
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "Time",
+            "Target": "Days",
+            "TargetValues": [ "5", "6" ]
+
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "ShareOfTime",
+            "TargetValues": ["20"]
+
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "Spot",
+            "TargetValues": ["5"]
+
+        }
+
+    ]
+} 

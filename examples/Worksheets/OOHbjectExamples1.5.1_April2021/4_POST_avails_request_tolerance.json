@@ -1,0 +1,75 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/products/products_avails_request.json",
+    "AccountId": "23873345",
+    "StartDate": "2021-07-05T06:00:00.000Z",
+    "EndDate": "2021-05-18T18:00:00.000Z",
+    "ProductIds": [
+        "456500"
+    ],
+    "AvailabilityFields": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Time",
+            "Target": "Days"
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "ShareOfTime"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Metrics",
+            "Target": "Impacts"
+        },
+        {
+            "Name": "Investment",
+            "Type": "Total",
+            "DataSource": "GBP",
+            "Target": "Fixed"
+        }
+    ],
+    "Grouping": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id"
+        }
+    ],
+    "Targeting": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id",
+            "Minimum": 5,
+            "Maximum": 5
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Metrics",
+            "Target": "Impacts",
+            "Minimum": 5000000,
+            "Maximum": 5500000
+        },
+        {
+            "Name": "Investment",
+            "Type": "Total",
+            "DataSource": "GBP",
+            "Target": "Fixed",
+            "Minimum": 5000,
+            "Maximum": 6000
+        }
+    ]
+}

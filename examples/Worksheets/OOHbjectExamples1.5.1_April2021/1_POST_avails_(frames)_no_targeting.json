@@ -1,0 +1,52 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/products/products_avails_request.json",
+    "AccountId": "23873345",
+    "EndDate": "2014-12-10T18:00:00.000Z",
+    "ProductIds": [ "456500" ],
+    "StartDate": "2014-12-05T06:00:00.000Z",
+
+    "AvailabilityFields": [
+
+
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id"
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "ShareOfTime"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Metrics",
+            "Target": "Impacts"
+        },
+        {
+            "Name": "Investment",
+            "Type": "Total",
+            "DataSource": "GBP",
+            "Target": "Fixed"
+        }
+
+
+    ],
+
+
+    "Grouping": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id"
+        }
+    ],
+
+    "Targeting": [
+
+    ]
+} 
