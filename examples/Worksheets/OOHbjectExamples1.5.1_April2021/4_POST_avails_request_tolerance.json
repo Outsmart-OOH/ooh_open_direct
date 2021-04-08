@@ -51,15 +51,16 @@
             "Name": "Inventory",
             "Type": "Frames",
             "DataSource": "Space",
-            "Target": "frame_id",
+            "Target": "frame_id_count",
             "Minimum": 4,
-            "Maximum": 5
+            "Maximum": 6
         },
         {
             "Name": "Inventory",
             "Type": "Audience",
             "DataSource": "Metrics",
             "Target": "Impacts",
+            "TargetValues": ["5200000"],
             "Minimum": 5000000,
             "Maximum": 5500000
         },
