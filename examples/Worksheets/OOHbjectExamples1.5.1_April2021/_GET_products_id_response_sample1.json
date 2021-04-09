@@ -47,7 +47,7 @@
             "Name": "Inventory",
             "Type": "Frames",
             "DataSource": "Space",
-            "Target": "frame_id_count", 
+            "Target": "frame_id", 
             "TargetValues": [
             ],
             "Selectable": true,
