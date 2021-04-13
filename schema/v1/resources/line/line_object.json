@@ -90,31 +90,9 @@
             "title": "State Change Reason",
             "description": "The reason why the state was changed by the publisher. The reason must be specified if: The publisher declined the booking or reservation, The publisher or user canceled the flight."
         },
-        "Stats": {
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats_object.json",
-            "$id": "#/properties/",
-            "type": "object",
-            "title": "Stats",
-            "description": "Reports on the schedule generated to fulfill the targeting requirements detailed in the Order Line (pre-flight stage), and the performance of the schedule when the campaign is in flight and/or completed."
-        },
         "Targeting": {
             "$id": "#/properties/Targeting",
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
-        },
-        "ProductUnAvails": {
-            "$id": "#/properties/ProductUnAvails",
-            "type": "array",
-            "title": "Array of ProductUnAvails",
-            "description": "This Object is used to show the EXCEPTION where the draft/reserve/booking request failed because of a change in product availability between booking states",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json",
-                "required": [
-                    "Currency",
-                    "ProductId",
-                    "Targeting",
-                    "Price"
-                ]
-            }
         },
         "ProductAvails": {
             "$id": "#/properties/ProductAvails",
