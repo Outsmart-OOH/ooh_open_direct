@@ -37,11 +37,7 @@
                 "1234931569",
                 "1235202465"
             ],
-            "Selectable": true,
-            "Minimum": 2,
-            "Maximum": 6,
-            "Increment": 2,
-            "Default": 6
+            "Selectable": true
         },
         {
             "Name": "Inventory",
