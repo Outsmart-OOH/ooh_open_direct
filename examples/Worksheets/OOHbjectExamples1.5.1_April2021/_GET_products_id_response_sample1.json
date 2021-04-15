@@ -40,7 +40,7 @@
         },
         {
             "Name": "Inventory",
-            "Type": "Frames",
+            "Type": "FrameCount",
             "DataSource": "Space",
             "Target": "frame_id",
             "TargetValues": [],
