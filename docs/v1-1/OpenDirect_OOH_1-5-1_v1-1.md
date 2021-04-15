@@ -840,7 +840,7 @@ e.g.
 
 Booking line date 08/11/20 00:00 to 17/11/20 00:00
 
-Delivery.Frames.Time.Hours = [1,2,3,4,……,24,25,26,…..48,……,72,…..,96,……120….144,145,….,168]
+Delivery.Frames.Time.Hours = [0,1,2,3,4,……,24,25,26,…..48,……,72,…..,96,……120….144,145,….,167]
 
 The OOHbject field *Selectable* indicates if this array is further targetable e.g. the Hours array is returned, and if the Hours are flagged as *Selectable*, the buyer may select Hours [6,7,8,9,30,31,32,33].
 
