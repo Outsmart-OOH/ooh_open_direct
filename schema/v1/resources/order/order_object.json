@@ -19,13 +19,6 @@
             "description": "The ID of the account that identifies the advertiser and buyer that own the order.",
             "maxLength": 36
         },
-        "Brand":{
-            "$id": "#/properties/Brand",
-            "type": "string",
-            "title": "Brand",
-            "description": "A descriptive name for the brand being advertised.",
-            "maxLength": 25
-        },
         "AdvertiserBrandId":{
             "$id": "#/properties/AdvertiserBrandId",
             "type": "string",

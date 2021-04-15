@@ -23,12 +23,11 @@
     "BuyerIdAccess": [],
     "ThirdPartyIdAccess": [],
     "TargetTypes": [
-       
         {
             "Name": "Inventory",
             "Type": "Frames",
             "DataSource": "Space",
-            "Target": "frame_id", 
+            "Target": "frame_id",
             "TargetValues": [
                 "1234931339",
                 "1235190735",
@@ -43,9 +42,8 @@
             "Name": "Inventory",
             "Type": "Frames",
             "DataSource": "Space",
-            "Target": "frame_id", 
-            "TargetValues": [
-            ],
+            "Target": "frame_id",
+            "TargetValues": [],
             "Selectable": true,
             "Minimum": 2,
             "Maximum": 6,
