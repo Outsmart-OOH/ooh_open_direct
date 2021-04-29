@@ -1,3 +1,5 @@
+
+
 {
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/products/products_response.json",
     "ActiveDate": "2012-12-10T18:00:00.000Z",
@@ -10,9 +12,9 @@
     "BasePrice": 10000,
     "Currency": "GBP",
     "DeliveryType": "Guaranteed",
-    "Description": "All Digital 6-sheets in Metropolis",
+    "Description": "Paper 6-sheets in Metropolis",
     "Icon": "http://<domain>/<path>/icon.jpg",
-    "Id": "456500",
+    "Id": "456800",
     "Languages": [
         "EN"
     ],
@@ -44,11 +46,7 @@
             "DataSource": "Space",
             "Target": "frame_id",
             "TargetValues": [],
-            "Selectable": true,
-            "Minimum": 2,
-            "Maximum": 6,
-            "Increment": 2,
-            "Default": 6
+            "Selectable": true
         },
         {
             "Name": "Inventory",
@@ -56,7 +54,7 @@
             "DataSource": "Space",
             "Target": "frame_type",
             "TargetValues": [
-                "digital moving image"
+                "static"
             ]
         },
         {
@@ -66,17 +64,6 @@
             "Target": "format",
             "TargetValues": [
                 "6 sheets"
-            ]
-        },
-        {
-            "Name": "Inventory",
-            "Type": "Frames",
-            "DataSource": "Space",
-            "Target": "environment",
-            "TargetValues": [
-                "Rail Stations",
-                "Roadside",
-                "Underground"
             ]
         },
         {
@@ -94,100 +81,22 @@
         {
             "Name": "Delivery",
             "Type": "Frames",
-            "DataSource": "ShareOfDisplay",
-            "Target": "ShareOfTime",
-            "TargetValues": [],
-            "Selectable": true,
-            "Minimum": 2,
-            "Maximum": 100,
-            "Increment": 1,
-            "Default": 16.6
+            "DataSource": "PostingDay",
+            "Target": "Weekpart",
+            "TargetValues": ["Monday"],
+            "Selectable": false
         },
         {
             "Name": "Delivery",
             "Type": "Frames",
             "DataSource": "ShareOfDisplay",
-            "Target": "Spot",
+            "Target": "ShareOfTime",
             "TargetValues": [],
             "Selectable": true,
-            "Minimum": 5,
-            "Maximum": 30,
-            "Increment": 5,
-            "Default": 5
-        },
-        {
-            "Name": "Distribution",
-            "Type": "Frames",
-            "DataSource": "ShareOfDisplay",
-            "Target": "Hour",
-            "TargetValues": [
-                "Fixed"
-            ]
-        },
-        {
-            "Name": "Inventory",
-            "Type": "Audience",
-            "DataSource": "Route",
-            "Target": "age",
-            "TargetValues": [
-                "15-17",
-                "18-24",
-                "25-29",
-                "30-34",
-                "35-39",
-                "40-44",
-                "45-49",
-                "50-54",
-                "55-59",
-                "60-64"
-            ],
-            "Selectable": true
-        },
-        {
-            "Name": "Inventory",
-            "Type": "Audience",
-            "DataSource": "Route",
-            "Target": "sex",
-            "TargetValues": [
-                "Male",
-                "Female"
-            ],
-            "Selectable": true
-        },
-        {
-            "Name": "Inventory",
-            "Type": "Audience",
-            "DataSource": "Route",
-            "Target": "affluence",
-            "TargetValues": [
-                "A",
-                "B",
-                "C1",
-                "C2",
-                "D",
-                "E"
-            ],
-            "Selectable": true
-        },
-        {
-            "Name": "Inventory",
-            "Type": "Audience",
-            "DataSource": "Metrics",
-            "Target": "Impacts",
-            "Selectable": true,
-            "Minimum": 100000,
-            "Maximum": 10000000,
-            "Increment": 1
-        },
-        {
-            "Name": "Investment",
-            "Type": "Total",
-            "DataSource": "GBP",
-            "Target": "Fixed",
-            "Selectable": true,
-            "Minimum": 5000,
-            "Maximum": 5000000,
-            "Increment": 1
+            "Minimum": 100,
+            "Maximum": 100,
+            "Increment": 0,
+            "Default": 100
         },
         {
             "Name": "Prohibitions",
