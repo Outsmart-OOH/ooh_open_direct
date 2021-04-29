@@ -10,9 +10,9 @@
     "BasePrice": 10000,
     "Currency": "GBP",
     "DeliveryType": "Guaranteed",
-    "Description": "Paper 6-sheets in Metropolis",
+    "Description": "All Digital 6-sheets in Metropolis",
     "Icon": "http://<domain>/<path>/icon.jpg",
-    "Id": "456800",
+    "Id": "456500",
     "Languages": [
         "EN"
     ],
@@ -44,7 +44,11 @@
             "DataSource": "Space",
             "Target": "frame_id",
             "TargetValues": [],
-            "Selectable": true
+            "Selectable": true,
+            "Minimum": 2,
+            "Maximum": 6,
+            "Increment": 2,
+            "Default": 6
         },
         {
             "Name": "Inventory",
@@ -52,7 +56,7 @@
             "DataSource": "Space",
             "Target": "frame_type",
             "TargetValues": [
-                "static"
+                "digital moving image"
             ]
         },
         {
@@ -90,22 +94,80 @@
         {
             "Name": "Delivery",
             "Type": "Frames",
-            "DataSource": "PostingDay",
-            "Target": "Weekpart",
-            "TargetValues": ["Monday"],
-            "Selectable": false
+            "DataSource": "ShareOfDisplay",
+            "Target": "ShareOfTime",
+            "TargetValues": [],
+            "Selectable": true,
+            "Minimum": 2,
+            "Maximum": 100,
+            "Increment": 1,
+            "Default": 16.6
         },
         {
             "Name": "Delivery",
             "Type": "Frames",
             "DataSource": "ShareOfDisplay",
-            "Target": "ShareOfTime",
+            "Target": "Spot",
             "TargetValues": [],
             "Selectable": true,
-            "Minimum": 100,
-            "Maximum": 100,
-            "Increment": 0,
-            "Default": 100
+            "Minimum": 5,
+            "Maximum": 30,
+            "Increment": 5,
+            "Default": 5
+        },
+        {
+            "Name": "Distribution",
+            "Type": "Frames",
+            "DataSource": "ShareOfDisplay",
+            "Target": "Hour",
+            "TargetValues": [
+                "Fixed"
+            ]
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Route",
+            "Target": "age",
+            "TargetValues": [
+                "15-17",
+                "18-24",
+                "25-29",
+                "30-34",
+                "35-39",
+                "40-44",
+                "45-49",
+                "50-54",
+                "55-59",
+                "60-64"
+            ],
+            "Selectable": true
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Route",
+            "Target": "sex",
+            "TargetValues": [
+                "Male",
+                "Female"
+            ],
+            "Selectable": true
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Route",
+            "Target": "affluence",
+            "TargetValues": [
+                "A",
+                "B",
+                "C1",
+                "C2",
+                "D",
+                "E"
+            ],
+            "Selectable": true
         },
         {
             "Name": "Inventory",
