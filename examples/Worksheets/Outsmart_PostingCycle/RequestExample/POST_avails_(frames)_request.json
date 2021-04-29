@@ -1,0 +1,61 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/products/products_avails_request.json",
+    "AccountId": "23873345",
+    "EndDate": "2021-02-07T00:00:00Z",
+    "ProductIds": [
+        "RoadsideClassic48s"
+    ],
+    "StartDate": "2021-11-01T00:00:00Z",
+    "AvailabilityFields": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Audience",
+            "DataSource": "Metrics",
+            "Target": "Impacts"
+        },
+        {
+            "Name": "Investment",
+            "Type": "Total",
+            "DataSource": "GBP",
+            "Target": "Fixed"
+        }
+    ],
+    "Grouping": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id"
+        }
+    ],
+    "Targeting": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id",
+            "TargetValues": [
+                "1234931339",
+                "1235190735",
+                "1234931338",
+                "1235191547"
+            ]
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
+            "DataSource": "Outsmart",
+            "Target": "PostingCycle",
+            "TargetValues": [
+                "2021-2",
+                "2021-3"
+            ]
+        }
+    ]
+}

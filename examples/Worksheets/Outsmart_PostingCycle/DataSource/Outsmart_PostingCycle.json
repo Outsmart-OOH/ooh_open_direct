@@ -1,0 +1,66 @@
+{
+    "Name": "Delivery",
+    "Type": "Frames",
+    "DataSource": "Outsmart",
+    "Target": "PostingCycle",
+    "TargetValues": [
+        "2021-1",
+        "2021-2",
+        "2021-3",
+        "2021-4",
+        "2021-5",
+        "2021-6",
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2021-13",
+        "2021-14",
+        "2021-15",
+        "2021-16",
+        "2021-17",
+        "2021-18",
+        "2021-19",
+        "2021-20",
+        "2021-21",
+        "2021-22",
+        "2021-23",
+        "2021-24",
+        "2021-25",
+        "2021-26"
+    ],
+    "Reference": [
+        {
+            "PostingCycle": "2021-1",
+            "StartDate": "2020-12-28T00:00:00Z",
+            "EndDate": "2021-01-10T00:00:00Z",
+            "Invoiced": "Jan"
+        },
+        {
+            "PostingCycle": "2021-2",
+            "StartDate": "2021-01-11T00:00:00Z",
+            "EndDate": "2021-01-24T00:00:00Z",
+            "Invoiced": "Jan"
+        },
+        {
+            "PostingCycle": "2021-3",
+            "StartDate": "2021-01-25T00:00:00Z",
+            "EndDate": "2021-02-07T00:00:00Z",
+            "Invoiced": "Jan"
+        },
+        {
+            "PostingCycle": "2021-4",
+            "StartDate": "2021-02-08T00:00:00Z",
+            "EndDate": "2021-02-21T00:00:00Z",
+            "Invoiced": "Feb"
+        },
+        {
+            "PostingCycle": "etc",
+            "StartDate": "etc",
+            "EndDate": "etc",
+            "Invoiced": "etc"
+        }
+    ]
+}
