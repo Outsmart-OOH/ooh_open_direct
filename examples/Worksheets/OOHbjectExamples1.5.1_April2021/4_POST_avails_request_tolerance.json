@@ -49,9 +49,9 @@
     "Targeting": [
         {
             "Name": "Inventory",
-            "Type": "Frames",
+            "Type": "FrameCount",
             "DataSource": "Space",
-            "Target": "frame_id_count",
+            "Target": "frame_id",
             "Minimum": 4,
             "Maximum": 6
         },

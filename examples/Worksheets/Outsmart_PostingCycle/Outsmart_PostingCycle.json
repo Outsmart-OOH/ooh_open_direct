@@ -1,0 +1,11 @@
+{
+    "PostingCycle": [
+        {
+            "Year": 2021,
+            "Cycle": "1",
+            "StartDate": "2020-12-28T00:00:00Z",
+            "EndDate": "2021-01-10T00:00:00Z",
+            "Invoiced": "Jan"
+        }
+    ]
+}
