@@ -43,18 +43,6 @@
             "Type": "Total",
             "DataSource": "GBP",
             "Target": "Fixed"
-        },
-        {
-            "Name": "Inventory",
-            "Type": "Availability",
-            "DataSource": "<Media Owner>",
-            "Target":"Unavailable"
-        },
-        {
-            "Name": "Inventory",
-            "Type": "Availability",
-            "DataSource": "<Media Owner>",
-            "Target":"Available"
         }
 
 
