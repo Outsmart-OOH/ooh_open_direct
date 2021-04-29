@@ -67,6 +67,16 @@
         {
             "Name": "Delivery",
             "Type": "Frames",
+            "DataSource": "PostingDay",
+            "Target": "Weekpart",
+            "TargetValues": [
+                "Monday"
+            ],
+            "Selectable": false
+        },
+        {
+            "Name": "Delivery",
+            "Type": "Frames",
             "DataSource": "Time",
             "Target": "Days",
             "TargetValues": [],
@@ -75,16 +85,6 @@
             "Maximum": 364,
             "Increment": 7,
             "Default": 7
-        },
-        {
-            "Name": "Delivery",
-            "Type": "Frames",
-            "DataSource": "PostingDay",
-            "Target": "Weekpart",
-            "TargetValues": [
-                "Monday"
-            ],
-            "Selectable": false
         },
         {
             "Name": "Delivery",
