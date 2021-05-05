@@ -1,9 +1,4 @@
 {
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/conditional_oohbject_schema.json",
-    "Name": "Delivery",
-    "Type": "Frames",
-    "DataSource": "SPACE",
-    "Target": "frame_id",
-    "TargetValues": []
-
+    "Name":
 }
