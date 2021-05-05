@@ -199,7 +199,6 @@
 
 
 
-        
 
         {
             "if": {
@@ -220,6 +219,71 @@
                         "enum": [
                             "Time",
                             "ShareOfDisplay"
+                        ]
+                    }
+                }
+            }
+        },
+
+
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Delivery"
+                    },
+                    "Type": {
+                        "const": 
+                            "Frames"
+                    },
+                    "DataSource": {
+                        "const": [
+                            "Time"
+                        ]
+                    }
+                }
+
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Days",
+                            "DayCount",
+                            "Hours", 
+                            "Minutes", 
+                            "TimeZone"
+                        ]
+                    }
+                }
+            }
+        },
+
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Delivery"
+                    },
+                    "Type": {
+                        "const": 
+                            "Frames"
+                    },
+                    "DataSource": {
+                        "const": [
+                            "ShareOfDisplay"
+                        ]
+                    }
+                }
+
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "ShareOfTime",
+                            "Spot",
+                            "SpotBreakLength"
                         ]
                     }
                 }
