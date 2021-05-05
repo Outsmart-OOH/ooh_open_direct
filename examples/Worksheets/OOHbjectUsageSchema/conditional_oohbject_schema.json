@@ -136,7 +136,66 @@
                     }
                 }
             }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Type": {
+                        "enum": [
+                            "Total",
+                            "Frames",
+                            "Audience"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Type": {
+                        "enum": [
+                            "Frames",
+                            "Audience",
+                            "Investment"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Prohibitions"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Type": {
+                        "enum": [
+                            "Frames"
+                        ]
+                    }
+                }
+            }
         }
+        
         
     ]
 }
