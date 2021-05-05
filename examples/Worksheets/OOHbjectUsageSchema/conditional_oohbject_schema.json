@@ -130,8 +130,7 @@
                 "properties": {
                     "Type": {
                         "enum": [
-                            "Frames",
-                            "Audience"
+                            "Frames"
                         ]
                     }
                 }
@@ -287,28 +286,6 @@
                         "enum": [
                             "Time",
                             "ShareOfDisplay"
-                        ]
-                    }
-                }
-            }
-            
-        },
-        {
-            "if": {
-                "properties": {
-                    "Name": {
-                        "const": "Delivery"
-                    },
-                    "Type": {
-                        "const": "Audience"
-                    }
-                }
-            },
-            "then": {
-                "properties": {
-                    "DataSource": {
-                        "enum": [
-                            "SPACE"
                         ]
                     }
                 }
@@ -484,6 +461,12 @@
         },
 
 
+
+
+
+
+
+
         {
             "if": {
                 "properties": {
@@ -514,16 +497,33 @@
         },
 
 
-
-
-
-
-
-
-
-
-
-
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Inventory"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    },
+                    "DataSource": {
+                        "const": "Metrics"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Impacts", 
+                            "Cover", 
+                            "Reach", 
+                            "Frequency"
+                        ]
+                    }
+                }
+            }
+        },
 
 
         {
@@ -575,6 +575,173 @@
                             "ShareOfTime",
                             "Spot",
                             "SpotBreakLength"
+                        ]
+                    }
+                }
+            }
+        },
+
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Total"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Fixed"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "CPF"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "CPT"
+                        ]
+                    }
+                }
+            }
+        },
+
+
+
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    },
+                    "DataSource": {
+                        "const": "ShareOfDisplay"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Days",
+                            "Hours"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    },
+                    "DataSource": {
+                        "const": "Time"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Days",
+                            "Hours"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    },
+                    "DataSource": {
+                        "const": "Time"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Days",
+                            "Hours"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Investment"
+                    },
+                    "DataSource": {
+                        "const": "Time"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Days",
+                            "Hours"
                         ]
                     }
                 }
