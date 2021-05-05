@@ -111,7 +111,7 @@
                     "Type": {
                         "enum": [
                             "Frames",
-                            "FrameCount",
+                            "FramesCount",
                             "Audience"
                         ]
                     }
@@ -196,7 +196,80 @@
             }
         },
 
+
+
         
+
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Inventory"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+            
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Inventory"
+                    },
+                    "Type": {
+                        "const": "FramesCount"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+            
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Inventory"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "SPACE",
+                            "Metrics"
+                        ]
+                    }
+                }
+            }
+            
+        },
+
+
+
         {
             "if": {
                 "properties": {
@@ -220,6 +293,238 @@
             }
             
         },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Delivery"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+            
+        },
+
+
+
+
+
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Total"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "GBP"
+                        ]
+                    }
+                }
+            }
+            
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "GBP"
+                        ]
+                    }
+                }
+            }
+            
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "GBP"
+                        ]
+                    }
+                }
+            }
+            
+        },
+
+
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "ShareOfDisplay",
+                            "Time",
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+            
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "Time",
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+            
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Investment"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "Time",
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+            
+        },
+
+
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Prohibitions"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+            
+        },
+
+
+        {
+            "if": {
+                "properties": {
+                    "DataSource": {
+                        "const": "SPACE"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "frame_id",
+                            "environment",
+                            "frame_type",
+                            "dimension",
+                            "format_id",
+                            "illumination",
+                            "tv_area",
+                            "region",
+                            "conurbation",
+                            "town"
+                        ]
+                    }
+                }
+            }
+            
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         {
             "if": {
@@ -275,5 +580,10 @@
                 }
             }
         }
+
+
+
+
+
     ]
 }
