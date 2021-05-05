@@ -1,19 +1,16 @@
 {
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/conditional_oohbject_schema.json",
-
-        
-        "Name": "Delivery",
-        "Type": "Audience",
-        "DataSource": "this",
-        "Target": "this",
-        "TargetValues": [
-            "this"
-        ],
-        "Selectable": true,
-        "Default": 0,
-        "Minimum": 0,
-        "Maximum": 0,
-        "Count": 0,
-        "Increment": 0
-
+    "Name": "Delivery",
+    "Type": "Audience",
+    "DataSource": "this",
+    "Target": "this",
+    "TargetValues": [
+        "this"
+    ],
+    "Selectable": true,
+    "Default": 0,
+    "Minimum": 0,
+    "Maximum": 0,
+    "Count": 0,
+    "Increment": 0
 }
