@@ -5,6 +5,7 @@
     "title": "OOHbject",
     "description": "OOHbject object.",
     "required": [
+        "$schema",
         "Name",
         "Type",
         "DataSource",
