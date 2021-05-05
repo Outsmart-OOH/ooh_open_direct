@@ -16,7 +16,7 @@
         "Increment",
         "Default"
     ],
-    "additionalProperties": false,
+    "additionalProperties": true,
     "properties": {
         "Name": {
             "$id": "#/properties/Name",
