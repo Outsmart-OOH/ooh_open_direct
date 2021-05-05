@@ -97,7 +97,7 @@
             "title": "Defines the default number of TargetValues that are selected if the Buyer does not specify any TargetValues or the target is not selectable"
         }
     },
-    "anyOf": [
+    "allOf": [
         {
             "if": {
                 "properties": {
@@ -194,7 +194,6 @@
                 }
             }
         },
-        
         {
             "if": {
                 "properties": {
@@ -221,23 +220,19 @@
                     }
                 }
             }
-            
-        }
-
-
-    ],
-    "oneOf":[
-
+        },
         {
             "if": {
-                "properties": {
-                    "Name": {
-                        "const": "Inventory"
-                    },
-                    "Type": {
-                        "const": "Frames"
+                
+                    "properties": {
+                        "Name": {
+                            "const": "Inventory"
+                        },
+                        "Type": {
+                            "const": "Frames"
+                        }
                     }
-                }
+                
             },
             "then": {
                 "properties": {
@@ -248,7 +243,6 @@
                     }
                 }
             }
-            
         },
         {
             "if": {
@@ -270,7 +264,6 @@
                     }
                 }
             }
-            
         },
         {
             "if": {
@@ -293,11 +286,7 @@
                     }
                 }
             }
-            
         },
-
-
-
         {
             "if": {
                 "properties": {
@@ -319,13 +308,7 @@
                     }
                 }
             }
-            
         },
-
-
-
-
-
         {
             "if": {
                 "properties": {
@@ -346,7 +329,6 @@
                     }
                 }
             }
-            
         },
         {
             "if": {
@@ -368,7 +350,6 @@
                     }
                 }
             }
-            
         },
         {
             "if": {
@@ -390,10 +371,7 @@
                     }
                 }
             }
-            
         },
-
-
         {
             "if": {
                 "properties": {
@@ -416,7 +394,6 @@
                     }
                 }
             }
-            
         },
         {
             "if": {
@@ -439,7 +416,6 @@
                     }
                 }
             }
-            
         },
         {
             "if": {
@@ -462,10 +438,7 @@
                     }
                 }
             }
-            
         },
-
-
         {
             "if": {
                 "properties": {
@@ -486,19 +459,7 @@
                     }
                 }
             }
-            
         },
-
-
-
-
-
-
-
-
-        
-
-
         {
             "if": {
                 "properties": {
@@ -517,17 +478,15 @@
                 "properties": {
                     "Target": {
                         "enum": [
-                            "Impacts", 
-                            "Cover", 
-                            "Reach", 
+                            "Impacts",
+                            "Cover",
+                            "Reach",
                             "Frequency"
                         ]
                     }
                 }
             }
         },
-
-
         {
             "if": {
                 "properties": {
@@ -582,7 +541,6 @@
                 }
             }
         },
-
         {
             "if": {
                 "properties": {
@@ -646,9 +604,6 @@
                 }
             }
         },
-
-
-
         {
             "if": {
                 "properties": {
@@ -749,10 +704,5 @@
                 }
             }
         }
-
-
-
-
-
     ]
 }
