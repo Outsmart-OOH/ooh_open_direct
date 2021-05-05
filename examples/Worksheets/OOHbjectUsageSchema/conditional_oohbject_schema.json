@@ -196,10 +196,7 @@
             }
         },
 
-
-
-
-
+        
         {
             "if": {
                 "properties": {
@@ -207,11 +204,9 @@
                         "const": "Delivery"
                     },
                     "Type": {
-                        "const": 
-                            "Frames"
+                        "const": "Frames"
                     }
                 }
-
             },
             "then": {
                 "properties": {
@@ -224,8 +219,6 @@
                 }
             }
         },
-
-
         {
             "if": {
                 "properties": {
@@ -233,16 +226,12 @@
                         "const": "Delivery"
                     },
                     "Type": {
-                        "const": 
-                            "Frames"
+                        "const": "Frames"
                     },
                     "DataSource": {
-                        "const": [
-                            "Time"
-                        ]
+                        "const": "Time"
                     }
                 }
-
             },
             "then": {
                 "properties": {
@@ -250,15 +239,14 @@
                         "enum": [
                             "Days",
                             "DayCount",
-                            "Hours", 
-                            "Minutes", 
+                            "Hours",
+                            "Minutes",
                             "TimeZone"
                         ]
                     }
                 }
             }
         },
-
         {
             "if": {
                 "properties": {
@@ -266,16 +254,12 @@
                         "const": "Delivery"
                     },
                     "Type": {
-                        "const": 
-                            "Frames"
+                        "const": "Frames"
                     },
                     "DataSource": {
-                        "const": [
-                            "ShareOfDisplay"
-                        ]
+                        "const": "ShareOfDisplay"
                     }
                 }
-
             },
             "then": {
                 "properties": {
@@ -289,7 +273,5 @@
                 }
             }
         }
-        
-        
     ]
 }
