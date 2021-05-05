@@ -97,7 +97,7 @@
             "title": "Defines the default number of TargetValues that are selected if the Buyer does not specify any TargetValues or the target is not selectable"
         }
     },
-    "anyOf": [
+    "oneOf": [
         {
             "if": {
                 "properties": {
