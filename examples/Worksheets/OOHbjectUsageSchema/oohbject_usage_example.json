@@ -2,5 +2,6 @@
     "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/conditional_oohbject_schema.json",
 "Name":"Investment",
 "Type": "Total",
-"DataSource": ""
+"DataSource": "GBP",
+"Target": ""
 }

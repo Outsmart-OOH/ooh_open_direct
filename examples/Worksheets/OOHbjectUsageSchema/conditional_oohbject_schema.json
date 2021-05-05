@@ -193,6 +193,35 @@
                     }
                 }
             }
+        },
+        
+        {
+            "if": {
+                "properties": {
+                    "DataSource": {
+                        "const": "SPACE"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "frame_id",
+                            "environment",
+                            "frame_type",
+                            "dimension",
+                            "format_id",
+                            "illumination",
+                            "tv_area",
+                            "region",
+                            "conurbation",
+                            "town"
+                        ]
+                    }
+                }
+            }
+            
         }
 
 
@@ -467,34 +496,7 @@
 
 
 
-        {
-            "if": {
-                "properties": {
-                    "DataSource": {
-                        "const": "SPACE"
-                    }
-                }
-            },
-            "then": {
-                "properties": {
-                    "Target": {
-                        "enum": [
-                            "frame_id",
-                            "environment",
-                            "frame_type",
-                            "dimension",
-                            "format_id",
-                            "illumination",
-                            "tv_area",
-                            "region",
-                            "conurbation",
-                            "town"
-                        ]
-                    }
-                }
-            }
-            
-        },
+        
 
 
         {
