@@ -1,6 +1,7 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/conditional_oohbject_schema.json",
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/conditional_oohbject_schema_L2.json",
 "Name":"Inventory",
-"Type": ""
+"Type": "Frames",
+"DataSource": ""
 
 }
