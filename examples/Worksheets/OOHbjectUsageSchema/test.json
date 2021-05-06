@@ -1,0 +1,43 @@
+{
+    "ReportPublishTime": "2020-12-20T00:00:00.000Z",
+    "ReportStartTime": "2020-12-09T00:00:00.000Z",
+    "ReportEndTime": "2020-12-10T01:00:00.000Z",
+    "Report": {
+        "AccountId": "23873345",
+        "OrderId": "3479",
+        "LineId": "8",
+        "OOHProviderData":["PO7567"],
+        "Stats": [
+            {
+                "StartTime": "2020-12-09T00:00:00Z",
+                "EndTime": "2020-12-09T00:00:10Z",
+                "FrameID": "1234158956",
+                "CreativeID": "capad653"
+            },
+            {
+                "StartTime": "2020-12-09T00:02:00Z",
+                "EndTime": "2020-12-09T00:02:10Z",
+                "FrameID": "1234158956",
+                "CreativeID": "capad653"
+            },
+            {
+                "StartTime": "2020-12-09T00:03:00Z",
+                "EndTime": "2020-12-09T00:03:10Z",
+                "FrameID": "1234158956",
+                "CreativeID": "capad653"
+            },
+            {
+                "StartTime": "2020-12-09T00:04:00Z",
+                "EndTime": "2020-12-09T00:04:10Z",
+                "FrameID": "1234158956",
+                "CreativeID": "capad653"
+            },
+            {
+                "StartTime": "etc",
+                "EndTime": "etc",
+                "FrameID": "etc",
+                "CreativeID": "etc"
+            }
+        ]
+    }
+}
