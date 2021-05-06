@@ -16,7 +16,7 @@
         "Increment",
         "Default"
     ],
-    "additionalProperties": false,
+    "additionalProperties": true,
     "properties": {
         "Name": {
             "$id": "#/properties/Name",
@@ -393,110 +393,6 @@
                     "DataSource": {
                         "enum": [
                             "GBP"
-                        ]
-                    }
-                }
-            }
-        },
-        {
-            "if": {
-                "allOf": [
-                    {
-                        "properties": {
-                            "Name": {
-                                "const": "Distribution"
-                            },
-                            "Type": {
-                                "const": "Frames"
-                            }
-                        }
-                    }
-                ]
-            },
-            "then": {
-                "properties": {
-                    "DataSource": {
-                        "enum": [
-                            "ShareOfDisplay",
-                            "Time",
-                            "SPACE"
-                        ]
-                    }
-                }
-            }
-        },
-        {
-            "if": {
-                "allOf": [
-                    {
-                        "properties": {
-                            "Name": {
-                                "const": "Distribution"
-                            },
-                            "Type": {
-                                "const": "Audience"
-                            }
-                        }
-                    }
-                ]
-            },
-            "then": {
-                "properties": {
-                    "DataSource": {
-                        "enum": [
-                            "Time",
-                            "SPACE"
-                        ]
-                    }
-                }
-            }
-        },
-        {
-            "if": {
-                "allOf": [
-                    {
-                        "properties": {
-                            "Name": {
-                                "const": "Distribution"
-                            },
-                            "Type": {
-                                "const": "Investment"
-                            }
-                        }
-                    }
-                ]
-            },
-            "then": {
-                "properties": {
-                    "DataSource": {
-                        "enum": [
-                            "Time",
-                            "SPACE"
-                        ]
-                    }
-                }
-            }
-        },
-        {
-            "if": {
-                "allOf": [
-                    {
-                        "properties": {
-                            "Name": {
-                                "const": "Prohibitions"
-                            },
-                            "Type": {
-                                "const": "Frames"
-                            }
-                        }
-                    }
-                ]
-            },
-            "then": {
-                "properties": {
-                    "DataSource": {
-                        "enum": [
-                            "SPACE"
                         ]
                     }
                 }
