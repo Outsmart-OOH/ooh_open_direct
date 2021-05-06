@@ -1,0 +1,734 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/conditional_oohbject_schema.json",
+    "type": "object",
+    "title": "OOHbject",
+    "description": "OOHbject object.",
+    "required": [
+        "Name",
+        "Type",
+        "DataSource",
+        "Target",
+        "TargetValues",
+        "Selectable",
+        "Minimum",
+        "Maximum",
+        "Increment",
+        "Default"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "Name",
+            "description": "The key objects for describing OOH media campaigns and products",
+            "maxLength": 255,
+            "enum": [
+                "Inventory",
+                "Delivery",
+                "Investment",
+                "Distribution",
+                "Prohibitions"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "Type",
+            "description": "How the OOHbject is being quantified",
+            "maxLength": 255
+        },
+        "DataSource": {
+            "$id": "#/properties/DataSource",
+            "type": "string",
+            "title": "The identification and inclusion of third party data sources",
+            "maxLength": 255
+        },
+        "Target": {
+            "$id": "#/properties/Target",
+            "type": "string",
+            "title": "Description of the OOHbject Metric",
+            "maxLength": 255
+        },
+        "TargetValues": {
+            "$id": "#/properties/TargetValues",
+            "type": "array",
+            "title": "Array of one or more values ",
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/TargetValues/items",
+                "title": "Target Value item",
+                "oneOf": [
+                    {
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        "Selectable": {
+            "$id": "#/properties/Selectable",
+            "type": "boolean",
+            "title": "Defines whether a Buyer can select from the given list of TargetValues  or whether the targetValues are fixed"
+        },
+        "Count": {
+            "$id": "#/properties/Count",
+            "type": "integer",
+            "title": "Count of TargetValues"
+        },
+        "Minimum": {
+            "$id": "#/properties/Minimum",
+            "type": "number",
+            "title": "Defines the minimum number of TargetValues that must be selected"
+        },
+        "Maximum": {
+            "$id": "#/properties/Maximum",
+            "type": "number",
+            "title": "Defines the maximum number of TargetValues that must be selected"
+        },
+        "Increment": {
+            "$id": "#/properties/Increment",
+            "type": "number",
+            "title": "Defines the increments that are permitted for the targeting values"
+        },
+        "Default": {
+            "$id": "#/properties/Default",
+            "type": "number",
+            "title": "Defines the default number of TargetValues that are selected if the Buyer does not specify any TargetValues or the target is not selectable"
+        }
+    },
+    "anyOf": [
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Inventory"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Type": {
+                        "enum": [
+                            "Frames",
+                            "FramesCount",
+                            "Audience"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Delivery"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Type": {
+                        "enum": [
+                            "Frames"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Type": {
+                        "enum": [
+                            "Total",
+                            "Frames",
+                            "Audience"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Type": {
+                        "enum": [
+                            "Frames",
+                            "Audience",
+                            "Investment"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Prohibitions"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Type": {
+                        "enum": [
+                            "Frames"
+                        ]
+                    }
+                }
+            }
+        },
+
+
+        {
+            "if": {
+                "properties": {
+                    "DataSource": {
+                        "const": "SPACE"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "frame_id",
+                            "environment",
+                            "frame_type",
+                            "dimension",
+                            "format_id",
+                            "illumination",
+                            "tv_area",
+                            "region",
+                            "conurbation",
+                            "town"
+                        ]
+                    }
+                }
+            }
+        },
+
+
+
+
+
+
+
+        {
+            "if": {
+                
+                    "properties": {
+                        "Name": {
+                            "const": "Inventory"
+                        },
+                        "Type": {
+                            "const": "Frames"
+                        }
+                    }
+                
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Inventory"
+                    },
+                    "Type": {
+                        "const": "FramesCount"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Inventory"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "SPACE",
+                            "Metrics"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Delivery"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "Time",
+                            "ShareOfDisplay"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Total"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "GBP"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "GBP"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "GBP"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "ShareOfDisplay",
+                            "Time",
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "Time",
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Investment"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "Time",
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Prohibitions"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+        },
+
+
+
+
+
+
+       
+
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Inventory"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    },
+                    "DataSource": {
+                        "const": "Metrics"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Impacts",
+                            "Cover",
+                            "Reach",
+                            "Frequency"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Delivery"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    },
+                    "DataSource": {
+                        "const": "Time"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Days",
+                            "DayCount",
+                            "Hours",
+                            "Minutes",
+                            "TimeZone"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Delivery"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    },
+                    "DataSource": {
+                        "const": "ShareOfDisplay"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "ShareOfTime",
+                            "Spot",
+                            "SpotBreakLength"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Total"
+                    },
+                    "DataSource": {
+                        "const": "GBP"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Fixed"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    },
+                    "DataSource": {
+                        "const": "GBP"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "CPF"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    },
+                    "DataSource": {
+                        "const": "GBP"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "CPT"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    },
+                    "DataSource": {
+                        "const": "ShareOfDisplay"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Days",
+                            "Hours"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    },
+                    "DataSource": {
+                        "const": "Time"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Days",
+                            "Hours"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    },
+                    "DataSource": {
+                        "const": "Time"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Days",
+                            "Hours"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Investment"
+                    },
+                    "DataSource": {
+                        "const": "Time"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "Target": {
+                        "enum": [
+                            "Days",
+                            "Hours"
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
