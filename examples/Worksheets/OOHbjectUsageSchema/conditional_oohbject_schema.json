@@ -194,6 +194,8 @@
                 }
             }
         },
+
+
         {
             "if": {
                 "properties": {
@@ -221,6 +223,13 @@
                 }
             }
         },
+
+
+
+
+
+
+
         {
             "if": {
                 
@@ -460,6 +469,14 @@
                 }
             }
         },
+
+
+
+
+
+
+       
+
         {
             "if": {
                 "properties": {
@@ -549,6 +566,9 @@
                     },
                     "Type": {
                         "const": "Total"
+                    },
+                    "DataSource": {
+                        "const": "GBP"
                     }
                 }
             },
@@ -570,6 +590,9 @@
                     },
                     "Type": {
                         "const": "Frames"
+                    },
+                    "DataSource": {
+                        "const": "GBP"
                     }
                 }
             },
@@ -591,6 +614,9 @@
                     },
                     "Type": {
                         "const": "Audience"
+                    },
+                    "DataSource": {
+                        "const": "GBP"
                     }
                 }
             },
