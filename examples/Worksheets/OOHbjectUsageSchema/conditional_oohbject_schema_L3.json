@@ -100,11 +100,13 @@
     "allOf": [
         {
             "if": {
+                "allOf": [
+                    {
                 "properties": {
                     "Name": {
                         "const": "Inventory"
                     }
-                }
+                }}]
             },
             "then": {
                 "properties": {
@@ -119,12 +121,13 @@
             }
         },
         {
-            "if": {
+            "if": {"allOf": [
+                {
                 "properties": {
                     "Name": {
                         "const": "Delivery"
                     }
-                }
+                }}]
             },
             "then": {
                 "properties": {
@@ -138,11 +141,13 @@
         },
         {
             "if": {
+                "allOf": [
+                    {
                 "properties": {
                     "Name": {
                         "const": "Investment"
                     }
-                }
+                }}]
             },
             "then": {
                 "properties": {
@@ -158,11 +163,13 @@
         },
         {
             "if": {
+                "allOf": [
+                    {
                 "properties": {
                     "Name": {
                         "const": "Distribution"
                     }
-                }
+                }}]
             },
             "then": {
                 "properties": {
@@ -178,11 +185,13 @@
         },
         {
             "if": {
+                "allOf": [
+                    {
                 "properties": {
                     "Name": {
                         "const": "Prohibitions"
                     }
-                }
+                }}]
             },
             "then": {
                 "properties": {
@@ -196,11 +205,13 @@
         },
         {
             "if": {
+                "allOf": [
+                    {
                 "properties": {
                     "DataSource": {
                         "const": "SPACE"
                     }
-                }
+                }}]
             },
             "then": {
                 "properties": {
@@ -224,12 +235,6 @@
 
 
 
-
-
-
-
-
-        
         {
             "if": {
                 "allOf": [
@@ -259,14 +264,16 @@
             "if": {
                 "allOf": [
                     {
-                "properties": {
-                    "Name": {
-                        "const": "Inventory"
-                    },
-                    "Type": {
-                        "const": "FramesCount"
+                        "properties": {
+                            "Name": {
+                                "const": "Inventory"
+                            },
+                            "Type": {
+                                "const": "FramesCount"
+                            }
+                        }
                     }
-                }}]
+                ]
             },
             "then": {
                 "properties": {
@@ -282,14 +289,16 @@
             "if": {
                 "allOf": [
                     {
-                "properties": {
-                    "Name": {
-                        "const": "Inventory"
-                    },
-                    "Type": {
-                        "const": "Audience"
+                        "properties": {
+                            "Name": {
+                                "const": "Inventory"
+                            },
+                            "Type": {
+                                "const": "Audience"
+                            }
+                        }
                     }
-                }}]
+                ]
             },
             "then": {
                 "properties": {
@@ -302,19 +311,20 @@
                 }
             }
         },
-
         {
             "if": {
                 "allOf": [
                     {
-                "properties": {
-                    "Name": {
-                        "const": "Delivery"
-                    },
-                    "Type": {
-                        "const": "Frames"
+                        "properties": {
+                            "Name": {
+                                "const": "Delivery"
+                            },
+                            "Type": {
+                                "const": "Frames"
+                            }
+                        }
                     }
-                }}]
+                ]
             },
             "then": {
                 "properties": {
@@ -331,14 +341,16 @@
             "if": {
                 "allOf": [
                     {
-                "properties": {
-                    "Name": {
-                        "const": "Investment"
-                    },
-                    "Type": {
-                        "const": "Total"
+                        "properties": {
+                            "Name": {
+                                "const": "Investment"
+                            },
+                            "Type": {
+                                "const": "Total"
+                            }
+                        }
                     }
-                }}]
+                ]
             },
             "then": {
                 "properties": {
@@ -354,14 +366,16 @@
             "if": {
                 "allOf": [
                     {
-                "properties": {
-                    "Name": {
-                        "const": "Investment"
-                    },
-                    "Type": {
-                        "const": "Frames"
+                        "properties": {
+                            "Name": {
+                                "const": "Investment"
+                            },
+                            "Type": {
+                                "const": "Frames"
+                            }
+                        }
                     }
-                }}]
+                ]
             },
             "then": {
                 "properties": {
@@ -377,14 +391,16 @@
             "if": {
                 "allOf": [
                     {
-                "properties": {
-                    "Name": {
-                        "const": "Investment"
-                    },
-                    "Type": {
-                        "const": "Audience"
+                        "properties": {
+                            "Name": {
+                                "const": "Investment"
+                            },
+                            "Type": {
+                                "const": "Audience"
+                            }
+                        }
                     }
-                }}]
+                ]
             },
             "then": {
                 "properties": {
@@ -400,14 +416,16 @@
             "if": {
                 "allOf": [
                     {
-                "properties": {
-                    "Name": {
-                        "const": "Distribution"
-                    },
-                    "Type": {
-                        "const": "Frames"
+                        "properties": {
+                            "Name": {
+                                "const": "Distribution"
+                            },
+                            "Type": {
+                                "const": "Frames"
+                            }
+                        }
                     }
-                }}]
+                ]
             },
             "then": {
                 "properties": {
@@ -425,14 +443,16 @@
             "if": {
                 "allOf": [
                     {
-                "properties": {
-                    "Name": {
-                        "const": "Distribution"
-                    },
-                    "Type": {
-                        "const": "Audience"
+                        "properties": {
+                            "Name": {
+                                "const": "Distribution"
+                            },
+                            "Type": {
+                                "const": "Audience"
+                            }
+                        }
                     }
-                }}]
+                ]
             },
             "then": {
                 "properties": {
@@ -449,14 +469,16 @@
             "if": {
                 "allOf": [
                     {
-                "properties": {
-                    "Name": {
-                        "const": "Distribution"
-                    },
-                    "Type": {
-                        "const": "Investment"
+                        "properties": {
+                            "Name": {
+                                "const": "Distribution"
+                            },
+                            "Type": {
+                                "const": "Investment"
+                            }
+                        }
                     }
-                }}]
+                ]
             },
             "then": {
                 "properties": {
@@ -473,14 +495,16 @@
             "if": {
                 "allOf": [
                     {
-                "properties": {
-                    "Name": {
-                        "const": "Prohibitions"
-                    },
-                    "Type": {
-                        "const": "Frames"
+                        "properties": {
+                            "Name": {
+                                "const": "Prohibitions"
+                            },
+                            "Type": {
+                                "const": "Frames"
+                            }
+                        }
                     }
-                }}]
+                ]
             },
             "then": {
                 "properties": {
@@ -492,8 +516,5 @@
                 }
             }
         }
-
-
-
     ]
 }
