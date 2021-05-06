@@ -301,6 +301,196 @@
                     }
                 }
             }
+        },
+
+        {
+            "if": {
+                "allOf": [
+                    {
+                "properties": {
+                    "Name": {
+                        "const": "Delivery"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }}]
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "Time",
+                            "ShareOfDisplay"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "allOf": [
+                    {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Total"
+                    }
+                }}]
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "GBP"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "allOf": [
+                    {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }}]
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "GBP"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "allOf": [
+                    {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    }
+                }}]
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "GBP"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "allOf": [
+                    {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }}]
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "ShareOfDisplay",
+                            "Time",
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "allOf": [
+                    {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    }
+                }}]
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "Time",
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "allOf": [
+                    {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Investment"
+                    }
+                }}]
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "Time",
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "allOf": [
+                    {
+                "properties": {
+                    "Name": {
+                        "const": "Prohibitions"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }}]
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
         }
 
 
