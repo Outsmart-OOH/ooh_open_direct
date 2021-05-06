@@ -100,13 +100,13 @@
     "allOf": [
         {
             "if": {
-                "allOf": [
-                    {
-                "properties": {
-                    "Name": {
-                        "const": "Inventory"
-                    }
-                }}]
+                
+                        "properties": {
+                            "Name": {
+                                "const": "Inventory"
+                            }
+                        }
+                   
             },
             "then": {
                 "properties": {
@@ -121,13 +121,14 @@
             }
         },
         {
-            "if": {"allOf": [
-                {
-                "properties": {
-                    "Name": {
-                        "const": "Delivery"
-                    }
-                }}]
+            "if": {
+                
+                        "properties": {
+                            "Name": {
+                                "const": "Delivery"
+                            }
+                        }
+                  
             },
             "then": {
                 "properties": {
@@ -141,13 +142,13 @@
         },
         {
             "if": {
-                "allOf": [
-                    {
-                "properties": {
-                    "Name": {
-                        "const": "Investment"
-                    }
-                }}]
+                
+                        "properties": {
+                            "Name": {
+                                "const": "Investment"
+                            }
+                        }
+                 
             },
             "then": {
                 "properties": {
@@ -163,13 +164,13 @@
         },
         {
             "if": {
-                "allOf": [
-                    {
-                "properties": {
-                    "Name": {
-                        "const": "Distribution"
-                    }
-                }}]
+                
+                        "properties": {
+                            "Name": {
+                                "const": "Distribution"
+                            }
+                        }
+                 
             },
             "then": {
                 "properties": {
@@ -185,13 +186,13 @@
         },
         {
             "if": {
-                "allOf": [
-                    {
-                "properties": {
-                    "Name": {
-                        "const": "Prohibitions"
-                    }
-                }}]
+                
+                        "properties": {
+                            "Name": {
+                                "const": "Prohibitions"
+                            }
+                        }
+                 
             },
             "then": {
                 "properties": {
@@ -205,13 +206,13 @@
         },
         {
             "if": {
-                "allOf": [
-                    {
-                "properties": {
-                    "DataSource": {
-                        "const": "SPACE"
-                    }
-                }}]
+                
+                        "properties": {
+                            "DataSource": {
+                                "const": "SPACE"
+                            }
+                        }
+                 
             },
             "then": {
                 "properties": {
@@ -232,9 +233,6 @@
                 }
             }
         },
-
-
-
         {
             "if": {
                 "allOf": [
