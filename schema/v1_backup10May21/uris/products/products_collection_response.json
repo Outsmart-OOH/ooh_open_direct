@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/products/products_collection_response.json",
+    "type": "object",
+    "title": "Response for a collection of Products",
+    "description": "The schema of a response that gives a collection of Products",
+    "required": [
+        "Products"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string"
+        },
+        "Products": {
+            "$id": "#/properties/Products",
+            "type": "array",
+            "title": "Array of Products",
+            "description": "Collection of Products",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/product/product_object.json",
+                "required": [
+                    "ActiveDate",
+                    "Id",
+                    "Name",
+                    "TargetTypes"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/size_object.json",
+    "type": "object",
+    "title": "Size",
+    "description": "Size object.",
+    "required": [
+        "Width",
+        "Height"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "Width": {
+            "$id": "#/properties/width",
+            "type": "integer",
+            "title": "Width",
+            "description": "The width of accepted creative size in pixels."
+        },
+        "Height": {
+            "$id": "#/properties/height",
+            "type": "integer",
+            "title": "Height",
+            "description": "The height of accepted creative size in pixels."
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/accounts/accounts_response.json",
+    "type": "object",
+    "title": "Response for a single Account",
+    "description": "The schema of a response that gives a single Account",
+    "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/account/account_object.json",
+    "required": [
+        "AdvertiserId",
+        "BuyerId",
+        "ThirdPartyId",
+        "Id",
+        "Name"
+    ]
+}

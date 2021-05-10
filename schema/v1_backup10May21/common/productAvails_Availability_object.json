@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object.json",
+    "type": "array",
+    "title": "ProductAvails Availability array",
+    "description": "Defines the response to a request for product availability and pricing information",
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "Status": {
+            "$id": "#/properties/Status",
+            "type": "string",
+            "title": "Status",
+            "description": "The ID of the account that identifies the buyer, advertiser and any other stakeholders.",
+            "enum": [
+                "Available",
+                "Partially Available",
+                "Unavailable"
+            ]
+        },
+        "Reason": {
+            "$id": "#/properties/Reason",
+            "type": "string",
+            "title": "Reason",
+            "description": "State the reason if Partially Available ot Unavailable"
+        },
+        "Comment": {
+            "$id": "#/properties/Comment",
+            "type": "string",
+            "title": "Comment",
+            "description": "Free text for an availability comment"
+        },
+        "Context": {
+            "$id": "#/properties/Context",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
+        },
+        "Targeting": {
+            "$id": "#/properties/Targeting",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
+        }
+
+    }
+}

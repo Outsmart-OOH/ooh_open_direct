@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/lines/lines_request.json",
+    "type": "object",
+    "title": "Request for a single Line",
+    "description": "The schema of a request that gives a single Line",
+    "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/line/line_object.json",
+    "required": [
+        "EndDate",
+        "ProductId",
+        "StartDate",
+        "Targeting",
+        "Name"
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json",
+    "type": "object",
+    "title": "ProductAvails object",
+    "description": "Defines the response to a request for product availability and pricing information",
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "ProductId": {
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/product/product_id_string.json"
+        },
+        "AccountId": {
+            "$id": "#/properties/AccountId",
+            "type": "string",
+            "title": "Account ID",
+            "description": "The ID of the account that identifies the buyer, advertiser and any other stakeholders."
+        },
+        "Currency": {
+            "$id": "#/properties/Currency",
+            "type": "string"
+        },
+        "Availability": {
+            "$id": "#/properties/Availability",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object.json"
+        },
+        "Price": {
+            "$id": "#/properties/Price",
+            "type": "number",
+            "title": "Price",
+            "description": "The Price of the product"
+        }
+
+    }
+}
