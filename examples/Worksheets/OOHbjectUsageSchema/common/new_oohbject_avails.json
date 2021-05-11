@@ -76,8 +76,8 @@
             "title": "Defines the maximum number of TargetValues that must be selected"
         }
     },
-    "anyOf": [
-        {
+    
+        "oneOf":[{
             "if": {
                 "properties": {
                     "Name": {
@@ -90,7 +90,7 @@
                     "Type": {
                         "enum": [
                             "Frames",
-                            "Audeince",
+                            "Audience",
                             "Investment"
                         ]
                     }
@@ -106,6 +106,6 @@
                     }
                 }
             }
-        }
-    ]
+        }]
+    
 }
