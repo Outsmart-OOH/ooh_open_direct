@@ -71,8 +71,6 @@
             "title": "Defines the maximum number of TargetValues that must be selected"
         }
     },
-
-    
     "oneOf": [
         {
             "if": {
@@ -104,25 +102,18 @@
                 }
             }
         }
-
-
-        
     ],
-    "allOf":[
+    "allOf": [
         {
             "if": {
-                "allOf": [
-                    {
-                        "properties": {
-                            "Name": {
-                                "const": "Inventory"
-                            },
-                            "Type": {
-                                "const": "Frames"
-                            }
-                        }
+                "properties": {
+                    "Name": {
+                        "const": "Inventory"
+                    },
+                    "Type": {
+                        "const": "Frames"
                     }
-                ]
+                }
             },
             "then": {
                 "properties": {
