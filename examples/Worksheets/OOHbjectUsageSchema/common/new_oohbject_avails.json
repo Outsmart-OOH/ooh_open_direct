@@ -103,7 +103,7 @@
             }
         }
     ],
-    "anyOf": [
+    "allOf": [
         {
             "if": {
                 "properties": {
@@ -234,7 +234,6 @@
                 }
             }
         },
-
         {
             "if": {
                 "properties": {
