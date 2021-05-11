@@ -255,6 +255,28 @@
                     }
                 }
             }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Investment"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "Time",
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
         }
     ]
 }
