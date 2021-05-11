@@ -31,12 +31,7 @@
             "type": "string",
             "title": "Type",
             "description": "How the OOHbject is being quantified",
-            "maxLength": 255,
-            "enum": [
-                "Frames",
-                "Audience",
-                "Investment"
-            ]
+            "maxLength": 255
         },
         "DataSource": {
             "$id": "#/properties/DataSource",
@@ -76,8 +71,8 @@
             "title": "Defines the maximum number of TargetValues that must be selected"
         }
     },
-    
-        "oneOf":[{
+    "oneOf": [
+        {
             "if": {
                 "properties": {
                     "Name": {
@@ -106,6 +101,6 @@
                     }
                 }
             }
-        }]
-    
+        }
+    ]
 }
