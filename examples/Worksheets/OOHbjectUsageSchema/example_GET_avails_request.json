@@ -47,7 +47,7 @@
         {
             "Name": "Inventory",
             "Type": "Frames",
-            "DataSource": "Space",
+            "DataSource": "SPACE",
             "Target": "frame_id",
             "TargetValues": [
                 "1234931339",
@@ -79,7 +79,7 @@
             "Target": "Spot",
             "TargetValues": ["5"]
 
-        }
+        }    
     ]
 } 
 
