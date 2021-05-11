@@ -103,7 +103,7 @@
             }
         }
     ],
-    "allOf": [
+    "allOf":  [
         {
             "if": {
                 "properties": {
