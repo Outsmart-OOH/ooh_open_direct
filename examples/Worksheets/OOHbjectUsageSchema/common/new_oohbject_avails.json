@@ -124,6 +124,28 @@
                     }
                 }
             }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Inventory"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "SPACE",
+                            "Metrics"
+                        ]
+                    }
+                }
+            }
         }
     ]
 }
