@@ -1,9 +1,0 @@
-{
-    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/conditional_oohbject_schema_L3.json",
-"Name":"Prohibitions",
-"Type": "Frames",
-"DataSource":"SPACE",
-"Target": "frame_id"
-
-}
-

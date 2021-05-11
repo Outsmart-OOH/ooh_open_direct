@@ -1,0 +1,127 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvailsSearch_object.json",
+    "type": "object",
+    "title": "ProductAvailsSearch object",
+    "description": "",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "AccountId": {
+            "$id": "#/properties/AccountId",
+            "type": "string",
+            "title": "Account ID",
+            "description": "The ID of the account that identifies the buyer, advertiser and any other stakeholders."
+        },
+        "AdvertiserBrandId": {
+            "$id": "#/properties/AdvertiserBrandId",
+            "type": "string"
+        },
+        "Currency": {
+            "$id": "#/properties/Currency",
+            "type": "string"
+        },
+        "ProductIds": {
+            "$id": "#/properties/ProductIds",
+            "type": "array",
+            "title": "Product IDs",
+            "description": "A list of IDs that identify the products on which to get availability and pricing information",
+            "items": {
+                "$id": "#/properties/ProductIds/items",
+                "type": "string"
+            }
+        },
+        "EndDate": {
+            "$id": "#/properties/EndDate",
+            "type": "string",
+            "format": "date-time",
+            "title": "End Date",
+            "description": "The desired end date for inventory delivery"
+        },
+        "StartDate": {
+            "$id": "#/properties/StartDate",
+            "type": "string",
+            "format": "date-time",
+            "title": "Start Date",
+            "description": "The desired start date for inventory delivery"
+        },
+        "AvailabilityFields": {
+            "$id": "#/properties/AvailabilityFields",
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/AvailabilityFields/items",
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                    "Name",
+                    "Type",
+                    "DataSource",
+                    "Target"
+                ],
+                "properties": {
+                    "Name": {
+                        "$id": "#/properties/AvailabilityFields/items/properties/Name",
+                        "type": "string"
+                    },
+                    "Type": {
+                        "$id": "#/properties/AvailabilityFields/items/properties/Type",
+                        "type": "string"
+                    },
+                    "DataSource": {
+                        "$id": "#/properties/AvailabilityFields/items/properties/DataSource",
+                        "type": "string"
+                    },
+                    "Target": {
+                        "$id": "#/properties/AvailabilityFields/items/properties/Target",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "Grouping": {
+            "$id": "#/properties/Grouping",
+            "type": "array",
+            "title": "Grouping",
+            "description": "Defines the OOHbject metric that the availability output is grouped as.",
+            "items": {
+                "$id": "#/properties/Grouping/items",
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                    "Name",
+                    "Type",
+                    "DataSource",
+                    "Target"
+                ],
+                "properties": {
+                    "Name": {
+                        "$id": "#/properties/Grouping/items/properties/Name",
+                        "type": "string"
+                    },
+                    "Type": {
+                        "$id": "#/properties/Grouping/items/properties/Type",
+                        "type": "string"
+                    },
+                    "DataSource": {
+                        "$id": "#/properties/Grouping/items/properties/DataSource",
+                        "type": "string"
+                    },
+                    "Target": {
+                        "$id": "#/properties/Grouping/items/properties/Target",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "Targeting": {
+            "$id": "#/properties/Targeting",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
+        }
+    }
+}
