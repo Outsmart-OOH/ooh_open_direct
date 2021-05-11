@@ -168,6 +168,71 @@
                     }
                 }
             }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "GBP"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Investment"
+                    },
+                    "Type": {
+                        "const": "Audience"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "GBP"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Distribution"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "ShareOfDisplay",
+                            "Time",
+                            "SPACE"
+                        ]
+                    }
+                }
+            }
         }
     ]
 }
