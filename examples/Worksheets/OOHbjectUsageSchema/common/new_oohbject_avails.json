@@ -238,50 +238,6 @@
             "if": {
                 "properties": {
                     "Name": {
-                        "const": "Distribution"
-                    },
-                    "Type": {
-                        "const": "Audience"
-                    }
-                }
-            },
-            "then": {
-                "properties": {
-                    "DataSource": {
-                        "enum": [
-                            "Time",
-                            "SPACE"
-                        ]
-                    }
-                }
-            }
-        },
-        {
-            "if": {
-                "properties": {
-                    "Name": {
-                        "const": "Distribution"
-                    },
-                    "Type": {
-                        "const": "Investment"
-                    }
-                }
-            },
-            "then": {
-                "properties": {
-                    "DataSource": {
-                        "enum": [
-                            "Time",
-                            "SPACE"
-                        ]
-                    }
-                }
-            }
-        },
-        {
-            "if": {
-                "properties": {
-                    "Name": {
                         "const": "Prohibitions"
                     },
                     "Type": {
