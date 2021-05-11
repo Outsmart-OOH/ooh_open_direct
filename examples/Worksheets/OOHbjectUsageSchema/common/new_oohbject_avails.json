@@ -233,27 +233,6 @@
                     }
                 }
             }
-        },
-        {
-            "if": {
-                "properties": {
-                    "Name": {
-                        "const": "Prohibitions"
-                    },
-                    "Type": {
-                        "const": "Frames"
-                    }
-                }
-            },
-            "then": {
-                "properties": {
-                    "DataSource": {
-                        "enum": [
-                            "SPACE"
-                        ]
-                    }
-                }
-            }
         }
     ]
 }
