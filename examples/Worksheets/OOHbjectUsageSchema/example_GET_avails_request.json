@@ -78,7 +78,6 @@
             "DataSource": "ShareOfDisplay",
             "Target": "Spot",
             "TargetValues": ["5"]
-
         }
     ]
 } 
