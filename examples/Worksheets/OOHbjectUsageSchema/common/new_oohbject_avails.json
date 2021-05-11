@@ -146,6 +146,28 @@
                     }
                 }
             }
+        },
+        {
+            "if": {
+                "properties": {
+                    "Name": {
+                        "const": "Delivery"
+                    },
+                    "Type": {
+                        "const": "Frames"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "DataSource": {
+                        "enum": [
+                            "Time",
+                            "ShareOfDisplay"
+                        ]
+                    }
+                }
+            }
         }
     ]
 }
