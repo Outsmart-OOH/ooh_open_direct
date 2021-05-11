@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvailsSearch_object.json",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/common/productAvailsSearch_object.json",
     "type": "object",
     "title": "ProductAvailsSearch object",
     "description": "",
@@ -121,7 +121,7 @@
         },
         "Targeting": {
             "$id": "#/properties/Targeting",
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/common/new_targetTypes_array_avails.json"
         }
     }
 }
