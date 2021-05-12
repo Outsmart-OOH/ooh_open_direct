@@ -42,7 +42,7 @@
             "enum": [
                 "ShareOfDisplay",
                 "Time",
-                "<DataSource>"
+                "<SPACE>"
             ],
             "additionalProperties": true
         },
@@ -54,7 +54,7 @@
             "enum": [
                 "Days",
                 "Hours",
-                "<DataSourceID>"
+                "<FrameID>"
             ],
             "additionalProperties": true
         },

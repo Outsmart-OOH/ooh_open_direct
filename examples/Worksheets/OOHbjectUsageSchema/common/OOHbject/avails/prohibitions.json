@@ -38,7 +38,7 @@
             "title": "The identification and inclusion of third party data sources",
             "maxLength": 255,
             "enum": [
-                "<DataSource>"
+                "<SPACE>"
             ]
         },
         "Target": {
@@ -47,7 +47,7 @@
             "title": "Description of the OOHbject Metric",
             "maxLength": 255,
             "enum": [
-                "<DataSourceID>"
+                "<FrameID>"
             ]
         },
         "TargetValues": {

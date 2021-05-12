@@ -10,7 +10,7 @@
         {
             "Name": "Inventory",
             "Type": "Frames",
-            "DataSource": "Space",
+            "DataSource": "SPACE",
             "Target": "frame_id"
         },
         {
@@ -38,7 +38,7 @@
         {
             "Name": "Inventory",
             "Type": "Frames",
-            "DataSource": "Space",
+            "DataSource": "SPACE",
             "Target": "frame_id"
         }
     ],
@@ -47,8 +47,8 @@
         {
             "Name": "Inventory",
             "Type": "Frames",
-            "DataSource": "SPACE",
-            "Target": "frame_id",
+            "DataSource": "<DataSource>",
+            "Target": "<DataSourceID>",
             "TargetValues": [
                 "1234931339",
                 "1235190735",
