@@ -47,7 +47,7 @@
             "title": "Description of the OOHbject Metric",
             "maxLength": 255,
             "enum": [
-                "<FrameID>"
+                "<FrameId>"
             ]
         },
         "TargetValues": {
