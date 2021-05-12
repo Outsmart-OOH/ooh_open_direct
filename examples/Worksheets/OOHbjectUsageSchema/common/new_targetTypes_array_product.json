@@ -17,7 +17,19 @@
                 "$ref": "#/definitions/$or"
             },
             {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/common/new_oohbject_avails.json"
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/common/OOHbject/product/inventory.json"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/common/OOHbject/product/delivery.json"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/common/OOHbject/product/investment.json"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/common/OOHbject/product/distribution.json"
+            },
+            {
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/examples/Worksheets/OOHbjectUsageSchema/common/OOHbject/product/prohibitions.json"
             }
         ]
     },
