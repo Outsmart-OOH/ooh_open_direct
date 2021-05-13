@@ -53,6 +53,26 @@
             "Target": "Spot",
             "Selectable": false,
             "Default": 5
+        },
+        {
+            "Name": "Prohibitions",
+            "Type": "Frames",
+            "DataSource": "SPACE",
+            "Target": "Alcohol",
+            "TargetValues": [
+                "1234931339",
+                "1235190735"
+            ]
+        },
+        {
+            "Name": "Prohibitions",
+            "Type": "Frames",
+            "DataSource": "SPACE",
+            "Target": "HFSS",
+            "TargetValues": [
+                "1234931569",
+                "1235202465"
+            ]
         }
     ],
     "TimeZone": "GMT",
