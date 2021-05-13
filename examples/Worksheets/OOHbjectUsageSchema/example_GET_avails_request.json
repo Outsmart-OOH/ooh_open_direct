@@ -78,6 +78,14 @@
             "DataSource": "ShareOfDisplay",
             "Target": "Spot",
             "TargetValues": ["5"]
+        },
+        {
+            "Name":"Inventory",
+            "Type": "Frames",
+            "DataSource": "<SPACE>",
+            "Target": "FramesCount",
+            "Minimum": 2,
+            "Maximum": 4
         }
     ]
 }

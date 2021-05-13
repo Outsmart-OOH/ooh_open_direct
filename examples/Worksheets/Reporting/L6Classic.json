@@ -2,7 +2,7 @@
     "ReportPublishTime": "2020-12-24T00:00:00.000Z",
     "ReportStartTime": "2020-12-09T00:00:00.000Z",
     "ReportEndTime": "2020-12-22T00:00:00.000Z",
-    "Report": {
+    "Report": [{
         "AccountId": "23873345",
         "OrderId": "3479",
         "LineId": "7",
@@ -23,5 +23,5 @@
                 "CreativeID":"adfgj123"
             }
         ]
-    }
+    }]
 }

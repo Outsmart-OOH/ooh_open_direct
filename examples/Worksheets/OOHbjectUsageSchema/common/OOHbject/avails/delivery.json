@@ -50,7 +50,8 @@
             "enum": [
                 "Days", "DayCount", "Hours", "Minutes", "TimeZone",
                 "ShareOfTime", "Spot", "SpotBreakLength"
-            ]
+            ],
+            "additionalProperties": true
         },
         "TargetValues": {
             "$id": "#/properties/TargetValues",
