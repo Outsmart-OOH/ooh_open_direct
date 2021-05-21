@@ -67,16 +67,6 @@
                     }
                 ]
             }
-        },
-        "Minimum": {
-            "$id": "#/properties/Minimum",
-            "type": "number",
-            "title": "Defines the minimum number of TargetValues that must be selected"
-        },
-        "Maximum": {
-            "$id": "#/properties/Maximum",
-            "type": "number",
-            "title": "Defines the maximum number of TargetValues that must be selected"
         }
     }
 }

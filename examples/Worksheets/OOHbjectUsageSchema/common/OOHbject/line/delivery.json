@@ -19,7 +19,7 @@
             "description": "The key objects for describing OOH media campaigns and products",
             "maxLength": 255,
             "enum": [
-                "Investment"
+                "Delivery"
             ]
         },
         "Type": {
@@ -29,8 +29,7 @@
             "description": "How the OOHbject is being quantified",
             "maxLength": 255,
             "enum": [
-                "Frames",
-                "Audience"
+                "Frames"
             ]
         },
         "DataSource": {
@@ -39,7 +38,8 @@
             "title": "The identification and inclusion of third party data sources",
             "maxLength": 255,
             "enum": [
-                "<GBP>"
+                "Time",
+                "ShareOfDisplay"
             ]
         },
         "Target": {
@@ -48,10 +48,10 @@
             "title": "Description of the OOHbject Metric",
             "maxLength": 255,
             "enum": [
-                "CPT",
-                "CPF",
-                "Fixed"
-            ]
+                "Days", "DayCount", "Hours", "Minutes", "TimeZone",
+                "ShareOfTime", "Spot", "SpotBreakLength"
+            ],
+            "additionalProperties": true
         },
         "TargetValues": {
             "$id": "#/properties/TargetValues",
@@ -67,16 +67,7 @@
                     }
                 ]
             }
-        },
-        "Minimum": {
-            "$id": "#/properties/Minimum",
-            "type": "number",
-            "title": "Defines the minimum number of TargetValues that must be selected"
-        },
-        "Maximum": {
-            "$id": "#/properties/Maximum",
-            "type": "number",
-            "title": "Defines the maximum number of TargetValues that must be selected"
         }
     }
+    
 }

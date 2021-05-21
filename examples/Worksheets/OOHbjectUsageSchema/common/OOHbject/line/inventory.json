@@ -19,7 +19,7 @@
             "description": "The key objects for describing OOH media campaigns and products",
             "maxLength": 255,
             "enum": [
-                "Investment"
+                "Inventory"
             ]
         },
         "Type": {
@@ -39,7 +39,8 @@
             "title": "The identification and inclusion of third party data sources",
             "maxLength": 255,
             "enum": [
-                "<GBP>"
+                "<SPACE>",
+                "Metrics"
             ]
         },
         "Target": {
@@ -48,9 +49,9 @@
             "title": "Description of the OOHbject Metric",
             "maxLength": 255,
             "enum": [
-                "CPT",
-                "CPF",
-                "Fixed"
+                "<FrameId>",
+                "FramesCount",
+                "Impacts", "Cover", "Reach", "Frequency"
             ]
         },
         "TargetValues": {
@@ -67,16 +68,6 @@
                     }
                 ]
             }
-        },
-        "Minimum": {
-            "$id": "#/properties/Minimum",
-            "type": "number",
-            "title": "Defines the minimum number of TargetValues that must be selected"
-        },
-        "Maximum": {
-            "$id": "#/properties/Maximum",
-            "type": "number",
-            "title": "Defines the maximum number of TargetValues that must be selected"
         }
     }
 }

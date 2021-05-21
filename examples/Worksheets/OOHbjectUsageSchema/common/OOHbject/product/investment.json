@@ -68,6 +68,16 @@
                 ]
             }
         },
+        "Selectable": {
+            "$id": "#/properties/Selectable",
+            "type": "boolean",
+            "title": "Defines whether a Buyer can select from the given list of TargetValues  or whether the targetValues are fixed"
+        },
+        "Count": {
+            "$id": "#/properties/Count",
+            "type": "integer",
+            "title": "Count of TargetValues"
+        },
         "Minimum": {
             "$id": "#/properties/Minimum",
             "type": "number",
@@ -77,6 +87,16 @@
             "$id": "#/properties/Maximum",
             "type": "number",
             "title": "Defines the maximum number of TargetValues that must be selected"
+        },
+        "Increment": {
+            "$id": "#/properties/Increment",
+            "type": "number",
+            "title": "Defines the increments that are permitted for the targeting values"
+        },
+        "Default": {
+            "$id": "#/properties/Default",
+            "type": "number",
+            "title": "Defines the default number of TargetValues that are selected if the Buyer does not specify any TargetValues or the target is not selectable"
         }
     }
 }
