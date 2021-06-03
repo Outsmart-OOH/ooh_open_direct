@@ -42,7 +42,7 @@
             "$id": "#/properties/AllowNoCreative",
             "type": "boolean",
             "title": "Allow No Creative",
-            "description": "A Boolean value that indicates whether line items assigned to this order may be booked before creative is assigned. "
+            "description": "A Boolean value that indicates whether line items assigned to this order may be booked before creative is assigned. A value of TRUE allows lines to be booked without creative assigned. Default value is TRUE for OOH"
         },
         "Geometry": {
             "$id": "#/properties/Geometry",
@@ -94,8 +94,8 @@
         "Languages": {
             "$id": "#/properties/Languages",
             "type": "array",
-            "title": "The Languages Schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Languages",
+            "description": "A list of creative languages that the product supports. Values provided using LANGUAGE reference data as specified in section 4.10.",
             "items": {
                 "$id": "#/properties/Languages/items",
                 "type": "string"
@@ -104,8 +104,8 @@
         "LeadTime": {
             "$id": "#/properties/LeadTime",
             "type": "string",
-            "title": "The Leadtime Schema",
-            "description": "An explanation about the purpose of this instance."
+            "title": "Lead time",
+            "description": "The time from the time of booking that a line that reference this product can begin running; the line’s start date must be equal to or later than today + n."
         },
         "Name": {
             "$id": "#/properties/Name",
@@ -117,7 +117,7 @@
             "$id": "#/properties/ReservedExpiryTime",
             "type": "string",
             "title": "Reserved expiry time",
-            "description": "An explanation about the purpose of this instance."
+            "description": "Defines the day of the week and time of day that represents the cut off point for expiry of a Line for the Product when it is “reserved”."
         },
         "AdvertiserIdAccess": {
             "$id": "#/properties/AdvertiserIdAccess",
