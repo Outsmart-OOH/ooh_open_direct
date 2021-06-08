@@ -1,4 +1,4 @@
-# **OpenDirect (OOH) 1.5.1 v1.1**
+# **OpenDirect (OOH) 1.5.1 v1.2**
 
 An OpenDirect 1.5.1 Implementation for the Out-Of-Home Industry
 
@@ -25,14 +25,13 @@ The OOH Standards Committee has representation from both Outsmart and IPAO. The 
 The Technical sub-group is a part of the OOH Industry Standards Committee. This group of experts sourced from Media Owners, Agencies and Specialists from the OOH Industry, were challenged to create a standard way for Media Owners/Publishers to make their inventory discoverable in a OpenDirect-compliant interface where agencies and advertisers can programmatically trade OOH inventory directly.
 
 ## Contributors
+sebastiaan@livedooh.com
 
-**Clear Channel** Ben Price, Jamie Mills, Victor Porter, Karen Fornos Klein
+**Clear Channel** Ben Price, Jamie Mills, Victor Porter, Karen Fornos Klein, Miles Talmey, Noopur Gosalia, Joao Baptista, Sebastiaan Schinkel
 
-**Global** Dan Sharp, Luke Howard, Matt Allard, Rob Brayshaw
+**Global** Dan Sharp, Luke Howard, Matt Allard, Rob Brayshaw, Denis Garcia, Olga Belousova
 
-**JCDecaux** Dom Kozak, Philippa Kings, Rebecca Lee
-
-**Key Systems** Jon Axworthy, Ross Lafar
+**JCDecaux** Dom Kozak, Philippa Kings, Rebecca Lee, Ioana Dima, Jack Paget
 
 **Kinetic** Alex Berry, Georgina Monet, Prasaant Patel
 
@@ -40,7 +39,7 @@ The Technical sub-group is a part of the OOH Industry Standards Committee. This 
 
 **Ocean Outdoor** Angela Green, Doug Swan, Luka Djukic
 
-**Posterscope** Daniel Conway, Steve Pavett, Gavin Lee
+**Posterscope** Daniel Conway, Steve Pavett, Christopher Ho, Alexandru Radu, George Popescu, Tina Hung
 
 **Rapport** Paul Sambrook, Ross Wilson, Gail Williams
 
@@ -52,7 +51,7 @@ The Technical sub-group is a part of the OOH Industry Standards Committee. This 
 
 Tim Lumb **OutSmart**
 
-Gavin Lee **Posterscope** &amp; UK OOH Standards Committee Co-Chair (IPAO)
+Gavin Lee **Dentsu Aegis** &amp; Former UK OOH Standards Committee Co-Chair (IPAO)
 
 Mungo Knot **Global** &amp; UK OOH Standards Committee Co-Chair (Outsmart)
 
@@ -224,6 +223,7 @@ A collection of targeting criteria used to discover and target the digital and p
 | 0.2 | Tim Harvey | 16/03/20 | All | First Draft of OpenDirect (OOH) 1.5.1 |
 | 1.0 | Tim Harvey | 24/04/20 | All | PDF Published Version of OpenDirect (OOH) 1.5.1 v1.0 |
 | 1.1 | Tim Harvey | from 12/04/20 | See Github Log | Github Published Version of OpenDirect (OOH) 1.5.1 v1.1 |
+| 1.2 | Tim Harvey | from 08/06/21 | See Github Log | Updated document featuring improvements that were worked on as organizations implemented the standard in 2021 |
 
 
 ## Audience
