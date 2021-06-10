@@ -75,6 +75,26 @@
             ]
         }
     ],
+    "AvailsGroupBy": [
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_id"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "frame_type"
+        },
+        {
+            "Name": "Inventory",
+            "Type": "Frames",
+            "DataSource": "Space",
+            "Target": "format"
+        }
+    ],
     "TimeZone": "GMT",
     "Url": "http://<domain>/<path>/creativespec.aspx"
 }
