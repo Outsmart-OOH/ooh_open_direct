@@ -1,0 +1,73 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": " ",
+    "type": "object",
+    "title": "OOHbject Type",
+    "description": "OOHbject object.",
+    "required": [
+        "Name",
+        "Type",
+        "DataSource",
+        "Target"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "Name",
+            "description": "The key objects for describing OOH media campaigns and products",
+            "maxLength": 255,
+            "enum": [
+                "Delivery"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "Type",
+            "description": "How the OOHbject is being quantified",
+            "maxLength": 255,
+            "enum": [
+                "Frames"
+            ]
+        },
+        "DataSource": {
+            "$id": "#/properties/DataSource",
+            "type": "string",
+            "title": "The identification and inclusion of third party data sources",
+            "maxLength": 255,
+            "enum": [
+                "Time",
+                "ShareOfDisplay"
+            ]
+        },
+        "Target": {
+            "$id": "#/properties/Target",
+            "type": "string",
+            "title": "Description of the OOHbject Metric",
+            "maxLength": 255,
+            "enum": [
+                "Days", "DayCount", "Hours", "Minutes", "TimeZone",
+                "ShareOfTime", "Spot", "SpotBreakLength"
+            ],
+            "additionalProperties": true
+        },
+        "TargetValues": {
+            "$id": "#/properties/TargetValues",
+            "type": "array",
+            "title": "Array of one or more values ",
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/TargetValues/items",
+                "title": "Target Value item",
+                "oneOf": [
+                    {
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    }
+    
+}
