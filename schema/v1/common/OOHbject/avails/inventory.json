@@ -1,0 +1,83 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/OOHbject/avails/inventory.json",
+    "type": "object",
+    "title": "OOHbject Type",
+    "description": "OOHbject object.",
+    "required": [
+        "Name",
+        "Type",
+        "DataSource",
+        "Target"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "Name",
+            "description": "The key objects for describing OOH media campaigns and products",
+            "maxLength": 255,
+            "enum": [
+                "Inventory"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "Type",
+            "description": "How the OOHbject is being quantified",
+            "maxLength": 255,
+            "enum": [
+                "Frames",
+                "Audience"
+            ]
+        },
+        "DataSource": {
+            "$id": "#/properties/DataSource",
+            "type": "string",
+            "title": "The identification and inclusion of third party data sources",
+            "maxLength": 255,
+            "enum": [
+                "<SPACE>",
+                "Metrics"
+            ]
+        },
+        "Target": {
+            "$id": "#/properties/Target",
+            "type": "string",
+            "title": "Description of the OOHbject Metric",
+            "maxLength": 255,
+            "enum": [
+                "<FrameId>",
+                "FramesCount",
+                "Impacts", "Cover", "Reach", "Frequency"
+            ]
+        },
+        "TargetValues": {
+            "$id": "#/properties/TargetValues",
+            "type": "array",
+            "title": "Array of one or more values ",
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/TargetValues/items",
+                "title": "Target Value item",
+                "oneOf": [
+                    {
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        "Minimum": {
+            "$id": "#/properties/Minimum",
+            "type": "number",
+            "title": "Defines the minimum number of TargetValues that must be selected"
+        },
+        "Maximum": {
+            "$id": "#/properties/Maximum",
+            "type": "number",
+            "title": "Defines the maximum number of TargetValues that must be selected"
+        }
+    }
+}
