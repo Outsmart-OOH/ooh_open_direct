@@ -92,7 +92,7 @@
         },
         "Targeting": {
             "$id": "#/properties/Targeting",
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array_line.json"
         },
         "ProductAvails": {
             "$id": "#/properties/ProductAvails",
