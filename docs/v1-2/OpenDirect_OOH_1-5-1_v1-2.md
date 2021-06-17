@@ -2045,14 +2045,20 @@ The following diagram outlines the publisher workflow.
 The following diagram outlines the workflow for creating an order.
 
 ![AdvertiserWorkflow](Pictures/advertiser_workflow.png)
+ 
+### 8.12.3 Availability to Orderline Workflow Diagram
 
-### 8.12.3 Booking State Diagram
+The following diagram outlines the workflow for going from an availability check to creating an orderline (the diagram assumes an order has already been created for an orderline to be assigned to)
+
+![Availability to Orderline Workflow](Pictures/Avails2Orderline.png)
+
+### 8.12.4 Booking State Diagram
 
 The following diagram shows the state changes of a Line resource. For details about each state, see BookingStatus.
 
 ![BookingState](Pictures/booking_state.png)
 
-### 8.12.4 Resource Model Diagram
+### 8.12.5 Resource Model Diagram
 
 The following diagram shows the relationships between the OpenDirect resources. This model allows a buyer to work with many advertisers and an advertiser to work with many buyers. If the advertiser does their own buying, they&#39;d be both the advertiser and the buyer. For details about the resource objects, see Resources.
 
