@@ -561,12 +561,13 @@ Contact Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/m
 
 Defines the response to a request for product availability and pricing information at product Level
 
-| Attribute | Description                                                                                                                                                      | Type                    |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| ProductId | ID that identifies the product for which availability and pricing information is provided                                                                        | String(36)              |
-| Targeting | The OOHbject targeting criteria, quantities & distribution variables returend as specified from the availability request                                         | Object                  |
-| Currency  | The currency used to specify Price. Currency is set for the PRODUCT resource specified in section 2.7 and uses CURRENCY reference data specified in section 4.6. | String (3) \[ISO-4217\] |
-| Price     | The product’s price based on OOHbject Targeting                                                                                                                  | Decimal                 |
+| Attribute    | Description                                                                                                                                                      | Type                    |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| ProductId    | ID that identifies the product for which availability and pricing information is provided                                                                        | String(36)              |
+| AccountId    | The ID of the account that identifies the buyer, advertiser and any other stakeholders.                                                                          | String(36)              |
+| Availability | An object that groups the inventory availbility into Available, Partially Available and Unavailable arrays of Targeting OOHbjects                                | Object                  |
+| Currency     | The currency used to specify Price. Currency is set for the PRODUCT resource specified in section 2.7 and uses CURRENCY reference data specified in section 4.6. | String (3) \[ISO-4217\] |
+| Price        | The product’s price based on OOHbject Targeting                                                                                                                  | Decimal                 |
 
 ProductAvails Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json
 
