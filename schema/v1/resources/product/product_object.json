@@ -119,6 +119,12 @@
             "title": "Reserved expiry time",
             "description": "An explanation about the purpose of this instance."
         },
+        "RetirementDate": {
+            "$id": "#/properties/RetirementDate",
+            "type": "string",
+            "title": "Retirement Date",
+            "description": "The date and time, in UTC, that the product may be removed from the bookable inventory."
+        },
         "AdvertiserIdAccess": {
             "$id": "#/properties/AdvertiserIdAccess",
             "type": "array",
@@ -151,11 +157,13 @@
         },
         "TargetTypes": {
             "$id": "#/properties/TargetTypes",
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array_product.json"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array_product.json",
+            "description": "An Array of OOHbjects that identify the types of targeting that the product supports. "
         },
         "AvailsGroupBy": {
             "$id": "#/properties/AvailsGroupBy",
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array_product.json"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array_product.json",
+            "description": "An array of OOHbjects that describe the grouped fields that that the Availability data can be returned in "
         },
         "TimeZone": {
             "$id": "#/properties/TimeZone",
