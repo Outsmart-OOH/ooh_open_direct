@@ -25,7 +25,6 @@ The OOH Standards Committee has representation from both Outsmart and IPAO. The 
 The Technical sub-group is a part of the OOH Industry Standards Committee. This group of experts sourced from Media Owners, Agencies and Specialists from the OOH Industry, were challenged to create a standard way for Media Owners/Publishers to make their inventory discoverable in a OpenDirect-compliant interface where agencies and advertisers can programmatically trade OOH inventory directly.
 
 ## Contributors
-sebastiaan@livedooh.com
 
 **Clear Channel** Ben Price, Jamie Mills, Victor Porter, Karen Fornos Klein, Miles Talmey, Noopur Gosalia, Joao Baptista, Sebastiaan Schinkel
 
