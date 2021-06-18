@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/reporting.json",
+    "type": "object",
+    "title": "reporting object",
+    "description": "Reporting header for Report arrays",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "ReportPublishTime": {
+            "$id": "#/properties/ReportPublishTime",
+            "type": "string",
+            "format": "date-time",
+            "title": "Report Publish Time",
+            "description": "The Date and Time in UTC when the Report was published"
+        },
+        "ReportStartTime": {
+            "$id": "#/properties/ReportStartTime",
+            "type": "string",
+            "format": "date-time",
+            "title": "Report Start Time",
+            "description": "The first StartTime in the Report Array"
+        },
+        "ReportEndTime": {
+            "$id": "#/properties/ReportEndTime",
+            "type": "string",
+            "format": "date-time",
+            "title": "Report End Time",
+            "description": "The last EndTime in the Report Array"
+        },
+        "Report": {
+            "$id": "#/properties/Report",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/report.json",
+            "description": "An Array of Report Objects"
+        }
+    
+    },
+
+    "Required": ["ReportPublishTime", "ReportStartTime", "ReportEndTime","Report"]
+}

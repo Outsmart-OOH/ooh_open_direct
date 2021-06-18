@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats.json",
+    "type": "object",
+    "title": "Stats object",
+    "description": "The Schedule and Delivery data served at Flight, Week, Day, Hour and/or Spot level of granularity at the Publisher's/Media Owner's discretion",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "StartTime": {
+            "$id": "#/properties/StartTime",
+            "type": "string",
+            "format": "date-time",
+            "title": "Start Time",
+            "description": "The Start Time in UTC for the Stat"
+        },
+        "EndTime": {
+            "$id": "#/properties/EndTime",
+            "type": "string",
+            "format": "date-time",
+            "title": "End Time",
+            "description": "The End Time in UTC for the Stat"
+        },
+        "FrameId": {
+            "$id": "#/properties/FrameId",
+            "type": "string",
+            "title": "Frame ID",
+            "description": "The ID of the Frame that the delivery is carried out upon"
+        },
+        "CreativeID": {
+            "$id": "#/properties/CreativeId",
+            "type": "string",
+            "title": "Creative ID",
+            "description": "The ID of the creative file that is played out in the Stat"
+        },
+        "SpotLength": {
+            "$id": "#/properties/SpotLength",
+            "type": "number",
+            "title": "Spot Length",
+            "description": "The amount of time the advertiser has to play their creative in - If an advertisement is on screen for this length of time, this constitutes one play"
+        },
+        "ShareOfTime": {
+            "$id": "#/properties/ShareOfTime",
+            "type": "number",
+            "title": "Share Of Time",
+            "description": "An Average % share of total time across the dimensions reported on for the campaign (e.g. play, hour. panel, geography)"
+        },
+        "BookedPlays": {
+            "$id": "#/properties/BookedPlays",
+            "type": "number",
+            "title": "Booked Plays",
+            "description": "The number of times a creative (with a defined spot length) has started playing but it may not have been fully played"
+        },
+        "DeliveredPlays": {
+            "$id": "#/properties/DeliveredPlays",
+            "type": "number",
+            "title": "Delivered Plays",
+            "description": "The number of times a creative (with a defined spot length) has started playing but it may not have been fully played"
+        },
+        "Delivery": {
+            "$id": "#/properties/Delivery",
+            "type": "number",
+            "title": "Delivery",
+            "description": "% of Delivered Plays vs Booked Plays"
+        }
+        
+    
+    },
+
+    "Required": ["StartTime", "EndTime", "FrameId","CreativeID"]
+}
