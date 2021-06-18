@@ -150,7 +150,7 @@ Richard Saturley **World Out of Home Organisation**
 
 [Appendix B: Minimum OpenDirect (OOH) Resources & Objects Required For An Initial Implementation](#appendix-b--minimum-opendirect-ooh-resources--objects-required-for-an-initial-implementation)
 
-[Appendix C : OOHbject Schema variation when used in the context of Product, Availability and Line operations]
+[Appendix C : OOHbject Schema variation when used in the context of Product, Availability and Line operations](#appendix-c--oohbject-schema-variation-when-used-in-the-context-of-product-availability-and-line-operations)
 
 # Executive Summary
 
