@@ -1885,21 +1885,87 @@ POST
 
 Only organizations that have an Approved or Limited status may retrieve performance stats
 
-### 7.11.3 Stats (Reporting) Examples
+### 7.11.3 Classic OOH Reporting JSON Example Response
 
-| URI                                         | Verb | Description                                                                                                                                         | Request                                                                                                                                                                                       | Response                                                                                                                                                                                          |
-| ------------------------------------------- | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| /accounts/{id}/orders/{id}/lines/stats      | POST | Request Stats Report at Order Level (all lines returned)                                                                                            | [POST\_stats\_request\_OrderLevel\_L4.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_request_OrderLevel_L4.json)                | [POST\_stats\_verbose\_response\_OrderLevel.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_verbose_response_OrderLevel.json)        |
-| /accounts/{id}/orders/{id}/lines/{id}/stats | POST | Booked plays and delivered plays with a 'media owner' Frame Reference at default classic Flight granularity                                         | [POST\_stats\_request\_L1\_classic.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_request_L1_classic.json)                      | [POST\_stats\_verbose\_response\_L1\_classic.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_verbose_response_L1_classic.json)       |
-|                                             |      | Booked plays and delivered plays with a with a 'media owner, Frame Reference at Hour granularity                                                    | [POST\_stats\_request\_L1\_digital.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_request_L1_digital.json)                      | [POST\_stats\_verbose\_response\_L1\_digital.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_verbose_response_L1_digital.json)       |
-|                                             |      | Booked plays and delivered plays with an 'industry standard' FrameID at default classic Flight granularity                                          | [POST\_stats\_request\_L2\_classic.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_request_L2_classic.json)                      | [POST\_stats\_verbose\_response\_L2\_classic.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_verbose_response_L2_classic.json)       |
-|                                             |      | Booked plays and delivered plays with an 'industry standard' FrameID Reference at Hour granularity                                                  | [POST\_stats\_request\_L2\_digital.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_request_L2_digital.json)                      | [POST\_stats\_verbose\_response\_L2\_digital.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_verbose_response_L2_digital.json)       |
-|                                             |      | Booked plays and delivered plays by Creative ID and Spot length with an 'industry standard' FrameID at default classic Flight granularity           | [POST\_stats\_request\_L4\_classic.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_request_L4_classic.json)                      | [POST\_stats\_verbose\_response\_L4\_classic.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_verbose_response_L4_classic.json)       |
-|                                             |      | Booked plays and delivered plays by Creative ID and Spot length with an 'industry standard' FrameID at Hour granularity                             | [POST\_stats\_request\_L4\_digital.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_request_L4_digital.json)                      | [POST\_stats\_verbose\_response\_L4\_digital.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_verbose_response_L4_digital.json)       |
-|                                             |      | Booked plays and delivered plays by Creative ID with an 'industry standard' FrameID at Spot granularity                                             | [POST\_stats\_request\_L6\_classic.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_request_L6_classic.json)                      | [POST\_stats\_verbose\_response\_L6\_classic.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_verbose_response_L6_classic.json)       |
-|                                             |      | Booked plays and delivered plays by Creative ID and Spot length with an 'industry standard' FrameID at Spot granularity                             | [POST\_stats\_request\_L6\_digital.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_request_L6_digital.json)                      | [POST\_stats\_verbose\_response\_L6\_digital.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_verbose_response_L6_digital.json)       |
-|                                             |      | Non-Verbose JSON version of Booked plays and delivered plays by Creative ID and Spot length with an 'industry standard' FrameID at Spot granularity | [POST\_stats\_nonverbose\_request\_L6\_digita.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_nonverbose_request_L6_digita.json) | [POST\_stats\_nonverbose\_response\_L6\_digital.json](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/examples/OOHpenDirect_1-5-1_v-1/POST_stats_nonverbose_response_L6_digital.json) |
-
+```json
+{
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/reporting.json",
+    "ReportPublishTime": "2020-12-24T00:00:00.000Z",
+    "ReportStartTime": "2020-12-09T00:00:00.000Z",
+    "ReportEndTime": "2020-12-22T00:00:00.000Z",
+    "Report": [{
+        "AccountId": "23873345",
+        "OrderId": "3479",
+        "LineId": "7",
+        "OOHProviderData": [
+            "PO7567"
+        ],
+        "Stats": [
+            {
+                "StartTime": "2020-12-09T00:00:00Z",
+                "EndTime":"2020-12-22T00:00:00Z",
+                "FrameID":"1234159856",
+                "CreativeID":"adfgj123"
+            },
+            {
+                "StartTime": "2020-12-09T00:00:00Z",
+                "EndTime":"2020-12-22T00:00:00Z",
+                "FrameID":"1234159857",
+                "CreativeID":"adfgj123"
+            }
+        ]
+    }]
+}
+```
+### 7.11.4 Digital OOH Reporting JSON Example Response
+```json
+{
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/reporting.json",
+    "ReportPublishTime": "2020-12-20T00:00:00.000Z",
+    "ReportStartTime": "2020-12-09T00:00:00.000Z",
+    "ReportEndTime": "2020-12-10T01:00:00.000Z",
+    "Report": [{
+        "AccountId": "23873345",
+        "OrderId": "3479",
+        "LineId": "8",
+        "OOHProviderData": [
+            "PO7567"
+        ],
+        "Stats": [
+            {
+                "StartTime": "2020-12-09T00:00:00Z",
+                "EndTime": "2020-12-09T00:00:10Z",
+                "FrameID": "1234158956",
+                "CreativeID": "capad653"
+            },
+            {
+                "StartTime": "2020-12-09T00:02:00Z",
+                "EndTime": "2020-12-09T00:02:10Z",
+                "FrameID": "1234158956",
+                "CreativeID": "capad653"
+            },
+            {
+                "StartTime": "2020-12-09T00:03:00Z",
+                "EndTime": "2020-12-09T00:03:10Z",
+                "FrameID": "1234158956",
+                "CreativeID": "capad653"
+            },
+            {
+                "StartTime": "2020-12-09T00:04:00Z",
+                "EndTime": "2020-12-09T00:04:10Z",
+                "FrameID": "1234158956",
+                "CreativeID": "capad653"
+            },
+            {
+                "StartTime": "etc",
+                "EndTime": "etc",
+                "FrameID": "etc",
+                "CreativeID": "etc"
+            }
+        ]
+    }]
+}
+```
 
 
 ## 7.12 Advertiser Brands
