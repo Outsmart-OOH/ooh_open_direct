@@ -92,6 +92,7 @@ Richard Saturley **World Out of Home Organisation**
 [3.7 OOHProviderData](#37-oohproviderdata)
 [3.8 Size](#38-size)
 [3.9 OOHbject](#39-oohbject)
+[3.10 Availability](#310-availability)
 
 [4. Reference Data](#4-reference-data)
 
