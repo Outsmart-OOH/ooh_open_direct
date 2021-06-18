@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/report.json",
+    "type": "object",
+    "title": "report object",
+    "description": "Report header detailing the Account, Order and Orderline information for the Stats arrays",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "AccountId": {
+            "$id": "#/properties/AccountId",
+            "type": "string",
+            "title": "Account ID",
+            "description": "The ID of the account that identifies the buyer, advertiser and any other stakeholders."
+        },
+        "OrderId": {
+            "$id": "#/properties/OrderId",
+            "type": "string",
+            "title": "Order ID",
+            "description": "The ID of the order that the Stats belong to"
+        },
+        "LineId": {
+            "$id": "#/properties/LineId",
+            "type": "string",
+            "title": "Line ID",
+            "description": "The ID of the Order Line that the Stats belong to"
+        },
+        "OOHProviderData": {
+            "$id": "#/properties/OOHProviderData",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohProviderData_object.json",
+            "description": "The OOHProviderData object is used for Buyers to detail structured information that may be used to identify their order in a Seller's system using their own IDs or references."
+        },
+        "Stats": {
+            "$id": "#/properties/Stats",
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats.json",
+            "description": "An Array of playout events that can be aggregated from a single playout event to a summary of perfromance over the whole campaign period."
+        }
+    
+    },
+
+    "Required": ["AccountId", "OrderId", "LineId","Stats"]
+}
