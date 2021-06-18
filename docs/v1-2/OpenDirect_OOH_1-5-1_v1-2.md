@@ -150,6 +150,8 @@ Richard Saturley **World Out of Home Organisation**
 
 [Appendix B: Minimum OpenDirect (OOH) Resources & Objects Required For An Initial Implementation](#appendix-b--minimum-opendirect-ooh-resources--objects-required-for-an-initial-implementation)
 
+[Appendix C : OOHbject Schema variation when used in the context of Product, Availability and Line operations]
+
 # Executive Summary
 
 ## OpenDirect
@@ -649,7 +651,9 @@ A collection of targeting criteria used to discover and target the digital and p
 | Increment    | Defines the increments that are permitted for the targeting values                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | number                                                             |
 | Default      | Defines the default TargetValue(s) that are selected if the Buyer does not specify any TargetValue(s) or the target is not selectable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | String (255) or Number                                             |
 
-OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json
+Basic OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json
+
+See Appendix C for a description of the OOHbject Schema variation when used in the context of Product, Availability and Line operations.
 
 ## 3.10 Availability
 
@@ -757,7 +761,7 @@ OpenDirect (and OpenRTB) trades with real time Audience impressions, whereas Out
 
 OOH Media physically manifests itself as display of the advert on a frame at a defined location and time which then gives an audience in the vicinity of that event an opportunity to see the advertising.
 
-OOHDirect1.5.1 uses the OpenDirect (OOH) OOHbject object (see section 3.11) to discover and target the multidimensional aspect of OOH media.
+OOHDirect1.5.1 uses the OpenDirect (OOH) OOHbject object (see section 3.9) to discover and target the multidimensional aspect of OOH media.
 
 The use of multiple objects to describe an OOH Product are at the discretion of the media owner/publisher. The simplest OOH product could be described as a single frame with the use of the Inventory OOHbject.
 
@@ -2090,6 +2094,8 @@ The OpenDirect (OOH) standard is not about telling media owners how to trade, no
 The table below summarises the OpenDirect (OOH) Resources, Common Objects and Targeting OOHbjects required to achieve a basic implementation of OpenDirect (OOH) 1.5.1 based on a Media Owner&#39;s existing trading capabilities and trading tools.
 
 ![MinimumResources](Pictures/minimum_resources.png)
+
+# Appendix C : OOHbject Schema variation when used in the context of Product, Availability and Line operations
 
 
 *OpenDirect 1.5.1 © 2016 Interactive Advertising Bureau, OpenDirect (OOH) 1.5.1 and OOHbjects © OutSmart and IPAO March 2020*
