@@ -433,11 +433,11 @@ A Product resource identifies anything from an ad placement to a Run of Network 
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | ActiveDate         | The date and time, in UTC, that the product may become part of the bookable inventory. Use ISO-8601 format for time and date.                                                                                          | ISO-8601                                                                              |
 | AdFormatTypes      | A list of ad types that the product supports.                                                                                                                                                                          | Array                                                                                 |
-| AllowNoCreative    | A Boolean value that indicates whether line items assigned to this order may be booked before creative is assigned. A value of TRUE allows lines to be booked without creative assigned. Default value is TRUE for OOH | Boolean                                                                               |
 | AdvertiserIdAccess | List of AdvertiserIDs with access to this Product. NULL = all accounts can access this product.                                                                                                                        | Array                                                                                 |
-| BuyerIdAccess      | List of BuyerIDs with access to this Product. NULL = all accounts can access this product.                                                                                                                             | Array                                                                                 |
-| ThirdPartyIdAccess | List of ThirdPartyIDs with access to this Product. NULL = all accounts can access this product.                                                                                                                        | Array                                                                                 |
+| AllowNoCreative    | A Boolean value that indicates whether line items assigned to this order may be booked before creative is assigned. A value of TRUE allows lines to be booked without creative assigned. Default value is TRUE for OOH | Boolean                                                                               |
+| AvailsGroupBy      | An array of OOHbjects that describe the grouped fields that that the Availability data can be returned in                                                                                                              | Object                                                                                |
 | BasePrice          | The product’s base retail price; this is not the rate card price. The actual price may be more if targeting is specified.                                                                                              | Decimal                                                                               |
+| BuyerIdAccess      | List of BuyerIDs with access to this Product. NULL = all accounts can access this product.                                                                                                                             | Array                                                                                 |
 | Currency           | Identifies the currency for BasePrice and MinSpend. Values provided using CURRENCY reference data as specified in section 4.6.                                                                                         | String (3) \[ISO-4217\]                                                               |
 | DeliveryType       | The type of delivery. For example, exclusive, guaranteed or non-guaranteed. Values provided using DELIVERY TYPES reference data                                                                                        | Object                                                                                |
 | Description        | The product’s description.                                                                                                                                                                                             | String (255)                                                                          |
@@ -449,10 +449,10 @@ A Product resource identifies anything from an ad placement to a Run of Network 
 | Name               | The product’s display name. The name must be unique.                                                                                                                                                                   | String                                                                                |
 | ReservedExpiryTime | Defines the day of the week and time of day that represents the cut off point for expiry of a Line for the Product when it is “reserved”.                                                                              | ISO-8601                                                                              |
 | RetirementDate     | The date and time, in UTC, that the product may be removed from the bookable inventory. Use ISO-8601 format for time and date                                                                                          | ISO-8601                                                                              |
-| TargetTypes        | A list of IDs that identify the types of targeting that the product supports. See OOHbjects Targeting                                                                                                                  | Object                                                                                |
+| TargetTypes        | An Array of OOHbjects that identify the types of targeting that the product supports.                                                                                                                                  | Object                                                                                |
+| ThirdPartyIdAccess | List of ThirdPartyIDs with access to this Product. NULL = all accounts can access this product.                                                                                                                        | Array                                                                                 |
 | TimeZone           | The time zone that the product runs in.                                                                                                                                                                                | [tz database time zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) |
 | Url                | A URL to the specification that describes the creative requirements.                                                                                                                                                   | String (1024)                                                                         |
-
 
 Product Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/product/product_object.json
 
@@ -2045,14 +2045,20 @@ The following diagram outlines the publisher workflow.
 The following diagram outlines the workflow for creating an order.
 
 ![AdvertiserWorkflow](Pictures/advertiser_workflow.png)
+ 
+### 8.12.3 Availability to Orderline Workflow Diagram
 
-### 8.12.3 Booking State Diagram
+The following diagram outlines the workflow for going from an availability check to creating an orderline (the diagram assumes an order has already been created for an orderline to be assigned to)
+
+![Availability to Orderline Workflow](Pictures/Avails2Orderline.png)
+
+### 8.12.4 Booking State Diagram
 
 The following diagram shows the state changes of a Line resource. For details about each state, see BookingStatus.
 
 ![BookingState](Pictures/booking_state.png)
 
-### 8.12.4 Resource Model Diagram
+### 8.12.5 Resource Model Diagram
 
 The following diagram shows the relationships between the OpenDirect resources. This model allows a buyer to work with many advertisers and an advertiser to work with many buyers. If the advertiser does their own buying, they&#39;d be both the advertiser and the buyer. For details about the resource objects, see Resources.
 
