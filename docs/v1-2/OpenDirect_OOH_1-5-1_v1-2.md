@@ -651,6 +651,19 @@ A collection of targeting criteria used to discover and target the digital and p
 
 OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json
 
+## 3.10 Availability
+
+An object that groups the inventory availbility into Available, Partially Available and Unavailable arrays of Targeting OOHbjects
+
+| Attribute | Description                                                                                                                                               | Type   |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| Status    | Summary definition of the inventory described in the Targeting Array as Available, Partially Available or Unavailable                                     | String |
+| Reason    | State the reason if Partially Available or Unavailable                                                                                                    | String |
+| Comment   | Free text for an availability comment                                                                                                                     | String |
+| Context   | Array of OOHbjects describing the context of any Partially Available or Unavailable status e.g. this could be a frame that is causing a duplication error | Object |
+| Targeting | Array of OOHbjects describing the inventory that is Available,  Partially Available or Unavailable statuses                                               | Object |
+
+OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object.json
 
 # 4 Reference Data
 
