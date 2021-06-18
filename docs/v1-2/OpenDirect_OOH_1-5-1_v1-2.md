@@ -1195,6 +1195,7 @@ The Schedule and Delivery data can be served at Flight, Week, Day, Hour and/or S
 | **/accounts/{id}/orders/{id}/lines/{id}/stats** | Requests the reporting for a specified Line in an Order. |
 
 ### 6.7.1 Reporting
+Reporting header for Report arrays
 
 | Attribute         | Description                                            | Type     |
 | ----------------- | ------------------------------------------------------ | -------- |
@@ -1203,9 +1204,10 @@ The Schedule and Delivery data can be served at Flight, Week, Day, Hour and/or S
 | ReportEndTime     | The last EndTime in the Report Array                   | ISO-8601 |
 | Report            | An Array of Report Objects                             | Object   |
 
-Reporting Schema:
+Reporting Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/reporting.json
  
 ### 6.7.2 Report
+Report header detailing the Account, Order and Orderline information for the Stats arrays
 
 | Attribute       | Description                                                                                                                                                                     | Type   |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -1215,9 +1217,10 @@ Reporting Schema:
 | OOHProviderData | The OOHProviderData object is used for Buyers to detail structured information that may be used to identify their order in a Seller's system using their own IDs or references. | Object |
 | Stats           | An Array of playout events that can be aggregated from a single playout event to a summary of perfromance over the whole campaign period.                                       | Object |
 
-Report Schema:
+Report Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/report.json
 
 ### 6.7.2 Stats
+The Schedule and Delivery data served at Flight, Week, Day, Hour and/or Spot level of granularity at the Publisher's/Media Owner's discretion
  
 | Attribute      | Description                                                                                                                                           | Type     |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
@@ -1229,9 +1232,9 @@ Report Schema:
 | ShareOfTime    | An Average % share of total time across the dimensions reported on for the campaign (e.g. play, hour. panel, geography)                               | Decimel  |
 | BookedPlays    | The number of times a creative (with a defined spot length) has started playing but it may not have been fully played                                 | Decimel  |
 | DeliveredPlays | The number of times a creative (with a defined spot length) has started playing but it may not have been fully played                                 | Decimel  |
-| Delivery       | The number of times a creative (with a defined spot length) has started playing but it may not have been fully played                                 | Decimel  | 
+| Delivery       | % of Delivered Plays vs Booked Plays                                 | Decimel  | 
 
-Stats Schema: 
+Stats Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats.json
  
  
 ## 6.8 Paging QueryParameters
