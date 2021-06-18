@@ -25,7 +25,6 @@ The OOH Standards Committee has representation from both Outsmart and IPAO. The 
 The Technical sub-group is a part of the OOH Industry Standards Committee. This group of experts sourced from Media Owners, Agencies and Specialists from the OOH Industry, were challenged to create a standard way for Media Owners/Publishers to make their inventory discoverable in a OpenDirect-compliant interface where agencies and advertisers can programmatically trade OOH inventory directly.
 
 ## Contributors
-sebastiaan@livedooh.com
 
 **Clear Channel** Ben Price, Jamie Mills, Victor Porter, Karen Fornos Klein, Miles Talmey, Noopur Gosalia, Joao Baptista, Sebastiaan Schinkel
 
@@ -92,6 +91,7 @@ Richard Saturley **World Out of Home Organisation**
 [3.7 OOHProviderData](#37-oohproviderdata)
 [3.8 Size](#38-size)
 [3.9 OOHbject](#39-oohbject)
+[3.10 Availability](#310-availability)
 
 [4. Reference Data](#4-reference-data)
 
@@ -149,6 +149,8 @@ Richard Saturley **World Out of Home Organisation**
 [Appendix A: Specification Change Log](#appendix-a--specification-change-log)
 
 [Appendix B: Minimum OpenDirect (OOH) Resources & Objects Required For An Initial Implementation](#appendix-b--minimum-opendirect-ooh-resources--objects-required-for-an-initial-implementation)
+
+[Appendix C : OOHbject Schema variation when used in the context of Product, Availability and Line operations](#appendix-c--oohbject-schema-variation-when-used-in-the-context-of-product-availability-and-line-operations)
 
 # Executive Summary
 
@@ -649,8 +651,23 @@ A collection of targeting criteria used to discover and target the digital and p
 | Increment    | Defines the increments that are permitted for the targeting values                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | number                                                             |
 | Default      | Defines the default TargetValue(s) that are selected if the Buyer does not specify any TargetValue(s) or the target is not selectable                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | String (255) or Number                                             |
 
-OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json
+Basic OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json
 
+See Appendix C for a description of the OOHbject Schema variation when used in the context of Product, Availability and Line operations.
+
+## 3.10 Availability
+
+An object that groups the inventory availbility into Available, Partially Available and Unavailable arrays of Targeting OOHbjects
+
+| Attribute | Description                                                                                                                                               | Type   |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| Status    | Summary definition of the inventory described in the Targeting Array as Available, Partially Available or Unavailable                                     | String |
+| Reason    | State the reason if Partially Available or Unavailable                                                                                                    | String |
+| Comment   | Free text for an availability comment                                                                                                                     | String |
+| Context   | Array of OOHbjects describing the context of any Partially Available or Unavailable status e.g. this could be a frame that is causing a duplication error | Object |
+| Targeting | Array of OOHbjects describing the inventory that is Available,  Partially Available or Unavailable statuses                                               | Object |
+
+OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object.json
 
 # 4 Reference Data
 
@@ -744,7 +761,7 @@ OpenDirect (and OpenRTB) trades with real time Audience impressions, whereas Out
 
 OOH Media physically manifests itself as display of the advert on a frame at a defined location and time which then gives an audience in the vicinity of that event an opportunity to see the advertising.
 
-OOHDirect1.5.1 uses the OpenDirect (OOH) OOHbject object (see section 3.11) to discover and target the multidimensional aspect of OOH media.
+OOHDirect1.5.1 uses the OpenDirect (OOH) OOHbject object (see section 3.9) to discover and target the multidimensional aspect of OOH media.
 
 The use of multiple objects to describe an OOH Product are at the discretion of the media owner/publisher. The simplest OOH product could be described as a single frame with the use of the Inventory OOHbject.
 
@@ -2078,5 +2095,20 @@ The table below summarises the OpenDirect (OOH) Resources, Common Objects and Ta
 
 ![MinimumResources](Pictures/minimum_resources.png)
 
+# Appendix C : OOHbject Schema variation when used in the context of Product, Availability and Line operations
+
+| OOHbject URI Usage              | Schema Referenced                                                 | Schema Referenced                              | Schema Referenced                                   | Schema Referenced                                                                                                                | Schema Referenced                                                                                                             |
+| ------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| GET\_lines\_id\_response        | uris/<br>lines/<br>lines\_response.json                           | resources/<br>line/<br>line\_object.json       | common/<br>targetTypes\_array\_line.json            | common/<br>OOHbject/<br>line/<br>delivery.json<br>distribution.json<br>inventory.json<br>investment.json<br>prohibitions.json    |                                                                                                                               |
+| GET\_lines\_response            | uris/<br>lines/<br>lines\_collection\_response.json               | resources/<br>line/<br>line\_object.json       | common/<br>targetTypes\_array\_line.json            | common/<br>OOHbject/<br>line/<br>delivery.json<br>distribution.json<br>inventory.json<br>investment.json<br>prohibitions.json    |                                                                                                                               |
+| GET\_products\_id\_response     | uris/<br>products/<br>products\_response.json                     | resources/<br>product/<br>product\_object.json | common/<br>targetTypes\_array\_product              | common/<br>OOHbject/<br>product/<br>delivery.json<br>distribution.json<br>inventory.json<br>investment.json<br>prohibitions.json |                                                                                                                               |
+| GET\_products\_response         | uris/<br>products/<br>products\_collection\_response.json         | resources/<br>product/<br>product\_object.json | common/<br>targetTypes\_array\_product              | common/<br>OOHbject/<br>product/<br>delivery.json<br>distribution.json<br>inventory.json<br>investment.json<br>prohibitions.json |                                                                                                                               |
+| PATCH\_lines\_id\_response      | uris/<br>lines/<br>lines\_response.json                           | resources/<br>line/<br>line\_object.json       | common/<br>targetTypes\_array\_line.json            | common/<br>OOHbject/<br>line/<br>delivery.json<br>distribution.json<br>inventory.json<br>investment.json<br>prohibitions.json    |                                                                                                                               |
+| POST\_avails\_request           | uris/<br>products/<br>products\_avails\_request.json              | common/<br>productAvailsSearch\_object.json    | common/<br>targetTypes\_array\_avails.json          | common/<br>OOHbject/<br>avails/<br>delivery.json<br>distribution.json<br>inventory.json<br>investment.json<br>prohibitions.json  |                                                                                                                               |
+| POST\_avails\_response          | uris/<br>products/<br>products\_avails\_collection\_response.json | common/<br>productAvails\_object.json          | common/<br>productAvails\_Availability\_object.json | common/<br>targetTypes\_array\_line.json                                                                                         | common/<br>OOHbject/<br>line/<br>delivery.json<br>distribution.json<br>inventory.json<br>investment.json<br>prohibitions.json |
+| POST\_lines\_request            | uris/<br>lines/<br>lines\_request.json                            | resources/<br>line/<br>line\_object.json       | common/<br>targetTypes\_array\_line.json            | common/<br>OOHbject/<br>line/<br>delivery.json<br>distribution.json<br>inventory.json<br>investment.json<br>prohibitions.json    |                                                                                                                               |
+| POST\_lines\_response           | uris/<br>lines/<br>lines\_response.json                           | resources/<br>line/<br>line\_object.json       | common/<br>targetTypes\_array\_line.json            | common/<br>OOHbject/<br>line/<br>delivery.json<br>distribution.json<br>inventory.json<br>investment.json<br>prohibitions.json    |                                                                                                                               |
+| POST\_products\_search\_request | uris/<br>products/<br>products\_search\_request.json              | common/<br>productSearch\_object.json          | common/<br>targetTypes\_array\_avails.json          | common/<br>OOHbject/<br>avails/<br>delivery.json<br>distribution.json<br>inventory.json<br>investment.json<br>prohibitions.json  |                                                                                                                               |
+| GET\_datasources\_response      | uris/<br>datasources/<br>datasources\_collection\_response.json   | common/<br>dataSource\_object.json             | common/<br>targetTypes\_array.json                  | common/<br>oohbject\_object.json                                                                                                 |                                                                                                                               |
 
 *OpenDirect 1.5.1 © 2016 Interactive Advertising Bureau, OpenDirect (OOH) 1.5.1 and OOHbjects © OutSmart and IPAO March 2020*
