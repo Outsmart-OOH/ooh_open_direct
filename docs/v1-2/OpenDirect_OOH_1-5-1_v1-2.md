@@ -1186,33 +1186,57 @@ Reference:
 ## 6.7 Stats (OOH Schedule &amp; Delivery Reporting)
 
 A method to publish the OOH display schedule generated to fulfil the campaign targeting requirements (pre-flight) and the performance of the schedule when the campaign is in flight and/or completed.
+ 
+The Schedule and Delivery data can be served at Flight, Week, Day, Hour and/or Spot level of granularity at the Publisher's/Media Owner's discretion.
 
 | **URI** | **Description** |
 | --- | --- |
-| **/accounts/{id}/orders/{id}/lines/stats** | Aggregates the spot, impacts, time and spend for all lines in the order. |
-| **/accounts/{id}/orders/{id}/lines/{id}/stats** | Aggregates the spot, impacts, time and spend for the specified line. |
+| **/accounts/{id}/orders/{id}/lines/stats** | Requests the reporting for all Lines in the Order. |
+| **/accounts/{id}/orders/{id}/lines/{id}/stats** | Requests the reporting for a specified Line in an Order. |
 
-The &#39;Stats&#39; resource enables the publishing of the schedule and the delivery of the schedule to the following fields and granularity:
+### 6.7.1 Reporting
+Reporting header for Report arrays
 
-### 6.7.1 Report Fields
+| Attribute         | Description                                            | Type     |
+| ----------------- | ------------------------------------------------------ | -------- |
+| ReportPublishTime | The Date and Time in UTC when the Report was published | ISO-8601 |
+| ReportStartTime   | The first StartTime in the Report Array                | ISO-8601 |
+| ReportEndTime     | The last EndTime in the Report Array                   | ISO-8601 |
+| Report            | An Array of Report Objects                             | Object   |
 
-| Field          | Definition                                                                                                                                            |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| StartDate      | The Start Date and Time in UTC  for the Stat                                                                                                          |
-| EndDate        | The End Date and Time in UTC for the Stat                                                                                                             |
-| SpotLength     | The amount of time the advertiser has to play their creative in - If an advertisement is on screen for this length of time, this constitutes one play |
-| ShareOfTime    | An Average % share of total time across the dimensions reported on for the campaign (e.g. play, hour. panel, geography)                               |
-| FrameID        | The ID of the Frame that the delivery is carried out upon                                                                                             |
-| CreativeID     | The ID of the creative file that is played out in the Spot                                                                                            |
-| BookedPlays    | The number of times a creative (with a defined spot length) has started playing but it may not have been fully played                                 |
-| DeliveredPlays | The number of times a creative (with a defined spot length is fully played)                                                                           |
-| Delivery       | % of Delivered Plays vs Booked Plays                                                                                                                  |
+Reporting Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/reporting.json
+ 
+### 6.7.2 Report
+Report header detailing the Account, Order and Orderline information for the Stats arrays
 
-### 6.7.2 Granularity
+| Attribute       | Description                                                                                                                                                                     | Type   |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| AccountId       | The ID of the account that identifies the buyer, advertiser and any other stakeholders.                                                                                         | String |
+| OrderId         | The ID of the order that the Stats belong to                                                                                                                                    | String |
+| LineId          | The ID of the orderline  that the Stats belong to                                                                                                                               | String |
+| OOHProviderData | The OOHProviderData object is used for Buyers to detail structured information that may be used to identify their order in a Seller's system using their own IDs or references. | Object |
+| Stats           | An Array of playout events that can be aggregated from a single playout event to a summary of perfromance over the whole campaign period.                                       | Object |
 
-The Schedule and Delivery data can be requested and or served at Flight, Week, Day, Hour and/or Spot level of granularity
+Report Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/report.json
 
+### 6.7.2 Stats
+The Schedule and Delivery data served at Flight, Week, Day, Hour and/or Spot level of granularity at the Publisher's/Media Owner's discretion
+ 
+| Attribute      | Description                                                                                                                                           | Type     |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| StartTime      | The Start Time in UTC for the Stat                                                                                                                    | ISO-8601 |
+| EndTime        | The End Time in UTC for the Stat                                                                                                                      | ISO-8601 |
+| FrameID        | The ID of the Frame that the delivery is carried out upon                                                                                             | String   |
+| CreativeID     | The ID of the creative file that is played out in the Spot                                                                                            | String   |
+| SpotLength     | The amount of time the advertiser has to play their creative in - If an advertisement is on screen for this length of time, this constitutes one play | Decimel  |
+| ShareOfTime    | An Average % share of total time across the dimensions reported on for the campaign (e.g. play, hour. panel, geography)                               | Decimel  |
+| BookedPlays    | The number of times a creative (with a defined spot length) has started playing but it may not have been fully played                                 | Decimel  |
+| DeliveredPlays | The number of times a creative (with a defined spot length) has started playing but it may not have been fully played                                 | Decimel  |
+| Delivery       | % of Delivered Plays vs Booked Plays                                 | Decimel  | 
 
+Stats Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats.json
+ 
+ 
 ## 6.8 Paging QueryParameters
 
 For any resource that returns lists of data, these resources should support paging. Two resource parameters—count and offset—will be required in order to support paging. If the parameters aren&#39;t included, the total number of available data might not be returned.
