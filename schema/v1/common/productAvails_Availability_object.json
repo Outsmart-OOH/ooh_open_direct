@@ -15,7 +15,7 @@
             "$id": "#/properties/Status",
             "type": "string",
             "title": "Status",
-            "description": "Summarry defintion of the inventory desctibed in the Targeting Array as Available, Partially Available or Unavailable",
+            "description": "Summary definition of the inventory desctibed in the Targeting Array as Available, Partially Available or Unavailable",
             "enum": [
                 "Available",
                 "Partially Available",
