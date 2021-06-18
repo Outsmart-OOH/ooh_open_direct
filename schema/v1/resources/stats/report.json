@@ -38,7 +38,7 @@
         },
         "Stats": {
             "$id": "#/properties/Stats",
-            "type": "object",
+            "type": "array",
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats.json",
             "description": "An Array of playout events that can be aggregated from a single playout event to a summary of perfromance over the whole campaign period."
         }

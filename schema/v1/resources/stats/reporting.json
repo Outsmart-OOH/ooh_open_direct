@@ -35,7 +35,7 @@
         },
         "Report": {
             "$id": "#/properties/Report",
-            "type": "object",
+            "type": "array",
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/report.json",
             "description": "An Array of Report Objects"
         }
