@@ -15,7 +15,7 @@
             "$id": "#/properties/Status",
             "type": "string",
             "title": "Status",
-            "description": "Summary definition of the inventory desctibed in the Targeting Array as Available, Partially Available or Unavailable",
+            "description": "The ID of the account that identifies the buyer, advertiser and any other stakeholders.",
             "enum": [
                 "Available",
                 "Partially Available",
@@ -36,15 +36,11 @@
         },
         "Context": {
             "$id": "#/properties/Context",
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array_line.json",
-            "title": "Context",
-            "description": "Array of OOHbjects describing the context of any Partially Available or Unavailable status e.g. This could be a frame that is causing a duplication error"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
         },
         "Targeting": {
             "$id": "#/properties/Targeting",
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array_line.json",
-            "title": "Targeting",
-            "description": "Array of OOHbjects describing the inventory that is Available,  Partially Available or Unavailable statuses"
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
         }
 
     }
