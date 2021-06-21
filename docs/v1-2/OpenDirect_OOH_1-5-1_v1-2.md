@@ -1064,7 +1064,7 @@ The following shows an example response for /accounts.
  
 ```json 
 {
-    Accounts: [
+    "Accounts": [
  
       {
          "AdvertiserId": "B7EBC7F3-FBB3-4250-99F1-8D001088434B",
