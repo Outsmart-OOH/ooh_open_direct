@@ -763,6 +763,8 @@ OOH Media physically manifests itself as display of the advert on a frame at a d
 
 OOHDirect1.5.1 uses the OpenDirect (OOH) OOHbject object (see section 3.9) to discover and target the multidimensional aspect of OOH media.
 
+![OOHbject Summary](Pictures/OOHbject_Summary.png)
+
 The use of multiple objects to describe an OOH Product are at the discretion of the media owner/publisher. The simplest OOH product could be described as a single frame with the use of the Inventory OOHbject.
 
 The core identification structure of an OOHbject is
@@ -824,6 +826,10 @@ Route has over 400 categories of audience classification and reports the audienc
 
 Further information on route can be found at [www.route.org.uk](http://www.route.org.uk/)
 
+#### Inventory,Frames,Metrics,FrameCount
+
+Allows the Media Owner / Publisher to define the total number of Frames to be targeted and allows the buyer to specify this metric when performing an availability check or setting up an order line.
+ 
 #### Inventory,Audience,Metrics,x
 
 Allows the Media Owner / Publisher to define the audience metrics that are available to targeted and allows the buyer to specify these metrics when performing an availability check or setting up an order line.
@@ -923,17 +929,21 @@ The Investment OOHbject allows an OOH media owner to describe (and OOH media buy
 
 *Local_Currency* is defined as the currency that the order is going to be transacted in to ISO 4217 currency codes e.g. GBP, USD, EUR
 
-#### Investment,Total,Local_Currency,Fixed
-
-If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested total Product price or given total Product price based on the other OOHbject targeting values given.
-
 #### Investment,Frames,Local_Currency,CPF
 
 If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested *cost per frame* price or a target *cost per frame* price based on the other OOHbject Product targeting values given.
+ 
+#### Investment,Frames,Local_Currency,Fixed
+
+If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested total Product price or given total Product price based on the other OOHbject targeting values given.
 
 #### Investment,Audience,Local_Currency,CPT
 
 If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested *cost per thousand* price or a target *cost per thousand* price based on the other OOHbject Product targeting values given.
+ 
+#### Investment,Audience,Local_Currency,Fixed
+
+If this is made available, this dynamic OOHbject details (in terms of the local currency) the requested total Product price or given total Product price based on the other OOHbject targeting values given.
 
 
 
