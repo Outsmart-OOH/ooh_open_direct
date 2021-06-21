@@ -483,21 +483,7 @@ Change Request Schema: TBC
 
 ## 2.9 Stats
 
-A resource to publish the OOH display schedule generated to fulfil the campaign targeting requirements (pre-flight) and the performance of the schedule when the campaign is in flight and/or completed.
-
-| Attribute       | Description                                                                        | Type                                                                                                                           |
-| --------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| AccountId       | The Account the Stats are for                                                      | String (36)                                                                                                                    |
-| OrderId         | The Order the Stats are for                                                        | String (36)                                                                                                                    |
-| LineId          | The Order Line the Stats are for                                                   | String (36)                                                                                                                    |
-| ReportStartTime | The date report will start. if left blank, it will revert to the LineID start date | ISO-8601                                                                                                                       |
-| ReportEndTime   | The date report will end. if left blank, it will revert to the LineID end date     | ISO-8601                                                                                                                       |
-| ReportFields    | The fields that are to be included in the Stats report                             | enum (StartTime, EndTime, SpotLength, ShareOfTime, FrameReference, FrameID, CreativeID, BookedPlays, DeliveredPlays, Delivery) |
-| TimeGranularity | The time granularity of the Stats report                                           | enum (All, Week, Day, Hour, Spot)                                                                                              |
-| ReportFormat    | requests the rerport output as a Verbose or Non-Verbose data format                | enum (Verbose, NonVerbose)                                                                                                     |
-| Webhook         | URI of the webhook to respond to                                                   | String (1024)                                                                                                                  |
-
-Stats Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/stats/stats_object.json
+See [6.7 Stats (OOH Schedule & Delivery Reporting)](#67-stats-ooh-schedule--delivery-reporting)
 
 
 # 3 Common Objects
