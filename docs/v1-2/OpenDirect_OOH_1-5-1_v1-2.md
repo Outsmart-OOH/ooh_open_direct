@@ -1061,33 +1061,24 @@ For GET calls that return a collection of resources, such as /accounts/{id}/orde
 
 The following shows an example response for /accounts.
 
-{
-
- Accounts: [
  
+```json 
 {
-
-"AdvertiserId": "B7EBC7F3-FBB3-4250-99F1-8D001088434B",
-
-"BuyerId": "4AA837B7-1A27-421E-9DDD-CAEF1AE884B5", 
-
-"Id": "9B0878BE-7254-49BE-AFD4-B0A67C7C3D26"
-
-},
-
-{
-
-"AdvertiserId": "16B55667-37CF-4447-A79D-88E6DAC4D7C2", 
-
-"BuyerId": "4AA837B7-1A27-421E-9DDD-CAEF1AE884B5",
-
-"Id": "EAC93F5D-F448-44D6-8333-4E530D14C9DA"
-
+    Accounts: [
+ 
+      {
+         "AdvertiserId": "B7EBC7F3-FBB3-4250-99F1-8D001088434B",
+         "BuyerId": "4AA837B7-1A27-421E-9DDD-CAEF1AE884B5", 
+         "Id": "9B0878BE-7254-49BE-AFD4-B0A67C7C3D26"
+      },
+      {
+         "AdvertiserId": "16B55667-37CF-4447-A79D-88E6DAC4D7C2", 
+         "BuyerId": "4AA837B7-1A27-421E-9DDD-CAEF1AE884B5",
+         "Id": "EAC93F5D-F448-44D6-8333-4E530D14C9DA"
+      }
+   ]
 }
-
-]
-
-}
+```
 
 The collection object may include additional publisher-defined properties. If there are no resources to return, the array must be empty.
 
