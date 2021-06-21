@@ -795,41 +795,6 @@ The Inventory **Name** OOHbject allows an OOH media owner to describe (and OOH m
 
 #### Summary
 
-| Name              | Type        | DataSource | Target    |
-| ----------------- | ----------- | ---------- | --------- |
-| Inventory         | Frames      | Space      | frame\_id |
-| linked\_asset\_id |
-| format            |
-| environment       |
-| dimension         |
-| frame\_type       |
-| illumination      |
-| faces             |
-| sales\_code       |
-| surface\_area     |
-| width             |
-| height            |
-| depot\_id         |
-| tv\_area          |
-| region            |
-| conurbation       |
-| town              |
-| postal\_sector    |
-| lat/long          |
-| Metrics           | FramesCount |
-| Audience          | Route       | age        |
-| sex               |
-| affluence         |
-| tv\_area          |
-| region            |
-| conurbation       |
-| town              |
-| postal\_sector    |
-| Metrics           | Impacts     |
-| Cover             |
-| Reach             |
-| Frequency         |
-
 ![Inventory OOHbject](Pictures/name_inventory.png)
 
 #### Inventory,Frames,SPACE,x
