@@ -1118,12 +1118,14 @@ The API may support the following HTTP status codes.
 
 If the request generates a 400 Bad Request status code, the response must contain a collection object; the collection object must contain a single field named **errors**. The value of **errors** is an array of one or more error objects. The following table defines the properties of the error object.
 
-| **Property** | **Type** | **Required/Optional** | **Description** |
-| --- | --- | --- | --- |
-| **ErrorCode** | String | Required | A symbolic string constant that identifies the error. |
-| **Context** | Dictionary\&lt;string, object\&gt; | Optional | A list of Publisher-defined key/value pairs that provide additional context about the error. For example, an ID that identifies a log entry. |
-| **Link** | String | Optional | A URL to additional help text that may help the callersolve theissue. |
-| **ErrorMessage** | String | Required | A string that describes the error that occurred. |
+| Attribute    | Description                                                                                      | Type   |
+| ------------ | ------------------------------------------------------------------------------------------------ | ------ |
+| ErrorCode    | A symbolic string constant that identifies the error.                                            | String |
+| ErrorMessage | A summary of the error that occurred.                                                            | String |
+| Availability | A detailed response in terms of Availability, Partial Availability and Unavailabiliy and Context | Object |
+| Link         | A URL to additional help text that may help the caller solve the issue.                          | String |
+ 
+Error Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/general/error.json
 
 The following shows the body of an example error response.
 
@@ -1133,27 +1135,47 @@ The following shows the body of an example error response.
 
  "Errors": [
      {
-
-     "Context": {
-                "Name": "Inventory",
-                "Type": "Frames",
-                "DataSource": "Space",
-                "Target": "frame_id",
-                "TargetValues": [
-                       1234931339,
-                       1235190735,
-                       1234931338,
-                       1235191547]
-                 },
-     "Message": "Frames are not selectable in this product", 
-     "ErrorCode": "FramesNotSelectable",
+     "ErrorCode": "Duplication101",
+     "Message": "Frame cant be selected", 
+     "Availability": [
+                {
+                    "Status": "Unavailable",
+                    "Reason": "Duplication",
+                    "Code":"DUP-90",
+                    "Comment":"Targeted frame duplicates with another frame",
+                    "Context":[
+                        {
+                            "Name": "Inventory",
+                            "Type": "Frames",
+                            "DataSource": "Space",
+                            "Target": "frame_id",
+                            "TargetValues": [
+                                "1235191234"
+                            ]
+                        }
+                     ],
+                    "Targeting": [
+                        {
+                            "Name": "Inventory",
+                            "Type": "Frames",
+                            "DataSource": "Space",
+                            "Target": "frame_id",
+                            "TargetValues": [
+                                "1235192345"
+                            ]
+                        }
+                    ]
+                }
+         }
+     ],
      "Link": "https://publisher.com/opendirect/help/SelectFrames.aspx"
 
      },
      {
-     "Context":{},
-     "Message":"",
-     "ErrorCode": "",
+     
+     "ErrorCode":"",
+     "ErrorMessage": "",
+     "Availabiliy":[],
      "Link": ""
      }
 
