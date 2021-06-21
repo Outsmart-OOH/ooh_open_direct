@@ -30,14 +30,14 @@
             "Type": "Frames",
             "DataSource": "Time",
             "Target": "Days",
-            "TargetValues": [ 5, 6 ]
+            "TargetValues": [ "5", "6" ]
         },
         {
             "Name": "Delivery",
             "Type": "Frames",
             "DataSource": "ShareOfDisplay",
             "Target": "ShareOfTime",
-            "TargetValues": [20]
+            "TargetValues": ["20"]
 
         },
         {
@@ -45,7 +45,7 @@
             "Type": "Frames",
             "DataSource": "ShareOfDisplay",
             "Target": "Spot",
-            "TargetValues": [5]
+            "TargetValues": ["5"]
 
         }
 

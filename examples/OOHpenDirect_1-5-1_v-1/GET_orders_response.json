@@ -15,7 +15,7 @@
           "CampaignName": "BARTYTIME",
           "PoNumber": "",
           "SalesOrderReference": "SPEC123",
-          "BarterOrganizationId": "BAR987",
+          "BarterOrganizationID": "BAR987",
           "Other": ""
         }
       ,
