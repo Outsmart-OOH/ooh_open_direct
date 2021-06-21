@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/general/error.json",
+    "type": "object",
+    "title": "400 error object",
+    "description": "Return for a POST, PATCH request that contains invalid data, or when the requested action (i.e. book) is not valid.The response must include the reasons for the error.",
+    "default": {},
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+        },
+        "ErrorCode": {
+            "$id": "#/properties/Reason",
+            "type": "string",
+            "title": "Error Code",
+            "description": "A symbolic string constant that identifies the error."
+        },
+        "ErrorMessage": {
+            "$id": "#/properties/Reason",
+            "type": "string",
+            "title": "Message",
+            "description": "A summary of the error that occurred."
+        },
+        "Availability": {
+            "$id": "#/properties/Availability",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object.json",
+            "title": "Error explained in terms of availability and context",
+            "description": "A detailed response in terms of Availability, Partial Availability and Unavailabiliy and Context"
+        },
+        "Link": {
+            "$id": "#/properties/Reason",
+            "type": "string",
+            "title": "Link",
+            "description": "A URL to additional help text that may help the caller solve the issue."
+        }
+    },
+
+    "Required": ["ErrorCode", "ErrorMessage"]
+}
