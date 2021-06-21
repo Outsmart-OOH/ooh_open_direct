@@ -1166,7 +1166,6 @@ The following shows the body of an example error response.
                         }
                     ]
                 }
-         }
      ],
      "Link": "https://publisher.com/opendirect/help/SelectFrames.aspx"
 
