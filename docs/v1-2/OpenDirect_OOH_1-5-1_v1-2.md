@@ -556,6 +556,8 @@ Defines the response to a request for product availability and pricing informati
 | Availability | An object that groups the inventory availbility into Available, Partially Available and Unavailable arrays of Targeting OOHbjects                                | Object                  |
 | Currency     | The currency used to specify Price. Currency is set for the PRODUCT resource specified in section 2.7 and uses CURRENCY reference data specified in section 4.6. | String (3) \[ISO-4217\] |
 | Price        | The product’s price based on OOHbject Targeting                                                                                                                  | Decimal                 |
+| StartDate          | The requested start date for inventory delivery                                                                                                                    | ISO-8601           |
+| EndDate            | The requested end date for inventory delivery                                                                                                                      | ISO-8601           |
 
 ProductAvails Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json
 
