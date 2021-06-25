@@ -94,19 +94,13 @@
             "$id": "#/properties/Targeting",
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array.json"
         },
-        "ProductAvails": {
+        "Availability": {
             "$id": "#/properties/ProductAvails",
             "type": "array",
             "title": "Array of ProductAvails",
-            "description": "This Object is used to return the latest Product Avails in the event of the line draft/reserve/booking request failing because of a change in product availability between booking states",
+            "description": "This Object is used to return the latest Product Avails in the event of the line reserve or booking request failing because of a change in product availability between booking states",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_object.json",
-                "required": [
-                    "Currency",
-                    "ProductId",
-                    "Targeting",
-                    "Price"
-                ]
+                "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object.json"
             }
         }
     }
