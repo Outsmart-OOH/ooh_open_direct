@@ -641,7 +641,7 @@ A collection of targeting criteria used to discover and target the digital and p
 
 Basic OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/oohbject_object.json
 
-See Appendix C for a description of the OOHbject Schema variation when used in the context of Product, Availability and Line operations.
+See [Appendix C](#appendix-c--oohbject-schema-variation-when-used-in-the-context-of-product-availability-and-line-operations) for a description of the OOHbject Schema variation when used in the context of Product, Availability and Line operations.
 
 ## 3.10 Availability
 
