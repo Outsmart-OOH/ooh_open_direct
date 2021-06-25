@@ -34,6 +34,20 @@
             "type": "number",
             "title": "Price",
             "description": "The Price of the product"
+        },
+        "EndDate": {
+            "$id": "#/properties/EndDate",
+            "type": "string",
+            "format": "date-time",
+            "title": "End Date",
+            "description": "The returned end date for inventory delivery"
+        },
+        "StartDate": {
+            "$id": "#/properties/StartDate",
+            "type": "string",
+            "format": "date-time",
+            "title": "Start Date",
+            "description": "The returned start date for inventory delivery"
         }
 
     }
