@@ -1077,7 +1077,7 @@ The collection object may include additional publisher-defined properties. If th
 
 Publishers must support authenticating advertiser and agency users. Publishers must use [OAuth 2.0](http://tools.ietf.org/html/draft-ietf-oauth-v2-15) for user authentication. Publishers must support the implicit and authorization code grant flows.
 
-Each request must include an AccessToken header that is set to the user&#39;s access token. If the token is not valid, the request must fail with HTTP status code 401 Unauthorized.
+Each request must include an access_token header that is set to the user&#39;s access token. If the token is not valid, the request must fail with HTTP status code 401 Unauthorized.
 
 ## 6.2 Versioning
 
