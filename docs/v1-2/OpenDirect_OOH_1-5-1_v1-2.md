@@ -838,9 +838,9 @@ e.g.
 
 Booking line date 08/11/20 to 17/11/20
 
-Delivery.Frames.Time.Days = [1,2,3,4,5,6,7] based on ISO 8601
+Delivery.Frames.Time.Days = [0,1,2,3,4,5,6] based on ISO 8601
 
-The OOHbject field *Selectable* indicates if this array is further targetable e.g. the Days array of [1,2,3,4,5,6,7] is returned, and if the Days are flagged as *Selectable*, the buyer may select days [6,7].
+The OOHbject field *Selectable* indicates if this array is further targetable e.g. the Days array of [0,1,2,3,4,5,6] is returned, and if the Days are flagged as *Selectable*, the buyer may select days [5,6].
 
 #### Delivery,Frames,Time,Hours
 
