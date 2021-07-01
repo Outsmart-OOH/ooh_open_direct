@@ -25,7 +25,6 @@
             "BuyerIdAccess": [],
             "ThirdPartyIdAccess": [],
             "TargetTypes": [
-
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
@@ -76,26 +75,26 @@
                         "Underground"
                     ]
                 },
-                
                 {
                     "Name": "Delivery",
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "Spot",
-                    "TargetValues":[],
+                    "TargetValues": [],
                     "Selectable": true,
                     "Minimum": 5,
                     "Maximum": 5,
                     "Increment": 0,
                     "Default": 5
                 },
-                
                 {
                     "Name": "Distribution",
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
                     "Target": "Days",
-                    "TargetValues": ["Flexible"],
+                    "TargetValues": [
+                        "Flexible"
+                    ],
                     "Selectable": true
                 },
                 {
@@ -103,13 +102,14 @@
                     "Type": "Investment",
                     "DataSource": "Space",
                     "Target": "tv_area",
-                    "TargetValues": ["Flexible"],
+                    "TargetValues": [
+                        "Flexible"
+                    ],
                     "Selectable": true,
                     "Minimum": 5000,
                     "Increment": 500,
                     "Default": 5000
                 },
-                
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
@@ -117,7 +117,6 @@
                     "Target": "Impacts",
                     "Selectable": true
                 },
-
                 {
                     "Name": "Prohibitions",
                     "Type": "Frames",
@@ -129,9 +128,40 @@
                     ]
                 }
             ],
+            "AvailsGroupBy": [
+                {
+                    "Name": "Inventory",
+                    "Type": "Frames",
+                    "DataSource": "Space",
+                    "Target": "frame_type"
+                },
+                {
+                    "Name": "Inventory",
+                    "Type": "Frames",
+                    "DataSource": "Space",
+                    "Target": "format"
+                },
+                {
+                    "Name": "Inventory",
+                    "Type": "Frames",
+                    "DataSource": "Space",
+                    "Target": "environment"
+                },
+                {
+                    "Name": "Distribution",
+                    "Type": "Investment",
+                    "DataSource": "Space",
+                    "Target": "tv_area"
+                },
+                {
+                    "Name": "Inventory",
+                    "Type": "Audience",
+                    "DataSource": "Metrics",
+                    "Target": "Impacts"
+                }
+            ],
             "TimeZone": "GMT",
             "Url": "http://<domain>/<path>/creativespec.aspx"
         }
-
     ]
 }

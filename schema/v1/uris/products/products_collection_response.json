@@ -20,10 +20,10 @@
             "items": {
                 "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/product/product_object.json",
                 "required": [
-                    "ActiveDate",
                     "Id",
                     "Name",
-                    "TargetTypes"
+                    "TargetTypes",
+                    "AvailsGroupBy"
                 ]
             }
         }

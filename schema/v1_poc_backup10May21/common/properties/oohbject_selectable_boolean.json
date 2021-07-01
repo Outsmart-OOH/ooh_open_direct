@@ -1,7 +1,0 @@
-{
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/properties/oohbject_selectable_boolean.json",
-    "type": "boolean",
-    "title": "Defines whether a Buyer can select from the given list of TargetValues or whether the targetValues are fixed",
-    "description": "Defines whether a Buyer can select from the given list of TargetValues or whether the targetValues are fixed"
-}
