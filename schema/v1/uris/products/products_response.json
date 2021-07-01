@@ -9,6 +9,6 @@
         "Id",
         "Name",
         "TargetTypes",
-        "AvailsGroupBy"
+        "ActiveDate"
     ]
 }
