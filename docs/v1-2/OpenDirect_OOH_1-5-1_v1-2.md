@@ -10,7 +10,13 @@ The OpenDirect media trading API was devised by the OpenDirect Working Group, a 
 
 # OpenDirect (OOH) 1.5.1
 
-OpenDirect (OOH) is an extension of the OpenDirect schema, particularly around the &#39;Product Target&#39; function, to accommodate the unique aspects of the &#39;real world&#39; Out-Of-Home Media (OOH) inventory in the dimensions of location, delivery, distribution, investment and display prohibitions. OpenDirect (OOH) has been developed by the members of the OOH industry organisations 'Outsmart' and the 'IPAO'.
+OpenDirect (OOH) is a recognised community extension of the IAB OpenDirect programmatic trading schema, particularly developed around Out-Of-Home 'Product and Availability Targeting' functions
+
+OpenDirect enables Media Owners to apply their own sales rules to inventory deals, and make these products discoverable and purchasable directly to a Media buyer without the need for 3rd party SSP, Exchange and DSP integration or fees.
+
+The standard uniquely accommodates the 'real world' aspects of  both Classic and Digital Out-Of-Home Media (OOH) inventory in the 5 dimensions of location, delivery, distribution, investment and display prohibitions. 
+
+OpenDirect (OOH) has been developed by the members of the OOH industry organisations 'Outsmart' and the 'IPAO'.
 
 ## About Outsmart
 
