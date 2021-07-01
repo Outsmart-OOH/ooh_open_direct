@@ -64,7 +64,7 @@ Richard Saturley **World Out of Home Organisation**
 
 # Contents
 
-[OpenDirect 1.5.1 v1.1](#opendirect-ooh-151-v11)
+[OpenDirect 1.5.1 v1.2](#opendirect-ooh-151-v12)
 
 [Executive Summary](#executive-summary)
 
