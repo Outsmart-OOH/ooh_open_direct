@@ -16,7 +16,7 @@ OpenDirect enables Media Owners to apply their own sales rules to inventory deal
 
 The standard uniquely accommodates the 'real world' aspects of  both Classic and Digital Out-Of-Home Media (OOH) inventory in the 5 dimensions of location, delivery, distribution, investment and display prohibitions. 
 
-OpenDirect (OOH) has been developed by the members of the OOH industry organisations [Outsmart](https://www.outsmart.org.uk/) and the [IPAO](https://ipa.co.uk/) and is endorsed buy the [OAAA](https://oaaa.org/AboutOOH/GuidelinesStandards/DigitalGuidelines/OpenDirectOOHSpecifications.aspx)
+OpenDirect (OOH) has been developed by the members of the OOH industry organisations [Outsmart](https://www.outsmart.org.uk/) and the [IPAO](https://ipa.co.uk/) and is endorsed by the [OAAA](https://oaaa.org/AboutOOH/GuidelinesStandards/DigitalGuidelines/OpenDirectOOHSpecifications.aspx)
 
 ## About Outsmart
 
