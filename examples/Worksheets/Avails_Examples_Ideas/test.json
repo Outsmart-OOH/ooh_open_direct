@@ -5,7 +5,7 @@
             "Currency": "",
             "ProductId": "1234",
             "Availability": [
-                {
+                [{
                     "Status": "Partially Available",
                     "Targeting": [
                         {
@@ -17,7 +17,7 @@
                     "Comment": "",
                     "Context": [],
                     "Reason": ""
-                }
+        }]
             ],
             "Price": 0,
             "AccountId": "",
