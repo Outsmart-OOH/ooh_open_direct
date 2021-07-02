@@ -27,7 +27,8 @@
         "Availability": {
             "$id": "#/properties/Availability",
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object.json",
-            "description":"An object that groups the inventory availbility into Available, Partially Available and Unavailable arrays of Targeting OOHbjects"
+            "description":"An object that groups the inventory availbility into Available, Partially Available and Unavailable arrays of Targeting OOHbjects",
+            "type":"array"
         },
         "Price": {
             "$id": "#/properties/Price",
