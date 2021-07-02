@@ -6,7 +6,11 @@
             "ProductId": "1234",
             "Availability": [
                 {
-                    "":""
+                    "Status": "Available",
+                    "Targeting": []
+                },
+                {
+                    
                 }
             ],
             "Price": 0,
