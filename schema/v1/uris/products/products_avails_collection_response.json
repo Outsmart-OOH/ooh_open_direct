@@ -16,7 +16,7 @@
         },
         "ProductAvails": {
             "$id": "#/properties/Products",
-            "type": "object",
+            "type": "array",
             "title": "Array of ProductAvails",
             "description": "Collection of ProductAvails",
             "items": {

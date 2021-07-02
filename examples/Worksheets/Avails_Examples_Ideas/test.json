@@ -6,8 +6,17 @@
             "ProductId": "1234",
             "Availability": [
                 {
-                    "Status": "Available",
-                    "Targeting": []
+                    "Status": "Partially Available",
+                    "Targeting": [
+                        {
+                            "Name":"Delivery",
+                            "Type": "Frames",
+                            "DataSource": 
+                        }
+                    ],
+                    "Comment": "",
+                    "Context": [],
+                    "Reason": ""
                 },
                 {
                     
