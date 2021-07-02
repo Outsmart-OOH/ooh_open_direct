@@ -27,7 +27,6 @@
         "Availability": {
             "$id": "#/properties/Availability",
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object_array.json",
-            "description":"https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object.json",
             "title": "Availability"
         },
         "Price": {
