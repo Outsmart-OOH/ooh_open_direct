@@ -3,7 +3,7 @@
     "ProductAvails": [
         {
             "Currency": "",
-            "ProductId": "",
+            "ProductId": "1234",
             "Availability": [
                 {
                     "":""
@@ -11,8 +11,8 @@
             ],
             "Price": 0,
             "AccountId": "",
-            "EndDate": "",
-            "StartDate": ""
+            "EndDate": "2021-11-01T00:00:00.000Z",
+            "StartDate": "2021-11-13T00:00:00.000Z"
         }
     ]
 }
