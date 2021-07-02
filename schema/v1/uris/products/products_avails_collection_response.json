@@ -2,6 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/uris/products/products_avails_collection_response.json",
     "type": "object",
+    
     "title": "Response for a collection of ProductAvails",
     "description": "The schema of a response that gives a collection of ProductAvails and Unavailability Reasons",
     "required": [
