@@ -11,12 +11,15 @@
                         {
                             "Name": "Delivery",
                             "Type": "Frames",
-                            "DataSource":
+                            "DataSource":""
                         }
                     ],
                     "Comment": "",
                     "Context": [],
                     "Reason": ""
+                },
+                {
+                    
                 }
             ],
             "Price": 0,
