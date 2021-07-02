@@ -10,7 +10,7 @@
                     "Status": "Available",
                     "Reason": "",
                     "Comment": "",
-                    "Context": "",
+                    "Context": [],
                     "Targeting": [
                         [
                             {

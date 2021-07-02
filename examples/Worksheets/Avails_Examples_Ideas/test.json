@@ -4,14 +4,14 @@
         {
             "Currency": "",
             "ProductId": "1234",
-            "Availability": 
+            "Availability": [
                 {
                     "Status": "Partially Available",
                     "Targeting": [
                         {
                             "Name": "Delivery",
                             "Type": "Frames",
-                            "DataSource":""
+                            "DataSource": ""
                         }
                     ],
                     "Comment": "",
@@ -19,8 +19,17 @@
                     "Reason": ""
                 },
                 {
-                    "Status"
+                    "Status": "Available",
+                    "Reason": "Cos",
+                    "Comment": "wow",
+                    "Context": [],
+                    "Targeting": [
+                        {
+                            "Name": "Delivery"
+                        }
+                    ]
                 }
+            ],
             "Price": 0,
             "AccountId": "",
             "EndDate": "2021-11-01T00:00:00.000Z",
