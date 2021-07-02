@@ -10,7 +10,9 @@
     "additionalProperties": false,
     "properties": {
         "$schema": {
-            "type": "string"
+            "type": "string",
+            "format": "uri",
+            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
         },
         "ProductAvails": {
             "$id": "#/properties/Products",
