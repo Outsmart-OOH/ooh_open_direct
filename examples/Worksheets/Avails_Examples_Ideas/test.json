@@ -5,19 +5,19 @@
             "Currency": "",
             "ProductId": "1234",
             "Availability": [
-                [{
+                {
                     "Status": "Partially Available",
                     "Targeting": [
                         {
-                            "Name":"Delivery",
+                            "Name": "Delivery",
                             "Type": "Frames",
-                            "DataSource": 
+                            "DataSource":
                         }
                     ],
                     "Comment": "",
                     "Context": [],
                     "Reason": ""
-        }]
+                }
             ],
             "Price": 0,
             "AccountId": "",

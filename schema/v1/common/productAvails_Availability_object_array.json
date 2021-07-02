@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object_array.json",
-    "type": "object",
+    "type": "array",
     "title": "Availability Object Array",
     "description": "Array of Availability Objects",
     "additionalProperties": false,
