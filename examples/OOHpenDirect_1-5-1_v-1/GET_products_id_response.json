@@ -184,25 +184,25 @@
             "Name": "Inventory",
             "Type": "Frames",
             "DataSource": "<SPACE>",
-            "Target": "frame_id"
+            "Target": "<frame_id>"
         },
         {
             "Name": "Inventory",
             "Type": "Frames",
             "DataSource": "<SPACE>",
-            "Target": "frame_type"
+            "Target": "<frame_type>"
         },
         {
             "Name": "Inventory",
             "Type": "Frames",
             "DataSource": "<SPACE>",
-            "Target": "format"
+            "Target": "<format>"
         },
         {
             "Name": "Inventory",
             "Type": "Frames",
             "DataSource": "<SPACE>",
-            "Target": "environment"
+            "Target": "<environment>"
         },
         {
             "Name": "Delivery",
