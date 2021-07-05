@@ -17,8 +17,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_id",
+                    "DataSource": "<SPACE>",
+                    "Target": "<FrameId>",
                     "TargetValues": [
                         "1234931339",
                         "1235190735",
