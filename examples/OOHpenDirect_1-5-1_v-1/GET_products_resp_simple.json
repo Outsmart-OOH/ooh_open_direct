@@ -68,7 +68,7 @@
             "Name": "Prohibitions",
             "Type": "Frames",
             "DataSource": "<SPACE>",
-            "Target": "<HFSS>",
+            "Target": "<ProhibitionsCategory>",
             "TargetValues": [
                 "1234931569",
                 "1235202465"
