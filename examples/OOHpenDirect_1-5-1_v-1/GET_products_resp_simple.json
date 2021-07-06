@@ -26,8 +26,8 @@
         {
             "Name": "Inventory",
             "Type": "Frames",
-            "DataSource": "Space",
-            "Target": "frame_id",
+            "DataSource": "<SPACE>",
+            "Target": "<frame_id>",
             "TargetValues": [
                 "1234931339",
                 "1235190735",
@@ -57,8 +57,8 @@
         {
             "Name": "Prohibitions",
             "Type": "Frames",
-            "DataSource": "SPACE",
-            "Target": "Alcohol",
+            "DataSource": "<SPACE>",
+            "Target": "<Alcohol>",
             "TargetValues": [
                 "1234931339",
                 "1235190735"
@@ -67,8 +67,8 @@
         {
             "Name": "Prohibitions",
             "Type": "Frames",
-            "DataSource": "SPACE",
-            "Target": "HFSS",
+            "DataSource": "<SPACE>",
+            "Target": "<HFSS>",
             "TargetValues": [
                 "1234931569",
                 "1235202465"
@@ -79,20 +79,20 @@
         {
             "Name": "Inventory",
             "Type": "Frames",
-            "DataSource": "Space",
-            "Target": "frame_id"
+            "DataSource": "<SPACE>",
+            "Target": "<frame_id>"
         },
         {
             "Name": "Inventory",
             "Type": "Frames",
-            "DataSource": "Space",
-            "Target": "frame_type"
+            "DataSource": "<SPACE>",
+            "Target": "<frame_type>"
         },
         {
             "Name": "Inventory",
             "Type": "Frames",
-            "DataSource": "Space",
-            "Target": "format"
+            "DataSource": "<SPACE>",
+            "Target": "<format>"
         }
     ],
     "TimeZone": "GMT",

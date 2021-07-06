@@ -50,7 +50,7 @@
             "title": "Description of the OOHbject Metric",
             "maxLength": 255,
             "enum": [
-                "<frame_id>","<frame_type>","<format>","<environment>",
+                "<frame_id>","<frame_type>","<format>","<environment>","<Alcohol>","<HFSS",
                 "<age>", "<sex>","<affluence>","<Impacts>",
                 "FramesCount",
                 "Impacts", "Cover", "Reach", "Frequency"
