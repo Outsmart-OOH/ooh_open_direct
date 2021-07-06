@@ -10,8 +10,8 @@
         {
             "Name": "Inventory",
             "Type": "Frames",
-            "DataSource": "Space",
-            "Target": "frame_id"
+            "DataSource": "<SPACE>",
+            "Target": "<frame_id>"
         },
         {
             "Name": "Delivery",
@@ -36,8 +36,8 @@
         {
             "Name": "Inventory",
             "Type": "Frames",
-            "DataSource": "Space",
-            "Target": "frame_id"
+            "DataSource": "<SPACE>",
+            "Target": "<frame_id>"
         }
     ],
     "Targeting": [
@@ -46,8 +46,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_id",
+                    "DataSource": "<SPACE>",
+                    "Target": "<frame_id>",
                     "TargetValues": [
                         "1234931339",
                         "1235190735"
@@ -86,8 +86,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_id",
+                    "DataSource": "<SPACE>",
+                    "Target": "<frame_id>",
                     "TargetValues": [
                         "1234931338",
                         "1235191547"
