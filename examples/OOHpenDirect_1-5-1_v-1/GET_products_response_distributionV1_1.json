@@ -28,8 +28,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_id",
+                    "DataSource": "<SPACE>",
+                    "Target": "<frame_id>",
                     "TargetValues": [
                         "1234931339",
                         "1235190735",
@@ -49,8 +49,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_type",
+                    "DataSource": "<SPACE>",
+                    "Target": "<frame_type>",
                     "TargetValues": [
                         "digital moving image"
                     ]
@@ -58,8 +58,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "format",
+                    "DataSource": "<SPACE>",
+                    "Target": "<format>",
                     "TargetValues": [
                         "6 sheets"
                     ]
@@ -67,8 +67,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "environment",
+                    "DataSource": "<SPACE>",
+                    "Target": "<environment>",
                     "TargetValues": [
                         "Rail Stations",
                         "Roadside",
@@ -100,8 +100,8 @@
                 {
                     "Name": "Distribution",
                     "Type": "Investment",
-                    "DataSource": "Space",
-                    "Target": "tv_area",
+                    "DataSource": "<SPACE>",
+                    "Target": "<tv_area>",
                     "TargetValues": [
                         "Flexible"
                     ],
@@ -120,8 +120,8 @@
                 {
                     "Name": "Prohibitions",
                     "Type": "Frames",
-                    "DataSource": "SPACE",
-                    "Target": "Alcohol",
+                    "DataSource": "<SPACE>",
+                    "Target": "<Alcohol>",
                     "TargetValues": [
                         "1234931339",
                         "1235190735"
@@ -132,26 +132,26 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_type"
+                    "DataSource": "<SPACE>",
+                    "Target": "<frame_type>"
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "format"
+                    "DataSource": "<SPACE>",
+                    "Target": "<format>"
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "environment"
+                    "DataSource": "<SPACE>",
+                    "Target": "<environment>"
                 },
                 {
                     "Name": "Distribution",
                     "Type": "Investment",
-                    "DataSource": "Space",
-                    "Target": "tv_area"
+                    "DataSource": "<SPACE>",
+                    "Target": "<tv_area>"
                 },
                 {
                     "Name": "Inventory",

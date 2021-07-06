@@ -54,7 +54,8 @@
             "enum": [
                 "Days",
                 "Hours",
-                "<FrameID>"
+                "<frame_id>","<frame_type>","<format>","<environment>",
+                "<age>", "<sex>","<affluence>","<Impacts>","<tv_area>","<town>"
             ],
             "additionalProperties": true
         },

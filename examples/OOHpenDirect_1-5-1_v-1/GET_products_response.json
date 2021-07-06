@@ -33,8 +33,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_id",
+                    "DataSource": "<SPACE>",
+                    "Target": "<frame_id>",
                     "TargetValues": [
                         "1234931339",
                         "1235190735",
@@ -52,8 +52,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_type",
+                    "DataSource": "<SPACE>",
+                    "Target": "<frame_type>",
                     "TargetValues": [
                         "digital moving image"
                     ]
@@ -61,8 +61,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "format",
+                    "DataSource": "<SPACE>",
+                    "Target": "<format>",
                     "TargetValues": [
                         "6 sheets"
                     ]
@@ -70,8 +70,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "environment",
+                    "DataSource": "<SPACE>",
+                    "Target": "<environment>",
                     "TargetValues": [
                         "Rail Stations",
                         "Roadside",
@@ -118,7 +118,7 @@
                     "Name": "Distribution",
                     "Type": "Frames",
                     "DataSource": "ShareOfDisplay",
-                    "Target": "Hour",
+                    "Target": "Hours",
                     "TargetValues": [
                         "Fixed"
                     ]
@@ -126,8 +126,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
-                    "DataSource": "Route",
-                    "Target": "age",
+                    "DataSource": "<ROUTE>",
+                    "Target": "<age>",
                     "TargetValues": [
                         "15-17",
                         "18-24",
@@ -145,8 +145,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
-                    "DataSource": "Route",
-                    "Target": "sex",
+                    "DataSource": "<ROUTE>",
+                    "Target": "<sex>",
                     "TargetValues": [
                         "Male",
                         "Female"
@@ -156,8 +156,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
-                    "DataSource": "Route",
-                    "Target": "affluence",
+                    "DataSource": "<ROUTE>",
+                    "Target": "<affluence>",
                     "TargetValues": [
                         "A",
                         "B",
@@ -178,8 +178,8 @@
                 {
                     "Name": "Prohibitions",
                     "Type": "Frames",
-                    "DataSource": "SPACE",
-                    "Target": "Alcohol",
+                    "DataSource": "<SPACE>",
+                    "Target": "<Alcohol>",
                     "TargetValues": [
                         "1234931339",
                         "1235190735"
@@ -190,38 +190,38 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_id"
+                    "DataSource": "<SPACE>",
+                    "Target": "<frame_id>"
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_type"
+                    "DataSource": "<SPACE>",
+                    "Target": "<frame_type>"
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "format"
+                    "DataSource": "<SPACE>",
+                    "Target": "<format>"
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "Town"
+                    "DataSource": "<SPACE>",
+                    "Target": "<tv_area>"
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "Postcode"
+                    "DataSource": "<SPACE>",
+                    "Target": "<town>"
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "environment"
+                    "DataSource": "<SPACE>",
+                    "Target": "<environment>"
                 },
                 {
                     "Name": "Delivery",
@@ -260,8 +260,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_id",
+                    "DataSource": "<SPACE>",
+                    "Target": "<frame_id>",
                     "TargetValues": [
                         "1234931339",
                         "1235190735",
@@ -293,20 +293,20 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_id"
+                    "DataSource": "<SPACE>",
+                    "Target": "<frame_id>"
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_type"
+                    "DataSource": "<SPACE>",
+                    "Target": "<frame_type>"
                 },
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "format"
+                    "DataSource": "<SPACE>",
+                    "Target": "<format>"
                 }
             ],
             "TimeZone": "GMT",
