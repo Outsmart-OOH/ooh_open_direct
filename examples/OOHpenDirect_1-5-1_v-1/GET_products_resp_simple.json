@@ -58,7 +58,7 @@
             "Name": "Prohibitions",
             "Type": "Frames",
             "DataSource": "<SPACE>",
-            "Target": "<Alcohol>",
+            "Target": "<ProhibitionsCategory>",
             "TargetValues": [
                 "1234931339",
                 "1235190735"
