@@ -9,14 +9,16 @@
     "Name": "My Line 1",
     "OrderId": "1235872",
     "ProductId": "456366",
-    "OOHProviderData": { "PoNumber": "88873" } ,
+    "OOHProviderData": {
+        "PoNumber": "88873"
+    },
     "StartDate": "2014-12-05T06:00:00.000Z",
     "Targeting": [
         {
             "Name": "Inventory",
             "Type": "Frames",
-            "DataSource": "Space",
-            "Target": "frame_id",
+            "DataSource": "<SPACE>",
+            "Target": "<frame_id>",
             "TargetValues": [
                 "1234931339",
                 "1235190735",
@@ -29,25 +31,28 @@
             "Type": "Frames",
             "DataSource": "Time",
             "Target": "Days",
-            "TargetValues": [ "5", "6" ]
-
+            "TargetValues": [
+                "5",
+                "6"
+            ]
         },
         {
             "Name": "Delivery",
             "Type": "Frames",
             "DataSource": "ShareOfDisplay",
             "Target": "ShareOfTime",
-            "TargetValues": ["20"]
-
+            "TargetValues": [
+                "20"
+            ]
         },
         {
             "Name": "Delivery",
             "Type": "Frames",
             "DataSource": "ShareOfDisplay",
             "Target": "Spot",
-            "TargetValues": ["5"]
-
+            "TargetValues": [
+                "5"
+            ]
         }
-
     ]
-} 
+}

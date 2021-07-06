@@ -9,14 +9,14 @@
                     "Status": "Available",
                     "Reason": "",
                     "Comment": "",
-                    "Context": "",
+                    "Context": [],
                     "Targeting": [
                         [
                             {
                                 "Name": "Inventory",
                                 "Type": "Frames",
-                                "DataSource": "Space",
-                                "Target": "frame_id",
+                                "DataSource": "<SPACE>",
+                                "Target": "<frame_id>",
                                 "TargetValues": [
                                     "1234931339"
                                 ]
@@ -41,8 +41,8 @@
                             },
                             {
                                 "Name": "Investment",
-                                "Type": "Total",
-                                "DataSource": "GBP",
+                                "Type": "Frames",
+                                "DataSource": "<GBP>",
                                 "Target": "Fixed",
                                 "TargetValues": [
                                     "150"
@@ -53,8 +53,8 @@
                             {
                                 "Name": "Inventory",
                                 "Type": "Frames",
-                                "DataSource": "Space",
-                                "Target": "frame_id",
+                                "DataSource": "<SPACE>",
+                                "Target": "<frame_id>",
                                 "TargetValues": [
                                     "1235190735"
                                 ]
@@ -79,8 +79,8 @@
                             },
                             {
                                 "Name": "Investment",
-                                "Type": "Total",
-                                "DataSource": "GBP",
+                                "Type": "Frames",
+                                "DataSource": "<GBP>",
                                 "Target": "Fixed",
                                 "TargetValues": [
                                     "250"
@@ -91,8 +91,8 @@
                             {
                                 "Name": "Inventory",
                                 "Type": "Frames",
-                                "DataSource": "Space",
-                                "Target": "frame_id",
+                                "DataSource": "<SPACE>",
+                                "Target": "<frame_id>",
                                 "TargetValues": [
                                     "1234931338"
                                 ]
@@ -117,8 +117,8 @@
                             },
                             {
                                 "Name": "Investment",
-                                "Type": "Total",
-                                "DataSource": "GBP",
+                                "Type": "Frames",
+                                "DataSource": "<GBP>",
                                 "Target": "Fixed",
                                 "TargetValues": [
                                     "100"
@@ -129,8 +129,8 @@
                             {
                                 "Name": "Inventory",
                                 "Type": "Frames",
-                                "DataSource": "Space",
-                                "Target": "frame_id",
+                                "DataSource": "<SPACE>",
+                                "Target": "<frame_id>",
                                 "TargetValues": [
                                     "1235191547"
                                 ]
@@ -155,8 +155,8 @@
                             },
                             {
                                 "Name": "Investment",
-                                "Type": "Total",
-                                "DataSource": "GBP",
+                                "Type": "Frames",
+                                "DataSource": "<GBP>",
                                 "Target": "Fixed",
                                 "TargetValues": [
                                     "300"

@@ -6,8 +6,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "frame_type",
+                    "DataSource": "<SPACE>",
+                    "Target": "<frame_type>",
                     "TargetValues": [
                         "digital moving image"
                     ]
@@ -15,8 +15,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "format",
+                    "DataSource": "<SPACE>",
+                    "Target": "<format>",
                     "TargetValues": [
                         "6 sheets"
                     ]
@@ -24,8 +24,8 @@
                 {
                     "Name": "Inventory",
                     "Type": "Frames",
-                    "DataSource": "Space",
-                    "Target": "environment",
+                    "DataSource": "<SPACE>",
+                    "Target": "<environment>",
                     "TargetValues": [
                         "Rail Stations"
                     ]
