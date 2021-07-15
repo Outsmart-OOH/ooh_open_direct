@@ -11,8 +11,8 @@
         {
             "Name": "Inventory",
             "Type": "Frames",
-            "DataSource": "Space",
-            "Target": "frame_id"
+            "DataSource": "<SPACE>",
+            "Target": "<frame_id>"
         },
         {
             "Name": "Inventory",
@@ -40,7 +40,7 @@
         },
         {
             "Name": "Investment",
-            "Type": "Total",
+            "Type": "Frames",
             "DataSource": "GBP",
             "Target": "Fixed"
         }

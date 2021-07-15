@@ -27,7 +27,7 @@
         },
         {
             "Name": "Investment",
-            "Type": "Total",
+            "Type": "Frames",
             "DataSource": "GBP",
             "Target": "Fixed"
         }
