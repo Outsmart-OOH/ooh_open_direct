@@ -38,7 +38,7 @@
             "title": "The identification and inclusion of third party data sources",
             "maxLength": 255,
             "enum": [
-                "<SPACE>"
+                "Space"
             ]
         },
         "Target": {

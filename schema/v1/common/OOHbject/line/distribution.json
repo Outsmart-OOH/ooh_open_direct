@@ -42,7 +42,7 @@
             "enum": [
                 "ShareOfDisplay",
                 "Time",
-                "<SPACE>"
+                "Space"
             ],
             "additionalProperties": true
         },

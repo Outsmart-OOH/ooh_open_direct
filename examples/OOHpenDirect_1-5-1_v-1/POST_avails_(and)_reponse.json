@@ -16,7 +16,7 @@
                             {
                                 "Name": "Inventory",
                                 "Type": "Frames",
-                                "DataSource": "<SPACE>",
+                                "DataSource": "Space",
                                 "Target": "<frame_id>",
                                 "TargetValues": [
                                     "1234931339"
@@ -54,7 +54,7 @@
                             {
                                 "Name": "Inventory",
                                 "Type": "Frames",
-                                "DataSource": "<SPACE>",
+                                "DataSource": "Space",
                                 "Target": "<frame_id>",
                                 "TargetValues": [
                                     "1235190735"
@@ -92,7 +92,7 @@
                             {
                                 "Name": "Inventory",
                                 "Type": "Frames",
-                                "DataSource": "<SPACE>",
+                                "DataSource": "Space",
                                 "Target": "<frame_id>",
                                 "TargetValues": [
                                     "1234931338"
@@ -130,7 +130,7 @@
                             {
                                 "Name": "Inventory",
                                 "Type": "Frames",
-                                "DataSource": "<SPACE>",
+                                "DataSource": "Space",
                                 "Target": "<frame_id>",
                                 "TargetValues": [
                                     "1235191547"

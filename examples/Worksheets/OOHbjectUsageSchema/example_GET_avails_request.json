@@ -47,7 +47,7 @@
         {
             "Name": "Inventory",
             "Type": "Frames",
-            "DataSource": "<SPACE>",
+            "DataSource": "Space",
             "Target": "<FrameId>",
             "TargetValues": [
                 "1234931339",
@@ -82,7 +82,7 @@
         {
             "Name":"Inventory",
             "Type": "Frames",
-            "DataSource": "<SPACE>",
+            "DataSource": "Space",
             "Target": "FramesCount",
             "Minimum": 2,
             "Maximum": 4
