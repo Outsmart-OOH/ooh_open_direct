@@ -54,7 +54,9 @@
                 "age", "sex","affluence","town","tv_area",
                 "FramesCount",
                 "Impacts", "Cover", "Reach", "Frequency"
-            ]
+            ],
+            "additionalProperties": true,
+            "description": "(frame_id,frame_type,format,environment) are derived from the Space DataSource. (age, sex,affluence,town,tv_area) are from the Route Datasource"
         },
         "TargetValues": {
             "$id": "#/properties/TargetValues",

@@ -52,7 +52,9 @@
                 "frame_id",
                 "FramesCount",
                 "Impacts", "Cover", "Reach", "Frequency"
-            ]
+            ],
+            "description": "frame_id is derived from the Space DataSource",
+            "additionalProperties": true
         },
         "TargetValues": {
             "$id": "#/properties/TargetValues",

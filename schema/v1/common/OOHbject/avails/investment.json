@@ -40,7 +40,8 @@
             "maxLength": 255,
             "enum": [
                 "GBP"
-            ]
+            ],
+            "additionalProperties": true
         },
         "Target": {
             "$id": "#/properties/Target",

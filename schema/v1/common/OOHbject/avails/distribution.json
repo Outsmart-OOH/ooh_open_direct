@@ -54,9 +54,10 @@
             "enum": [
                 "Days",
                 "Hours",
-                "<FrameID>"
+                "frame_id"
             ],
-            "additionalProperties": true
+            "additionalProperties": true,
+            "description": "frame_id is derived from the Space DataSource"
         },
         "TargetValues": {
             "$id": "#/properties/TargetValues",

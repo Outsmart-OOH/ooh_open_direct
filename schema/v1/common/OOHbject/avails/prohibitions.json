@@ -48,7 +48,8 @@
             "maxLength": 255,
             "enum": [
                 "<ProhibitionsCategory>"
-            ]
+            ],
+            "additionalProperties": true
         },
         "TargetValues": {
             "$id": "#/properties/TargetValues",
