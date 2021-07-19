@@ -126,7 +126,7 @@
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
-                    "DataSource": "<ROUTE>",
+                    "DataSource": "Route",
                     "Target": "<age>",
                     "TargetValues": [
                         "15-17",
@@ -145,7 +145,7 @@
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
-                    "DataSource": "<ROUTE>",
+                    "DataSource": "Route",
                     "Target": "<sex>",
                     "TargetValues": [
                         "Male",
@@ -156,7 +156,7 @@
                 {
                     "Name": "Inventory",
                     "Type": "Audience",
-                    "DataSource": "<ROUTE>",
+                    "DataSource": "Route",
                     "Target": "<affluence>",
                     "TargetValues": [
                         "A",

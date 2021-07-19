@@ -40,7 +40,7 @@
             "maxLength": 255,
             "enum": [
                 "Space",
-                "<ROUTE>",
+                "Route",
                 "Metrics"
             ]
         },
