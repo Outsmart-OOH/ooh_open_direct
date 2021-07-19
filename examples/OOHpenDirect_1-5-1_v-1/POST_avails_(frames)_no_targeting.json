@@ -12,7 +12,7 @@
             "Name": "Inventory",
             "Type": "Frames",
             "DataSource": "Space",
-            "Target": "<frame_id>"
+            "Target": "frame_id"
         },
         {
             "Name": "Delivery",

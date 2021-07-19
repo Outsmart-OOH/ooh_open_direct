@@ -49,7 +49,7 @@
             "title": "Description of the OOHbject Metric",
             "maxLength": 255,
             "enum": [
-                "<frame_id>",
+                "frame_id",
                 "FramesCount",
                 "Impacts", "Cover", "Reach", "Frequency"
             ]

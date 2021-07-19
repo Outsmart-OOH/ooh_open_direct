@@ -17,7 +17,7 @@
                                 "Name": "Inventory",
                                 "Type": "Frames",
                                 "DataSource": "Space",
-                                "Target": "<frame_id>",
+                                "Target": "frame_id",
                                 "TargetValues": [
                                     "1234931339"
                                 ]
@@ -43,7 +43,7 @@
                             {
                                 "Name": "Investment",
                                 "Type": "Frames",
-                                "DataSource": "<GBP>",
+                                "DataSource": "GBP",
                                 "Target": "Fixed",
                                 "TargetValues": [
                                     "100"
@@ -55,7 +55,7 @@
                                 "Name": "Inventory",
                                 "Type": "Frames",
                                 "DataSource": "Space",
-                                "Target": "<frame_id>",
+                                "Target": "frame_id",
                                 "TargetValues": [
                                     "1235190735"
                                 ]
@@ -81,7 +81,7 @@
                             {
                                 "Name": "Investment",
                                 "Type": "Frames",
-                                "DataSource": "<GBP>",
+                                "DataSource": "GBP",
                                 "Target": "Fixed",
                                 "TargetValues": [
                                     "180"
@@ -93,7 +93,7 @@
                                 "Name": "Inventory",
                                 "Type": "Frames",
                                 "DataSource": "Space",
-                                "Target": "<frame_id>",
+                                "Target": "frame_id",
                                 "TargetValues": [
                                     "1234931338"
                                 ]
@@ -119,7 +119,7 @@
                             {
                                 "Name": "Investment",
                                 "Type": "Frames",
-                                "DataSource": "<GBP>",
+                                "DataSource": "GBP",
                                 "Target": "Fixed",
                                 "TargetValues": [
                                     "100"
@@ -131,7 +131,7 @@
                                 "Name": "Inventory",
                                 "Type": "Frames",
                                 "DataSource": "Space",
-                                "Target": "<frame_id>",
+                                "Target": "frame_id",
                                 "TargetValues": [
                                     "1235191547"
                                 ]
@@ -157,7 +157,7 @@
                             {
                                 "Name": "Investment",
                                 "Type": "Frames",
-                                "DataSource": "<GBP>",
+                                "DataSource": "GBP",
                                 "Target": "Fixed",
                                 "TargetValues": [
                                     "300"
