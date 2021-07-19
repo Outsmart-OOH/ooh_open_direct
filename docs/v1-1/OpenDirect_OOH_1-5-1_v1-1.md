@@ -1,7 +1,6 @@
 # **OpenDirect (OOH) 1.5.1 v1.1**
 
-An OpenDirect 1.5.1 Implementation for the Out-Of-Home Industry
-This document is now out of date and has been superseded by [OpenDirect (OOH) 1.5.1 v1.2](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/docs/v1-2/OpenDirect_OOH_1-5-1_v1-2.md)
+An OpenDirect 1.5.1 Implementation for the Out-Of-Home Industry. This document is now out of date and has been superseded by [OpenDirect (OOH) 1.5.1 v1.2](https://github.com/Outsmart-OOH/ooh_open_direct/blob/master/docs/v1-2/OpenDirect_OOH_1-5-1_v1-2.md)
 
 ![OpenDirectSummary](Pictures/OpenDirectSummary.png)
 
