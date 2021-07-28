@@ -47,8 +47,9 @@
             "title": "Description of the OOHbject Metric",
             "maxLength": 255,
             "enum": [
-                "<ProhibitionsCategory>","<Alcohol>","<HFSS"
-            ]
+                "ProhibitionsCategory","Alcohol","HFSS"
+            ],
+            "additionalProperties": true
         },
         "TargetValues": {
             "$id": "#/properties/TargetValues",
