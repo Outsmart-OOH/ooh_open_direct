@@ -16,7 +16,22 @@
             "$id": "#/properties/BookingStatus",
             "type": "string",
             "title": "Booking Status",
-            "description": "A value that determines whether the line is booked and is capable of delivering ads. For a states , see Booking Status Values."
+            "description": "A value that determines whether the line is booked and is capable of delivering ads. For a states , see Booking Status Values.",
+            "enum": [
+                "Draft",
+                "PendingReservation",
+                "Reserved",
+                "PendingBooking",
+                "Booked",
+                "InFlight",
+                "Finished",
+                "Stopped",
+                "Cancelled",
+                "Paused",
+                "Expired",
+                "Declined",
+                "ChangePending"
+            ]
         },
         "Comment": {
             "$id": "#/properties/Comment",
