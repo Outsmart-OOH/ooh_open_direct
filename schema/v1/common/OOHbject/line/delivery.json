@@ -48,7 +48,7 @@
             "title": "Description of the OOHbject Metric",
             "maxLength": 255,
             "enum": [
-                "Days", "DayCount", "Hours", "Minutes", "TimeZone",
+                "Weeks", "Days", "DayCount", "Hours", "Minutes", "TimeZone",
                 "ShareOfTime", "Spot", "SpotBreakLength"
             ],
             "additionalProperties": true
