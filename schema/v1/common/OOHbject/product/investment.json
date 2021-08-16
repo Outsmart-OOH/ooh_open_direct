@@ -72,6 +72,7 @@
         "Selectable": {
             "$id": "#/properties/Selectable",
             "type": "boolean",
+            "default": false,
             "title": "Defines whether a Buyer can select from the given list of TargetValues  or whether the targetValues are fixed"
         },
         "Count": {
