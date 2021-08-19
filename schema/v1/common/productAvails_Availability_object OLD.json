@@ -42,7 +42,7 @@
         },
         "Targeting": {
             "$id": "#/properties/Targeting",
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array_avails.json",
+            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/targetTypes_array_line.json",
             "title": "Targeting",
             "description": "Array of OOHbjects describing the inventory that is Available,  Partially Available or Unavailable statuses"
         }
