@@ -51,11 +51,11 @@
             "maxLength": 255,
             "enum": [
                 "frame_id","frame_type","format","environment",
-                "age", "sex","affluence","town","tv_area",
+                "age", "sex","affluence","town","tv_area","demographic",
                 "FramesCount",
                 "Impacts", "Cover", "Reach", "Frequency"
             ],
-            "description": "(frame_id,frame_type,format,environment) are derived from the Space DataSource. (age, sex,affluence,town,tv_area) are from the Route Datasource",
+            "description": "(frame_id,frame_type,format,environment) are derived from the Space DataSource. (age, sex,affluence,town,tv_area, demographic) are from the Route Datasource",
             "additionalProperties": true
         },
         "TargetValues": {

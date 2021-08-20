@@ -40,7 +40,8 @@
             "maxLength": 255,
             "enum": [
                 "Space",
-                "Metrics"
+                "Metrics",
+                "Route"
             ]
         },
         "Target": {
@@ -51,7 +52,8 @@
             "enum": [
                 "frame_id",
                 "FramesCount",
-                "Impacts", "Cover", "Reach", "Frequency"
+                "Impacts", "Cover", "Reach", "Frequency",
+                "age", "sex","affluence","town","tv_area","demographic"
             ],
             "description": "frame_id is derived from the Space DataSource",
             "additionalProperties": true
