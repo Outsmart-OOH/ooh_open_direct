@@ -682,19 +682,6 @@ Defines the types of organization involved in the OpenDirect transaction.
 
 Not supported in the OpenDirect (OOH) 1.5.1 Schema
 
-## 4.3 Availability
-
-Defines the availability status of a Frame in association with an order, line or other targeted time.
-
-| Property     | Description                                                                                                                | Type   | Constraints       |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------- | ------ | ----------------- |
-| Available    | The asset is available for the requested in charge period and targeting criteria                                           | String | Max 20 characters |
-| Invalid      | The requested asset is not valid (e.g. decommisioned, not recognised)                                                      | String | Max 20 characters |
-| Optioned     | The asset has been optioned for the requested in charge period and targeting criteria                                      | String | Max 20 characters |
-| Booked       | The asset has been booked for the requested in charge period and targeting criteria                                        | String | Max 20 characters |
-| NotAvailable | The asset is not available for the requested in charge period and targeting criteria (potentially for a number of reasons) | String | Max 20 characters |
-| NotPermitted | The asset falls outside of the scope of the requested Product (including due to prohibtions, juxtas etc)                   | String | Max 20 characters |
-
 ## 4.4 ContactType
 
 Defines the possible types of roles that a Contact plays in an Order
@@ -1504,7 +1491,7 @@ Gets, updates, or deletes the specified Line.
 
 GET: (required) Gets the specified line from the order.
 
-PATCH: (required) Updates the specified line. To update a line, the line must be in the Draft state.
+PATCH: (required) Updates the specified line. To update a line, the line must be in the Draft state. If the line is not in Draft state (e.g. reserved or booked) the Publisher/Media Owner may allow certain fields to be updated via a PATCH such as 'OOHProviderData'
 
 DELETE: (required) Deletes the specified line. May delete a line only if it&#39;s in the Draft state. Must also delete assignments that reference the line.
 
