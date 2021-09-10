@@ -53,7 +53,7 @@
                 "frame_id",
                 "FramesCount",
                 "Impacts", "Cover", "Reach", "Frequency",
-                "age", "sex","affluence","town","tv_area","demographic"
+                "age", "sex","affluence","town","tv_area","demographic","version"
             ],
             "description": "frame_id is derived from the Space DataSource",
             "additionalProperties": true
