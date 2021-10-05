@@ -742,7 +742,9 @@ OpenDirect (and OpenRTB) trades with real time Audience impressions, whereas Out
 
 OOH Media physically manifests itself as display of the advert on a frame at a defined location and time which then gives an audience in the vicinity of that event an opportunity to see the advertising.
 
-OOHDirect1.5.1 uses the OpenDirect (OOH) OOHbject object (see section 3.9) to discover and target the multidimensional aspect of OOH media.
+OpenDirect(OOH)1.5.1 uses the OpenDirect (OOH) OOHbject object to discover and target the multidimensional aspect of OOH media.
+
+See the [OOHbject Example Repository](https://github.com/Outsmart-OOH/ooh_open_direct_examples/tree/main/1-5-1_v1/OOHbject_Scenarios) for a description of the OOHbject Schema variation when used in the context of Product, Availability and Line operations.
 
 ![OOHbject Summary](Pictures/OOHbject_Summary.png)
 
