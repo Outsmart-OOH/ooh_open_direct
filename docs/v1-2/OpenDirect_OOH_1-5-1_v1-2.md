@@ -1106,7 +1106,7 @@ If the request generates a 400 Bad Request status code, the response must contai
 | ------------ | ------------------------------------------------------------------------------------------------ | ------ |
 | ErrorCode    | A symbolic string constant that identifies the error.                                            | String |
 | ErrorMessage | A summary of the error that occurred.                                                            | String |
-| Availability | A detailed response in terms of Availability, Partial Availability and Unavailabiliy and Context | Object |
+|  |  |  |
 | Link         | A URL to additional help text that may help the caller solve the issue.                          | String |
  
 Error Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/general/error.json
