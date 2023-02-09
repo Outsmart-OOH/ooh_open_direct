@@ -37,6 +37,8 @@
             "description": "A URL to additional help text that may help the caller solve the issue."
         }
     },
-
-    "Required": ["ErrorCode", "ErrorMessage"]
+    "Required": [
+        "ErrorCode",
+        "ErrorMessage"
+    ]
 }
