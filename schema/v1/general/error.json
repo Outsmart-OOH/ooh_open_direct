@@ -17,6 +17,10 @@
             "type": "array",
             "title": "Array of one or more values ",
             "additionalItems": true,
+            "Required": [
+                "ErrorCode",
+                "ErrorMessage"
+            ],
             "items": {
                 "properties": {
                     "ErrorCode": {
@@ -46,9 +50,5 @@
                 }
             }
         }
-    },
-    "Required": [
-        "ErrorCode",
-        "ErrorMessage"
-    ]
+    }
 }
