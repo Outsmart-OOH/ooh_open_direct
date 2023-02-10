@@ -12,31 +12,46 @@
             "format": "uri",
             "description": "$schema only included to aid validation of JSON, should not be used in real calls."
         },
-        "ErrorCode": {
-            "$id": "#/properties/Reason",
-            "type": "string",
-            "title": "Error Code",
-            "description": "A symbolic string constant that identifies the error."
-        },
-        "ErrorMessage": {
-            "$id": "#/properties/Reason",
-            "type": "string",
-            "title": "Message",
-            "description": "A summary of the error that occurred."
-        },
-        "Availability": {
-            "$id": "#/properties/Availability",
-            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object.json",
-            "title": "Error explained in terms of availability and context",
-            "description": "A detailed response in terms of Availability, Partial Availability and Unavailabiliy and Context"
-        },
-        "Link": {
-            "$id": "#/properties/Reason",
-            "type": "string",
-            "title": "Link",
-            "description": "A URL to additional help text that may help the caller solve the issue."
+        "Errors": {
+            "$id": "#/properties/Errors",
+            "type": "array",
+            "title": "Array of one or more values ",
+            "additionalItems": true,
+            "Required": [
+                "ErrorCode",
+                "ErrorMessage"
+            ],
+            "items": {
+                "properties": {
+                    "ErrorCode": {
+                        "$id": "#/properties/Errors/properties/ErrorCode",
+                        "type": "string",
+                        "title": "Error Code",
+                        "description": "A symbolic string constant that identifies the error."
+                    },
+                    "ErrorMessage": {
+                        "$id": "#/properties/Errors/properties/ErrorMessage",
+                        "type": "string",
+                        "title": "Message",
+                        "description": "A summary of the error that occurred."
+                    },
+                    "Availability": {
+                        "$id": "#/properties/ProductAvails",
+                        "type": "array",
+                        "title": "Array of ProductAvails",
+                        "description": "A detailed response in terms of Availability, Partial Availability and Unavailabiliy and Context",
+                        "items": {
+                            "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object.json"
+                        }
+                    },
+                    "Link": {
+                        "$id": "#/properties/Errors/properties/Link",
+                        "type": "string",
+                        "title": "Link",
+                        "description": "A URL to additional help text that may help the caller solve the issue."
+                    }
+                }
+            }
         }
-    },
-
-    "Required": ["ErrorCode", "ErrorMessage"]
+    }
 }
