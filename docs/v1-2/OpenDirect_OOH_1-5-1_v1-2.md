@@ -655,8 +655,25 @@ An object that groups the inventory availbility into Available, Partially Availa
 
 | Attribute | Description                                                                                                                                               | Type   |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| Status    | Summary definition of the inventory described in the Targeting Array as Available, Partially Available or Unavailable                                     | String |
-| Reason    | State the reason if Partially Available or Unavailable                                                                                                    | String |
+| Status    | Summary definition of the inventory described in the Targeting Array as 
+* Available
+* Partially Available
+* Unavailable                                     | String |
+| Reason    | State the reason if Partially Available or Unavailable from the list
+* Booked
+* Optioned
+* Excluded
+* OutOfCharge
+* Prohibited
+* Manual Trade Only
+* InvalidPeriodLength
+* InvalidFrameID
+* InvalidBudget
+* InvalidPrice
+* ClientDuplication
+* LocationDuplication
+* LocationJuxta
+| String |
 | Comment   | Free text for an availability comment                                                                                                                     | String |
 | Context   | Array of OOHbjects describing the context of any Partially Available or Unavailable status e.g. this could be a frame that is causing a duplication error | Object |
 | Targeting | Array of OOHbjects describing the inventory that is Available,  Partially Available or Unavailable statuses                                               | Object |
