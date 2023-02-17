@@ -1106,7 +1106,7 @@ If the request generates a 400 Bad Request status code, the response must contai
 
 | Attribute    | Description                                                                                      | Type   |
 | ------------ | ------------------------------------------------------------------------------------------------ | ------ |
-| ErrorCode    | A symbolic string constant that identifies the error.                                            | String |
+| Field        | Name of the Field value that has caused the error                                                | String |
 | ErrorMessage | A summary of the error that occurred.                                                            | String |
 | Availability | A detailed response in terms of Availability, Partial Availability and Unavailabiliy and Context | Object |
 | Link         | A URL to additional help text that may help the caller solve the issue.                          | String |
@@ -1116,56 +1116,22 @@ Error Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/mas
 The following shows the body of an example error response.
 
 ```json
-
 {
-
- "Errors": [
-     {
-     "ErrorCode": "Duplication101",
-     "Message": "Frame cant be selected", 
-     "Availability": [
-                {
-                    "Status": "Unavailable",
-                    "Reason": "Duplication",
-                    "Code":"DUP-90",
-                    "Comment":"Targeted frame duplicates with another frame",
-                    "Context":[
-                        {
-                            "Name": "Inventory",
-                            "Type": "Frames",
-                            "DataSource": "Space",
-                            "Target": "frame_id",
-                            "TargetValues": [
-                                "1235191234"
-                            ]
-                        }
-                     ],
-                    "Targeting": [
-                        {
-                            "Name": "Inventory",
-                            "Type": "Frames",
-                            "DataSource": "Space",
-                            "Target": "frame_id",
-                            "TargetValues": [
-                                "1235192345"
-                            ]
-                        }
-                    ]
-                }
-     ],
-     "Link": "https://publisher.com/opendirect/help/SelectFrames.aspx"
-
-     },
-     {
-     
-     "ErrorCode":"",
-     "ErrorMessage": "",
-     "Availabiliy":[],
-     "Link": ""
-     }
-
-  ]
-
+    "$schema": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/general/error.json",
+    "Errors": [
+        {
+            "Field": "AdvertiserID",
+            "ErrorMessage": "Advertiser ID Not recognised",
+            "Availability": [],
+            "Link": ""
+        },
+        {
+            "Field": "BuyerID",
+            "ErrorMessage": "Missing",
+            "Availability": [],
+            "Link": ""
+        }
+    ]
 }
 ```
 
