@@ -657,25 +657,8 @@ An object that groups the inventory availbility into Available, Partially Availa
 
 | Attribute | Description                                                                                                                                               | Type   |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| Status    | Summary definition of the inventory described in the Targeting Array as 
-* Available
-* Partially Available
-* Unavailable                                     | String |
-| Reason    | State the reason if Partially Available or Unavailable from the list
-* Booked
-* Optioned
-* Excluded
-* OutOfCharge
-* Prohibited
-* Manual Trade Only
-* InvalidPeriodLength
-* InvalidFrameID
-* InvalidBudget
-* InvalidPrice
-* ClientDuplication
-* LocationDuplication
-* LocationJuxta
-| String |
+| Status    | Summary definition of the inventory described in the Targeting Array as <ul><li>Available</li><li>Partially Available</li><li>Unavailable</li></ul> | String |
+| Reason    | State the reason if Partially Available or Unavailable from the list <ul><li>Booked</li><li>Optioned</li><li>Excluded</li><li>OutOfCharge</li><li>Prohibited</li><li>Manual Trade Only</li><li>InvalidPeriodLength</li><li>InvalidFrameID</li><li>InvalidBudget</li><li>InvalidPrice</li><li>ClientDuplication</li><li>LocationDuplication</li><li>LocationJuxta</li></ul>| String |
 | Comment   | Free text for an availability comment                                                                                                                     | String |
 | Context   | Array of OOHbjects describing the context of any Partially Available or Unavailable status e.g. this could be a frame that is causing a duplication error | Object |
 | Targeting | Array of OOHbjects describing the inventory that is Available,  Partially Available or Unavailable statuses                                               | Object |
