@@ -7,6 +7,10 @@
     "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/line/line_object.json",
     "required": [
         "Id",
-        "Name"
+        "Name",
+        "StartDate",
+        "EndDate",
+        "Targeting",
+        "OOHProviderData"
     ]
 }
