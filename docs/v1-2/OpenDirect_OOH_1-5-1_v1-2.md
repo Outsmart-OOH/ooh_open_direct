@@ -522,8 +522,8 @@ Defines the details of a Brand associated with an organization
 | Id                   | A system-generated opaque ID that uniquely identifies the brand | String (255) |
 | Name                 | The brand's display name                                        | String (255) |
 | OrganizationId       | The ID of the organization that owns the brand                  | String (36)  |
-| ThirdPartyID         | A Third Party ID for the AdvertiserBrand (e.g. Space)           | String (36)  |
-| ThirdPartyDataSource | The Third Party Data Source for the Advertiser Brand ID         | String (255) |
+| ThirdPartyDataSource         | A Third Party ID for the AdvertiserBrand (e.g. Space)           | String (36)  |
+| ThirdPartyDataSourceID | The Third Party Data Source for the Advertiser Brand ID         | String (255) |
 
 AdvertiserBrand Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/advertiserBrand_object.json
 
