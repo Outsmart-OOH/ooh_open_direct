@@ -1297,25 +1297,20 @@ However, if the property is an array of any type and is NULL, the response must 
 
 The following examples show the reccomended implememtiation support for the url filter function
 
-Wildcards
+#### Wildcards
+/brands?name=\*gucci\* <br/>
+/organizations?name=\*procter\*
+ 
+#### Boolean (AND) Logic
+/brands/?eids_name=SPACE&eids_tpids_id=1234 <br/> 
+/organizations?eids_name=SPACE&eids_tpids_id=4567 <br/>
+/organizations?eids_source=https://oohspace.co.uk&eids_tpids_id=8879 
+ 
+#### Ability to retrieve all data if pagination is implemented 
+/brands?offset=0&count=50000 <br/>
+/organizations?offset=0&count=50000
 
-| Wildcards | 
-| --------- |
-| /brands?name=\*gucci\* |
-| /organizations?name=\*procter\* |
 
- 
-|Boolean (AND) Logic|
-|--------------------|
-| /brands/?eids_name=SPACE&eids_tpids_id=1234 | 
-| /organizations?eids_name=SPACE&eids_tpids_id=4567 | 
-| /organizations?eids_source=https://oohspace.co.uk&eids_tpids_id=8879 |
- 
-| Ability to retrieve all data if pagination is implemented |
-|---------------------------------------------------------|
-| /brands?offset=0&count=50000 |
-| /organizations?offset=0&count=50000 |
- 
 
 ## 7.2 Account
 
