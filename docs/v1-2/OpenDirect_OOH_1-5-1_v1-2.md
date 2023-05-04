@@ -682,6 +682,11 @@ Extended identifiers support in the OpenDirect specification allows buyers to us
     <td>Source or technology provider responsible for the set of included IDs. Expressed as a top-level domain.</td>
   </tr>
   <tr>
+    <td><code>name</code></td>
+    <td>string</td>
+    <td>Name of Source or technology provider responsible for the set of included IDs.</td>
+  </tr>
+  <tr>
     <td><code>tpids</code></td>
     <td>object array</td>
     <td>Array of third party IDs <code>TPID</code> objects from the given source. Refer to 3.11 Extended Identifier UIDs</td>
