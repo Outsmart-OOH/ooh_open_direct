@@ -429,7 +429,8 @@ At the moment the Sell Side creates all Organizations, this is not a schema nor 
 | ProviderData       | An opaque CLOB of provider-defined data. Providers may use this field as needed (for example, to store an ID that correlates this object with resources within their system). Note that any provider that edits this object may override the data in this field. The data should include a marker that you can identify to ensure the data is yours.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | CLOB (1000)                                    |
 | OOHProviderData    | The OOHProviderData object is used for Buyers to detail structured information that may be used to identify their order in a Seller's system using their own IDs or references.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Object                                         |
 | Status             | A value that indicates the current state of the approval process. The approval process confirms the organization’s identity. The following are the possible values.<br>• Pending – The organization is under review.<br>• Approved – The organization is approved and can create and book orders.<br>• Disapproved – The organization’s identity could not be verified. The organization may not create and book orders. The DisapprovalReason property must specify the reason why the organization was not approved.<br>• Limited – The organization’s identity could not be verified; however, they may create and book orders.<br>This state may affect the products and pricing offered to the organization. The organization may create orders in any state (except where noted); however, they may search for available inventory or reserve and book inventory only in the Approved and Limited states. | enum (Pending, Approved, Disapproved, Limited) |
-| Url                | A URL to the organization’s website.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | String (1024)                                  |
+| Url                | A URL to the organization’s website.                         | String (1024)                                  |
+| Eids                | array of extended ids (EID) that detail third party datasources and ids that may be referenced to identify the organization to the buyer                       | Array                                  |
 
 
 
@@ -522,8 +523,7 @@ Defines the details of a Brand associated with an organization
 | Id                   | A system-generated opaque ID that uniquely identifies the brand | String (255) |
 | Name                 | The brand's display name                                        | String (255) |
 | OrganizationId       | The ID of the organization that owns the brand                  | String (36)  |
-| ThirdPartyDataSource         | A Third Party ID for the AdvertiserBrand (e.g. Space)           | String (36)  |
-| ThirdPartyDataSourceId | The Third Party Data Source for the Advertiser Brand ID         | String (255) |
+| Eids                | array of extended ids (EID) that detail third party datasources and ids that may be referenced to identify the AdvertiderBrand to the buyer                       | Array                                  |
 
 AdvertiserBrand Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/advertiserBrand_object.json
 
@@ -664,6 +664,68 @@ An object that groups the inventory availbility into Available, Partially Availa
 | Targeting | Array of OOHbjects describing the inventory that is Available,  Partially Available or Unavailable statuses                                               | Object |
 
 OOHbject Schema: https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/common/productAvails_Availability_object.json
+ 
+## 3.10 EID 
+
+Extended identifiers support in the OpenDirect specification allows buyers to use third party identifiers in ther trading process. This object can contain one or more TPIDs from a single source or a technology provider. The publisher should ensure that business agreements allow for the sending of this data.
+
+
+<table>
+  <tr>
+    <td><strong>Attribute&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></td>
+    <td><strong>Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></td>
+    <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+    <td><code>source</code></td>
+    <td>string</td>
+    <td>Source or technology provider responsible for the set of included IDs. Expressed as a top-level domain.</td>
+  </tr>
+  <tr>
+    <td><code>name</code></td>
+    <td>string</td>
+    <td>Name of Source or technology provider responsible for the set of included IDs.</td>
+  </tr>
+  <tr>
+    <td><code>tpids</code></td>
+    <td>object array</td>
+    <td>Array of third party IDs <code>TPID</code> objects from the given source. Refer to 3.11 Extended Identifier UIDs</td>
+ </tr>
+  <tr>
+    <td><code>ext</code></td>
+    <td>object</td>
+    <td>Placeholder for exchange-specific extensions to OpenDirect.</td>
+     </td>
+     </td>
+  </tr>
+</table>
+
+
+## 3.11 - TPID 
+
+This object contains a single third party identifier provided as part of extended identifiers. The publisher should ensure that business agreements allow for the sending of this data.
+
+
+<table>
+  <tr>
+    <td><strong>Attribute&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></td>
+    <td><strong>Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></td>
+    <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+    <td><code>id</code></td>
+    <td>string</td>
+    <td>The identifier for the Third Party.</td>
+  </tr>
+  <tr>
+    <td><code>ext</code></td>
+    <td>object</td>
+    <td>Placeholder for specific extensions to this object.</td>
+     </td>
+     </td>
+  </tr>
+</table> 
+
 
 # 4 Reference Data
 
