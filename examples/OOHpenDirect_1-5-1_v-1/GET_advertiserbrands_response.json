@@ -5,29 +5,65 @@
             "Id": "1173",
             "Name": "Marmite",
             "OrganizationId": "345",
-            "ThirdPartyId": "27",
-            "ThirdPartyDataSource": "Space"
+            "eids": [
+                {
+                    "source": "https://oohspace.co.uk",
+                    "name": "SPACE",
+                    "tpids": [
+                        {
+                            "id": "14789"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "Id": "1174",
             "Name": "PGTips",
             "OrganizationId": "345",
-            "ThirdPartyId": "42",
-            "ThirdPartyDataSource": "Space"
+            "eids": [
+                {
+                    "source": "https://oohspace.co.uk",
+                    "name": "SPACE",
+                    "tpids": [
+                        {
+                            "id": "567"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "Id": "1175",
             "Name": "Lynx",
             "OrganizationId": "345",
-            "ThirdPartyId": "109",
-            "ThirdPartyDataSource": "Space"
+            "eids": [
+                {
+                    "source": "https://oohspace.co.uk",
+                    "name": "SPACE",
+                    "tpids": [
+                        {
+                            "id": "8890"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "Id": "1176",
             "Name": "Walls",
             "OrganizationId": "345",
-            "ThirdPartyId": "240",
-            "ThirdPartyDataSource": "Space"
+            "eids": [
+                {
+                    "source": "https://oohspace.co.uk",
+                    "name": "SPACE",
+                    "tpids": [
+                        {
+                            "id": "3562"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
