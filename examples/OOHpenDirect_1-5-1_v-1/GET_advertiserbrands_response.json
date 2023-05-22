@@ -5,7 +5,7 @@
             "Id": "1173",
             "Name": "Marmite",
             "OrganizationId": "345",
-            "eids": [
+            "Eids": [
                 {
                     "source": "https://oohspace.co.uk",
                     "name": "SPACE",
@@ -21,7 +21,7 @@
             "Id": "1174",
             "Name": "PGTips",
             "OrganizationId": "345",
-            "eids": [
+            "Eids": [
                 {
                     "source": "https://oohspace.co.uk",
                     "name": "SPACE",
@@ -37,7 +37,7 @@
             "Id": "1175",
             "Name": "Lynx",
             "OrganizationId": "345",
-            "eids": [
+            "Eids": [
                 {
                     "source": "https://oohspace.co.uk",
                     "name": "SPACE",
@@ -53,7 +53,7 @@
             "Id": "1176",
             "Name": "Walls",
             "OrganizationId": "345",
-            "eids": [
+            "Eids": [
                 {
                     "source": "https://oohspace.co.uk",
                     "name": "SPACE",
