@@ -26,17 +26,42 @@
         "OrganizationId": {
             "$ref": "https://raw.githubusercontent.com/Outsmart-OOH/ooh_open_direct/master/schema/v1/resources/organization/organization_id_string.json"
         },
-        "ThirdPartyDataSourceId": {
-            "type": "string",
-            "title": "Third Party ID",
-            "description": "A Third Party ID for the AdvertiserBrand (e.g. Space)",
-            "maxLength": 36
-        },
-        "ThirdPartyDataSource": {
-            "type": "string",
-            "title": "Third Party Data Source",
-            "description": "The Third Party Data Source for the Advertiser Brand ID",
-            "maxLength": 128
+        "Eids": {
+            "description": "array of extended ids (EID) that detail third party datasources and ids that may be referenced to identify the AdvertiderBrand to the buyer.",
+            "type": "array",
+            "items": {
+                "properties": {
+                    "source": {
+                        "description": "Source or technology provider responsible for the set of included IDs. Expressed as a top-level domain",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "Name of Source or technology provider responsible for the set of included IDs.",
+                        "type": "string"
+                    },
+                    "tpids": {
+                        "description": "Array of extended third prty ID objects from the given source.",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "description": "The identifier for the Third Party.",
+                                    "type": "string"
+                                },
+                                "ext": {
+                                    "description": "Placeholder for specific extensions to this object.",
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "ext": {
+                        "description": "Placeholder for specific extensions to this object.",
+                        "type": "object"
+                    }
+                }
+            }
         }
     }
 }
