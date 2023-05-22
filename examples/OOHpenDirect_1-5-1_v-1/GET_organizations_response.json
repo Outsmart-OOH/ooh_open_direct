@@ -69,15 +69,26 @@
             "Name": "IdealHolmes",
             "AdvertiserBrands": [
                 {
-                "Id":"123456",
-                "Name":"Manic Miner",
-                "OrganizationId":"Bug-Byte"
+                    "Id": "123456",
+                    "Name": "Manic Miner",
+                    "OrganizationId": "Bug-Byte"
                 }
             ],
             "OrganizationType": "Advertiser",
             "Phone": "2065550100",
             "Status": "Approved",
-            "Url": "http://www.idealholmes.com"
+            "Url": "http://www.idealholmes.com",
+            "Eids": [
+                {
+                    "source": "https://oohspace.co.uk",
+                    "name": "SPACE",
+                    "tpids": [
+                        {
+                            "id": "1287659"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
