@@ -22,7 +22,8 @@
                 "required": [
                     "Id",
                     "Name",
-                    "OrganizationId"
+                    "OrganizationId",
+                    "Eids"
                 ]
             }
         }
