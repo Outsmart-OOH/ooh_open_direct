@@ -10,7 +10,7 @@
         "$schema": {
             "type": "string",
             "format": "uri",
-            "description": "$schema only included to aid validation of JSON, should not be used in real calls."
+            "description": "$schema only included to aid validation of JSON, should not be used in real cal.ls."
         },
         "AdvertiserId": {
             "$id": "#/properties/AdvertiserId",
@@ -46,11 +46,22 @@
             "description": "The name of the account. Used for display purposes"
         },
         "ProviderData": {
-            "$id": "#/proerties/ProviderData",
+            "$id": "#/properties/ProviderData",
             "type": "string",
             "maxLength": 1000,
             "title": "Provider Data",
             "description": "An opaque CLOB of provider-defined data. Providers may use this field as needed (for example, to store an ID that correlates this object with resources within their system). Note that any provider that edits this object may override the data in this field. The data should include a marker that you can identify to ensure the data is yours."
-        }
+        },
+        "Status": {
+            "$id": "#/properties/Status",
+            "type": "string",
+            "title": "Status",
+            "description": "A value that indicates the current state of the Account.",
+            "enum": [
+                "Pending",
+                "Approved",
+                "Disapproved"
+            ]
+        },
     }
 }
