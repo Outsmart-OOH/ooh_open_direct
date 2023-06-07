@@ -7,14 +7,16 @@
             "ThirdPartyId": "1234987",
             "Id": "9876542",
             "Name": "Brand B",
-            "ProviderData": ""
+            "ProviderData": "",
+            "Status": "Approved"
         },
         {
             "AdvertiserId": "1234987",
             "BuyerId": "34587",
             "ThirdPartyId": "98765",
             "Id": "23873345",
-            "Name": "Brand A"
+            "Name": "Brand A",
+            "Status": "Approved"
         }
     ]
 }
